@@ -1,160 +1,161 @@
-# SUPER MARIO PRO2
+# Super Mario PRO2
 
-## Contenidos
+A 2D platformer engine built entirely from scratch in C++ — no third-party game engine or libraries — for the Programming II (PRO2) course. Component-based architecture, full local 2-player support, and enemies with real behavioral logic (a segmented Wiggler, a multi-state flying boss).
 
-[1]Ejecución
-[2]Controles
-[3]Arquitectura del Juego
-[4]Entities & Collectables
-[5]HUD
-[6]Enemigos Principales
-[7]Wiggler
-[8]Kamek
-[9]Sistema de Respawn
-[10]Fin de Nivel
-[11]Modo 2 Jugadores
-[12]Setas Aleatorias
+<img width="908" height="613" alt="Image" src="https://github.com/user-attachments/assets/c50c4853-655b-4fe2-8744-bf5416e659db" />
+
+## Contents
+
+- [Running the project](#running-the-project)
+- [Controls](#controls)
+- [Architecture](#architecture)
+- [Entities & collectables](#entities--collectables)
+- [HUD](#hud)
+- [Enemies](#enemies)
+- [Respawn system](#respawn-system)
+- [Level end](#level-end)
+- [2-player mode](#2-player-mode)
+- [Random mushrooms](#random-mushrooms)
 
 ---
 
-[1] Ejecución
+## Running the project
 
-### Desde la raíz del proyecto:
+From the project root:
 
-$ make
+```bash
+make
+```
 
-### Ejecutable en bin/mario_pro2:
+Run the executable:
 
+```bash
 ./bin/mario_pro2
+```
+
 
 ---
 
-[2]🎮 Controles
+## Controls
 
-Jugador 1 (Mario):
+### Player 1 (Mario)
 
-[←] - Moverse a la izquierda
+| Key | Action |
+|---|---|
+| `←` | Move left |
+| `→` | Move right |
+| `↑` | Sprint |
+| `↓` | Crouch |
+| `Space` | Jump |
+| `B` | Dance |
 
-[→] - Moverse a la derecha
+### Player 2 (Luigi)
 
-[↑] - Sprint
+| Key | Action |
+|---|---|
+| `A` | Move left |
+| `D` | Move right |
+| `W` | Jump |
+| `S` | Crouch |
+| `V` | Sprint |
+| `Q` | Dance |
 
-[↓] - Agacharse
+### Special functions
 
-[Space] - Saltar
-
-[B] - Bailar
-
-Jugador 2 (Luigi):
-
-[A] - Moverse a la izquierda
-
-[D] - Moverse a la derecha
-
-[W] - Saltar
-
-[S] - Agacharse
-
-[V] - Sprint
-
-[Q] - Bailar
-
-Funciones Especiales:
-
-[E] - Modo Debug (muestra los coliders)
-
-[U] - Respawn inmediato
-
-[P] - Pausar/Continuar (Cuidado! No hay alerta visual de que el juego esta en pausa).
-
-[2] - Hacer aparecer y desaparecer a Luigi
+| Key | Action |
+|---|---|
+| `E` | Debug mode (shows colliders) |
+| `U` | Immediate respawn |
+| `P` | Pause / resume — **note:** there is no visual indicator that the game is paused |
+| `2` | Spawn or remove Luigi |
 
 ---
 
-[3] Arquitectura del Juego
+## Architecture
 
-Este proyecto sigue un diseño por componentes:
+The project follows a **component-based design**:
 
-### BoxCollider: detección de colisiones rectangulares.
+- **`BoxCollider`** — rectangular collision detection.
+- **`Animator`** — manages sprites and frame-by-frame animation.
 
-### Animator: gestiona sprites y animaciones frame‑by‑frame.
+Every entity and collectable is built from these components, which keeps new entities fast to create and easy to maintain.
 
-Cada entidad o colectable contiene estos componentes, lo que agiliza su creación y mantenimiento.
+- **`ParticleSystemManager`** — a component that handles on-screen particle effects: respawn particles, enemy-defeat effects, jump and run dust, and similar.
 
-### ParticleSystemManager: Es un componente, que facilita el pintar efectos en la pantalla (particulas como las de respawn, eliminar enemigos, humo al saltar y correr...)
-
----
-
-[4] Entities & Collectables
-
-### Entities
-
-Desde Goombas y Koopas hasta las setas.
-
-### Collectables
-
-Monedas tradicionales y el EndStar (estrella dorada estilo Galaxy).
 
 ---
 
-[5] HUD
+## Entities & collectables
 
-Con ayuda de la clase HUD.hh se muestra en pantalla:
+**Entities** — from Goombas and Koopas to the various mushrooms.
 
-1.Monedas recogidas
-2.Tiempo en partida
-3.Setas recogidas
-
-[6] Enemigos Principales
+**Collectables** — traditional coins, and the **End Star**, a Super Mario Galaxy–style golden star.
 
 ---
+
+## HUD
+
+Handled by the `HUD.hh` class, showing on screen:
+
+1. Coins collected
+2. Time in the current run
+3. Mushrooms collected
+
+<img width="962" height="636" alt="Image" src="https://github.com/user-attachments/assets/010cd0e5-f0ed-4a14-a242-13e1c47c01cf" />
+
+
+---
+
+## Enemies
 
 ### Wiggler
 
-Inspirado en listas enlazadas: cada segmento del cuerpo es un nodo.
+Inspired by linked lists: each body segment is a node.
 
-Al saltarle, se parte el segmento tocado, reapareciendo como un nuevo Wiggler.
-
-Movimiento sinusoidal y animación de pisada gracias al Animator.
+- Jumping on a segment splits it off, and it reappears as a new, independent Wiggler.
+- Sinusoidal movement and a stepping animation, driven by the `Animator` component.
 
 ### Kamek
 
-Vuela por la pantalla con multiples estados: Idle, Move, Summon
+Flies around the screen with multiple states:
 
-Idle-> Flota en el aire.
-Move-> Escoje una posicion en la pantalla, y vuela hacia alli.
-Summon-> Invoca enemigos.
+| State | Behavior |
+|---|---|
+| `Idle` | Floats in the air |
+| `Move` | Picks a position on screen and flies toward it |
+| `Summon` | Summons enemies |
 
----
+<img width="817" height="437" alt="Image" src="https://github.com/user-attachments/assets/e9bbf5bc-eaa8-4c34-86a8-d947274d9c2a" />
 
-[7] Sistema de Respawn
-
-Banderas repartidas por el nivel: al tocarlas, se actualiza tu punto de respawn.
-
-Si Mario muere, reaparecerá en la última bandera activada.
-
---- 
-
-[8] Fin de Nivel
-
-Un collectable especial: la End Star (inspirada en Super Mario Galaxy 2).
-
-Al recogerla, se dispara una pequeña secuencia:
-
-Y tus marcas se muestran en pantalla.
 
 ---
 
-[9] Modo 2 Jugadores
+## Respawn system
 
-Pulsa 2 para invocar o expulsar a Luigi, que aparece junto a Mario.
+Flags are placed throughout the level. Touching one updates Mario's respawn point.
 
-Si sale de la pantalla, desaparece automáticamente.
+If Mario dies, he reappears at the last flag he activated.
 
 ---
 
-[10] Setas Aleatorias
+## Level end
 
-Al golpear un bloque “?”, sale una seta al azar de varios tipos:
+A special collectable, the **End Star** (inspired by Super Mario Galaxy 2). Collecting it triggers a short end-of-level sequence, and your run's stats are displayed on screen.
 
-Normal, Roja, Verde… ¡y la Seta Gigante!
+<!-- IMAGE HERE: end-of-level screenshot -->
+
+---
+
+## 2-player mode
+
+Press `2` to spawn or remove Luigi, who appears alongside Mario. If Luigi leaves the screen, he's automatically removed.
+
+<img width="571" height="396" alt="Image" src="https://github.com/user-attachments/assets/52511789-bb1f-469c-b0ea-b69cd59e6e5d" />
+
+---
+
+## Random mushrooms
+
+Hitting a `?` block drops a random mushroom: Normal, Red, Green... and the Giant Mushroom.
+
+<img width="249" height="165" alt="Image" src="https://github.com/user-attachments/assets/d5ee4e55-50f9-4f28-bb2e-fd2f4700a053" />
