@@ -1,0 +1,20 @@
+<map id="ParticleSystemManager::getInstance" name="ParticleSystemManager::getInstance">
+<area shape="rect" id="node1" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="1141,251,1317,293"/>
+<area shape="rect" id="node2" href="$classWiggler.html#a585a456a580fbfd393ee4bdc7516a528" title=" " alt="" coords="919,5,1045,32"/>
+<area shape="rect" id="node3" href="$classWiggler.html#a301193641dc65d18bd928de27fdaf089" title=" " alt="" coords="883,56,1081,83"/>
+<area shape="rect" id="node4" href="$classManager.html#aed2b4bd12cabc5bd5d8528bb6ea844f4" title="Paints everything in every manager. (most of the game)." alt="" coords="922,107,1042,133"/>
+<area shape="rect" id="node7" href="$classWiggler.html#a57299d8747b7976651ac7e13730c4eb7" title=" " alt="" coords="912,157,1052,184"/>
+<area shape="rect" id="node8" href="$classGame.html#a0c6fbced92dbe00f94f96d899f02fdb8" title=" " alt="" coords="667,208,823,235"/>
+<area shape="rect" id="node10" href="$classMario.html#ae2f3ce13baf3c3b809c3333bb2b2292a" title=" " alt="" coords="921,259,1043,285"/>
+<area shape="rect" id="node11" href="$classMario.html#a78a9e97404fc6528e2afab19f5177b63" title=" " alt="" coords="689,259,801,285"/>
+<area shape="rect" id="node14" href="$classAnim_1_1Animator.html#aedd2fd4eae1640c6733fd1b9ea689597" title="spawnsParticlesOfAnimation, Spawns the particle system with the name name at a position pos." alt="" coords="871,361,1093,402"/>
+<area shape="rect" id="node16" href="$classFlagManager.html#a06aee406466eeb96d5efdbabba6c9fc8" title="Updates the flags in the game, they change state if touched by a player." alt="" coords="902,427,1062,453"/>
+<area shape="rect" id="node17" href="$classKamek.html#a279f7996d249690cf8aba8ec71f33b59" title="Updates Kamek." alt="" coords="921,477,1043,504"/>
+<area shape="rect" id="node18" href="$classKamek.html#a3518828e327cdaf88d3ded63479c2888" title="Updates in the SUMMON state, chooses random spots to spawn Goombas, and spawns particles and animatio..." alt="" coords="887,528,1077,555"/>
+<area shape="rect" id="node5" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="501,144,604,171"/>
+<area shape="rect" id="node6" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,171,60,197"/>
+<area shape="rect" id="node9" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,208,223,235"/>
+<area shape="rect" id="node12" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="487,259,619,285"/>
+<area shape="rect" id="node13" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,259,439,285"/>
+<area shape="rect" id="node15" href="$classCollectable.html#aed201917e38b6c95943084c7c6f77e5d" title="Spawns a collected animation at pos_. Does not actually destroy itself." alt="" coords="667,368,822,395"/>
+</map>

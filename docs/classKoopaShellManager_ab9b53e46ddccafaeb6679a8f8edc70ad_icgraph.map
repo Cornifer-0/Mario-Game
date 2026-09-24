@@ -1,0 +1,10 @@
+<map id="KoopaShellManager::spawn" name="KoopaShellManager::spawn">
+<area shape="rect" id="node1" title="Spawns a koopshell at a position." alt="" coords="1115,35,1273,76"/>
+<area shape="rect" id="node2" href="$classEntityManager.html#acf781a732afe8fdcbeaeb15e0316f8cb" title="Kills if in the collider." alt="" coords="873,5,1067,47"/>
+<area shape="rect" id="node8" href="$classEntityManager.html#a3dac9289566317ccb865d12b6265d799" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="885,71,1055,98"/>
+<area shape="rect" id="node3" href="$classKoopaShellManager.html#aacb6ef395b8a631fc7f3dd79bef17dd4" title="Updates the koopShell aswell as the objects around it, like the mario, luigi and the goombas." alt="" coords="667,5,825,47"/>
+<area shape="rect" id="node4" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="487,13,619,39"/>
+<area shape="rect" id="node5" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,13,439,39"/>
+<area shape="rect" id="node6" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,13,223,39"/>
+<area shape="rect" id="node7" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="pro2::Window::set_camera_topleft" name="pro2::Window::set_camera_topleft">
+<area shape="rect" id="node1" title="Establece la posición de la esquina superior izquierda de la cámara." alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c" title="Devuelve la posición de la esquina superior izquierda de la cámara." alt="" coords="248,13,408,39"/>
+</map>

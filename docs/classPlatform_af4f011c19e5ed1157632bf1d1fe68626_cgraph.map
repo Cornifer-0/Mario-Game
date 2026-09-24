@@ -1,0 +1,7 @@
+<map id="Platform::paint" name="Platform::paint">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,124,108"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#ade5e9bd7b7ca4263581d9fd553e0bd3f" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="172,56,383,83"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="609,56,785,83"/>
+<area shape="rect" id="node3" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="431,5,561,32"/>
+<area shape="rect" id="node5" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="431,56,561,83"/>
+</map>

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['c1_926',['c1',['../namespaceAnimData.html#ac44c0a86ed46e01a84d0e9d73e8ad7af',1,'AnimData']]],
+  ['c2_927',['c2',['../namespaceAnimData.html#aaf88122a6535df2f419cd1e9594af59e',1,'AnimData']]],
+  ['c3_928',['c3',['../namespaceAnimData.html#a395b131756fbc10a13fec903b3d2a8ff',1,'AnimData']]],
+  ['c4_929',['c4',['../namespaceAnimData.html#acf311ecf8edec7d83d9c3d6963b14110',1,'AnimData']]],
+  ['camera_5fspeed_5f_930',['camera_speed_',['../classpro2_1_1Window.html#a3fc2ec7b7dcd41b28be129634463e20f',1,'pro2::Window']]],
+  ['clock_931',['clock',['../namespaceAnimData.html#ac6213b3008d76468d7d8dfb44be4d17d',1,'AnimData']]],
+  ['coin_5fidle_932',['coin_idle',['../namespaceAnimData.html#a13180496bfa3ed59a2e22e2070b88fd5',1,'AnimData']]],
+  ['coll1map_933',['coll1Map',['../classResourceManager.html#a1ff08ebf64d19e5a09341ebc90eb189e',1,'ResourceManager']]],
+  ['collectables_5f_934',['collectables_',['../classResourceManager.html#a72ff6a1186f66de2e1489c7058f803ce',1,'ResourceManager']]],
+  ['collectablesmap_5f_935',['collectablesMap_',['../classResourceManager.html#afc7079e6ec3700b3cf4d6ecdcb95bf4a',1,'ResourceManager']]],
+  ['collected_5f_936',['collected_',['../classResourceManager.html#a1ec4fac9f30bee01856d0f810c3671fb',1,'ResourceManager::collected_()'],['../classCollectable.html#ac4cd9567de387d3807bbf3850096c0d2',1,'Collectable::collected_()']]],
+  ['collected_5fblock_937',['collected_block',['../namespaceAnimData.html#a1499cb1073d0b3e28255ed3c0b022cba',1,'AnimData']]],
+  ['controls_5f_938',['controls_',['../classMario.html#a740b6bc5d069b12152564a419564d29d',1,'Mario']]],
+  ['crouch_5f_939',['crouch_',['../structpro2_1_1ControlsSetUp.html#a4a0a2d122f13658c97387e82abb870ab',1,'pro2::ControlsSetUp']]],
+  ['currentanim_5f_940',['currentAnim_',['../classAnim_1_1Animator.html#a67e8b245f455c1a242c946735a60c073',1,'Anim::Animator']]],
+  ['currentframe_5f_941',['currentFrame_',['../classAnim_1_1Animation.html#ada0aa99ba780d1b916bc25d85c9baa02',1,'Anim::Animation']]],
+  ['cyan_942',['cyan',['../namespacepro2.html#ae79338de6e0d8f480ec7d4deebe04e5d',1,'pro2']]]
+];

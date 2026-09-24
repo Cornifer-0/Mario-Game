@@ -1,0 +1,8 @@
+<map id="pro2::Window::camera_center" name="pro2::Window::camera_center">
+<area shape="rect" id="node1" title="Devuelve la posición del centro de la cámara." alt="" coords="489,23,656,65"/>
+<area shape="rect" id="node2" href="$classManager.html#aed2b4bd12cabc5bd5d8528bb6ea844f4" title="Paints everything in every manager. (most of the game)." alt="" coords="296,5,416,32"/>
+<area shape="rect" id="node5" href="$classGame.html#ab146f2f8cec61b092586762267cf1e73" title=" " alt="" coords="271,56,441,83"/>
+<area shape="rect" id="node3" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="114,5,217,32"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" id="node6" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,56,223,83"/>
+</map>

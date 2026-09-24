@@ -1,0 +1,4 @@
+<map id="Anim::Animator::Animator" name="Anim::Animator::Animator">
+<area shape="rect" id="node1" title="Constructs an Animator with the first and only animation anim, being named as &quot;idle&quot; by default." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a78d0977a422f50f8bdc5ea7fa6e32512" title="Adds an animation to the anims_ map, the the name name." alt="" coords="245,5,468,32"/>
+</map>

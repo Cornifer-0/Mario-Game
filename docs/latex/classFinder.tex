@@ -1,0 +1,549 @@
+\hypertarget{classFinder}{}\doxysection{Finder$<$ T $>$ Class Template Reference}
+\label{classFinder}\index{Finder$<$ T $>$@{Finder$<$ T $>$}}
+
+
+La class \mbox{\hyperlink{classFinder}{Finder}} et permet guardar elements T associats a un regtangle en un espai 2d. T ha de tenir el metode get\+\_\+rect(). \mbox{\hyperlink{classFinder}{Finder}} et permet rapidament comprobar quins objectes interseccionen amb un rectangle donat.  
+
+
+
+
+{\ttfamily \#include $<$finder.\+hh$>$}
+
+
+
+Collaboration diagram for Finder$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classFinder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}} ()
+\item 
+\mbox{\hyperlink{classFinder_af750b6ecac6cfa207474c83697e830ca}{$\sim$\+Finder}} ()
+\item 
+void \mbox{\hyperlink{classFinder_a60b26c2f502472b2d58823bddea14e7b}{add}} (T $\ast$t)
+\begin{DoxyCompactList}\small\item\em Afegeix t al contenidor del \mbox{\hyperlink{classFinder}{Finder}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a429914516be45896a1049253e768160a}{update}} (T $\ast$t)
+\begin{DoxyCompactList}\small\item\em Actualitza el rectangle associat a t dins del \mbox{\hyperlink{classFinder}{Finder}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a6c6f6492df6b83891eaafe534b6f4051}{remove}} (T $\ast$t)
+\begin{DoxyCompactList}\small\item\em Afegeix t al \mbox{\hyperlink{classFinder}{Finder}}. \end{DoxyCompactList}\item 
+std\+::set$<$ T $\ast$ $>$ \mbox{\hyperlink{classFinder_a65e77ed25d8ee5004a830622f304a2f6}{query}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect) const
+\begin{DoxyCompactList}\small\item\em Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFinder_a4d206a624b0d45dd8f3a1030f4b8cf3e}{add}} (\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$qn, T $\ast$t)
+\begin{DoxyCompactList}\small\item\em Funcio recursiva per buscar les fulles de l\textquotesingle{}arbre que interseccionen amb el rectangle de t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_aef7a40bdc8a0fb809bba4d9173892419}{update\+Node}} (\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$qn)
+\begin{DoxyCompactList}\small\item\em Comproba si el node s\textquotesingle{}ha de dividir. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFinder_aec6b48019cf7d820c6d78040755852f4}{intersect}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&a, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&b) const
+\begin{DoxyCompactList}\small\item\em Retorna true si i nomes si els rectangles a i b interseccionen en el pla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a19893848e02a5cbdfa88a6d5d019dc81}{divide}} (\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$qn)
+\begin{DoxyCompactList}\small\item\em Divideix el quad\+Node qn, es a dir, crea 4 fills a aquest node i reperteix als fills els objectes que hi havia en aquest node. Els rects dels fills corresponen als quadrants del rect del pare (top\+\_\+left, top\+\_\+right, bottom\+\_\+left, bottom\+\_\+right). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a1af0cc380138c7798aa3217bbab0c7dc}{remove\+\_\+with\+\_\+rect}} (T $\ast$t, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} old\+\_\+rect)
+\begin{DoxyCompactList}\small\item\em Eliminar un objecte que ha estat guardat amb old\+\_\+rect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a74162a3a1eec014b5d53fa7ff7c03b49}{remove\+\_\+}} (\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$qn, T $\ast$t, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} old\+\_\+rect)
+\begin{DoxyCompactList}\small\item\em Funcio recursiva per buscar on esta guardat t, i eliminar-\/lo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_af25bf9f9084b01ed20944aec40c180d0}{add\+\_\+to\+\_\+set\+\_\+if\+\_\+intersects}} (const std\+::vector$<$ T $\ast$ $>$ items, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect, std\+::set$<$ T $\ast$ $>$ \&S) const
+\begin{DoxyCompactList}\small\item\em La funcio afageix els objecte de items a S, si i nomes si interseccionen amb rect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_abf26632846b54bb3e9061e72d4dd7a95}{query\+\_\+}} (\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$qn, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect, std\+::set$<$ T $\ast$ $>$ \&S) const
+\begin{DoxyCompactList}\small\item\em Query recursiva per buscar un objecte dins de l\textquotesingle{}arbre de \mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}}\textquotesingle{}s. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_aba62ea24416b98c880c7ede60905888c}{clear\+Tree}} (\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funcio recursiva per borrar l\textquotesingle{}arbre sencer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$ \mbox{\hyperlink{classFinder_a37c13dac9b5c629161827df463285d29}{root\+\_\+}}
+\item 
+std\+::unordered\+\_\+map$<$ T $\ast$, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} $>$ \mbox{\hyperlink{classFinder_afa8e3dc22f9495e01f3cfa68b5d62c11}{item\+\_\+rects\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classFinder_aac8aefc6bd9ec6594da064778d16b5fa}{MAX\+\_\+\+OCCUPACY}} = 8
+\item 
+static const int \mbox{\hyperlink{classFinder_a9fdea0d0e181b8ea6873a11a05ef7ce8}{MIN\+\_\+\+NODE\+\_\+\+SIZE}} = 20
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Finder$<$ T $>$}
+
+La class \mbox{\hyperlink{classFinder}{Finder}} et permet guardar elements T associats a un regtangle en un espai 2d. T ha de tenir el metode get\+\_\+rect(). \mbox{\hyperlink{classFinder}{Finder}} et permet rapidament comprobar quins objectes interseccionen amb un rectangle donat. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFinder_a8a823378bec0a23c9fa080f2332999ad}\label{classFinder_a8a823378bec0a23c9fa080f2332999ad}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!Finder@{Finder}}
+\index{Finder@{Finder}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Finder()}{Finder()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::\mbox{\hyperlink{classFinder}{Finder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFinder_af750b6ecac6cfa207474c83697e830ca}\label{classFinder_af750b6ecac6cfa207474c83697e830ca}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!````~Finder@{$\sim$Finder}}
+\index{````~Finder@{$\sim$Finder}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Finder()}{~Finder()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classFinder}{Finder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classFinder_af750b6ecac6cfa207474c83697e830ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFinder_a4d206a624b0d45dd8f3a1030f4b8cf3e}\label{classFinder_a4d206a624b0d45dd8f3a1030f4b8cf3e}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!add@{add}}
+\index{add@{add}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$}]{qn,  }\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Funcio recursiva per buscar les fulles de l\textquotesingle{}arbre que interseccionen amb el rectangle de t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qn} & \\
+\hline
+{\em t} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a4d206a624b0d45dd8f3a1030f4b8cf3e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a60b26c2f502472b2d58823bddea14e7b}\label{classFinder_a60b26c2f502472b2d58823bddea14e7b}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!add@{add}}
+\index{add@{add}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Afegeix t al contenidor del \mbox{\hyperlink{classFinder}{Finder}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a60b26c2f502472b2d58823bddea14e7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_af25bf9f9084b01ed20944aec40c180d0}\label{classFinder_af25bf9f9084b01ed20944aec40c180d0}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!add\_to\_set\_if\_intersects@{add\_to\_set\_if\_intersects}}
+\index{add\_to\_set\_if\_intersects@{add\_to\_set\_if\_intersects}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add\_to\_set\_if\_intersects()}{add\_to\_set\_if\_intersects()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add\+\_\+to\+\_\+set\+\_\+if\+\_\+intersects (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $\ast$ $>$}]{items,  }\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect,  }\item[{std\+::set$<$ T $\ast$ $>$ \&}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+La funcio afageix els objecte de items a S, si i nomes si interseccionen amb rect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & \\
+\hline
+{\em rect} & \\
+\hline
+{\em S} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classFinder_af25bf9f9084b01ed20944aec40c180d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_af25bf9f9084b01ed20944aec40c180d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_aba62ea24416b98c880c7ede60905888c}\label{classFinder_aba62ea24416b98c880c7ede60905888c}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!clearTree@{clearTree}}
+\index{clearTree@{clearTree}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clearTree()}{clearTree()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::clear\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Funcio recursiva per borrar l\textquotesingle{}arbre sencer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classFinder_aba62ea24416b98c880c7ede60905888c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a19893848e02a5cbdfa88a6d5d019dc81}\label{classFinder_a19893848e02a5cbdfa88a6d5d019dc81}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!divide@{divide}}
+\index{divide@{divide}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::divide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$}]{qn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Divideix el quad\+Node qn, es a dir, crea 4 fills a aquest node i reperteix als fills els objectes que hi havia en aquest node. Els rects dels fills corresponen als quadrants del rect del pare (top\+\_\+left, top\+\_\+right, bottom\+\_\+left, bottom\+\_\+right). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qn} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classFinder_a19893848e02a5cbdfa88a6d5d019dc81_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a19893848e02a5cbdfa88a6d5d019dc81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_aec6b48019cf7d820c6d78040755852f4}\label{classFinder_aec6b48019cf7d820c6d78040755852f4}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!intersect@{intersect}}
+\index{intersect@{intersect}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{a,  }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Retorna true si i nomes si els rectangles a i b interseccionen en el pla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_aec6b48019cf7d820c6d78040755852f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a65e77ed25d8ee5004a830622f304a2f6}\label{classFinder_a65e77ed25d8ee5004a830622f304a2f6}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!query@{query}}
+\index{query@{query}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::set$<$T $\ast$$>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. 
+
+Si el nombre de rectangles del contenidor és {\ttfamily n}, el cost de l\textquotesingle{}algorisme ha de ser O(log n).
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & El rectangle de cerca\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de {\ttfamily rect} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a65e77ed25d8ee5004a830622f304a2f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classFinder_a65e77ed25d8ee5004a830622f304a2f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_abf26632846b54bb3e9061e72d4dd7a95}\label{classFinder_abf26632846b54bb3e9061e72d4dd7a95}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!query\_@{query\_}}
+\index{query\_@{query\_}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{query\_()}{query\_()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::query\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$}]{qn,  }\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect,  }\item[{std\+::set$<$ T $\ast$ $>$ \&}]{S }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Query recursiva per buscar un objecte dins de l\textquotesingle{}arbre de \mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}}\textquotesingle{}s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qn} & \\
+\hline
+{\em rect} & \\
+\hline
+{\em S} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_abf26632846b54bb3e9061e72d4dd7a95_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_abf26632846b54bb3e9061e72d4dd7a95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a6c6f6492df6b83891eaafe534b6f4051}\label{classFinder_a6c6f6492df6b83891eaafe534b6f4051}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Afegeix t al \mbox{\hyperlink{classFinder}{Finder}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a6c6f6492df6b83891eaafe534b6f4051_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a74162a3a1eec014b5d53fa7ff7c03b49}\label{classFinder_a74162a3a1eec014b5d53fa7ff7c03b49}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove\_@{remove\_}}
+\index{remove\_@{remove\_}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_()}{remove\_()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$}]{qn,  }\item[{T $\ast$}]{t,  }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{old\+\_\+rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Funcio recursiva per buscar on esta guardat t, i eliminar-\/lo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qn} & \\
+\hline
+{\em t} & \\
+\hline
+{\em old\+\_\+rect} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classFinder_a74162a3a1eec014b5d53fa7ff7c03b49_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a74162a3a1eec014b5d53fa7ff7c03b49_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a1af0cc380138c7798aa3217bbab0c7dc}\label{classFinder_a1af0cc380138c7798aa3217bbab0c7dc}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove\_with\_rect@{remove\_with\_rect}}
+\index{remove\_with\_rect@{remove\_with\_rect}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_with\_rect()}{remove\_with\_rect()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove\+\_\+with\+\_\+rect (\begin{DoxyParamCaption}\item[{T $\ast$}]{t,  }\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{old\+\_\+rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Eliminar un objecte que ha estat guardat amb old\+\_\+rect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em old\+\_\+rect} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a1af0cc380138c7798aa3217bbab0c7dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classFinder_a1af0cc380138c7798aa3217bbab0c7dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_a429914516be45896a1049253e768160a}\label{classFinder_a429914516be45896a1049253e768160a}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!update@{update}}
+\index{update@{update}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualitza el rectangle associat a t dins del \mbox{\hyperlink{classFinder}{Finder}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_a429914516be45896a1049253e768160a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFinder_aef7a40bdc8a0fb809bba4d9173892419}\label{classFinder_aef7a40bdc8a0fb809bba4d9173892419}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!updateNode@{updateNode}}
+\index{updateNode@{updateNode}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{updateNode()}{updateNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::update\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}} $\ast$}]{qn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Comproba si el node s\textquotesingle{}ha de dividir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qn} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFinder_aef7a40bdc8a0fb809bba4d9173892419_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classFinder_aef7a40bdc8a0fb809bba4d9173892419_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFinder_afa8e3dc22f9495e01f3cfa68b5d62c11}\label{classFinder_afa8e3dc22f9495e01f3cfa68b5d62c11}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!item\_rects\_@{item\_rects\_}}
+\index{item\_rects\_@{item\_rects\_}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{item\_rects\_}{item\_rects\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::unordered\+\_\+map$<$T $\ast$, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}$>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::item\+\_\+rects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFinder_aac8aefc6bd9ec6594da064778d16b5fa}\label{classFinder_aac8aefc6bd9ec6594da064778d16b5fa}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!MAX\_OCCUPACY@{MAX\_OCCUPACY}}
+\index{MAX\_OCCUPACY@{MAX\_OCCUPACY}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAX\_OCCUPACY}{MAX\_OCCUPACY}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::MAX\+\_\+\+OCCUPACY = 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFinder_a9fdea0d0e181b8ea6873a11a05ef7ce8}\label{classFinder_a9fdea0d0e181b8ea6873a11a05ef7ce8}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!MIN\_NODE\_SIZE@{MIN\_NODE\_SIZE}}
+\index{MIN\_NODE\_SIZE@{MIN\_NODE\_SIZE}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MIN\_NODE\_SIZE}{MIN\_NODE\_SIZE}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::MIN\+\_\+\+NODE\+\_\+\+SIZE = 20\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFinder_a37c13dac9b5c629161827df463285d29}\label{classFinder_a37c13dac9b5c629161827df463285d29}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!root\_@{root\_}}
+\index{root\_@{root\_}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{root\_}{root\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structFinder_1_1QuadNode}{Quad\+Node}}$\ast$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::root\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/core/\mbox{\hyperlink{finder_8hh}{finder.\+hh}}\end{DoxyCompactItemize}

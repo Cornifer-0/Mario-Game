@@ -1,0 +1,4 @@
+<map id="Collectable::calcPositionOffset" name="Collectable::calcPositionOffset">
+<area shape="rect" id="node1" title="Calculates an offset, based on the frame_count, useful to simulate sinusoidal movements of the coins." alt="" coords="5,5,187,47"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964" title="Devuelve el contador de fotogramas pintados hasta el momento." alt="" coords="235,5,392,47"/>
+</map>

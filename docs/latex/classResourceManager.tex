@@ -1,0 +1,272 @@
+\hypertarget{classResourceManager}{}\doxysection{Resource\+Manager Class Reference}
+\label{classResourceManager}\index{ResourceManager@{ResourceManager}}
+
+
+The class Resource \mbox{\hyperlink{classManager}{Manager}} is a container for collectables. It helps organize them , spawn and destroy them.  
+
+
+
+
+{\ttfamily \#include $<$resource\+Manager.\+hh$>$}
+
+
+
+Collaboration diagram for Resource\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classResourceManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb}{Resource\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} with the default\+Collectables\+Map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResourceManager_a58f5b86a660e829b88e5245d4ad7a129}{Resource\+Manager}} (\mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} cm)
+\begin{DoxyCompactList}\small\item\em Construct a new Reousrce\+Manager with a custom collectables map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResourceManager_a49825d1291ce4cfa91f9d93d9adf291c}{get\+Collected}} () const
+\begin{DoxyCompactList}\small\item\em Retruns the amount of pionts collected . SACKS -\/$>$ 5, COINS -\/$>$ 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResourceManager_a7d5bfb154ece795c3faa9f0c0060bfcf}{update}} (\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$mario\+Collider)
+\begin{DoxyCompactList}\small\item\em Checks if a collider has collided with a coin, if it has it collects that coin and erase it from the container. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResourceManager_a5e41ab2c185485305055f476692f4478}{respawn\+Collectables}} ()
+\begin{DoxyCompactList}\small\item\em Respawns all collectables, does not reset the collected\+\_\+ counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResourceManager_a429ac8e387b14fdcde5b27efe77f64eb}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints all collectables on the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} \mbox{\hyperlink{classResourceManager_afc7079e6ec3700b3cf4d6ecdcb95bf4a}{collectables\+Map\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCollectable}{Collectable}} $>$ \mbox{\hyperlink{classResourceManager_a72ff6a1186f66de2e1489c7058f803ce}{collectables\+\_\+}}
+\item 
+int \mbox{\hyperlink{classResourceManager_a1ec4fac9f30bee01856d0f810c3671fb}{collected\+\_\+}}
+\item 
+\mbox{\hyperlink{classFinder}{Finder}}$<$ \mbox{\hyperlink{classCollectable}{Collectable}} $>$ $\ast$ \mbox{\hyperlink{classResourceManager_a9f47766e6f38392948eca63a24e5a2d3}{f\+\_\+\+Collectable\+\_\+}}
+\item 
+const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} \mbox{\hyperlink{classResourceManager_ac80703ddf16418eb63de84db8b6b3247}{default\+Collectables\+Map}}
+\item 
+const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} \mbox{\hyperlink{classResourceManager_a1ff08ebf64d19e5a09341ebc90eb189e}{coll1\+Map}}
+\item 
+const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} \mbox{\hyperlink{classResourceManager_a24770c0aece869633bad13259fa19e08}{entrega2}}
+\item 
+const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} \mbox{\hyperlink{classResourceManager_a664f6dfa8e17e40244b194d675958a9a}{judit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class Resource \mbox{\hyperlink{classManager}{Manager}} is a container for collectables. It helps organize them , spawn and destroy them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb}\label{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb}} 
+\index{ResourceManager@{ResourceManager}!ResourceManager@{ResourceManager}}
+\index{ResourceManager@{ResourceManager}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ResourceManager()}{ResourceManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} with the default\+Collectables\+Map. 
+
+\mbox{\Hypertarget{classResourceManager_a58f5b86a660e829b88e5245d4ad7a129}\label{classResourceManager_a58f5b86a660e829b88e5245d4ad7a129}} 
+\index{ResourceManager@{ResourceManager}!ResourceManager@{ResourceManager}}
+\index{ResourceManager@{ResourceManager}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ResourceManager()}{ResourceManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}}}]{cm }\end{DoxyParamCaption})}
+
+
+
+Construct a new Reousrce\+Manager with a custom collectables map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cm} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResourceManager_a49825d1291ce4cfa91f9d93d9adf291c}\label{classResourceManager_a49825d1291ce4cfa91f9d93d9adf291c}} 
+\index{ResourceManager@{ResourceManager}!getCollected@{getCollected}}
+\index{getCollected@{getCollected}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getCollected()}{getCollected()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::get\+Collected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retruns the amount of pionts collected . SACKS -\/$>$ 5, COINS -\/$>$ 1. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResourceManager_a429ac8e387b14fdcde5b27efe77f64eb}\label{classResourceManager_a429ac8e387b14fdcde5b27efe77f64eb}} 
+\index{ResourceManager@{ResourceManager}!paint@{paint}}
+\index{paint@{paint}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints all collectables on the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classResourceManager_a429ac8e387b14fdcde5b27efe77f64eb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classResourceManager_a5e41ab2c185485305055f476692f4478}\label{classResourceManager_a5e41ab2c185485305055f476692f4478}} 
+\index{ResourceManager@{ResourceManager}!respawnCollectables@{respawnCollectables}}
+\index{respawnCollectables@{respawnCollectables}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{respawnCollectables()}{respawnCollectables()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::respawn\+Collectables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Respawns all collectables, does not reset the collected\+\_\+ counter. 
+
+\mbox{\Hypertarget{classResourceManager_a7d5bfb154ece795c3faa9f0c0060bfcf}\label{classResourceManager_a7d5bfb154ece795c3faa9f0c0060bfcf}} 
+\index{ResourceManager@{ResourceManager}!update@{update}}
+\index{update@{update}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$}]{mario\+Collider }\end{DoxyParamCaption})}
+
+
+
+Checks if a collider has collided with a coin, if it has it collects that coin and erase it from the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario\+Collider} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classResourceManager_a7d5bfb154ece795c3faa9f0c0060bfcf_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classResourceManager_a1ff08ebf64d19e5a09341ebc90eb189e}\label{classResourceManager_a1ff08ebf64d19e5a09341ebc90eb189e}} 
+\index{ResourceManager@{ResourceManager}!coll1Map@{coll1Map}}
+\index{coll1Map@{coll1Map}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{coll1Map}{coll1Map}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} Resource\+Manager\+::coll1\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= []() \{}
+\DoxyCodeLine{        \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{CollectablesMap}} map;}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < 1000; x += 40) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} \mbox{\hyperlink{namespaceAnimData_a6229f732741ce41d1568b1f16cc3b974}{y}} = 0; \mbox{\hyperlink{namespaceAnimData_a6229f732741ce41d1568b1f16cc3b974}{y}} < 1000; \mbox{\hyperlink{namespaceAnimData_a6229f732741ce41d1568b1f16cc3b974}{y}} += 40) \{}
+\DoxyCodeLine{                map.push\_back(\{\{x, \mbox{\hyperlink{namespaceAnimData_a6229f732741ce41d1568b1f16cc3b974}{y}}\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\});}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} map;}
+\DoxyCodeLine{    \}()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classResourceManager_a72ff6a1186f66de2e1489c7058f803ce}\label{classResourceManager_a72ff6a1186f66de2e1489c7058f803ce}} 
+\index{ResourceManager@{ResourceManager}!collectables\_@{collectables\_}}
+\index{collectables\_@{collectables\_}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{collectables\_}{collectables\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCollectable}{Collectable}}$>$ Resource\+Manager\+::collectables\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classResourceManager_afc7079e6ec3700b3cf4d6ecdcb95bf4a}\label{classResourceManager_afc7079e6ec3700b3cf4d6ecdcb95bf4a}} 
+\index{ResourceManager@{ResourceManager}!collectablesMap\_@{collectablesMap\_}}
+\index{collectablesMap\_@{collectablesMap\_}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{collectablesMap\_}{collectablesMap\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} Resource\+Manager\+::collectables\+Map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classResourceManager_a1ec4fac9f30bee01856d0f810c3671fb}\label{classResourceManager_a1ec4fac9f30bee01856d0f810c3671fb}} 
+\index{ResourceManager@{ResourceManager}!collected\_@{collected\_}}
+\index{collected\_@{collected\_}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{collected\_}{collected\_}}
+{\footnotesize\ttfamily int Resource\+Manager\+::collected\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classResourceManager_ac80703ddf16418eb63de84db8b6b3247}\label{classResourceManager_ac80703ddf16418eb63de84db8b6b3247}} 
+\index{ResourceManager@{ResourceManager}!defaultCollectablesMap@{defaultCollectablesMap}}
+\index{defaultCollectablesMap@{defaultCollectablesMap}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{defaultCollectablesMap}{defaultCollectablesMap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} Resource\+Manager\+::default\+Collectables\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\{\{75, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{125, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{175, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{225, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{275, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{325, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{375, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{425, 225\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{}
+\DoxyCodeLine{                                                    \{\{75, 165\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                                    \{\{125, 165\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{375, 165\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    \{\{425, 165\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{}
+\DoxyCodeLine{                                                    \{\{75, 100\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                                    \{\{425, 100\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                                    }
+\DoxyCodeLine{                                                    \{\{200, 200\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                                    \{\{300, 180\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                                    \{\{350, 120\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                                    \{\{150, 140\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                                    \{\{250, 160\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classResourceManager_a24770c0aece869633bad13259fa19e08}\label{classResourceManager_a24770c0aece869633bad13259fa19e08}} 
+\index{ResourceManager@{ResourceManager}!entrega2@{entrega2}}
+\index{entrega2@{entrega2}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{entrega2}{entrega2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} Resource\+Manager\+::entrega2\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\{\{32, -\/32\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                      \{\{396, 220\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                      \{\{100, 275\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                      \{\{475, 270\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                      \{\{550, 220\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                      \{\{650, 220\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                      \{\{1390, 200\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                      \{\{232, 75\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea930d0b01788eeed4239717401e7ad1df}{SMALL\_COIN}}\},}
+\DoxyCodeLine{                                      }
+\DoxyCodeLine{                                      \{\{300, 300\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                      \{\{500, 100\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\},}
+\DoxyCodeLine{                                      \{\{700, 150\}, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861ea3db211bb0d30db282da5a13b354f69c8}{COIN}}\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classResourceManager_a9f47766e6f38392948eca63a24e5a2d3}\label{classResourceManager_a9f47766e6f38392948eca63a24e5a2d3}} 
+\index{ResourceManager@{ResourceManager}!f\_Collectable\_@{f\_Collectable\_}}
+\index{f\_Collectable\_@{f\_Collectable\_}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{f\_Collectable\_}{f\_Collectable\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFinder}{Finder}}$<$\mbox{\hyperlink{classCollectable}{Collectable}}$>$$\ast$ Resource\+Manager\+::f\+\_\+\+Collectable\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classResourceManager_a664f6dfa8e17e40244b194d675958a9a}\label{classResourceManager_a664f6dfa8e17e40244b194d675958a9a}} 
+\index{ResourceManager@{ResourceManager}!judit@{judit}}
+\index{judit@{judit}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{judit}{judit}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{resourceManager_8hh_a4fa7d6fd1fe130f1872d7f69508204a8}{Collectables\+Map}} Resource\+Manager\+::judit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{resourceManager_8hh}{resource\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{resourceManager_8cc}{resource\+Manager.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="pro2::paint_background_sprite" name="pro2::paint_background_sprite">
+<area shape="rect" id="node1" title="Paints the background sprite to the window, with a parallax effect given by the parralaxMuliplier...." alt="" coords="5,74,180,115"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="237,5,395,32"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="228,56,404,83"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c" title="Devuelve la posición de la esquina superior izquierda de la cámara." alt="" coords="236,107,396,133"/>
+<area shape="rect" id="node5" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="239,157,393,184"/>
+</map>

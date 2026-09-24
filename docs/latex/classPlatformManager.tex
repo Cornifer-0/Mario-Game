@@ -1,0 +1,149 @@
+\hypertarget{classPlatformManager}{}\doxysection{Platform\+Manager Class Reference}
+\label{classPlatformManager}\index{PlatformManager@{PlatformManager}}
+
+
+A manager for platforms.  
+
+
+
+
+{\ttfamily \#include $<$platform\+Manager.\+hh$>$}
+
+
+
+Collaboration diagram for Platform\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classPlatformManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlatformManager_a32b1f8f491e7bfa3236b801da9397b94}{Platform\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPlatform}{Platform}} \mbox{\hyperlink{classManager}{Manager}} object. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \& \mbox{\hyperlink{classPlatformManager_a7bafdd2a5adcd5f3dfc3d6f4bea91f44}{get\+All\+Platforms}} () const
+\item 
+const std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \& \mbox{\hyperlink{classPlatformManager_ae7700edc20dd052ed0ca0f6869253731}{get\+Finder\+Platforms}} () const
+\item 
+void \mbox{\hyperlink{classPlatformManager_a5d4db4a3cce1bce2967fa65ba6e5a2f8}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Updates platforms in s\+\_\+platforms\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlatformManager_aa1a2b8481a182f741c9d9dc58b15ef68}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints all platforms in s\+\_\+platforms\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \mbox{\hyperlink{classPlatformManager_a712ddde242b00d002874375d76af40ef}{platforms\+\_\+}}
+\item 
+std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \mbox{\hyperlink{classPlatformManager_af811d72d826d6a710dabac0bb96df2e2}{s\+\_\+platforms\+\_\+}}
+\item 
+\mbox{\hyperlink{classFinder}{Finder}}$<$ \mbox{\hyperlink{classPlatform}{Platform}} $>$ $\ast$ \mbox{\hyperlink{classPlatformManager_af9df4de3225edbe692d310d366df61b2}{f\+\_\+\+Platforms\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager for platforms. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlatformManager_a32b1f8f491e7bfa3236b801da9397b94}\label{classPlatformManager_a32b1f8f491e7bfa3236b801da9397b94}} 
+\index{PlatformManager@{PlatformManager}!PlatformManager@{PlatformManager}}
+\index{PlatformManager@{PlatformManager}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{PlatformManager()}{PlatformManager()}}
+{\footnotesize\ttfamily Platform\+Manager\+::\+Platform\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPlatform}{Platform}} \mbox{\hyperlink{classManager}{Manager}} object. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classPlatformManager_a32b1f8f491e7bfa3236b801da9397b94_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlatformManager_a7bafdd2a5adcd5f3dfc3d6f4bea91f44}\label{classPlatformManager_a7bafdd2a5adcd5f3dfc3d6f4bea91f44}} 
+\index{PlatformManager@{PlatformManager}!getAllPlatforms@{getAllPlatforms}}
+\index{getAllPlatforms@{getAllPlatforms}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{getAllPlatforms()}{getAllPlatforms()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \& Platform\+Manager\+::get\+All\+Platforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlatformManager_ae7700edc20dd052ed0ca0f6869253731}\label{classPlatformManager_ae7700edc20dd052ed0ca0f6869253731}} 
+\index{PlatformManager@{PlatformManager}!getFinderPlatforms@{getFinderPlatforms}}
+\index{getFinderPlatforms@{getFinderPlatforms}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{getFinderPlatforms()}{getFinderPlatforms()}}
+{\footnotesize\ttfamily const std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \& Platform\+Manager\+::get\+Finder\+Platforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlatformManager_aa1a2b8481a182f741c9d9dc58b15ef68}\label{classPlatformManager_aa1a2b8481a182f741c9d9dc58b15ef68}} 
+\index{PlatformManager@{PlatformManager}!paint@{paint}}
+\index{paint@{paint}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Platform\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints all platforms in s\+\_\+platforms\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlatformManager_a5d4db4a3cce1bce2967fa65ba6e5a2f8}\label{classPlatformManager_a5d4db4a3cce1bce2967fa65ba6e5a2f8}} 
+\index{PlatformManager@{PlatformManager}!update@{update}}
+\index{update@{update}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Platform\+Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Updates platforms in s\+\_\+platforms\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlatformManager_a5d4db4a3cce1bce2967fa65ba6e5a2f8_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlatformManager_af9df4de3225edbe692d310d366df61b2}\label{classPlatformManager_af9df4de3225edbe692d310d366df61b2}} 
+\index{PlatformManager@{PlatformManager}!f\_Platforms\_@{f\_Platforms\_}}
+\index{f\_Platforms\_@{f\_Platforms\_}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{f\_Platforms\_}{f\_Platforms\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFinder}{Finder}}$<$\mbox{\hyperlink{classPlatform}{Platform}}$>$$\ast$ Platform\+Manager\+::f\+\_\+\+Platforms\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatformManager_a712ddde242b00d002874375d76af40ef}\label{classPlatformManager_a712ddde242b00d002874375d76af40ef}} 
+\index{PlatformManager@{PlatformManager}!platforms\_@{platforms\_}}
+\index{platforms\_@{platforms\_}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{platforms\_}{platforms\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classPlatform}{Platform}} $\ast$$>$ Platform\+Manager\+::platforms\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatformManager_af811d72d826d6a710dabac0bb96df2e2}\label{classPlatformManager_af811d72d826d6a710dabac0bb96df2e2}} 
+\index{PlatformManager@{PlatformManager}!s\_platforms\_@{s\_platforms\_}}
+\index{s\_platforms\_@{s\_platforms\_}!PlatformManager@{PlatformManager}}
+\doxysubsubsection{\texorpdfstring{s\_platforms\_}{s\_platforms\_}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{classPlatform}{Platform}} $\ast$$>$ Platform\+Manager\+::s\+\_\+platforms\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{platformManager_8hh}{platform\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{platformManager_8cc}{platform\+Manager.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,316 @@
+\hypertarget{classAnim_1_1Animator}{}\doxysection{Anim\+::Animator Class Reference}
+\label{classAnim_1_1Animator}\index{Anim::Animator@{Anim::Animator}}
+
+
+The class animator a container for storing the different animations an object might have.  
+
+
+
+
+{\ttfamily \#include $<$animator.\+hh$>$}
+
+
+
+Collaboration diagram for Anim\+::Animator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classAnim_1_1Animator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator_a2bcac9e65e5c7c183ca44def3543d7d0}{Animator}} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty \mbox{\hyperlink{classAnim_1_1Animator}{Animator}} with no Animations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnim_1_1Animator_aa35fd80d740be8b7bcdc61638eb55e82}{Animator}} (const \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} \&anim)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classAnim_1_1Animator}{Animator}} with the first and only animation anim, being named as \char`\"{}idle\char`\"{} by default. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnim_1_1Animator_a78d0977a422f50f8bdc5ea7fa6e32512}{add\+Animation}} (std\+::string name, const \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} \&anim)
+\begin{DoxyCompactList}\small\item\em Adds an animation to the anims\+\_\+ map, the the name name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnim_1_1Animator_a3ef8c8f4557a13fc4a7b7f7f0362173b}{change\+Animation}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Changes the current\+Anim\+\_\+ to name and sets current\+Frame\+\_\+ to 0. In case of current\+Anim\+\_\+ being equal to name in the first place, the method does nothing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnim_1_1Animator_a59dd3357956a0f3bba8d343362e83df5}{change\+Animation\+Reset}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Changes the current\+Anim\+\_\+ to name and sets current\+Frame\+\_\+ to 0. In case of current\+Anim\+\_\+ being equal to name it still resets the animation by setting current\+Frame\+\_\+ to 0. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAnim_1_1Animator_ace9eba96ac4c75ea4bf3460a7f9fc943}{get\+Animation}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current\+Anim\+\_\+ name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnim_1_1Animator_aedd2fd4eae1640c6733fd1b9ea689597}{spawn\+Particle\+Of\+Animation}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, std\+::string name) const
+\begin{DoxyCompactList}\small\item\em spawns\+Particles\+Of\+Animation, Spawns the particle system with the name name at a position pos. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAnim_1_1Animator_a49a3a5acb13d251defda57062ff54031}{animation\+Ended}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if and only if the animation has ended. For this the anims\+\_\+\mbox{[}current\+Anim\+\_\+\mbox{]} repeat attribute must be false and anims\+\_\+\mbox{[}current\+Anim\+\_\+\mbox{]} current\+Frame must be the last of the Animation\+Frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} \mbox{\hyperlink{classAnim_1_1Animator_a2361fe1b3faf687fd549cec8ce1ddcc2}{current\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current\+Frame of the current\+Animation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} \mbox{\hyperlink{classAnim_1_1Animator_a23d7ea38ef0175f05c8805b5ddabaa25}{next\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next\+Frame of the animation and sets prev\+Frame\+\_\+ to 0 if and only if prev\+Frame\+\_\+ $>$= than the duration of the current animation. If that is not the case returns the current\+Frame and prev\+Frame\+\_\+ gets incremented by one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} $>$ \mbox{\hyperlink{classAnim_1_1Animator_aae47673a3dfa0514ebe0ca699f7bccf1}{anims\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classAnim_1_1Animator_a67e8b245f455c1a242c946735a60c073}{current\+Anim\+\_\+}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classAnim_1_1Animator_a1e64fca41c870d420db95fb3436012ab}{prev\+Frame\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class animator a container for storing the different animations an object might have. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAnim_1_1Animator_a2bcac9e65e5c7c183ca44def3543d7d0}\label{classAnim_1_1Animator_a2bcac9e65e5c7c183ca44def3543d7d0}} 
+\index{Anim::Animator@{Anim::Animator}!Animator@{Animator}}
+\index{Animator@{Animator}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{Animator()}{Animator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Anim\+::\+Animator\+::\+Animator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct an empty \mbox{\hyperlink{classAnim_1_1Animator}{Animator}} with no Animations. 
+
+\mbox{\Hypertarget{classAnim_1_1Animator_aa35fd80d740be8b7bcdc61638eb55e82}\label{classAnim_1_1Animator_aa35fd80d740be8b7bcdc61638eb55e82}} 
+\index{Anim::Animator@{Anim::Animator}!Animator@{Animator}}
+\index{Animator@{Animator}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{Animator()}{Animator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Anim\+::\+Animator\+::\+Animator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} \&}]{anim }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classAnim_1_1Animator}{Animator}} with the first and only animation anim, being named as \char`\"{}idle\char`\"{} by default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_aa35fd80d740be8b7bcdc61638eb55e82_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnim_1_1Animator_a78d0977a422f50f8bdc5ea7fa6e32512}\label{classAnim_1_1Animator_a78d0977a422f50f8bdc5ea7fa6e32512}} 
+\index{Anim::Animator@{Anim::Animator}!addAnimation@{addAnimation}}
+\index{addAnimation@{addAnimation}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{addAnimation()}{addAnimation()}}
+{\footnotesize\ttfamily void Anim\+::\+Animator\+::add\+Animation (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{const \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} \&}]{anim }\end{DoxyParamCaption})}
+
+
+
+Adds an animation to the anims\+\_\+ map, the the name name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em anim} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a78d0977a422f50f8bdc5ea7fa6e32512_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_a49a3a5acb13d251defda57062ff54031}\label{classAnim_1_1Animator_a49a3a5acb13d251defda57062ff54031}} 
+\index{Anim::Animator@{Anim::Animator}!animationEnded@{animationEnded}}
+\index{animationEnded@{animationEnded}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{animationEnded()}{animationEnded()}}
+{\footnotesize\ttfamily bool Anim\+::\+Animator\+::animation\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if and only if the animation has ended. For this the anims\+\_\+\mbox{[}current\+Anim\+\_\+\mbox{]} repeat attribute must be false and anims\+\_\+\mbox{[}current\+Anim\+\_\+\mbox{]} current\+Frame must be the last of the Animation\+Frame. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a49a3a5acb13d251defda57062ff54031_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_a3ef8c8f4557a13fc4a7b7f7f0362173b}\label{classAnim_1_1Animator_a3ef8c8f4557a13fc4a7b7f7f0362173b}} 
+\index{Anim::Animator@{Anim::Animator}!changeAnimation@{changeAnimation}}
+\index{changeAnimation@{changeAnimation}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{changeAnimation()}{changeAnimation()}}
+{\footnotesize\ttfamily void Anim\+::\+Animator\+::change\+Animation (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Changes the current\+Anim\+\_\+ to name and sets current\+Frame\+\_\+ to 0. In case of current\+Anim\+\_\+ being equal to name in the first place, the method does nothing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a3ef8c8f4557a13fc4a7b7f7f0362173b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_a59dd3357956a0f3bba8d343362e83df5}\label{classAnim_1_1Animator_a59dd3357956a0f3bba8d343362e83df5}} 
+\index{Anim::Animator@{Anim::Animator}!changeAnimationReset@{changeAnimationReset}}
+\index{changeAnimationReset@{changeAnimationReset}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{changeAnimationReset()}{changeAnimationReset()}}
+{\footnotesize\ttfamily void Anim\+::\+Animator\+::change\+Animation\+Reset (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Changes the current\+Anim\+\_\+ to name and sets current\+Frame\+\_\+ to 0. In case of current\+Anim\+\_\+ being equal to name it still resets the animation by setting current\+Frame\+\_\+ to 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a59dd3357956a0f3bba8d343362e83df5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a59dd3357956a0f3bba8d343362e83df5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_a2361fe1b3faf687fd549cec8ce1ddcc2}\label{classAnim_1_1Animator_a2361fe1b3faf687fd549cec8ce1ddcc2}} 
+\index{Anim::Animator@{Anim::Animator}!currentFrame@{currentFrame}}
+\index{currentFrame@{currentFrame}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{currentFrame()}{currentFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} Anim\+::\+Animator\+::current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current\+Frame of the current\+Animation. 
+
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a2361fe1b3faf687fd549cec8ce1ddcc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_ace9eba96ac4c75ea4bf3460a7f9fc943}\label{classAnim_1_1Animator_ace9eba96ac4c75ea4bf3460a7f9fc943}} 
+\index{Anim::Animator@{Anim::Animator}!getAnimation@{getAnimation}}
+\index{getAnimation@{getAnimation}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{getAnimation()}{getAnimation()}}
+{\footnotesize\ttfamily string Anim\+::\+Animator\+::get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current\+Anim\+\_\+ name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_ace9eba96ac4c75ea4bf3460a7f9fc943_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_a23d7ea38ef0175f05c8805b5ddabaa25}\label{classAnim_1_1Animator_a23d7ea38ef0175f05c8805b5ddabaa25}} 
+\index{Anim::Animator@{Anim::Animator}!nextFrame@{nextFrame}}
+\index{nextFrame@{nextFrame}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{nextFrame()}{nextFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} Anim\+::\+Animator\+::next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the next\+Frame of the animation and sets prev\+Frame\+\_\+ to 0 if and only if prev\+Frame\+\_\+ $>$= than the duration of the current animation. If that is not the case returns the current\+Frame and prev\+Frame\+\_\+ gets incremented by one. 
+
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_a23d7ea38ef0175f05c8805b5ddabaa25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animator_aedd2fd4eae1640c6733fd1b9ea689597}\label{classAnim_1_1Animator_aedd2fd4eae1640c6733fd1b9ea689597}} 
+\index{Anim::Animator@{Anim::Animator}!spawnParticleOfAnimation@{spawnParticleOfAnimation}}
+\index{spawnParticleOfAnimation@{spawnParticleOfAnimation}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{spawnParticleOfAnimation()}{spawnParticleOfAnimation()}}
+{\footnotesize\ttfamily void Anim\+::\+Animator\+::spawn\+Particle\+Of\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+
+
+spawns\+Particles\+Of\+Animation, Spawns the particle system with the name name at a position pos. 
+
+\begin{DoxyReturn}{Returns}
+Animation$\ast$ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_aedd2fd4eae1640c6733fd1b9ea689597_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animator_aedd2fd4eae1640c6733fd1b9ea689597_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnim_1_1Animator_aae47673a3dfa0514ebe0ca699f7bccf1}\label{classAnim_1_1Animator_aae47673a3dfa0514ebe0ca699f7bccf1}} 
+\index{Anim::Animator@{Anim::Animator}!anims\_@{anims\_}}
+\index{anims\_@{anims\_}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{anims\_}{anims\_}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classAnim_1_1Animation}{Animation}}$>$ Anim\+::\+Animator\+::anims\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnim_1_1Animator_a67e8b245f455c1a242c946735a60c073}\label{classAnim_1_1Animator_a67e8b245f455c1a242c946735a60c073}} 
+\index{Anim::Animator@{Anim::Animator}!currentAnim\_@{currentAnim\_}}
+\index{currentAnim\_@{currentAnim\_}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{currentAnim\_}{currentAnim\_}}
+{\footnotesize\ttfamily std\+::string Anim\+::\+Animator\+::current\+Anim\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnim_1_1Animator_a1e64fca41c870d420db95fb3436012ab}\label{classAnim_1_1Animator_a1e64fca41c870d420db95fb3436012ab}} 
+\index{Anim::Animator@{Anim::Animator}!prevFrame\_@{prevFrame\_}}
+\index{prevFrame\_@{prevFrame\_}!Anim::Animator@{Anim::Animator}}
+\doxysubsubsection{\texorpdfstring{prevFrame\_}{prevFrame\_}}
+{\footnotesize\ttfamily uint64\+\_\+t Anim\+::\+Animator\+::prev\+Frame\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/components/\mbox{\hyperlink{animator_8hh}{animator.\+hh}}\item 
+src/components/\mbox{\hyperlink{animator_8cc}{animator.\+cc}}\end{DoxyCompactItemize}

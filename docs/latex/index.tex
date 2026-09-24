@@ -1,0 +1,129 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ \hypertarget{index_autotoc_md1}{}\doxysection{Contenidos}\label{index_autotoc_md1}
+\mbox{[}1\mbox{]}Ejecución \mbox{[}2\mbox{]}Controles \mbox{[}3\mbox{]}Arquitectura del Juego \mbox{[}4\mbox{]}Entities \& Collectables \mbox{[}5\mbox{]}\mbox{\hyperlink{classHUD}{HUD}} \mbox{[}6\mbox{]}Enemigos Principales \mbox{[}7\mbox{]}\mbox{\hyperlink{classWiggler}{Wiggler}} \mbox{[}8\mbox{]}\mbox{\hyperlink{classKamek}{Kamek}} \mbox{[}9\mbox{]}Sistema de Respawn \mbox{[}10\mbox{]}Fin de Nivel \mbox{[}11\mbox{]}Modo 2 Jugadores \mbox{[}12\mbox{]}Setas Aleatorias
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}1\mbox{]} Ejecución\hypertarget{index_autotoc_md3}{}\doxysubsection{Desde la raíz del proyecto\+:}\label{index_autotoc_md3}
+\$ make\hypertarget{index_autotoc_md4}{}\doxysubsection{Ejecutable en bin/mario\+\_\+pro2\+:}\label{index_autotoc_md4}
+./bin/mario\+\_\+pro2
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}2\mbox{]}🎮 Controles
+
+Jugador 1 (\mbox{\hyperlink{classMario}{Mario}})\+:
+
+\mbox{[}←\mbox{]} -\/ Moverse a la izquierda
+
+\mbox{[}→\mbox{]} -\/ Moverse a la derecha
+
+\mbox{[}↑\mbox{]} -\/ Sprint
+
+\mbox{[}↓\mbox{]} -\/ Agacharse
+
+\mbox{[}Space\mbox{]} -\/ Saltar
+
+\mbox{[}B\mbox{]} -\/ Bailar
+
+Jugador 2 (Luigi)\+:
+
+\mbox{[}A\mbox{]} -\/ Moverse a la izquierda
+
+\mbox{[}D\mbox{]} -\/ Moverse a la derecha
+
+\mbox{[}W\mbox{]} -\/ Saltar
+
+\mbox{[}S\mbox{]} -\/ Agacharse
+
+\mbox{[}V\mbox{]} -\/ Sprint
+
+\mbox{[}Q\mbox{]} -\/ Bailar
+
+Funciones Especiales\+:
+
+\mbox{[}E\mbox{]} -\/ Modo Debug (muestra los coliders)
+
+\mbox{[}U\mbox{]} -\/ Respawn inmediato
+
+\mbox{[}P\mbox{]} -\/ Pausar/\+Continuar (Cuidado! No hay alerta visual de que el juego esta en pausa).
+
+\mbox{[}2\mbox{]} -\/ Hacer aparecer y desaparecer a Luigi
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}3\mbox{]} Arquitectura del Juego
+
+Este proyecto sigue un diseño por componentes\+:\hypertarget{index_autotoc_md7}{}\doxysubsection{Box\+Collider\+: detección de colisiones rectangulares.}\label{index_autotoc_md7}
+\hypertarget{index_autotoc_md8}{}\doxysubsection{Animator\+: gestiona sprites y animaciones frame‑by‑frame.}\label{index_autotoc_md8}
+Cada entidad o colectable contiene estos componentes, lo que agiliza su creación y mantenimiento.\hypertarget{index_autotoc_md9}{}\doxysubsection{Particle\+System\+Manager\+: Es un componente, que facilita el pintar efectos en la pantalla (particulas como las de respawn, eliminar enemigos, humo al saltar y correr...)}\label{index_autotoc_md9}
+\DoxyHorRuler{0}
+
+
+\mbox{[}4\mbox{]} Entities \& Collectables\hypertarget{index_autotoc_md11}{}\doxysubsection{Entities}\label{index_autotoc_md11}
+Desde Goombas y Koopas hasta las setas.\hypertarget{index_autotoc_md12}{}\doxysubsection{Collectables}\label{index_autotoc_md12}
+Monedas tradicionales y el End\+Star (estrella dorada estilo Galaxy).
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}5\mbox{]} \mbox{\hyperlink{classHUD}{HUD}}
+
+Con ayuda de la clase \mbox{\hyperlink{HUD_8hh}{HUD.\+hh}} se muestra en pantalla\+:
+
+1.\+Monedas recogidas 2.\+Tiempo en partida 3.\+Setas recogidas
+
+\mbox{[}6\mbox{]} Enemigos Principales
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md15}{}\doxysubsection{Wiggler}\label{index_autotoc_md15}
+Inspirado en listas enlazadas\+: cada segmento del cuerpo es un nodo.
+
+Al saltarle, se parte el segmento tocado, reapareciendo como un nuevo \mbox{\hyperlink{classWiggler}{Wiggler}}.
+
+Movimiento sinusoidal y animación de pisada gracias al Animator.\hypertarget{index_autotoc_md16}{}\doxysubsection{Kamek}\label{index_autotoc_md16}
+Vuela por la pantalla con multiples estados\+: Idle, Move, Summon
+
+Idle-\/$>$ Flota en el aire. Move-\/$>$ Escoje una posicion en la pantalla, y vuela hacia alli. Summon-\/$>$ Invoca enemigos.
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}7\mbox{]} Sistema de Respawn
+
+Banderas repartidas por el nivel\+: al tocarlas, se actualiza tu punto de respawn.
+
+Si \mbox{\hyperlink{classMario}{Mario}} muere, reaparecerá en la última bandera activada.
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}8\mbox{]} Fin de Nivel
+
+Un collectable especial\+: la End Star (inspirada en Super \mbox{\hyperlink{classMario}{Mario}} Galaxy 2).
+
+Al recogerla, se dispara una pequeña secuencia\+:
+
+Y tus marcas se muestran en pantalla.
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}9\mbox{]} Modo 2 Jugadores
+
+Pulsa 2 para invocar o expulsar a Luigi, que aparece junto a \mbox{\hyperlink{classMario}{Mario}}.
+
+Si sale de la pantalla, desaparece automáticamente.
+
+\DoxyHorRuler{0}
+
+
+\mbox{[}10\mbox{]} Setas Aleatorias
+
+Al golpear un bloque “?”, sale una seta al azar de varios tipos\+:
+
+Normal, Roja, Verde… ¡y la Seta Gigante! 

@@ -1,0 +1,9 @@
+<map id="Mario::paint" name="Mario::paint">
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,105,120"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a23d7ea38ef0175f05c8805b5ddabaa25" title="Returns the nextFrame of the animation and sets prevFrame_ to 0 if and only if prevFrame_ &gt;= than the..." alt="" coords="157,5,360,32"/>
+<area shape="rect" id="node3" href="$namespacepro2.html#a53b6d9bb59e9b6d79ddc591a87bf9379" title="Dibuixa una imatge/textura a la finextra a partir d&#39;una posicio (aquesta es el centre)" alt="" coords="191,57,327,98"/>
+<area shape="rect" id="node4" href="$classBoxCollider.html#ade5e9bd7b7ca4263581d9fd553e0bd3f" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="153,123,364,149"/>
+<area shape="rect" id="node6" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="591,123,767,149"/>
+<area shape="rect" id="node5" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="412,72,543,99"/>
+<area shape="rect" id="node7" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="412,123,543,149"/>
+</map>

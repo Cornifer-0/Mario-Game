@@ -1,0 +1,4 @@
+<map id="pro2::paint_vline" name="pro2::paint_vline">
+<area shape="rect" id="node1" title="Dibuja una línea vertical en la ventana." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="184,5,360,32"/>
+</map>

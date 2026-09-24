@@ -1,0 +1,9 @@
+<map id="Wiggler::mario_update" name="Wiggler::mario_update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,176,133"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a60832b9f7f761240e000e18415414a11" title="Returns true if and only if the boxCollider collides with other." alt="" coords="224,5,415,32"/>
+<area shape="rect" id="node3" href="$classMario.html#a3b78a7f90fe02f6ca2f0e322770bb473" title=" " alt="" coords="276,56,363,83"/>
+<area shape="rect" id="node5" href="$classMario.html#a214bf9b6cff10d1b6f69ad2019a43f68" title=" " alt="" coords="250,107,389,133"/>
+<area shape="rect" id="node6" href="$classMario.html#a3a9062f3dae45d2b304832608735826e" title=" " alt="" coords="256,157,383,184"/>
+<area shape="rect" id="node7" href="$classMario.html#adb7c1e4fe5678628216c3110a8eb10c0" title=" " alt="" coords="246,208,393,235"/>
+<area shape="rect" id="node4" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="463,56,709,83"/>
+</map>

@@ -1,0 +1,247 @@
+\hypertarget{classAnim_1_1Animation}{}\doxysection{Anim\+::Animation Class Reference}
+\label{classAnim_1_1Animation}\index{Anim::Animation@{Anim::Animation}}
+
+
+Class \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} let\textquotesingle{}s you construct a simple sprite animation from an Animation\+Frame (vector$<$\+Frame$>$)  
+
+
+
+
+{\ttfamily \#include $<$animator.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animation_a750cf96010e5e4420c91ab67ab651503}{Animation}} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty animatoin,. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnim_1_1Animation_afe9e7db2a0457b0fb00b4390b8ad971e}{Animation}} (const \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \&AF)
+\begin{DoxyCompactList}\small\item\em Constructs an animation with the Animation\+Frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnim_1_1Animation_a61e584ae65193b249eb91d44b9b59fa0}{Animation}} (const \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \&AF, bool repeat, int duration)
+\begin{DoxyCompactList}\small\item\em Constructs an animation with an Animation\+Frame with extra parameters repeat and duration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnim_1_1Animation_aecafda8f1c3bdb5ec7c8918dcb1407be}{Animation}} (const \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \&AF, bool repeat)
+\begin{DoxyCompactList}\small\item\em Constructs an animation with an Animation\+Frame with extra parameter repeat. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAnim_1_1Animation_ac795a95e28da9f734c46531c19d3ecb0}{get\+Duration}} () const
+\begin{DoxyCompactList}\small\item\em Returns the duration of the animation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAnim_1_1Animation_a6295dbe61e169714bb9e805bf51c90fe}{get\+NFrames}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of frames of the animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAnim_1_1Animation_aa5283ad4b42e950d165acac76930d2bf}{animation\+Ended}} () const
+\begin{DoxyCompactList}\small\item\em Returns true only if the animation has ended. This only happens when repeat is false and the last frame of the Animation\+Frame has been reached. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnim_1_1Animation_a8b2f836887c2c6ca71c078f851e1e2cc}{restart}} ()
+\begin{DoxyCompactList}\small\item\em Restarts the animation. (Sets the current\+Frame to 0) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} \mbox{\hyperlink{classAnim_1_1Animation_a9cf535ec0741cd2aa2fb9320f2c41380}{current\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current Frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} \mbox{\hyperlink{classAnim_1_1Animation_ab0a90c26594b5aaf8c1b0da64f90e449}{next\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next Frame in the animation, If the current\+Frame is the last frame of the Animation\+Frame, returns the last frame in case repeat is false, the first frame otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classAnim_1_1Animation_a61dad51ea38dc134075aa9dee4798da3}{duration\+\_\+}}
+\item 
+\mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \mbox{\hyperlink{classAnim_1_1Animation_a01eca5552b293779d60d8fe98815038d}{frames\+\_\+}}
+\item 
+int \mbox{\hyperlink{classAnim_1_1Animation_ada0aa99ba780d1b916bc25d85c9baa02}{current\+Frame\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classAnim_1_1Animation_aa039f54ed484d376181e6b5c3a4cf859}{repeat\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} let\textquotesingle{}s you construct a simple sprite animation from an Animation\+Frame (vector$<$\+Frame$>$) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAnim_1_1Animation_a750cf96010e5e4420c91ab67ab651503}\label{classAnim_1_1Animation_a750cf96010e5e4420c91ab67ab651503}} 
+\index{Anim::Animation@{Anim::Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Anim\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs an empty animatoin,. 
+
+\mbox{\Hypertarget{classAnim_1_1Animation_afe9e7db2a0457b0fb00b4390b8ad971e}\label{classAnim_1_1Animation_afe9e7db2a0457b0fb00b4390b8ad971e}} 
+\index{Anim::Animation@{Anim::Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Anim\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \&}]{AF }\end{DoxyParamCaption})}
+
+
+
+Constructs an animation with the Animation\+Frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em AF} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnim_1_1Animation_a61e584ae65193b249eb91d44b9b59fa0}\label{classAnim_1_1Animation_a61e584ae65193b249eb91d44b9b59fa0}} 
+\index{Anim::Animation@{Anim::Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Anim\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \&}]{AF,  }\item[{bool}]{repeat,  }\item[{int}]{duration }\end{DoxyParamCaption})}
+
+
+
+Constructs an animation with an Animation\+Frame with extra parameters repeat and duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em AF} & \\
+\hline
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnim_1_1Animation_aecafda8f1c3bdb5ec7c8918dcb1407be}\label{classAnim_1_1Animation_aecafda8f1c3bdb5ec7c8918dcb1407be}} 
+\index{Anim::Animation@{Anim::Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Anim\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} \&}]{AF,  }\item[{bool}]{repeat }\end{DoxyParamCaption})}
+
+
+
+Constructs an animation with an Animation\+Frame with extra parameter repeat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em AF} & \\
+\hline
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnim_1_1Animation_aa5283ad4b42e950d165acac76930d2bf}\label{classAnim_1_1Animation_aa5283ad4b42e950d165acac76930d2bf}} 
+\index{Anim::Animation@{Anim::Animation}!animationEnded@{animationEnded}}
+\index{animationEnded@{animationEnded}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{animationEnded()}{animationEnded()}}
+{\footnotesize\ttfamily bool Anim\+::\+Animation\+::animation\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true only if the animation has ended. This only happens when repeat is false and the last frame of the Animation\+Frame has been reached. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animation_aa5283ad4b42e950d165acac76930d2bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animation_a9cf535ec0741cd2aa2fb9320f2c41380}\label{classAnim_1_1Animation_a9cf535ec0741cd2aa2fb9320f2c41380}} 
+\index{Anim::Animation@{Anim::Animation}!currentFrame@{currentFrame}}
+\index{currentFrame@{currentFrame}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{currentFrame()}{currentFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} Anim\+::\+Animation\+::current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current Frame. 
+
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animation_a9cf535ec0741cd2aa2fb9320f2c41380_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animation_ac795a95e28da9f734c46531c19d3ecb0}\label{classAnim_1_1Animation_ac795a95e28da9f734c46531c19d3ecb0}} 
+\index{Anim::Animation@{Anim::Animation}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily int Anim\+::\+Animation\+::get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the duration of the animation. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAnim_1_1Animation_a6295dbe61e169714bb9e805bf51c90fe}\label{classAnim_1_1Animation_a6295dbe61e169714bb9e805bf51c90fe}} 
+\index{Anim::Animation@{Anim::Animation}!getNFrames@{getNFrames}}
+\index{getNFrames@{getNFrames}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{getNFrames()}{getNFrames()}}
+{\footnotesize\ttfamily int Anim\+::\+Animation\+::get\+NFrames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of frames of the animation. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAnim_1_1Animation_ab0a90c26594b5aaf8c1b0da64f90e449}\label{classAnim_1_1Animation_ab0a90c26594b5aaf8c1b0da64f90e449}} 
+\index{Anim::Animation@{Anim::Animation}!nextFrame@{nextFrame}}
+\index{nextFrame@{nextFrame}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{nextFrame()}{nextFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceAnim_ab1b8287acbead3304464de1bfc797386}{Frame}} Anim\+::\+Animation\+::next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the next Frame in the animation, If the current\+Frame is the last frame of the Animation\+Frame, returns the last frame in case repeat is false, the first frame otherwise. 
+
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnim_1_1Animation_ab0a90c26594b5aaf8c1b0da64f90e449_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnim_1_1Animation_a8b2f836887c2c6ca71c078f851e1e2cc}\label{classAnim_1_1Animation_a8b2f836887c2c6ca71c078f851e1e2cc}} 
+\index{Anim::Animation@{Anim::Animation}!restart@{restart}}
+\index{restart@{restart}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void Anim\+::\+Animation\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restarts the animation. (Sets the current\+Frame to 0) 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnim_1_1Animation_ada0aa99ba780d1b916bc25d85c9baa02}\label{classAnim_1_1Animation_ada0aa99ba780d1b916bc25d85c9baa02}} 
+\index{Anim::Animation@{Anim::Animation}!currentFrame\_@{currentFrame\_}}
+\index{currentFrame\_@{currentFrame\_}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{currentFrame\_}{currentFrame\_}}
+{\footnotesize\ttfamily int Anim\+::\+Animation\+::current\+Frame\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnim_1_1Animation_a61dad51ea38dc134075aa9dee4798da3}\label{classAnim_1_1Animation_a61dad51ea38dc134075aa9dee4798da3}} 
+\index{Anim::Animation@{Anim::Animation}!duration\_@{duration\_}}
+\index{duration\_@{duration\_}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{duration\_}{duration\_}}
+{\footnotesize\ttfamily int Anim\+::\+Animation\+::duration\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnim_1_1Animation_a01eca5552b293779d60d8fe98815038d}\label{classAnim_1_1Animation_a01eca5552b293779d60d8fe98815038d}} 
+\index{Anim::Animation@{Anim::Animation}!frames\_@{frames\_}}
+\index{frames\_@{frames\_}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{frames\_}{frames\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceAnim_aa0380d511ba31c81ce43f3d49b048011}{Animation\+Frame}} Anim\+::\+Animation\+::frames\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnim_1_1Animation_aa039f54ed484d376181e6b5c3a4cf859}\label{classAnim_1_1Animation_aa039f54ed484d376181e6b5c3a4cf859}} 
+\index{Anim::Animation@{Anim::Animation}!repeat\_@{repeat\_}}
+\index{repeat\_@{repeat\_}!Anim::Animation@{Anim::Animation}}
+\doxysubsubsection{\texorpdfstring{repeat\_}{repeat\_}}
+{\footnotesize\ttfamily bool Anim\+::\+Animation\+::repeat\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/components/\mbox{\hyperlink{animator_8hh}{animator.\+hh}}\item 
+src/components/\mbox{\hyperlink{animator_8cc}{animator.\+cc}}\end{DoxyCompactItemize}

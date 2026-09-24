@@ -1,0 +1,6 @@
+<map id="pro2::paint_sprite" name="pro2::paint_sprite">
+<area shape="rect" id="node1" title=" " alt="" coords="344,35,480,61"/>
+<area shape="rect" id="node2" href="$namespacepro2.html#ab5a215cae23098694e39e35b44108a0f" title="Dibuixa una xifra a la pantalla." alt="" coords="147,5,296,32"/>
+<area shape="rect" id="node4" href="$namespacepro2.html#a4243dbdb2761befd42f6592e5fb9f589" title=" " alt="" coords="153,57,289,98"/>
+<area shape="rect" id="node3" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="5,5,99,32"/>
+</map>

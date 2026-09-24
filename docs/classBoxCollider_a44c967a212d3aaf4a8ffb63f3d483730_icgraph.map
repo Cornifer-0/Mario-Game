@@ -1,0 +1,6 @@
+<map id="BoxCollider::getRect" name="BoxCollider::getRect">
+<area shape="rect" id="node1" title="Get the Rect object." alt="" coords="221,56,376,83"/>
+<area shape="rect" id="node2" href="$classCollectable.html#a25be2491e7ed00b246b3d58287ba7797" title="Get the rect object." alt="" coords="11,5,167,32"/>
+<area shape="rect" id="node3" href="$classBlock.html#ab82d77f961632f2db14f17d38a030b12" title="Get the rect object." alt="" coords="30,56,149,83"/>
+<area shape="rect" id="node4" href="$classBlockManager.html#a13d329f84ae0b96813065f08ba474d1a" title="Updates mario so he interacts with the blocks." alt="" coords="5,107,173,133"/>
+</map>

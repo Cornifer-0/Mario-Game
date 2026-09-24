@@ -1,0 +1,6 @@
+<map id="ResourceManager::paint" name="ResourceManager::paint">
+<area shape="rect" id="node1" title="Paints all collectables on the window." alt="" coords="5,31,185,57"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3" title=" " alt="" coords="233,31,432,57"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="480,5,639,32"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="482,56,637,83"/>
+</map>

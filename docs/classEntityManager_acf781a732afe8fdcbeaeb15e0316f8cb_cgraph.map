@@ -1,0 +1,5 @@
+<map id="EntityManager::killIfInThisCollider" name="EntityManager::killIfInThisCollider">
+<area shape="rect" id="node1" title="Kills if in the collider." alt="" coords="5,39,199,80"/>
+<area shape="rect" id="node2" href="$classKoopaShellManager.html#a68da5ad47e7b6fb50c3138196499fe04" title="Returns the only instance of a koopaShellManager." alt="" coords="247,5,405,47"/>
+<area shape="rect" id="node3" href="$classKoopaShellManager.html#ab9b53e46ddccafaeb6679a8f8edc70ad" title="Spawns a koopshell at a position." alt="" coords="247,71,405,112"/>
+</map>

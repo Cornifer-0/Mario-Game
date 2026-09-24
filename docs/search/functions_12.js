@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['set_5fcamera_5ftopleft_849',['set_camera_topleft',['../classpro2_1_1Window.html#a1393bc8d5c74455c1b25e3b38db7af92',1,'pro2::Window']]],
+  ['set_5ffps_850',['set_fps',['../classpro2_1_1Window.html#aaa39faf0a0dfa480661c314341638548',1,'pro2::Window']]],
+  ['set_5fgrounded_851',['set_grounded',['../classMario.html#a970f238b3538fa175b0f73aa29aa2c48',1,'Mario']]],
+  ['set_5fmario_5fin_5fsight_852',['set_mario_in_sight',['../classEntity.html#a24b90d89778131871c81397ef9aa84ab',1,'Entity']]],
+  ['set_5fpixel_853',['set_pixel',['../classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac',1,'pro2::Window']]],
+  ['set_5fx_854',['set_x',['../classMario.html#a52e29f7688225e81da18bad4ed571a0e',1,'Mario']]],
+  ['set_5fx_5faccel_855',['set_x_accel',['../classMario.html#ae78695ed4309b7e33ca806cf2bbbb8e0',1,'Mario']]],
+  ['set_5fy_856',['set_y',['../classMario.html#a807ce8785091bd609e156292409b376f',1,'Mario']]],
+  ['set_5fy_5faccel_857',['set_y_accel',['../classMario.html#acc6ac6e7875aa85a1a2d0acef477b1ee',1,'Mario']]],
+  ['setinvulnarabilityframes_858',['setInvulnarabilityFrames',['../classMario.html#a910f099acc43a3953dacbc0be9a80df9',1,'Mario']]],
+  ['setpadding_859',['setPadding',['../classBoxCollider.html#ae494bfb0cca9868d8f1c47284d9af4df',1,'BoxCollider']]],
+  ['sleep_860',['sleep',['../classpro2_1_1Window.html#abbe66e79c657fd8939c3df975a825214',1,'pro2::Window']]],
+  ['spawn_861',['spawn',['../classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516',1,'ParticleSystemManager::spawn()'],['../classKoopaShellManager.html#ab9b53e46ddccafaeb6679a8f8edc70ad',1,'KoopaShellManager::spawn()']]],
+  ['spawnend_862',['spawnEnd',['../classWiggler.html#a2b4580bbad11c071a353bb58f18fc8a8',1,'Wiggler']]],
+  ['spawnentity_863',['spawnEntity',['../classEntityManager.html#aa5b2c4a3ee350b65f67c678961e286a4',1,'EntityManager']]],
+  ['spawnparticleofanimation_864',['spawnParticleOfAnimation',['../classAnim_1_1Animator.html#aedd2fd4eae1640c6733fd1b9ea689597',1,'Anim::Animator']]],
+  ['stop_865',['stop',['../classKoopaShell.html#abc313dc8febcb4564a7e0910fc32552a',1,'KoopaShell']]]
+];

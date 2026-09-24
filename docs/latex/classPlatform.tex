@@ -1,0 +1,240 @@
+\hypertarget{classPlatform}{}\doxysection{Platform Class Reference}
+\label{classPlatform}\index{Platform@{Platform}}
+
+
+{\ttfamily \#include $<$platform.\+hh$>$}
+
+
+
+Collaboration diagram for Platform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlatform__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe}{Platform}} ()
+\item 
+\mbox{\hyperlink{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}{Platform}} (const \mbox{\hyperlink{classPlatform}{Platform}} \&other)
+\item 
+\mbox{\hyperlink{classPlatform_a91871e5a88901d48593ba752f8f71c54}{Platform}} (int left, int right, int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}}, int bottom)
+\item 
+void \mbox{\hyperlink{classPlatform_af4f011c19e5ed1157632bf1d1fe68626}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug) const
+\item 
+bool \mbox{\hyperlink{classPlatform_a433b419b896a57783db4c8ad2f5534b2}{has\+\_\+crossed\+\_\+floor\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\item 
+bool \mbox{\hyperlink{classPlatform_ac2b883af0e1080efd09a0e1d64d51e93}{has\+\_\+crossed\+\_\+platform}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\item 
+bool \mbox{\hyperlink{classPlatform_a1602f44ba0bdf9a2417c13926d6e04dd}{has\+\_\+crossed\+\_\+block\+\_\+sideways}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\item 
+bool \mbox{\hyperlink{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}{is\+\_\+pt\+\_\+inside}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pt) const
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classPlatform_a34b87a9909b67a453f9bc3a089d4da9c}{get\+Collider}} () const
+\item 
+int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classPlatform_a16a47c819406b8b30b8c28d63f272447}{get\+\_\+rect}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classPlatform_a735075ce424a4c889dd9d31fb30fc34a}{box\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classPlatform_a677abda7770601f7296fc2e3eacdb216}{animator\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classPlatform_a4d48aebd0e02e00119569773710b5a08}{platform\+\_\+clear\+\_\+mid\+\_\+1\+\_\+}}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classPlatform_a6837c4daf13bf957335f57909fd089b6}{platform\+\_\+clear\+\_\+top}}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classPlatform_ae5412c4e3951599eda2ead65a822b018}{platform\+\_\+clear\+\_\+side}}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classPlatform_ae5d78a1c70c082d16d2fc348e2abf432}{platform\+\_\+clear\+\_\+border}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe}\label{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe}} 
+\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Platform\+::\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}\label{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}} 
+\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlatform}{Platform}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlatform_a91871e5a88901d48593ba752f8f71c54}\label{classPlatform_a91871e5a88901d48593ba752f8f71c54}} 
+\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{right,  }\item[{int}]{top,  }\item[{int}]{bottom }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlatform_a16a47c819406b8b30b8c28d63f272447}\label{classPlatform_a16a47c819406b8b30b8c28d63f272447}} 
+\index{Platform@{Platform}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Platform\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlatform_a34b87a9909b67a453f9bc3a089d4da9c}\label{classPlatform_a34b87a9909b67a453f9bc3a089d4da9c}} 
+\index{Platform@{Platform}!getCollider@{getCollider}}
+\index{getCollider@{getCollider}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{getCollider()}{getCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Platform\+::get\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlatform_a1602f44ba0bdf9a2417c13926d6e04dd}\label{classPlatform_a1602f44ba0bdf9a2417c13926d6e04dd}} 
+\index{Platform@{Platform}!has\_crossed\_block\_sideways@{has\_crossed\_block\_sideways}}
+\index{has\_crossed\_block\_sideways@{has\_crossed\_block\_sideways}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_block\_sideways()}{has\_crossed\_block\_sideways()}}
+{\footnotesize\ttfamily bool Platform\+::has\+\_\+crossed\+\_\+block\+\_\+sideways (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlatform_a1602f44ba0bdf9a2417c13926d6e04dd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlatform_a433b419b896a57783db4c8ad2f5534b2}\label{classPlatform_a433b419b896a57783db4c8ad2f5534b2}} 
+\index{Platform@{Platform}!has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}}
+\index{has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_floor\_downwards()}{has\_crossed\_floor\_downwards()}}
+{\footnotesize\ttfamily bool Platform\+::has\+\_\+crossed\+\_\+floor\+\_\+downwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlatform_a433b419b896a57783db4c8ad2f5534b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlatform_ac2b883af0e1080efd09a0e1d64d51e93}\label{classPlatform_ac2b883af0e1080efd09a0e1d64d51e93}} 
+\index{Platform@{Platform}!has\_crossed\_platform@{has\_crossed\_platform}}
+\index{has\_crossed\_platform@{has\_crossed\_platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_platform()}{has\_crossed\_platform()}}
+{\footnotesize\ttfamily bool Platform\+::has\+\_\+crossed\+\_\+platform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlatform_ac2b883af0e1080efd09a0e1d64d51e93_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}\label{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}} 
+\index{Platform@{Platform}!is\_pt\_inside@{is\_pt\_inside}}
+\index{is\_pt\_inside@{is\_pt\_inside}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{is\_pt\_inside()}{is\_pt\_inside()}}
+{\footnotesize\ttfamily bool Platform\+::is\+\_\+pt\+\_\+inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pt }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlatform_af4f011c19e5ed1157632bf1d1fe68626}\label{classPlatform_af4f011c19e5ed1157632bf1d1fe68626}} 
+\index{Platform@{Platform}!paint@{paint}}
+\index{paint@{paint}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Platform\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlatform_af4f011c19e5ed1157632bf1d1fe68626_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}\label{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}} 
+\index{Platform@{Platform}!top@{top}}
+\index{top@{top}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily int Platform\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlatform_a677abda7770601f7296fc2e3eacdb216}\label{classPlatform_a677abda7770601f7296fc2e3eacdb216}} 
+\index{Platform@{Platform}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Platform\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a15a4798385af5225ac32250b0e3647d6}\label{classPlatform_a15a4798385af5225ac32250b0e3647d6}} 
+\index{Platform@{Platform}!bottom\_@{bottom\_}}
+\index{bottom\_@{bottom\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{bottom\_}{bottom\_}}
+{\footnotesize\ttfamily int Platform\+::bottom\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a735075ce424a4c889dd9d31fb30fc34a}\label{classPlatform_a735075ce424a4c889dd9d31fb30fc34a}} 
+\index{Platform@{Platform}!boxCollider\_@{boxCollider\_}}
+\index{boxCollider\_@{boxCollider\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{boxCollider\_}{boxCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Platform\+::box\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}\label{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}} 
+\index{Platform@{Platform}!left\_@{left\_}}
+\index{left\_@{left\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{left\_}{left\_}}
+{\footnotesize\ttfamily int Platform\+::left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_ae5d78a1c70c082d16d2fc348e2abf432}\label{classPlatform_ae5d78a1c70c082d16d2fc348e2abf432}} 
+\index{Platform@{Platform}!platform\_clear\_border@{platform\_clear\_border}}
+\index{platform\_clear\_border@{platform\_clear\_border}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{platform\_clear\_border}{platform\_clear\_border}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Platform\+::platform\+\_\+clear\+\_\+border\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a4d48aebd0e02e00119569773710b5a08}\label{classPlatform_a4d48aebd0e02e00119569773710b5a08}} 
+\index{Platform@{Platform}!platform\_clear\_mid\_1\_@{platform\_clear\_mid\_1\_}}
+\index{platform\_clear\_mid\_1\_@{platform\_clear\_mid\_1\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{platform\_clear\_mid\_1\_}{platform\_clear\_mid\_1\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Platform\+::platform\+\_\+clear\+\_\+mid\+\_\+1\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_ae5412c4e3951599eda2ead65a822b018}\label{classPlatform_ae5412c4e3951599eda2ead65a822b018}} 
+\index{Platform@{Platform}!platform\_clear\_side@{platform\_clear\_side}}
+\index{platform\_clear\_side@{platform\_clear\_side}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{platform\_clear\_side}{platform\_clear\_side}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Platform\+::platform\+\_\+clear\+\_\+side\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a6837c4daf13bf957335f57909fd089b6}\label{classPlatform_a6837c4daf13bf957335f57909fd089b6}} 
+\index{Platform@{Platform}!platform\_clear\_top@{platform\_clear\_top}}
+\index{platform\_clear\_top@{platform\_clear\_top}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{platform\_clear\_top}{platform\_clear\_top}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Platform\+::platform\+\_\+clear\+\_\+top\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}\label{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}} 
+\index{Platform@{Platform}!right\_@{right\_}}
+\index{right\_@{right\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{right\_}{right\_}}
+{\footnotesize\ttfamily int Platform\+::right\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}\label{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}} 
+\index{Platform@{Platform}!top\_@{top\_}}
+\index{top\_@{top\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{top\_}{top\_}}
+{\footnotesize\ttfamily int Platform\+::top\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/world/\mbox{\hyperlink{platform_8hh}{platform.\+hh}}\item 
+src/world/\mbox{\hyperlink{platform_8cc}{platform.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<map id="pro2::Window::frame_count" name="pro2::Window::frame_count">
+<area shape="rect" id="node1" title="Devuelve el contador de fotogramas pintados hasta el momento." alt="" coords="901,115,1059,156"/>
+<area shape="rect" id="node2" href="$classCollectable.html#a703d744038da02cafad9e2940bc073d6" title="Calculates an offset, based on the frame_count, useful to simulate sinusoidal movements of the coins." alt="" coords="671,5,853,47"/>
+<area shape="rect" id="node4" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="489,97,621,123"/>
+<area shape="rect" id="node8" href="$classMario.html#a78a9e97404fc6528e2afab19f5177b63" title=" " alt="" coords="706,122,818,149"/>
+<area shape="rect" id="node9" href="$classKamek.html#a19e091952f2465adfcbd83b6d1d5312f" title="Updates in the IDLE states, floats..." alt="" coords="683,173,841,199"/>
+<area shape="rect" id="node10" href="$classKamek.html#aa2e895460e58218b974936e534261c85" title="Updates in the MOVING state, moves towards move_target_." alt="" coords="671,223,853,250"/>
+<area shape="rect" id="node3" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="487,13,623,39"/>
+<area shape="rect" id="node5" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,97,439,123"/>
+<area shape="rect" id="node6" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,97,223,123"/>
+<area shape="rect" id="node7" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,97,60,123"/>
+</map>

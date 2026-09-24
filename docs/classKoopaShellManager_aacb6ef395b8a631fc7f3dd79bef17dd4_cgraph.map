@@ -1,0 +1,14 @@
+<map id="KoopaShellManager::update" name="KoopaShellManager::update">
+<area shape="rect" id="node1" title="Updates the koopShell aswell as the objects around it, like the mario, luigi and the goombas." alt="" coords="5,134,164,175"/>
+<area shape="rect" id="node2" href="$classMario.html#a3b78a7f90fe02f6ca2f0e322770bb473" title=" " alt="" coords="533,40,620,66"/>
+<area shape="rect" id="node4" href="$classMario.html#a214bf9b6cff10d1b6f69ad2019a43f68" title=" " alt="" coords="239,40,378,66"/>
+<area shape="rect" id="node5" href="$classMario.html#ac4b0c13ef4aae16f66d34a8cb2f9b70a" title=" " alt="" coords="235,90,383,117"/>
+<area shape="rect" id="node6" href="$classMario.html#adb7c1e4fe5678628216c3110a8eb10c0" title=" " alt="" coords="235,141,382,168"/>
+<area shape="rect" id="node7" href="$classMario.html#ac3b75d0650fb2a149d33fd9f1420da99" title=" " alt="" coords="259,192,359,218"/>
+<area shape="rect" id="node9" href="$classEntityManager.html#acf781a732afe8fdcbeaeb15e0316f8cb" title="Kills if in the collider." alt="" coords="212,243,405,284"/>
+<area shape="rect" id="node12" href="$classMario.html#a910f099acc43a3953dacbc0be9a80df9" title=" " alt="" coords="218,308,399,350"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="748,78,995,105"/>
+<area shape="rect" id="node8" href="$classAnim_1_1Animator.html#a59dd3357956a0f3bba8d343362e83df5" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="453,108,700,150"/>
+<area shape="rect" id="node10" href="$classKoopaShellManager.html#a68da5ad47e7b6fb50c3138196499fe04" title="Returns the only instance of a koopaShellManager." alt="" coords="497,210,656,251"/>
+<area shape="rect" id="node11" href="$classKoopaShellManager.html#ab9b53e46ddccafaeb6679a8f8edc70ad" title="Spawns a koopshell at a position." alt="" coords="497,275,656,316"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="pro2::Window::set_pixel" name="pro2::Window::set_pixel">
+<area shape="rect" id="node1" title="Cambia un pixel de la ventana." alt="" coords="889,233,1065,260"/>
+<area shape="rect" id="node2" href="$classEntity.html#a3d5357e1dbe9a7cdb0ded3978d8ac370" title="Paints the goomba on the window, if debug is set to true, it calls for the debug of the boxCollider." alt="" coords="723,5,823,32"/>
+<area shape="rect" id="node3" href="$classKamek.html#a3a4f2a78a48b98e9c4273d179e9f5bb6" title="Paints Kamek on the window." alt="" coords="719,56,828,83"/>
+<area shape="rect" id="node4" href="$classMario.html#a657b66f6c78e5ae10796452486de54d8" title=" " alt="" coords="279,208,379,235"/>
+<area shape="rect" id="node7" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="261,360,397,387"/>
+<area shape="rect" id="node8" href="$classPlatform.html#af4f011c19e5ed1157632bf1d1fe68626" title=" " alt="" coords="269,411,388,437"/>
+<area shape="rect" id="node9" href="$namespacepro2.html#a7da69392e8cbe4f0fc8c7c027e1e7e1f" title="Paints the background sprite to the window, with a parallax effect given by the parralaxMuliplier...." alt="" coords="465,91,639,133"/>
+<area shape="rect" id="node10" href="$namespacepro2.html#addfac8af42421478c938d5bbd64c1343" title="Paints every pixel outside the circle (formed by center and radius parameters) black." alt="" coords="469,157,635,184"/>
+<area shape="rect" id="node11" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="708,309,839,336"/>
+<area shape="rect" id="node15" href="$namespacepro2.html#aae12ca43c834c2f0aa225bb1509be63c" title=" " alt="" coords="705,461,841,488"/>
+<area shape="rect" id="node19" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="708,259,839,285"/>
+<area shape="rect" id="node5" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="108,157,211,184"/>
+<area shape="rect" id="node6" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,157,60,184"/>
+<area shape="rect" id="node12" href="$classBoxCollider.html#ade5e9bd7b7ca4263581d9fd553e0bd3f" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="447,309,657,336"/>
+<area shape="rect" id="node13" href="$classBlock.html#ab64ad3986a6c7d163cb28ed805cd38bf" title="Paints the block on window." alt="" coords="279,259,378,285"/>
+<area shape="rect" id="node14" href="$classWiggler.html#a57299d8747b7976651ac7e13730c4eb7" title=" " alt="" coords="259,309,399,336"/>
+<area shape="rect" id="node16" href="$namespacepro2.html#ab5a215cae23098694e39e35b44108a0f" title="Dibuixa una xifra a la pantalla." alt="" coords="477,461,627,488"/>
+<area shape="rect" id="node18" href="$namespacepro2.html#a4243dbdb2761befd42f6592e5fb9f589" title=" " alt="" coords="484,513,620,554"/>
+<area shape="rect" id="node17" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="282,461,375,488"/>
+</map>

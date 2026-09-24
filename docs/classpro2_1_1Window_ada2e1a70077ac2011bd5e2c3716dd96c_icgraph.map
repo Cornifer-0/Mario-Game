@@ -1,0 +1,9 @@
+<map id="pro2::Window::topleft" name="pro2::Window::topleft">
+<area shape="rect" id="node1" title="Devuelve la posición de la esquina superior izquierda de la cámara." alt="" coords="501,93,661,120"/>
+<area shape="rect" id="node2" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="309,5,403,32"/>
+<area shape="rect" id="node3" href="$namespacepro2.html#a7da69392e8cbe4f0fc8c7c027e1e7e1f" title="Paints the background sprite to the window, with a parallax effect given by the parralaxMuliplier...." alt="" coords="269,57,443,98"/>
+<area shape="rect" id="node6" href="$namespacepro2.html#addfac8af42421478c938d5bbd64c1343" title="Paints every pixel outside the circle (formed by center and radius parameters) black." alt="" coords="273,123,439,149"/>
+<area shape="rect" id="node7" href="$classpro2_1_1Window.html#a1393bc8d5c74455c1b25e3b38db7af92" title="Establece la posición de la esquina superior izquierda de la cámara." alt="" coords="259,174,453,215"/>
+<area shape="rect" id="node4" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="108,93,211,120"/>
+<area shape="rect" id="node5" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,93,60,120"/>
+</map>

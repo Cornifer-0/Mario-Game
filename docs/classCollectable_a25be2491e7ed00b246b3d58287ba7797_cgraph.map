@@ -1,0 +1,4 @@
+<map id="Collectable::get_rect" name="Collectable::get_rect">
+<area shape="rect" id="node1" title="Get the rect object." alt="" coords="5,5,161,32"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a44c967a212d3aaf4a8ffb63f3d483730" title="Get the Rect object." alt="" coords="209,5,364,32"/>
+</map>

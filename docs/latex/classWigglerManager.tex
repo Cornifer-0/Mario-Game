@@ -1,0 +1,113 @@
+\hypertarget{classWigglerManager}{}\doxysection{Wiggler\+Manager Class Reference}
+\label{classWigglerManager}\index{WigglerManager@{WigglerManager}}
+
+
+Class for managing wigglers.  
+
+
+
+
+{\ttfamily \#include $<$wiggler\+Manager.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWigglerManager_ad9ce8b94a6eb93fd486efbb771d2e08c}{Wiggler\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} \mbox{\hyperlink{classManager}{Manager}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWigglerManager_ac3a5939457b99bc1d8738878fa9b57d6}{update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms)
+\begin{DoxyCompactList}\small\item\em Updates all wigglers in wigglers\+\_\+, fills new\+Wigglers\+\_\+ with new wigglers to add, and fills to\+Remove\+Wigglers\+\_\+ with wigglers that have been killed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWigglerManager_a4245023ab08d15d87aafbea54743d9e1}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints all wigglers in wigglers\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \mbox{\hyperlink{classWigglerManager_a1e226b059732c9ad2bbe0cbde15a10da}{wigglers\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \mbox{\hyperlink{classWigglerManager_ab7f8d923e10429c2364cc4212e3b38ef}{new\+Wigglers\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \mbox{\hyperlink{classWigglerManager_a361bae9f672f576a65e7faa31edba9ff}{to\+Remove\+Wigglers\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing wigglers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWigglerManager_ad9ce8b94a6eb93fd486efbb771d2e08c}\label{classWigglerManager_ad9ce8b94a6eb93fd486efbb771d2e08c}} 
+\index{WigglerManager@{WigglerManager}!WigglerManager@{WigglerManager}}
+\index{WigglerManager@{WigglerManager}!WigglerManager@{WigglerManager}}
+\doxysubsubsection{\texorpdfstring{WigglerManager()}{WigglerManager()}}
+{\footnotesize\ttfamily Wiggler\+Manager\+::\+Wiggler\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} \mbox{\hyperlink{classManager}{Manager}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWigglerManager_a4245023ab08d15d87aafbea54743d9e1}\label{classWigglerManager_a4245023ab08d15d87aafbea54743d9e1}} 
+\index{WigglerManager@{WigglerManager}!paint@{paint}}
+\index{paint@{paint}!WigglerManager@{WigglerManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Wiggler\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints all wigglers in wigglers\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWigglerManager_ac3a5939457b99bc1d8738878fa9b57d6}\label{classWigglerManager_ac3a5939457b99bc1d8738878fa9b57d6}} 
+\index{WigglerManager@{WigglerManager}!update@{update}}
+\index{update@{update}!WigglerManager@{WigglerManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Wiggler\+Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms }\end{DoxyParamCaption})}
+
+
+
+Updates all wigglers in wigglers\+\_\+, fills new\+Wigglers\+\_\+ with new wigglers to add, and fills to\+Remove\+Wigglers\+\_\+ with wigglers that have been killed. 
+
+Also moves all wigglers from new\+Wigglers to wigglers\+\_\+ and emptys new\+Wigglers. As well as removing all wigglers in wigglers\+\_\+ that are in to\+Remove\+Wigglers\+\_\+, then empties to\+Remove\+Wigglers\+\_\+.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+{\em luigi} & \\
+\hline
+{\em platforms} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWigglerManager_ab7f8d923e10429c2364cc4212e3b38ef}\label{classWigglerManager_ab7f8d923e10429c2364cc4212e3b38ef}} 
+\index{WigglerManager@{WigglerManager}!newWigglers\_@{newWigglers\_}}
+\index{newWigglers\_@{newWigglers\_}!WigglerManager@{WigglerManager}}
+\doxysubsubsection{\texorpdfstring{newWigglers\_}{newWigglers\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$$>$ Wiggler\+Manager\+::new\+Wigglers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWigglerManager_a361bae9f672f576a65e7faa31edba9ff}\label{classWigglerManager_a361bae9f672f576a65e7faa31edba9ff}} 
+\index{WigglerManager@{WigglerManager}!toRemoveWigglers\_@{toRemoveWigglers\_}}
+\index{toRemoveWigglers\_@{toRemoveWigglers\_}!WigglerManager@{WigglerManager}}
+\doxysubsubsection{\texorpdfstring{toRemoveWigglers\_}{toRemoveWigglers\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$$>$ Wiggler\+Manager\+::to\+Remove\+Wigglers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWigglerManager_a1e226b059732c9ad2bbe0cbde15a10da}\label{classWigglerManager_a1e226b059732c9ad2bbe0cbde15a10da}} 
+\index{WigglerManager@{WigglerManager}!wigglers\_@{wigglers\_}}
+\index{wigglers\_@{wigglers\_}!WigglerManager@{WigglerManager}}
+\doxysubsubsection{\texorpdfstring{wigglers\_}{wigglers\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$$>$ Wiggler\+Manager\+::wigglers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{wigglerManager_8hh}{wiggler\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{wigglerManager_8cc}{wiggler\+Manager.\+cc}}\end{DoxyCompactItemize}

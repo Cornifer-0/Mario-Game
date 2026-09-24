@@ -1,0 +1,20 @@
+<map id="Manager" name="Manager">
+<area shape="rect" id="node1" title="General Manager for the game. A manager of managers." alt="" coords="1099,376,1177,403"/>
+<area shape="rect" id="node2" href="$classHUD.html" title=" " alt="" coords="846,73,898,100"/>
+<area shape="rect" id="node3" href="$structpro2_1_1Pt.html" title=" " alt="" coords="225,191,297,217"/>
+<area shape="rect" id="node7" href="$classKamek.html" title="Class for Kamek enemy." alt="" coords="838,268,906,295"/>
+<area shape="rect" id="node8" href="$classBoxCollider.html" title=" " alt="" coords="525,268,622,295"/>
+<area shape="rect" id="node4" href="$classAnim_1_1Animator.html" title="The class animator a container for storing the different animations an object might have." alt="" coords="511,73,635,100"/>
+<area shape="rect" id="node5" title=" " alt="" coords="232,73,291,100"/>
+<area shape="rect" id="node6" href="$classEntityManager.html" title="Class GoombasManager manages the goombas in the scene. Basically a container for goombas that makes i..." alt="" coords="813,217,931,244"/>
+<area shape="rect" id="node9" href="$structpro2_1_1Rect.html" title=" " alt="" coords="5,377,93,404"/>
+<area shape="rect" id="node12" href="$structFinder_1_1QuadNode.html" title=" " alt="" coords="173,472,349,499"/>
+<area shape="rect" id="node10" href="$classResourceManager.html" title="The class Resource Manager is a container for collectables. It helps organize them ,..." alt="" coords="803,349,941,376"/>
+<area shape="rect" id="node11" href="$classFinder.html" title=" " alt="" coords="491,353,656,380"/>
+<area shape="rect" id="node14" href="$classFinder.html" title=" " alt="" coords="499,405,647,432"/>
+<area shape="rect" id="node16" href="$classFinder.html" title=" " alt="" coords="509,463,637,489"/>
+<area shape="rect" id="node13" href="$classPlatformManager.html" title="A manager for platforms." alt="" coords="805,400,939,427"/>
+<area shape="rect" id="node15" href="$classBlockManager.html" title="Class for managing blocks." alt="" coords="815,451,929,477"/>
+<area shape="rect" id="node17" href="$classWigglerManager.html" title="Class for managing wigglers." alt="" coords="807,501,937,528"/>
+<area shape="rect" id="node18" href="$classFlagManager.html" title="Class for managing flags in the game. These flags, are used to set checkpoints." alt="" coords="819,552,925,579"/>
+</map>

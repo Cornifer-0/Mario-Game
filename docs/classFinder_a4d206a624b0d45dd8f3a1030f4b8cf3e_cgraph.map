@@ -1,0 +1,7 @@
+<map id="Finder::add" name="Finder::add">
+<area shape="rect" id="node1" title="Funcio recursiva per buscar les fulles de l&#39;arbre que interseccionen amb el rectangle de t." alt="" coords="5,43,100,69"/>
+<area shape="rect" id="node2" href="$classFinder.html#a60b26c2f502472b2d58823bddea14e7b" title="Afegeix t al contenidor del Finder." alt="" coords="520,5,615,32"/>
+<area shape="rect" id="node3" href="$classFinder.html#aec6b48019cf7d820c6d78040755852f4" title="Retorna true si i nomes si els rectangles a i b interseccionen en el pla." alt="" coords="504,68,631,95"/>
+<area shape="rect" id="node4" href="$classFinder.html#aef7a40bdc8a0fb809bba4d9173892419" title="Comproba si el node s&#39;ha de dividir." alt="" coords="148,43,297,69"/>
+<area shape="rect" id="node5" href="$classFinder.html#a19893848e02a5cbdfa88a6d5d019dc81" title="Divideix el quadNode qn, es a dir, crea 4 fills a aquest node i reperteix als fills els objectes que ..." alt="" coords="345,43,456,69"/>
+</map>

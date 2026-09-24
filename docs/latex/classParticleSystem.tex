@@ -1,0 +1,135 @@
+\hypertarget{classParticleSystem}{}\doxysection{Particle\+System Class Reference}
+\label{classParticleSystem}\index{ParticleSystem@{ParticleSystem}}
+
+
+\mbox{\hyperlink{classParticleSystem}{Particle\+System}} creates a particle system that spawns at a poition and when the animation has ended destroys itself. Useful for dust, stars , and small VFX effects.  
+
+
+
+
+{\ttfamily \#include $<$particle\+System.\+hh$>$}
+
+
+
+Collaboration diagram for Particle\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classParticleSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParticleSystem_a66d6a40f5e63094627e21a62f8244e45}{Particle\+System}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{classParticleSystem}{Particle\+System}} at a position with an animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classParticleSystem_a47d69989f4a35feabc7f646a63bf9c7c}{has\+Ended}} () const
+\begin{DoxyCompactList}\small\item\em Returns true only if the animation in the animator has ended. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParticleSystem_ae746ad4b33796fff56a90d20e14e7b66}{die}} ()
+\begin{DoxyCompactList}\small\item\em Sets dead to true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParticleSystem_a1525b5fa89cc33064fc959cd4c9ba08c}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Paints the particle system on the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classParticleSystem_a207214743c9f2c8fd9c5ec6739619921}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classParticleSystem_a837b9e1329c804795c291cd1e7743383}{animator\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classParticleSystem_adbe102337b4f41561f9c155dfb07c877}{dead\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classParticleSystem}{Particle\+System}} creates a particle system that spawns at a poition and when the animation has ended destroys itself. Useful for dust, stars , and small VFX effects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParticleSystem_a66d6a40f5e63094627e21a62f8244e45}\label{classParticleSystem_a66d6a40f5e63094627e21a62f8244e45}} 
+\index{ParticleSystem@{ParticleSystem}!ParticleSystem@{ParticleSystem}}
+\index{ParticleSystem@{ParticleSystem}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{ParticleSystem()}{ParticleSystem()}}
+{\footnotesize\ttfamily Particle\+System\+::\+Particle\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&}]{anim }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{classParticleSystem}{Particle\+System}} at a position with an animation. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParticleSystem_ae746ad4b33796fff56a90d20e14e7b66}\label{classParticleSystem_ae746ad4b33796fff56a90d20e14e7b66}} 
+\index{ParticleSystem@{ParticleSystem}!die@{die}}
+\index{die@{die}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily void Particle\+System\+::die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets dead to true. 
+
+\mbox{\Hypertarget{classParticleSystem_a47d69989f4a35feabc7f646a63bf9c7c}\label{classParticleSystem_a47d69989f4a35feabc7f646a63bf9c7c}} 
+\index{ParticleSystem@{ParticleSystem}!hasEnded@{hasEnded}}
+\index{hasEnded@{hasEnded}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{hasEnded()}{hasEnded()}}
+{\footnotesize\ttfamily bool Particle\+System\+::has\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true only if the animation in the animator has ended. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParticleSystem_a1525b5fa89cc33064fc959cd4c9ba08c}\label{classParticleSystem_a1525b5fa89cc33064fc959cd4c9ba08c}} 
+\index{ParticleSystem@{ParticleSystem}!paint@{paint}}
+\index{paint@{paint}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Particle\+System\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Paints the particle system on the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classParticleSystem_a1525b5fa89cc33064fc959cd4c9ba08c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classParticleSystem_a837b9e1329c804795c291cd1e7743383}\label{classParticleSystem_a837b9e1329c804795c291cd1e7743383}} 
+\index{ParticleSystem@{ParticleSystem}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Particle\+System\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classParticleSystem_adbe102337b4f41561f9c155dfb07c877}\label{classParticleSystem_adbe102337b4f41561f9c155dfb07c877}} 
+\index{ParticleSystem@{ParticleSystem}!dead\_@{dead\_}}
+\index{dead\_@{dead\_}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{dead\_}{dead\_}}
+{\footnotesize\ttfamily bool Particle\+System\+::dead\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classParticleSystem_a207214743c9f2c8fd9c5ec6739619921}\label{classParticleSystem_a207214743c9f2c8fd9c5ec6739619921}} 
+\index{ParticleSystem@{ParticleSystem}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!ParticleSystem@{ParticleSystem}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Particle\+System\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/components/\mbox{\hyperlink{particleSystem_8hh}{particle\+System.\+hh}}\item 
+src/components/\mbox{\hyperlink{particleSystem_8cc}{particle\+System.\+cc}}\end{DoxyCompactItemize}

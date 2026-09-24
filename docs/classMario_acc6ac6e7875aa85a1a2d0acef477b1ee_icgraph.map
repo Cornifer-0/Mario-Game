@@ -1,0 +1,4 @@
+<map id="Mario::set_y_accel" name="Mario::set_y_accel">
+<area shape="rect" id="node1" title=" " alt="" coords="221,5,364,32"/>
+<area shape="rect" id="node2" href="$classBlockManager.html#a13d329f84ae0b96813065f08ba474d1a" title="Updates mario so he interacts with the blocks." alt="" coords="5,5,173,32"/>
+</map>

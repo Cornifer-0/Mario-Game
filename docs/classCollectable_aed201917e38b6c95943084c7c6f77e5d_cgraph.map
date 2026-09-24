@@ -1,0 +1,6 @@
+<map id="Collectable::Destroy" name="Collectable::Destroy">
+<area shape="rect" id="node1" title="Spawns a collected animation at pos_. Does not actually destroy itself." alt="" coords="5,46,160,73"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#aedd2fd4eae1640c6733fd1b9ea689597" title="spawnsParticlesOfAnimation, Spawns the particle system with the name name at a position pos." alt="" coords="208,39,431,80"/>
+<area shape="rect" id="node3" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="479,5,655,47"/>
+<area shape="rect" id="node4" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="479,71,655,112"/>
+</map>

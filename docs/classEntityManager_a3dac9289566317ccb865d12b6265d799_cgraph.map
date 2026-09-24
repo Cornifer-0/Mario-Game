@@ -1,0 +1,13 @@
+<map id="EntityManager::update" name="EntityManager::update">
+<area shape="rect" id="node1" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="5,185,176,212"/>
+<area shape="rect" id="node2" href="$classMario.html#a3b78a7f90fe02f6ca2f0e322770bb473" title=" " alt="" coords="511,32,597,59"/>
+<area shape="rect" id="node4" href="$classMario.html#a214bf9b6cff10d1b6f69ad2019a43f68" title=" " alt="" coords="234,43,373,69"/>
+<area shape="rect" id="node5" href="$classKoopaShellManager.html#a68da5ad47e7b6fb50c3138196499fe04" title="Returns the only instance of a koopaShellManager." alt="" coords="224,94,383,135"/>
+<area shape="rect" id="node6" href="$classMario.html#ab455fbf56f08999269b8b15ac97aa1c6" title=" " alt="" coords="245,160,362,187"/>
+<area shape="rect" id="node7" href="$classMario.html#ac3b75d0650fb2a149d33fd9f1420da99" title=" " alt="" coords="253,211,353,237"/>
+<area shape="rect" id="node9" href="$classHUD.html#a2ff0be71fea5ae35d08966d172e7adc7" title="Adds one to the value_ attribute." alt="" coords="247,261,360,288"/>
+<area shape="rect" id="node10" href="$classMario.html#a0bc34a1f489d6d10905c83fa8e1e72f9" title=" " alt="" coords="258,312,349,339"/>
+<area shape="rect" id="node11" href="$classKoopaShellManager.html#ab9b53e46ddccafaeb6679a8f8edc70ad" title="Spawns a koopshell at a position." alt="" coords="224,363,383,405"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="725,101,972,128"/>
+<area shape="rect" id="node8" href="$classAnim_1_1Animator.html#a59dd3357956a0f3bba8d343362e83df5" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="431,123,677,165"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="ResourceManager::update" name="ResourceManager::update">
+<area shape="rect" id="node1" title="Checks if a collider has collided with a coin, if it has it collects that coin and erase it from the ..." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a60832b9f7f761240e000e18415414a11" title="Returns true if and only if the boxCollider collides with other." alt="" coords="245,5,436,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Kamek::paint" name="Kamek::paint">
+<area shape="rect" id="node1" title="Paints Kamek on the window." alt="" coords="5,42,115,69"/>
+<area shape="rect" id="node2" href="$namespacepro2.html#a53b6d9bb59e9b6d79ddc591a87bf9379" title="Dibuixa una imatge/textura a la finextra a partir d&#39;una posicio (aquesta es el centre)" alt="" coords="183,5,319,47"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="163,71,339,98"/>
+</map>

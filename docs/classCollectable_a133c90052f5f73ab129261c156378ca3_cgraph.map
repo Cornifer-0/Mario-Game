@@ -1,0 +1,7 @@
+<map id="Collectable::Collectable" name="Collectable::Collectable">
+<area shape="rect" id="node1" title="Construct a new Collectable object at a position pos. With a type ct." alt="" coords="5,81,181,108"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a78d0977a422f50f8bdc5ea7fa6e32512" title="Adds an animation to the anims_ map, the the name name." alt="" coords="229,5,452,32"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animator.html#a2361fe1b3faf687fd549cec8ce1ddcc2" title="Returns the currentFrame of the currentAnimation." alt="" coords="231,56,450,83"/>
+<area shape="rect" id="node4" href="$classBoxCollider.html#ae494bfb0cca9868d8f1c47284d9af4df" title="Set the Padding, boxCollider should be updated for the effects of this change to take place." alt="" coords="253,107,429,133"/>
+<area shape="rect" id="node5" href="$classBoxCollider.html#a2f96d48196f68ebe9b5319ab9b89f72d" title="It updates the position of the boxCollider using the position of the objecte and a Frame(sprite),..." alt="" coords="265,157,416,184"/>
+</map>

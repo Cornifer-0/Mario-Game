@@ -1,0 +1,10 @@
+<map id="Mario::set_grounded" name="Mario::set_grounded">
+<area shape="rect" id="node1" title=" " alt="" coords="891,56,1045,83"/>
+<area shape="rect" id="node2" href="$classMario.html#a4b8785eae84e2d5f0f45bf5290054f92" title=" " alt="" coords="667,5,843,32"/>
+<area shape="rect" id="node3" href="$classBlockManager.html#a13d329f84ae0b96813065f08ba474d1a" title="Updates mario so he interacts with the blocks." alt="" coords="671,56,839,83"/>
+<area shape="rect" id="node4" href="$classMario.html#a78a9e97404fc6528e2afab19f5177b63" title=" " alt="" coords="699,107,811,133"/>
+<area shape="rect" id="node5" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="487,107,619,133"/>
+<area shape="rect" id="node6" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,107,439,133"/>
+<area shape="rect" id="node7" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,107,223,133"/>
+<area shape="rect" id="node8" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,60,133"/>
+</map>

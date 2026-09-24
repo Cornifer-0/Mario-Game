@@ -1,0 +1,4 @@
+<map id="Platform::has_crossed_floor_downwards" name="Platform::has_crossed_floor_downwards">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a60832b9f7f761240e000e18415414a11" title="Returns true if and only if the boxCollider collides with other." alt="" coords="220,13,411,39"/>
+</map>

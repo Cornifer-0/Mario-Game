@@ -1,0 +1,7 @@
+<map id="FlagManager::update" name="FlagManager::update">
+<area shape="rect" id="node1" title="Updates the flags in the game, they change state if touched by a player." alt="" coords="5,85,165,112"/>
+<area shape="rect" id="node2" href="$classMario.html#a9cedf22f9727329c4eb114068c0e14a8" title=" " alt="" coords="213,5,395,32"/>
+<area shape="rect" id="node3" href="$classMario.html#a214bf9b6cff10d1b6f69ad2019a43f68" title=" " alt="" coords="235,56,373,83"/>
+<area shape="rect" id="node4" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="216,107,392,149"/>
+<area shape="rect" id="node5" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="216,173,392,214"/>
+</map>

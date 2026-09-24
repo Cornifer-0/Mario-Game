@@ -1,0 +1,5 @@
+<map id="Anim::Animation::nextFrame" name="Anim::Animation::nextFrame">
+<area shape="rect" id="node1" title="Returns the next Frame in the animation, If the currentFrame is the last frame of the AnimationFrame,..." alt="" coords="5,46,215,73"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animation.html#aa5283ad4b42e950d165acac76930d2bf" title="Returns true only if the animation has ended. This only happens when repeat is false and the last fra..." alt="" coords="263,5,468,47"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animation.html#a9cf535ec0741cd2aa2fb9320f2c41380" title="Returns the current Frame." alt="" coords="273,71,458,112"/>
+</map>

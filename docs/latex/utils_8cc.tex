@@ -1,0 +1,37 @@
+\hypertarget{utils_8cc}{}\doxysection{src/core/utils.cc File Reference}
+\label{utils_8cc}\index{src/core/utils.cc@{src/core/utils.cc}}
+{\ttfamily \#include $<$assets/text\+\_\+sprites\+\_\+data.\+hh$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$core/utils.\+hh$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for utils.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepro2}{pro2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da}{pro2\+::paint\+\_\+hline}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int xini, int xfin, int y, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color=\mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}})
+\begin{DoxyCompactList}\small\item\em Dibuja una línea horizontal en la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_abb90df6acb9671a913c1f4d91591caae}{pro2\+::paint\+\_\+vline}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int x, int yini, int yfin, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color=\mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}})
+\begin{DoxyCompactList}\small\item\em Dibuja una línea vertical en la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a4243dbdb2761befd42f6592e5fb9f589}{pro2\+::paint\+\_\+sprite\+\_\+center}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const vector$<$ vector$<$ int $>$$>$ \&sprite, bool mirror, float scae)
+\item 
+void \mbox{\hyperlink{namespacepro2_aae12ca43c834c2f0aa225bb1509be63c}{pro2\+::paint\+\_\+sprite}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const vector$<$ vector$<$ int $>$$>$ \&sprite, bool mirror, float scale)
+\item 
+void \mbox{\hyperlink{namespacepro2_a7da69392e8cbe4f0fc8c7c027e1e7e1f}{pro2\+::paint\+\_\+background\+\_\+sprite}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&sprite, double parallax\+Multiplier, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&sky=\{\{0\}\})
+\begin{DoxyCompactList}\small\item\em Paints the background sprite to the window, with a parallax effect given by the parralax\+Muliplier. From a certain height, it starts drawing the sky (all black by default). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_ab5a215cae23098694e39e35b44108a0f}{pro2\+::paint\+\_\+number}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, int number)
+\begin{DoxyCompactList}\small\item\em Dibuixa una xifra a la pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_addfac8af42421478c938d5bbd64c1343}{pro2\+::paint\+\_\+end\+\_\+circle}} (Window \&window, int radius, Pt center)
+\begin{DoxyCompactList}\small\item\em Paints every pixel outside the circle (formed by center and radius parameters) black. \end{DoxyCompactList}\end{DoxyCompactItemize}

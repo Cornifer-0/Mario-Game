@@ -1,0 +1,234 @@
+\hypertarget{classManager}{}\doxysection{Manager Class Reference}
+\label{classManager}\index{Manager@{Manager}}
+
+
+General \mbox{\hyperlink{classManager}{Manager}} for the game. A manager of managers.  
+
+
+
+
+{\ttfamily \#include $<$manager.\+hh$>$}
+
+
+
+Collaboration diagram for Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager}} ()
+\item 
+int \mbox{\hyperlink{classManager_ac2255e4addd7de5e78d1ffe24f3e5ac7}{update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Updates all managers, returns 1 only if the game has ended (mario has collected the END\+\_\+\+STAR) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classManager_aed2b4bd12cabc5bd5d8528bb6ea844f4}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug, bool end)
+\begin{DoxyCompactList}\small\item\em Paints everything in every manager. (most of the game). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlagManager}{Flag\+Manager}} $\ast$ \mbox{\hyperlink{classManager_a745683d09b3455d0f9e12f300227db09}{fm\+\_\+}}
+\item 
+\mbox{\hyperlink{classPlatformManager}{Platform\+Manager}} $\ast$ \mbox{\hyperlink{classManager_a9d4a670a254a1a06deea63c0e79aaba8}{pm\+\_\+}}
+\item 
+\mbox{\hyperlink{classResourceManager}{Resource\+Manager}} $\ast$ \mbox{\hyperlink{classManager_a3cbc363d4519da68539e859231b87f23}{rm\+\_\+}}
+\item 
+\mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$ \mbox{\hyperlink{classManager_ada92a786bf5357e1506fc420111d8092}{gm\+\_\+}}
+\item 
+\mbox{\hyperlink{classBlockManager}{Block\+Manager}} $\ast$ \mbox{\hyperlink{classManager_a97eb0e931f212cb2bf5f55ee5ac1cffb}{bm\+\_\+}}
+\item 
+\mbox{\hyperlink{classWigglerManager}{Wiggler\+Manager}} $\ast$ \mbox{\hyperlink{classManager_aba31fe55debf325444f2af17ee5384bd}{wg\+\_\+}}
+\item 
+\mbox{\hyperlink{classKamek}{Kamek}} $\ast$ \mbox{\hyperlink{classManager_aee6fc7cb5b7bde3c1b87964a1e48028f}{kamek\+\_\+}}
+\item 
+\mbox{\hyperlink{classKamek}{Kamek}} $\ast$ \mbox{\hyperlink{classManager_ad54a89c69f9b251b79865432685caba0}{kamek2\+\_\+}}
+\item 
+\mbox{\hyperlink{classKamek}{Kamek}} $\ast$ \mbox{\hyperlink{classManager_a71916edcd2ca9c29fc70ceec9c2a5a4c}{kamek3\+\_\+}}
+\item 
+\mbox{\hyperlink{classKamek}{Kamek}} $\ast$ \mbox{\hyperlink{classManager_ab5fc7291156ed691d09e31c1a225bbde}{kamek4\+\_\+}}
+\item 
+\mbox{\hyperlink{classHUD}{HUD}} $\ast$ \mbox{\hyperlink{classManager_ac52132ef4165938606e8fadd00b54a59}{hud\+\_\+coin\+\_\+}}
+\item 
+\mbox{\hyperlink{classHUD}{HUD}} $\ast$ \mbox{\hyperlink{classManager_a641b3111b4e16acf00caee70888d9b18}{hud\+\_\+time\+\_\+}}
+\item 
+\mbox{\hyperlink{classHUD}{HUD}} $\ast$ \mbox{\hyperlink{classManager_ace96af493c4e5140c1bb5120b6eabf73}{hud\+\_\+mushroom\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+General \mbox{\hyperlink{classManager}{Manager}} for the game. A manager of managers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}\label{classManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}} 
+\index{Manager@{Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily Manager\+::\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classManager_aed2b4bd12cabc5bd5d8528bb6ea844f4}\label{classManager_aed2b4bd12cabc5bd5d8528bb6ea844f4}} 
+\index{Manager@{Manager}!paint@{paint}}
+\index{paint@{paint}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug,  }\item[{bool}]{end }\end{DoxyParamCaption})}
+
+
+
+Paints everything in every manager. (most of the game). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+{\em end} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classManager_aed2b4bd12cabc5bd5d8528bb6ea844f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classManager_aed2b4bd12cabc5bd5d8528bb6ea844f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classManager_ac2255e4addd7de5e78d1ffe24f3e5ac7}\label{classManager_ac2255e4addd7de5e78d1ffe24f3e5ac7}} 
+\index{Manager@{Manager}!update@{update}}
+\index{update@{update}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily int Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Updates all managers, returns 1 only if the game has ended (mario has collected the END\+\_\+\+STAR) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+{\em luigi} & \\
+\hline
+{\em window} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classManager_ac2255e4addd7de5e78d1ffe24f3e5ac7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classManager_ac2255e4addd7de5e78d1ffe24f3e5ac7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classManager_a97eb0e931f212cb2bf5f55ee5ac1cffb}\label{classManager_a97eb0e931f212cb2bf5f55ee5ac1cffb}} 
+\index{Manager@{Manager}!bm\_@{bm\_}}
+\index{bm\_@{bm\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{bm\_}{bm\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBlockManager}{Block\+Manager}}$\ast$ Manager\+::bm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_a745683d09b3455d0f9e12f300227db09}\label{classManager_a745683d09b3455d0f9e12f300227db09}} 
+\index{Manager@{Manager}!fm\_@{fm\_}}
+\index{fm\_@{fm\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{fm\_}{fm\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlagManager}{Flag\+Manager}}$\ast$ Manager\+::fm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_ada92a786bf5357e1506fc420111d8092}\label{classManager_ada92a786bf5357e1506fc420111d8092}} 
+\index{Manager@{Manager}!gm\_@{gm\_}}
+\index{gm\_@{gm\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{gm\_}{gm\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntityManager}{Entity\+Manager}}$\ast$ Manager\+::gm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_ac52132ef4165938606e8fadd00b54a59}\label{classManager_ac52132ef4165938606e8fadd00b54a59}} 
+\index{Manager@{Manager}!hud\_coin\_@{hud\_coin\_}}
+\index{hud\_coin\_@{hud\_coin\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{hud\_coin\_}{hud\_coin\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHUD}{HUD}}$\ast$ Manager\+::hud\+\_\+coin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_ace96af493c4e5140c1bb5120b6eabf73}\label{classManager_ace96af493c4e5140c1bb5120b6eabf73}} 
+\index{Manager@{Manager}!hud\_mushroom\_@{hud\_mushroom\_}}
+\index{hud\_mushroom\_@{hud\_mushroom\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{hud\_mushroom\_}{hud\_mushroom\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHUD}{HUD}}$\ast$ Manager\+::hud\+\_\+mushroom\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_a641b3111b4e16acf00caee70888d9b18}\label{classManager_a641b3111b4e16acf00caee70888d9b18}} 
+\index{Manager@{Manager}!hud\_time\_@{hud\_time\_}}
+\index{hud\_time\_@{hud\_time\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{hud\_time\_}{hud\_time\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHUD}{HUD}}$\ast$ Manager\+::hud\+\_\+time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_ad54a89c69f9b251b79865432685caba0}\label{classManager_ad54a89c69f9b251b79865432685caba0}} 
+\index{Manager@{Manager}!kamek2\_@{kamek2\_}}
+\index{kamek2\_@{kamek2\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{kamek2\_}{kamek2\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKamek}{Kamek}}$\ast$ Manager\+::kamek2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_a71916edcd2ca9c29fc70ceec9c2a5a4c}\label{classManager_a71916edcd2ca9c29fc70ceec9c2a5a4c}} 
+\index{Manager@{Manager}!kamek3\_@{kamek3\_}}
+\index{kamek3\_@{kamek3\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{kamek3\_}{kamek3\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKamek}{Kamek}}$\ast$ Manager\+::kamek3\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_ab5fc7291156ed691d09e31c1a225bbde}\label{classManager_ab5fc7291156ed691d09e31c1a225bbde}} 
+\index{Manager@{Manager}!kamek4\_@{kamek4\_}}
+\index{kamek4\_@{kamek4\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{kamek4\_}{kamek4\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKamek}{Kamek}}$\ast$ Manager\+::kamek4\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_aee6fc7cb5b7bde3c1b87964a1e48028f}\label{classManager_aee6fc7cb5b7bde3c1b87964a1e48028f}} 
+\index{Manager@{Manager}!kamek\_@{kamek\_}}
+\index{kamek\_@{kamek\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{kamek\_}{kamek\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKamek}{Kamek}}$\ast$ Manager\+::kamek\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_a9d4a670a254a1a06deea63c0e79aaba8}\label{classManager_a9d4a670a254a1a06deea63c0e79aaba8}} 
+\index{Manager@{Manager}!pm\_@{pm\_}}
+\index{pm\_@{pm\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{pm\_}{pm\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlatformManager}{Platform\+Manager}}$\ast$ Manager\+::pm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_a3cbc363d4519da68539e859231b87f23}\label{classManager_a3cbc363d4519da68539e859231b87f23}} 
+\index{Manager@{Manager}!rm\_@{rm\_}}
+\index{rm\_@{rm\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{rm\_}{rm\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classResourceManager}{Resource\+Manager}}$\ast$ Manager\+::rm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classManager_aba31fe55debf325444f2af17ee5384bd}\label{classManager_aba31fe55debf325444f2af17ee5384bd}} 
+\index{Manager@{Manager}!wg\_@{wg\_}}
+\index{wg\_@{wg\_}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{wg\_}{wg\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWigglerManager}{Wiggler\+Manager}}$\ast$ Manager\+::wg\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{manager_8hh}{manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{manager_8cc}{manager.\+cc}}\end{DoxyCompactItemize}

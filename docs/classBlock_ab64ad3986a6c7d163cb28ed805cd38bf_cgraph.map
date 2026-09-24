@@ -1,0 +1,9 @@
+<map id="Block::paint" name="Block::paint">
+<area shape="rect" id="node1" title="Paints the block on window." alt="" coords="5,56,104,83"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a23d7ea38ef0175f05c8805b5ddabaa25" title="Returns the nextFrame of the animation and sets prevFrame_ to 0 if and only if prevFrame_ &gt;= than the..." alt="" coords="156,5,359,32"/>
+<area shape="rect" id="node3" href="$namespacepro2.html#a20411f55dbe1eca54a4f98e4ee623d77" title="Dibuixa una imatge/textura a la finestra a partir d&#39;una posició" alt="" coords="189,56,325,83"/>
+<area shape="rect" id="node4" href="$classBoxCollider.html#ade5e9bd7b7ca4263581d9fd553e0bd3f" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="152,107,363,133"/>
+<area shape="rect" id="node5" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="411,81,541,108"/>
+<area shape="rect" id="node7" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="411,132,541,159"/>
+<area shape="rect" id="node6" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="589,107,765,133"/>
+</map>

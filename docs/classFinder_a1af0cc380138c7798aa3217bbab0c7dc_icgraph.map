@@ -1,0 +1,5 @@
+<map id="Finder::remove_with_rect" name="Finder::remove_with_rect">
+<area shape="rect" id="node1" title="Eliminar un objecte que ha estat guardat amb old_rect." alt="" coords="173,31,360,57"/>
+<area shape="rect" id="node2" href="$classFinder.html#a6c6f6492df6b83891eaafe534b6f4051" title="Afegeix t al Finder." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node3" href="$classFinder.html#a429914516be45896a1049253e768160a" title="Actualitza el rectangle associat a t dins del Finder." alt="" coords="8,56,123,83"/>
+</map>

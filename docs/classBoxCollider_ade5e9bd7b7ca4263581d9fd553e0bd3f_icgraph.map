@@ -1,0 +1,10 @@
+<map id="BoxCollider::printDebugLines" name="BoxCollider::printDebugLines">
+<area shape="rect" id="node1" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="447,107,657,133"/>
+<area shape="rect" id="node2" href="$classMario.html#a657b66f6c78e5ae10796452486de54d8" title=" " alt="" coords="279,5,379,32"/>
+<area shape="rect" id="node5" href="$classBlock.html#ab64ad3986a6c7d163cb28ed805cd38bf" title="Paints the block on window." alt="" coords="279,56,378,83"/>
+<area shape="rect" id="node6" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="261,107,397,133"/>
+<area shape="rect" id="node7" href="$classPlatform.html#af4f011c19e5ed1157632bf1d1fe68626" title=" " alt="" coords="269,157,388,184"/>
+<area shape="rect" id="node8" href="$classWiggler.html#a57299d8747b7976651ac7e13730c4eb7" title=" " alt="" coords="259,208,399,235"/>
+<area shape="rect" id="node3" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="108,5,211,32"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>

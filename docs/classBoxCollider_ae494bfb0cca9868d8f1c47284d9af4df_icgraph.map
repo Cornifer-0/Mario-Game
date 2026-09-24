@@ -1,0 +1,4 @@
+<map id="BoxCollider::setPadding" name="BoxCollider::setPadding">
+<area shape="rect" id="node1" title="Set the Padding, boxCollider should be updated for the effects of this change to take place." alt="" coords="229,5,405,32"/>
+<area shape="rect" id="node2" href="$classCollectable.html#a133c90052f5f73ab129261c156378ca3" title="Construct a new Collectable object at a position pos. With a type ct." alt="" coords="5,5,181,32"/>
+</map>

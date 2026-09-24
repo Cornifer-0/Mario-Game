@@ -1,0 +1,6 @@
+<map id="include/enemies/wiggler.hh" name="include/enemies/wiggler.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="147,5,347,32"/>
+<area shape="rect" id="node2" href="$game_8cc.html" title=" " alt="" coords="5,80,137,107"/>
+<area shape="rect" id="node3" href="$wiggler_8cc.html" title=" " alt="" coords="162,80,333,107"/>
+<area shape="rect" id="node4" href="$wigglerManager_8cc.html" title=" " alt="" coords="357,80,593,107"/>
+</map>

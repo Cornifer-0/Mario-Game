@@ -1,0 +1,146 @@
+\hypertarget{fenster_8h}{}\doxysection{include/graphics/fenster.h File Reference}
+\label{fenster_8h}\index{include/graphics/fenster.h@{include/graphics/fenster.h}}
+{\ttfamily \#include $<$X11/\+XKBlib.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+Xlib.\+h$>$}\newline
+{\ttfamily \#include $<$X11/keysym.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for fenster.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fenster_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fenster_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfenster}{fenster}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{fenster_8h_a8fb447618db946a9e2a596d9ea18763f}{\+\_\+\+DEFAULT\+\_\+\+SOURCE}}~1
+\item 
+\#define \mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}}~extern
+\item 
+\#define \mbox{\hyperlink{fenster_8h_a22c4e72d11d5aac37a5cd2e13bddfc8b}{fenster\+\_\+pixel}}(f,  x,  y)~((f)-\/$>$buf\mbox{[}((y) $\ast$ (f)-\/$>$width) + (x)\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} int \mbox{\hyperlink{fenster_8h_a77492a4d2e3e0168e55c2538d82c9317}{fenster\+\_\+open}} (struct \mbox{\hyperlink{structfenster}{fenster}} $\ast$f)
+\item 
+\mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} int \mbox{\hyperlink{fenster_8h_a409cfb66c65724949592f8a3c2d0b113}{fenster\+\_\+loop}} (struct \mbox{\hyperlink{structfenster}{fenster}} $\ast$f)
+\item 
+\mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} void \mbox{\hyperlink{fenster_8h_a6a404d56c6ae8aa2f333cb598a517bec}{fenster\+\_\+close}} (struct \mbox{\hyperlink{structfenster}{fenster}} $\ast$f)
+\item 
+\mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} void \mbox{\hyperlink{fenster_8h_aadd67368344b4c84fd4760d0b08a5ff3}{fenster\+\_\+sleep}} (int64\+\_\+t ms)
+\item 
+\mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} int64\+\_\+t \mbox{\hyperlink{fenster_8h_a98c0d11f3a94484327c846fb745a2c6b}{fenster\+\_\+time}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{fenster_8h_a8fb447618db946a9e2a596d9ea18763f}\label{fenster_8h_a8fb447618db946a9e2a596d9ea18763f}} 
+\index{fenster.h@{fenster.h}!\_DEFAULT\_SOURCE@{\_DEFAULT\_SOURCE}}
+\index{\_DEFAULT\_SOURCE@{\_DEFAULT\_SOURCE}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{\_DEFAULT\_SOURCE}{\_DEFAULT\_SOURCE}}
+{\footnotesize\ttfamily \#define \+\_\+\+DEFAULT\+\_\+\+SOURCE~1}
+
+\mbox{\Hypertarget{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}\label{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}} 
+\index{fenster.h@{fenster.h}!FENSTER\_API@{FENSTER\_API}}
+\index{FENSTER\_API@{FENSTER\_API}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{FENSTER\_API}{FENSTER\_API}}
+{\footnotesize\ttfamily \#define FENSTER\+\_\+\+API~extern}
+
+\mbox{\Hypertarget{fenster_8h_a22c4e72d11d5aac37a5cd2e13bddfc8b}\label{fenster_8h_a22c4e72d11d5aac37a5cd2e13bddfc8b}} 
+\index{fenster.h@{fenster.h}!fenster\_pixel@{fenster\_pixel}}
+\index{fenster\_pixel@{fenster\_pixel}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{fenster\_pixel}{fenster\_pixel}}
+{\footnotesize\ttfamily \#define fenster\+\_\+pixel(\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~((f)-\/$>$buf\mbox{[}((y) $\ast$ (f)-\/$>$width) + (x)\mbox{]})}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fenster_8h_a6a404d56c6ae8aa2f333cb598a517bec}\label{fenster_8h_a6a404d56c6ae8aa2f333cb598a517bec}} 
+\index{fenster.h@{fenster.h}!fenster\_close@{fenster\_close}}
+\index{fenster\_close@{fenster\_close}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{fenster\_close()}{fenster\_close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} void fenster\+\_\+close (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfenster}{fenster}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{fenster_8h_a6a404d56c6ae8aa2f333cb598a517bec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fenster_8h_a409cfb66c65724949592f8a3c2d0b113}\label{fenster_8h_a409cfb66c65724949592f8a3c2d0b113}} 
+\index{fenster.h@{fenster.h}!fenster\_loop@{fenster\_loop}}
+\index{fenster\_loop@{fenster\_loop}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{fenster\_loop()}{fenster\_loop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} int fenster\+\_\+loop (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfenster}{fenster}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fenster_8h_a409cfb66c65724949592f8a3c2d0b113_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fenster_8h_a77492a4d2e3e0168e55c2538d82c9317}\label{fenster_8h_a77492a4d2e3e0168e55c2538d82c9317}} 
+\index{fenster.h@{fenster.h}!fenster\_open@{fenster\_open}}
+\index{fenster\_open@{fenster\_open}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{fenster\_open()}{fenster\_open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} int fenster\+\_\+open (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structfenster}{fenster}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{fenster_8h_a77492a4d2e3e0168e55c2538d82c9317_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fenster_8h_aadd67368344b4c84fd4760d0b08a5ff3}\label{fenster_8h_aadd67368344b4c84fd4760d0b08a5ff3}} 
+\index{fenster.h@{fenster.h}!fenster\_sleep@{fenster\_sleep}}
+\index{fenster\_sleep@{fenster\_sleep}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{fenster\_sleep()}{fenster\_sleep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} void fenster\+\_\+sleep (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{ms }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fenster_8h_aadd67368344b4c84fd4760d0b08a5ff3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fenster_8h_a98c0d11f3a94484327c846fb745a2c6b}\label{fenster_8h_a98c0d11f3a94484327c846fb745a2c6b}} 
+\index{fenster.h@{fenster.h}!fenster\_time@{fenster\_time}}
+\index{fenster\_time@{fenster\_time}!fenster.h@{fenster.h}}
+\doxysubsubsection{\texorpdfstring{fenster\_time()}{fenster\_time()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fenster_8h_a77850f4258d1c54e446a7b3393e698b7}{FENSTER\+\_\+\+API}} int64\+\_\+t fenster\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fenster_8h_a98c0d11f3a94484327c846fb745a2c6b_icgraph}
+\end{center}
+\end{figure}

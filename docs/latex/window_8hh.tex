@@ -1,0 +1,133 @@
+\hypertarget{window_8hh}{}\doxysection{include/graphics/window.hh File Reference}
+\label{window_8hh}\index{include/graphics/window.hh@{include/graphics/window.hh}}
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}graphics/fenster.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$core/geometry.\+hh$>$}\newline
+Include dependency graph for window.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{window_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{window_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepro2}{pro2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{window_8hh_a260b0fc54095550ad3a7e9c414a7ab54}{FENSTER\+\_\+\+HEADER}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}{pro2\+::\+Mod\+Key}} \{ \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7ed11fb24a4f44577d0e51c33a40674}{pro2\+::\+Ctrl}} = 1
+, \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdae3f26039b51177aa99bd58f676c90b95}{pro2\+::\+Shift}} = 2
+, \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b}{pro2\+::\+Alt}} = 4
+, \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fda24b0a64ee223639589b72a25bc4a156c}{pro2\+::\+Meta}} = 8
+ \}
+\item 
+enum \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700}{pro2\+::\+Keys}} \{ \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9aa24fc884a6387a418d820ba980768}{pro2\+::\+Space}} = 32
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8819bc5c67185dd437984b99b4f6e590}{pro2\+::\+Backspace}} = 8
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ad54590c4696a7331eabc0f4c6fde3348}{pro2\+::\+Delete}} = 127
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a5f7423a798bb1981231ce4c42ea3f211}{pro2\+::\+End}} = 5
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeea82caa64877a8fc3a657e802fa3686}{pro2\+::\+Escape}} = 27
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7c656bf97a6e3f1e883060fecc2b7e36}{pro2\+::\+Home}} = 2
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8cae20caeec2b889cb528929abdec8dc}{pro2\+::\+Insert}} = 26
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ab36e80941c59958fa8af38e9fe565626}{pro2\+::\+Page\+Down}} = 4
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a472261161b652b591234518dfa6c97f5}{pro2\+::\+Page\+Up}} = 3
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a9c0991b9a25e9528ff02075ff9315f50}{pro2\+::\+Return}} = 10
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a90361512ecabd0d9df6eb1cef17600ae}{pro2\+::\+Tab}} = 9
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700afc87f5d76503f9d022ba5659cb57d14e}{pro2\+::\+Up}} = 17
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af95dcc0475c6085eb235ca826b0b64aa}{pro2\+::\+Down}} = 18
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d}{pro2\+::\+Right}} = 19
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeb7db451ca12b561e89a93b2436390cd}{pro2\+::\+Left}} = 20
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aef1a209850816aededaa5608b05d6571}{pro2\+::A}} = 65
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af1b9f355bf60f11547496c965b638b99}{pro2\+::B}} = 66
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a1c845b5d13dca5fba662d8d8a18bd7cb}{pro2\+::C}} = 67
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac746af27b3301a008dd611a5a545439b}{pro2\+::D}} = 68
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9560d678f8615b76c61d7011c0143e8}{pro2\+::E}} = 69
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adc7c15671f0119ac0dd5fd3c3aad49d3}{pro2\+::F}} = 70
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adaaaff8df223592198c396f4766d0cad}{pro2\+::G}} = 71
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a038168cf343f62a1f439d7161e19fdc2}{pro2\+::H}} = 72
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a580e4580b9f56c9e772439b679fd59ec}{pro2\+::I}} = 73
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a50164cc49e0d9fb1110f13dac2dda71d}{pro2\+::J}} = 74
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3fb940b1da6afc215c2f0affad9993eb}{pro2\+::K}} = 75
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700acf0eac664d5793ca9f82eec282d15b36}{pro2\+::L}} = 76
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1ad5936de00d49d2273f77d5727e9ee}{pro2\+::M}} = 77
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a84d96e7e87e9513b19f26533aaf7456d}{pro2\+::N}} = 78
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7e6a4ad5f23d16c06f97730d27a25a0c}{pro2\+::O}} = 79
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a64078be746e75abc2e40ef14318d1704}{pro2\+::P}} = 80
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8763f6566da4a3fe0f33b1fa788fcccc}{pro2\+::Q}} = 81
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a0698eb0537c841980037538577f2b03e}{pro2\+::R}} = 82
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3af4b86fd159f2f583fb8ce7a0d2549c}{pro2\+::S}} = 83
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ae1e1b1cdafcc827e9673e44f8a2fae46}{pro2\+::T}} = 84
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1b0ab6fe54c06f089e600000683aadf}{pro2\+::U}} = 85
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a46caeabc9dc7993eaba42450e48a90a2}{pro2\+::V}} = 86
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a4e0ff598ffbdf421cb42f16da11c5fee}{pro2\+::W}} = 87
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8756ca3882ff63652048780a5bb7d60d}{pro2\+::X}} = 88
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a528e3b9060ce7565361e36723c66d943}{pro2\+::Y}} = 89
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8f370a7d5d0dc06fefdbf4947acf3470}{pro2\+::Z}} = 90
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const Color \mbox{\hyperlink{namespacepro2_ad75418ec194604dc97f1efe077788d53}{pro2\+::black}} = 0x00000000
+\item 
+const Color \mbox{\hyperlink{namespacepro2_af106aa7882e524344cfa403034cd5720}{pro2\+::red}} = 0x00ff0000
+\item 
+const Color \mbox{\hyperlink{namespacepro2_a316de377ea278a05420f85b64f4349bb}{pro2\+::green}} = 0x0000ff00
+\item 
+const Color \mbox{\hyperlink{namespacepro2_aabd9113151a0b2203ccff1e694aaadae}{pro2\+::blue}} = 0x000000ff
+\item 
+const Color \mbox{\hyperlink{namespacepro2_a2724ea0a5071964af91346a0f94fd60c}{pro2\+::yellow}} = 0x00ffff00
+\item 
+const Color \mbox{\hyperlink{namespacepro2_a6ca5ebed0b2082a3548fc5b827bd1fd5}{pro2\+::magenta}} = 0x00ff00ff
+\item 
+const Color \mbox{\hyperlink{namespacepro2_ae79338de6e0d8f480ec7d4deebe04e5d}{pro2\+::cyan}} = 0x0000ffff
+\item 
+const Color \mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}} = 0x00ffffff
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{window_8hh_a260b0fc54095550ad3a7e9c414a7ab54}\label{window_8hh_a260b0fc54095550ad3a7e9c414a7ab54}} 
+\index{window.hh@{window.hh}!FENSTER\_HEADER@{FENSTER\_HEADER}}
+\index{FENSTER\_HEADER@{FENSTER\_HEADER}!window.hh@{window.hh}}
+\doxysubsubsection{\texorpdfstring{FENSTER\_HEADER}{FENSTER\_HEADER}}
+{\footnotesize\ttfamily \#define FENSTER\+\_\+\+HEADER}
+

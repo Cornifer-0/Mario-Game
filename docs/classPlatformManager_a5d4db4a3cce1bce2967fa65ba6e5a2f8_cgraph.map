@@ -1,0 +1,10 @@
+<map id="PlatformManager::update" name="PlatformManager::update">
+<area shape="rect" id="node1" title="Updates platforms in s_platforms_." alt="" coords="5,81,193,108"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3" title=" " alt="" coords="241,56,440,83"/>
+<area shape="rect" id="node5" href="$classFinder.html#a65e77ed25d8ee5004a830622f304a2f6" title="Retorna el conjunt d&#39;objectes amb rectangles total o parcialment dins de rect." alt="" coords="287,107,394,133"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="488,5,647,32"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="490,56,645,83"/>
+<area shape="rect" id="node6" href="$classFinder.html#abf26632846b54bb3e9061e72d4dd7a95" title="Query recursiva per buscar un objecte dins de l&#39;arbre de QuadNode&#39;s." alt="" coords="510,107,625,133"/>
+<area shape="rect" id="node7" href="$classFinder.html#af25bf9f9084b01ed20944aec40c180d0" title="La funcio afageix els objecte de items a S, si i nomes si interseccionen amb rect." alt="" coords="695,70,836,111"/>
+<area shape="rect" id="node8" href="$classFinder.html#aec6b48019cf7d820c6d78040755852f4" title="Retorna true si i nomes si els rectangles a i b interseccionen en el pla." alt="" coords="884,107,1011,133"/>
+</map>

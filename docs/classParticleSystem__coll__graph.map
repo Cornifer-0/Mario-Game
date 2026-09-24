@@ -1,0 +1,6 @@
+<map id="ParticleSystem" name="ParticleSystem">
+<area shape="rect" id="node1" title="ParticleSystem creates a particle system that spawns at a poition and when the animation has ended de..." alt="" coords="14,184,133,211"/>
+<area shape="rect" id="node2" href="$structpro2_1_1Pt.html" title=" " alt="" coords="5,95,77,121"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animator.html" title="The class animator a container for storing the different animations an object might have." alt="" coords="102,95,226,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="135,5,193,32"/>
+</map>

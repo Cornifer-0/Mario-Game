@@ -1,0 +1,5 @@
+<map id="Anim::Animator::animationEnded" name="Anim::Animator::animationEnded">
+<area shape="rect" id="node1" title="Returns true if and only if the animation has ended. For this the anims_[currentAnim_] repeat attribu..." alt="" coords="327,5,525,47"/>
+<area shape="rect" id="node2" href="$classHUD.html#ad5a06e383f62cba83a9ec84b4da84f59" title="Returns the Frame that must be rendered on screen as the HUD icon. Usually an animation." alt="" coords="147,13,279,39"/>
+<area shape="rect" id="node3" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="5,13,99,39"/>
+</map>

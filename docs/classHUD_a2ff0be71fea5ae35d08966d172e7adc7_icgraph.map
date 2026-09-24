@@ -1,0 +1,4 @@
+<map id="HUD::plusOne" name="HUD::plusOne">
+<area shape="rect" id="node1" title="Adds one to the value_ attribute." alt="" coords="224,5,337,32"/>
+<area shape="rect" id="node2" href="$classEntityManager.html#a3dac9289566317ccb865d12b6265d799" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="5,5,176,32"/>
+</map>

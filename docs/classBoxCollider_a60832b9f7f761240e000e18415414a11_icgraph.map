@@ -1,0 +1,15 @@
+<map id="BoxCollider::collidingWith" name="BoxCollider::collidingWith">
+<area shape="rect" id="node1" title="Returns true if and only if the boxCollider collides with other." alt="" coords="516,307,707,334"/>
+<area shape="rect" id="node2" href="$classBlock.html#af4f1893fc92f086790e695631a929424" title="Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block do..." alt="" coords="296,5,443,47"/>
+<area shape="rect" id="node3" href="$classBlock.html#a7b7bcef444de84ed1c577193e5cb7ba0" title="Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block si..." alt="" coords="296,71,443,112"/>
+<area shape="rect" id="node4" href="$classPlatform.html#a1602f44ba0bdf9a2417c13926d6e04dd" title=" " alt="" coords="286,136,453,177"/>
+<area shape="rect" id="node5" href="$classBlock.html#a7044504c43b0e767df1258adccddf5d9" title="Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block up..." alt="" coords="296,201,443,243"/>
+<area shape="rect" id="node6" href="$classPlatform.html#a433b419b896a57783db4c8ad2f5534b2" title=" " alt="" coords="286,267,453,308"/>
+<area shape="rect" id="node7" href="$classPlatform.html#ac2b883af0e1080efd09a0e1d64d51e93" title=" " alt="" coords="286,332,453,373"/>
+<area shape="rect" id="node8" href="$classWiggler.html#a893a737f969b08957044c20d9eb8b09c" title=" " alt="" coords="284,398,455,425"/>
+<area shape="rect" id="node9" href="$classWiggler.html#a301193641dc65d18bd928de27fdaf089" title=" " alt="" coords="271,449,468,475"/>
+<area shape="rect" id="node10" href="$classResourceManager.html#a7d5bfb154ece795c3faa9f0c0060bfcf" title="Checks if a collider has collided with a coin, if it has it collects that coin and erase it from the ..." alt="" coords="273,499,465,526"/>
+<area shape="rect" id="node11" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="285,550,453,577"/>
+<area shape="rect" id="node12" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,550,223,577"/>
+<area shape="rect" id="node13" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,550,60,577"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Finder::add_to_set_if_intersects" name="Finder::add_to_set_if_intersects">
+<area shape="rect" id="node1" title="La funcio afageix els objecte de items a S, si i nomes si interseccionen amb rect." alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node2" href="$classFinder.html#aec6b48019cf7d820c6d78040755852f4" title="Retorna true si i nomes si els rectangles a i b interseccionen en el pla." alt="" coords="195,13,321,39"/>
+</map>

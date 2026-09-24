@@ -1,0 +1,6 @@
+<map id="ParticleSystemManager::paint" name="ParticleSystemManager::paint">
+<area shape="rect" id="node1" title="Renders all managed particle systems onto the specified window." alt="" coords="427,5,603,47"/>
+<area shape="rect" id="node2" href="$classManager.html#aed2b4bd12cabc5bd5d8528bb6ea844f4" title="Paints everything in every manager. (most of the game)." alt="" coords="259,13,379,39"/>
+<area shape="rect" id="node3" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="108,13,211,39"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>

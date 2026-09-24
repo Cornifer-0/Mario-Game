@@ -1,0 +1,13 @@
+<map id="Collectable::paint" name="Collectable::paint">
+<area shape="rect" id="node1" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="5,181,141,207"/>
+<area shape="rect" id="node2" href="$classCollectable.html#a703d744038da02cafad9e2940bc073d6" title="Calculates an offset, based on the frame_count, useful to simulate sinusoidal movements of the coins." alt="" coords="208,5,389,47"/>
+<area shape="rect" id="node4" href="$classAnim_1_1Animator.html#a2361fe1b3faf687fd549cec8ce1ddcc2" title="Returns the currentFrame of the currentAnimation." alt="" coords="189,71,408,98"/>
+<area shape="rect" id="node5" href="$classAnim_1_1Animator.html#a23d7ea38ef0175f05c8805b5ddabaa25" title="Returns the nextFrame of the animation and sets prevFrame_ to 0 if and only if prevFrame_ &gt;= than the..." alt="" coords="197,122,400,149"/>
+<area shape="rect" id="node6" href="$namespacepro2.html#a53b6d9bb59e9b6d79ddc591a87bf9379" title="Dibuixa una imatge/textura a la finextra a partir d&#39;una posicio (aquesta es el centre)" alt="" coords="231,173,367,215"/>
+<area shape="rect" id="node7" href="$classBoxCollider.html#ade5e9bd7b7ca4263581d9fd553e0bd3f" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="193,239,404,266"/>
+<area shape="rect" id="node9" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="661,239,837,266"/>
+<area shape="rect" id="node11" href="$classBoxCollider.html#a2f96d48196f68ebe9b5319ab9b89f72d" title="It updates the position of the boxCollider using the position of the objecte and a Frame(sprite),..." alt="" coords="223,341,374,367"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964" title="Devuelve el contador de fotogramas pintados hasta el momento." alt="" coords="456,5,613,47"/>
+<area shape="rect" id="node8" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="469,189,600,215"/>
+<area shape="rect" id="node10" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="469,239,600,266"/>
+</map>

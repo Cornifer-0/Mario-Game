@@ -1,0 +1,11 @@
+<map id="Mario::pos" name="Mario::pos">
+<area shape="rect" id="node1" title=" " alt="" coords="489,132,580,159"/>
+<area shape="rect" id="node2" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="114,5,217,32"/>
+<area shape="rect" id="node4" href="$classGame.html#a0c6fbced92dbe00f94f96d899f02fdb8" title=" " alt="" coords="278,56,434,83"/>
+<area shape="rect" id="node6" href="$classEntityManager.html#a3dac9289566317ccb865d12b6265d799" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="271,107,441,133"/>
+<area shape="rect" id="node7" href="$classBlockManager.html#a13d329f84ae0b96813065f08ba474d1a" title="Updates mario so he interacts with the blocks." alt="" coords="272,157,440,184"/>
+<area shape="rect" id="node8" href="$classGame.html#ab146f2f8cec61b092586762267cf1e73" title=" " alt="" coords="271,208,441,235"/>
+<area shape="rect" id="node9" href="$classKamek.html#a19e091952f2465adfcbd83b6d1d5312f" title="Updates in the IDLE states, floats..." alt="" coords="277,259,435,285"/>
+<area shape="rect" id="node3" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" id="node5" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,56,223,83"/>
+</map>

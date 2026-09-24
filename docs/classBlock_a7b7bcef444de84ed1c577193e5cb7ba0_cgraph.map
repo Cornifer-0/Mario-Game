@@ -1,0 +1,4 @@
+<map id="Block::has_crossed_block_sideways" name="Block::has_crossed_block_sideways">
+<area shape="rect" id="node1" title="Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block si..." alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a60832b9f7f761240e000e18415414a11" title="Returns true if and only if the boxCollider collides with other." alt="" coords="200,13,391,39"/>
+</map>

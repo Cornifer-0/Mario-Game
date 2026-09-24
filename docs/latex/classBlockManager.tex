@@ -1,0 +1,149 @@
+\hypertarget{classBlockManager}{}\doxysection{Block\+Manager Class Reference}
+\label{classBlockManager}\index{BlockManager@{BlockManager}}
+
+
+Class for managing blocks.  
+
+
+
+
+{\ttfamily \#include $<$block\+Manager.\+hh$>$}
+
+
+
+Collaboration diagram for Block\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classBlockManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBlockManager_a93282216d97540def52c1fa4029eb693}{Block\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBlock}{Block}} \mbox{\hyperlink{classManager}{Manager}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlockManager_a078eb5f7c9088eb77d78f88e8ea53b1f}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints all the blocks on the screen (all that are inside the screen thanks to the finder) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlockManager_a13d329f84ae0b96813065f08ba474d1a}{update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, \mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$gm\+\_\+)
+\begin{DoxyCompactList}\small\item\em Updates mario so he interacts with the blocks. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \& \mbox{\hyperlink{classBlockManager_abfc6ca67fa1e49a9dd2d8351454185f7}{get\+\_\+blocks}} () const
+\item 
+const std\+::set$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \& \mbox{\hyperlink{classBlockManager_a560568f998ce8390f87413738c2a7302}{get\+\_\+blocks\+\_\+f}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \mbox{\hyperlink{classBlockManager_a784b36c340c16c065d0b1d822f27e22a}{blocks\+\_\+}}
+\item 
+std\+::set$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \mbox{\hyperlink{classBlockManager_a0bc2caea611d3df4754a0a997977a05c}{to\+Paint\+\_\+}}
+\item 
+\mbox{\hyperlink{classFinder}{Finder}}$<$ \mbox{\hyperlink{classBlock}{Block}} $>$ $\ast$ \mbox{\hyperlink{classBlockManager_a80abc62421083c86b01c4f8e24aa7f41}{f\+\_\+blocks\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing blocks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBlockManager_a93282216d97540def52c1fa4029eb693}\label{classBlockManager_a93282216d97540def52c1fa4029eb693}} 
+\index{BlockManager@{BlockManager}!BlockManager@{BlockManager}}
+\index{BlockManager@{BlockManager}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{BlockManager()}{BlockManager()}}
+{\footnotesize\ttfamily Block\+Manager\+::\+Block\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBlock}{Block}} \mbox{\hyperlink{classManager}{Manager}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBlockManager_abfc6ca67fa1e49a9dd2d8351454185f7}\label{classBlockManager_abfc6ca67fa1e49a9dd2d8351454185f7}} 
+\index{BlockManager@{BlockManager}!get\_blocks@{get\_blocks}}
+\index{get\_blocks@{get\_blocks}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{get\_blocks()}{get\_blocks()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classBlock}{Block}} $\ast$$>$\& Block\+Manager\+::get\+\_\+blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBlockManager_a560568f998ce8390f87413738c2a7302}\label{classBlockManager_a560568f998ce8390f87413738c2a7302}} 
+\index{BlockManager@{BlockManager}!get\_blocks\_f@{get\_blocks\_f}}
+\index{get\_blocks\_f@{get\_blocks\_f}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{get\_blocks\_f()}{get\_blocks\_f()}}
+{\footnotesize\ttfamily const std\+::set$<$\mbox{\hyperlink{classBlock}{Block}} $\ast$$>$\& Block\+Manager\+::get\+\_\+blocks\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBlockManager_a078eb5f7c9088eb77d78f88e8ea53b1f}\label{classBlockManager_a078eb5f7c9088eb77d78f88e8ea53b1f}} 
+\index{BlockManager@{BlockManager}!paint@{paint}}
+\index{paint@{paint}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Block\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints all the blocks on the screen (all that are inside the screen thanks to the finder) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlockManager_a078eb5f7c9088eb77d78f88e8ea53b1f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlockManager_a13d329f84ae0b96813065f08ba474d1a}\label{classBlockManager_a13d329f84ae0b96813065f08ba474d1a}} 
+\index{BlockManager@{BlockManager}!update@{update}}
+\index{update@{update}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Block\+Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{\mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$}]{gm\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Updates mario so he interacts with the blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlockManager_a13d329f84ae0b96813065f08ba474d1a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBlockManager_a784b36c340c16c065d0b1d822f27e22a}\label{classBlockManager_a784b36c340c16c065d0b1d822f27e22a}} 
+\index{BlockManager@{BlockManager}!blocks\_@{blocks\_}}
+\index{blocks\_@{blocks\_}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{blocks\_}{blocks\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classBlock}{Block}} $\ast$$>$ Block\+Manager\+::blocks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlockManager_a80abc62421083c86b01c4f8e24aa7f41}\label{classBlockManager_a80abc62421083c86b01c4f8e24aa7f41}} 
+\index{BlockManager@{BlockManager}!f\_blocks\_@{f\_blocks\_}}
+\index{f\_blocks\_@{f\_blocks\_}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{f\_blocks\_}{f\_blocks\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFinder}{Finder}}$<$\mbox{\hyperlink{classBlock}{Block}}$>$$\ast$ Block\+Manager\+::f\+\_\+blocks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlockManager_a0bc2caea611d3df4754a0a997977a05c}\label{classBlockManager_a0bc2caea611d3df4754a0a997977a05c}} 
+\index{BlockManager@{BlockManager}!toPaint\_@{toPaint\_}}
+\index{toPaint\_@{toPaint\_}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{toPaint\_}{toPaint\_}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{classBlock}{Block}} $\ast$$>$ Block\+Manager\+::to\+Paint\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{blockManager_8hh}{block\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{blockManager_8cc}{block\+Manager.\+cc}}\end{DoxyCompactItemize}

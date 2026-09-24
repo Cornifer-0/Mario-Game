@@ -1,0 +1,14 @@
+<map id="Mario::die" name="Mario::die">
+<area shape="rect" id="node1" title=" " alt="" coords="936,165,1023,192"/>
+<area shape="rect" id="node2" href="$classWiggler.html#a893a737f969b08957044c20d9eb8b09c" title=" " alt="" coords="704,5,875,32"/>
+<area shape="rect" id="node3" href="$classWiggler.html#a301193641dc65d18bd928de27fdaf089" title=" " alt="" coords="691,56,888,83"/>
+<area shape="rect" id="node4" href="$classGame.html#a0c6fbced92dbe00f94f96d899f02fdb8" title=" " alt="" coords="487,111,643,137"/>
+<area shape="rect" id="node7" href="$classKoopaShellManager.html#aacb6ef395b8a631fc7f3dd79bef17dd4" title="Updates the koopShell aswell as the objects around it, like the mario, luigi and the goombas." alt="" coords="710,158,869,199"/>
+<area shape="rect" id="node10" href="$classEntityManager.html#a3dac9289566317ccb865d12b6265d799" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="704,224,875,251"/>
+<area shape="rect" id="node11" href="$classMario.html#a78a9e97404fc6528e2afab19f5177b63" title=" " alt="" coords="733,275,845,301"/>
+<area shape="rect" id="node12" href="$classKamek.html#a279f7996d249690cf8aba8ec71f33b59" title="Updates Kamek." alt="" coords="729,325,850,352"/>
+<area shape="rect" id="node5" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,140,223,167"/>
+<area shape="rect" id="node6" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,140,60,167"/>
+<area shape="rect" id="node8" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="499,165,631,192"/>
+<area shape="rect" id="node9" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,165,439,192"/>
+</map>

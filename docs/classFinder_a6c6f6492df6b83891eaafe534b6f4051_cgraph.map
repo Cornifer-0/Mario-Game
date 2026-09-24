@@ -1,0 +1,6 @@
+<map id="Finder::remove" name="Finder::remove">
+<area shape="rect" id="node1" title="Afegeix t al Finder." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node2" href="$classFinder.html#a1af0cc380138c7798aa3217bbab0c7dc" title="Eliminar un objecte que ha estat guardat amb old_rect." alt="" coords="173,5,360,32"/>
+<area shape="rect" id="node3" href="$classFinder.html#a74162a3a1eec014b5d53fa7ff7c03b49" title="Funcio recursiva per buscar on esta guardat t, i eliminar&#45;lo." alt="" coords="408,5,535,32"/>
+<area shape="rect" id="node4" href="$classFinder.html#aec6b48019cf7d820c6d78040755852f4" title="Retorna true si i nomes si els rectangles a i b interseccionen en el pla." alt="" coords="583,5,709,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Entity::paint" name="Entity::paint">
+<area shape="rect" id="node1" title="Paints the goomba on the window, if debug is set to true, it calls for the debug of the boxCollider." alt="" coords="5,89,105,116"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3" title=" " alt="" coords="153,31,352,57"/>
+<area shape="rect" id="node5" href="$namespacepro2.html#a53b6d9bb59e9b6d79ddc591a87bf9379" title="Dibuixa una imatge/textura a la finextra a partir d&#39;una posicio (aquesta es el centre)" alt="" coords="185,82,321,123"/>
+<area shape="rect" id="node6" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="165,148,341,175"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="400,5,559,32"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="402,56,557,83"/>
+</map>

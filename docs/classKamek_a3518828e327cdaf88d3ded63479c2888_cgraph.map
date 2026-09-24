@@ -1,0 +1,6 @@
+<map id="Kamek::update_SUMMON" name="Kamek::update_SUMMON">
+<area shape="rect" id="node1" title="Updates in the SUMMON state, chooses random spots to spawn Goombas, and spawns particles and animatio..." alt="" coords="5,78,196,105"/>
+<area shape="rect" id="node2" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="259,5,435,47"/>
+<area shape="rect" id="node3" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="259,71,435,112"/>
+<area shape="rect" id="node4" href="$classEntityManager.html#aa5b2c4a3ee350b65f67c678961e286a4" title="Spawns an entity of type at a pos." alt="" coords="244,137,449,163"/>
+</map>

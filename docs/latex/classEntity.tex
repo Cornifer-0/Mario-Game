@@ -1,0 +1,442 @@
+\hypertarget{classEntity}{}\doxysection{Entity Class Reference}
+\label{classEntity}\index{Entity@{Entity}}
+
+
+Class of the Enemy Goomba.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+hh$>$}
+
+
+
+Collaboration diagram for Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor of goomba, not safe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_a6d318923d8087afc0d23162d46ddb7c5}{Entity}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}})
+\begin{DoxyCompactList}\small\item\em Construct a Goomba at a position type NORMAL is assumed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_a40b01ac9c21f10a6425aaa20522291cd}{Entity}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, \mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}} tp)
+\begin{DoxyCompactList}\small\item\em Construct a new Goomba object at a position with a custom type . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classEntity_ab6015f7ff8b7011e693390953362f301}{get\+Head\+Collider}} () const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the head\+Collider attribute of the goomba. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_a9a74d116f545e616461c4e047a26f22a}{looking\+\_\+left}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if looking left. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}} \mbox{\hyperlink{classEntity_a71b3d5377689dc9ea99de6974481cc2b}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classEntity_ab59e9379df4e91fc76cccea265072ce6}{get\+Body\+Collider}} () const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the body\+Collider attribute of the goomba. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classEntity_ac11069ce9521e54266f3fed2ff1e9e1b}{get\+Visibility\+Collider}} () const
+\begin{DoxyCompactList}\small\item\em Get the Visibility Collider object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a87466c642875c59e774830e3168b485b}{die}} ()
+\begin{DoxyCompactList}\small\item\em Spawns the death particle of the goomba at it\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classEntity_ae226571b50a9598510f05855ebdc0901}{pos}} () const
+\begin{DoxyCompactList}\small\item\em Returns the position of the goomba. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_aa49a8546c691a82a2d98891662b89040}{check\+\_\+collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ platforms, const std\+::set$<$ class \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \&blocks)
+\begin{DoxyCompactList}\small\item\em Checks for collisions with platforms, makes the goomba turn if it has collided with a platform horizontally, sets y to the platform top if it has fallen inside a platform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the goomba, calling update\+\_\+horizontal\+\_\+movement and update\+\_\+collider. Aswell as updating last\+\_\+pos\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a30f894906327324f22aa49ab36f560d8}{change\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em Makes the goomba change direction by flipping the sign of the speed.\+x and setting looking\+\_\+left\+\_\+ to !looking\+\_\+left\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a24b90d89778131871c81397ef9aa84ab}{set\+\_\+mario\+\_\+in\+\_\+sight}} (bool b)
+\begin{DoxyCompactList}\small\item\em Set the mario in sight object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a3d5357e1dbe9a7cdb0ded3978d8ac370}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints the goomba on the window, if debug is set to true, it calls for the debug of the box\+Collider. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classEntity_a06edd5db98a6ddc7da7f207c9b57565f}{get\+\_\+rect}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEntity_ae0855dc8f7463690f5c2f3b1f7dd61e3}{apply\+\_\+physics}} ()
+\begin{DoxyCompactList}\small\item\em Applies normal physics to the goomba, just as the mario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a26c1cc2aee34839334aaf27abfbfa43e}{update\+\_\+horizontal\+\_\+movement}} ()
+\begin{DoxyCompactList}\small\item\em Updates the horintal movement of the goomba, making it walk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a0035a8d66771543821029f4711e1fc20}{update\+\_\+collider}} ()
+\begin{DoxyCompactList}\small\item\em Updates the collider of the goomba. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classEntity_a59a6d8bc1700ce9879c61f33016a3d7a}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classEntity_a7b5884446e283d3d19552eb892af573f}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classEntity_a8d1a028a9387c16728f1ad49632b372e}{speed\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classEntity_ae651243fcd7d5becc3e364825143057e}{accel\+\_\+}} = \{0, 0\}
+\item 
+int \mbox{\hyperlink{classEntity_a2080882a544f2d9fe18ca445ea59aba2}{accel\+\_\+time\+\_\+}} = 0
+\item 
+int \mbox{\hyperlink{classEntity_ae6a40577a5bd4cea8495a5344bea7a22}{velocity\+\_\+}} = 1
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classEntity_ad161c94971c6ff43ba581de5f79f7cd4}{animator\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classEntity_a2353ee2097c4361b527800291861659b}{body\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classEntity_aebecec8624a28eceacbe77ef6def6bee}{head\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classEntity_a3a8e603512cfe780f62ac24066c9c662}{visibility\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}} \mbox{\hyperlink{classEntity_a3a99b29dc476f9d23a4df4f5f1442e39}{type\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classEntity_a13c05839a7d644e54ba583f03bd14da3}{grounded\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classEntity_a0e39404145ad8b295bf948a6f222f374}{looking\+\_\+left\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classEntity_a799462330dd8c754cdada5dab432b4dc}{dead}}
+\item 
+bool \mbox{\hyperlink{classEntity_a1c2ec9844cbda19c4ab45deafe5dacf6}{mario\+\_\+in\+\_\+sight\+\_\+}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the Enemy Goomba. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_a980f368aa07ce358583982821533a54a}\label{classEntity_a980f368aa07ce358583982821533a54a}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor of goomba, not safe. 
+
+\mbox{\Hypertarget{classEntity_a6d318923d8087afc0d23162d46ddb7c5}\label{classEntity_a6d318923d8087afc0d23162d46ddb7c5}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct a Goomba at a position type NORMAL is assumed. 
+
+\mbox{\Hypertarget{classEntity_a40b01ac9c21f10a6425aaa20522291cd}\label{classEntity_a40b01ac9c21f10a6425aaa20522291cd}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}}}]{tp }\end{DoxyParamCaption})}
+
+
+
+Construct a new Goomba object at a position with a custom type . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tp} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_ae0855dc8f7463690f5c2f3b1f7dd61e3}\label{classEntity_ae0855dc8f7463690f5c2f3b1f7dd61e3}} 
+\index{Entity@{Entity}!apply\_physics@{apply\_physics}}
+\index{apply\_physics@{apply\_physics}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{apply\_physics()}{apply\_physics()}}
+{\footnotesize\ttfamily void Entity\+::apply\+\_\+physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Applies normal physics to the goomba, just as the mario. 
+
+\mbox{\Hypertarget{classEntity_a30f894906327324f22aa49ab36f560d8}\label{classEntity_a30f894906327324f22aa49ab36f560d8}} 
+\index{Entity@{Entity}!changeDirection@{changeDirection}}
+\index{changeDirection@{changeDirection}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{changeDirection()}{changeDirection()}}
+{\footnotesize\ttfamily void Entity\+::change\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes the goomba change direction by flipping the sign of the speed.\+x and setting looking\+\_\+left\+\_\+ to !looking\+\_\+left\+\_\+. 
+
+\mbox{\Hypertarget{classEntity_aa49a8546c691a82a2d98891662b89040}\label{classEntity_aa49a8546c691a82a2d98891662b89040}} 
+\index{Entity@{Entity}!check\_collisions@{check\_collisions}}
+\index{check\_collisions@{check\_collisions}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{check\_collisions()}{check\_collisions()}}
+{\footnotesize\ttfamily void Entity\+::check\+\_\+collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$}]{platforms,  }\item[{const std\+::set$<$ class \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \&}]{blocks }\end{DoxyParamCaption})}
+
+
+
+Checks for collisions with platforms, makes the goomba turn if it has collided with a platform horizontally, sets y to the platform top if it has fallen inside a platform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em platforms} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a87466c642875c59e774830e3168b485b}\label{classEntity_a87466c642875c59e774830e3168b485b}} 
+\index{Entity@{Entity}!die@{die}}
+\index{die@{die}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily void Entity\+::die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawns the death particle of the goomba at it\textquotesingle{}s position. 
+
+\mbox{\Hypertarget{classEntity_a06edd5db98a6ddc7da7f207c9b57565f}\label{classEntity_a06edd5db98a6ddc7da7f207c9b57565f}} 
+\index{Entity@{Entity}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Entity\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classEntity_ab59e9379df4e91fc76cccea265072ce6}\label{classEntity_ab59e9379df4e91fc76cccea265072ce6}} 
+\index{Entity@{Entity}!getBodyCollider@{getBodyCollider}}
+\index{getBodyCollider@{getBodyCollider}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getBodyCollider()}{getBodyCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Entity\+::get\+Body\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the body\+Collider attribute of the goomba. 
+
+\begin{DoxyReturn}{Returns}
+box\+Collider$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_ab6015f7ff8b7011e693390953362f301}\label{classEntity_ab6015f7ff8b7011e693390953362f301}} 
+\index{Entity@{Entity}!getHeadCollider@{getHeadCollider}}
+\index{getHeadCollider@{getHeadCollider}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getHeadCollider()}{getHeadCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Entity\+::get\+Head\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the head\+Collider attribute of the goomba. 
+
+\begin{DoxyReturn}{Returns}
+box\+Collider$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a71b3d5377689dc9ea99de6974481cc2b}\label{classEntity_a71b3d5377689dc9ea99de6974481cc2b}} 
+\index{Entity@{Entity}!getType@{getType}}
+\index{getType@{getType}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}} Entity\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+goomba\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_ac11069ce9521e54266f3fed2ff1e9e1b}\label{classEntity_ac11069ce9521e54266f3fed2ff1e9e1b}} 
+\index{Entity@{Entity}!getVisibilityCollider@{getVisibilityCollider}}
+\index{getVisibilityCollider@{getVisibilityCollider}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getVisibilityCollider()}{getVisibilityCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Entity\+::get\+Visibility\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Visibility Collider object. 
+
+\begin{DoxyReturn}{Returns}
+box\+Collider$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a9a74d116f545e616461c4e047a26f22a}\label{classEntity_a9a74d116f545e616461c4e047a26f22a}} 
+\index{Entity@{Entity}!looking\_left@{looking\_left}}
+\index{looking\_left@{looking\_left}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{looking\_left()}{looking\_left()}}
+{\footnotesize\ttfamily bool Entity\+::looking\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if looking left. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a3d5357e1dbe9a7cdb0ded3978d8ac370}\label{classEntity_a3d5357e1dbe9a7cdb0ded3978d8ac370}} 
+\index{Entity@{Entity}!paint@{paint}}
+\index{paint@{paint}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Entity\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints the goomba on the window, if debug is set to true, it calls for the debug of the box\+Collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntity_a3d5357e1dbe9a7cdb0ded3978d8ac370_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEntity_ae226571b50a9598510f05855ebdc0901}\label{classEntity_ae226571b50a9598510f05855ebdc0901}} 
+\index{Entity@{Entity}!pos@{pos}}
+\index{pos@{pos}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} Entity\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the position of the goomba. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a24b90d89778131871c81397ef9aa84ab}\label{classEntity_a24b90d89778131871c81397ef9aa84ab}} 
+\index{Entity@{Entity}!set\_mario\_in\_sight@{set\_mario\_in\_sight}}
+\index{set\_mario\_in\_sight@{set\_mario\_in\_sight}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{set\_mario\_in\_sight()}{set\_mario\_in\_sight()}}
+{\footnotesize\ttfamily void Entity\+::set\+\_\+mario\+\_\+in\+\_\+sight (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set the mario in sight object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}\label{classEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}} 
+\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Entity\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the goomba, calling update\+\_\+horizontal\+\_\+movement and update\+\_\+collider. Aswell as updating last\+\_\+pos\+\_\+. 
+
+\mbox{\Hypertarget{classEntity_a0035a8d66771543821029f4711e1fc20}\label{classEntity_a0035a8d66771543821029f4711e1fc20}} 
+\index{Entity@{Entity}!update\_collider@{update\_collider}}
+\index{update\_collider@{update\_collider}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update\_collider()}{update\_collider()}}
+{\footnotesize\ttfamily void Entity\+::update\+\_\+collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates the collider of the goomba. 
+
+\mbox{\Hypertarget{classEntity_a26c1cc2aee34839334aaf27abfbfa43e}\label{classEntity_a26c1cc2aee34839334aaf27abfbfa43e}} 
+\index{Entity@{Entity}!update\_horizontal\_movement@{update\_horizontal\_movement}}
+\index{update\_horizontal\_movement@{update\_horizontal\_movement}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update\_horizontal\_movement()}{update\_horizontal\_movement()}}
+{\footnotesize\ttfamily void Entity\+::update\+\_\+horizontal\+\_\+movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates the horintal movement of the goomba, making it walk. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEntity_ae651243fcd7d5becc3e364825143057e}\label{classEntity_ae651243fcd7d5becc3e364825143057e}} 
+\index{Entity@{Entity}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Entity\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a2080882a544f2d9fe18ca445ea59aba2}\label{classEntity_a2080882a544f2d9fe18ca445ea59aba2}} 
+\index{Entity@{Entity}!accel\_time\_@{accel\_time\_}}
+\index{accel\_time\_@{accel\_time\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{accel\_time\_}{accel\_time\_}}
+{\footnotesize\ttfamily int Entity\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_ad161c94971c6ff43ba581de5f79f7cd4}\label{classEntity_ad161c94971c6ff43ba581de5f79f7cd4}} 
+\index{Entity@{Entity}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Entity\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a2353ee2097c4361b527800291861659b}\label{classEntity_a2353ee2097c4361b527800291861659b}} 
+\index{Entity@{Entity}!bodyCollider\_@{bodyCollider\_}}
+\index{bodyCollider\_@{bodyCollider\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{bodyCollider\_}{bodyCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Entity\+::body\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a799462330dd8c754cdada5dab432b4dc}\label{classEntity_a799462330dd8c754cdada5dab432b4dc}} 
+\index{Entity@{Entity}!dead@{dead}}
+\index{dead@{dead}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{dead}{dead}}
+{\footnotesize\ttfamily bool Entity\+::dead\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a13c05839a7d644e54ba583f03bd14da3}\label{classEntity_a13c05839a7d644e54ba583f03bd14da3}} 
+\index{Entity@{Entity}!grounded\_@{grounded\_}}
+\index{grounded\_@{grounded\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{grounded\_}{grounded\_}}
+{\footnotesize\ttfamily bool Entity\+::grounded\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_aebecec8624a28eceacbe77ef6def6bee}\label{classEntity_aebecec8624a28eceacbe77ef6def6bee}} 
+\index{Entity@{Entity}!headCollider\_@{headCollider\_}}
+\index{headCollider\_@{headCollider\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{headCollider\_}{headCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Entity\+::head\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a7b5884446e283d3d19552eb892af573f}\label{classEntity_a7b5884446e283d3d19552eb892af573f}} 
+\index{Entity@{Entity}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Entity\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a0e39404145ad8b295bf948a6f222f374}\label{classEntity_a0e39404145ad8b295bf948a6f222f374}} 
+\index{Entity@{Entity}!looking\_left\_@{looking\_left\_}}
+\index{looking\_left\_@{looking\_left\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{looking\_left\_}{looking\_left\_}}
+{\footnotesize\ttfamily bool Entity\+::looking\+\_\+left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a1c2ec9844cbda19c4ab45deafe5dacf6}\label{classEntity_a1c2ec9844cbda19c4ab45deafe5dacf6}} 
+\index{Entity@{Entity}!mario\_in\_sight\_@{mario\_in\_sight\_}}
+\index{mario\_in\_sight\_@{mario\_in\_sight\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{mario\_in\_sight\_}{mario\_in\_sight\_}}
+{\footnotesize\ttfamily bool Entity\+::mario\+\_\+in\+\_\+sight\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a59a6d8bc1700ce9879c61f33016a3d7a}\label{classEntity_a59a6d8bc1700ce9879c61f33016a3d7a}} 
+\index{Entity@{Entity}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Entity\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a8d1a028a9387c16728f1ad49632b372e}\label{classEntity_a8d1a028a9387c16728f1ad49632b372e}} 
+\index{Entity@{Entity}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Entity\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a3a99b29dc476f9d23a4df4f5f1442e39}\label{classEntity_a3a99b29dc476f9d23a4df4f5f1442e39}} 
+\index{Entity@{Entity}!type\_@{type\_}}
+\index{type\_@{type\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{type\_}{type\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}} Entity\+::type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_ae6a40577a5bd4cea8495a5344bea7a22}\label{classEntity_ae6a40577a5bd4cea8495a5344bea7a22}} 
+\index{Entity@{Entity}!velocity\_@{velocity\_}}
+\index{velocity\_@{velocity\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{velocity\_}{velocity\_}}
+{\footnotesize\ttfamily int Entity\+::velocity\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntity_a3a8e603512cfe780f62ac24066c9c662}\label{classEntity_a3a8e603512cfe780f62ac24066c9c662}} 
+\index{Entity@{Entity}!visibilityCollider\_@{visibilityCollider\_}}
+\index{visibilityCollider\_@{visibilityCollider\_}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{visibilityCollider\_}{visibilityCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Entity\+::visibility\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/enemies/\mbox{\hyperlink{entity_8hh}{entity.\+hh}}\item 
+src/enemies/\mbox{\hyperlink{entity_8cc}{entity.\+cc}}\end{DoxyCompactItemize}

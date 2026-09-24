@@ -1,0 +1,6 @@
+<map id="pro2::Window::was_key_pressed" name="pro2::Window::was_key_pressed">
+<area shape="rect" id="node1" title="Determina si cierta tecla se presionó entre el fotograma anterior y el actual." alt="" coords="475,5,649,47"/>
+<area shape="rect" id="node2" href="$classGame.html#a0c6fbced92dbe00f94f96d899f02fdb8" title=" " alt="" coords="271,13,427,39"/>
+<area shape="rect" id="node3" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,13,223,39"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>

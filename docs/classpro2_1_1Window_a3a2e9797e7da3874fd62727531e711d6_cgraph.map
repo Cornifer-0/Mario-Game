@@ -1,0 +1,7 @@
+<map id="pro2::Window::next_frame" name="pro2::Window::next_frame">
+<area shape="rect" id="node1" title="Gestiona las tareas necesarias para pasar al siguiente fotograma." alt="" coords="5,74,152,115"/>
+<area shape="rect" id="node2" href="$fenster_8h.html#a409cfb66c65724949592f8a3c2d0b113" title=" " alt="" coords="230,5,333,32"/>
+<area shape="rect" id="node3" href="$fenster_8h.html#aadd67368344b4c84fd4760d0b08a5ff3" title=" " alt="" coords="226,56,337,83"/>
+<area shape="rect" id="node4" href="$fenster_8h.html#a98c0d11f3a94484327c846fb745a2c6b" title=" " alt="" coords="229,107,334,133"/>
+<area shape="rect" id="node5" href="$classpro2_1_1Window.html#ab7e10a36f347292e5fb9a0bffd0e3b49" title="Este método actualiza la cámara en función de la velocidad." alt="" coords="200,158,363,199"/>
+</map>

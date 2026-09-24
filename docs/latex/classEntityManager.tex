@@ -1,0 +1,240 @@
+\hypertarget{classEntityManager}{}\doxysection{Entity\+Manager Class Reference}
+\label{classEntityManager}\index{EntityManager@{EntityManager}}
+
+
+Class Goombas\+Manager manages the goombas in the scene. Basically a container for goombas that makes it easy to, spawn and kill goombas aswell as updating them.  
+
+
+
+
+{\ttfamily \#include $<$entity\+Manager.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEntityManager_a7555637657d090171be6ceee8451de0a}{Entity\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Goombas\+Manager with the default\+Goomba\+Map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntityManager_a0eae7eaa068cf740d111480cb8f5232a}{Entity\+Manager}} (\mbox{\hyperlink{entityManager_8hh_a7c8772a8daf420748ac409390da8ed6b}{Entity\+Map}} gm)
+\begin{DoxyCompactList}\small\item\em Construct a new Goombas\+Manager with a custom map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEntityManager_a6016ec18868bbd60f1de8f4ecc7904d3}{get\+Killed}} () const
+\begin{DoxyCompactList}\small\item\em Get the killed\+\_\+ attribute. (How many goombas have been killed) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntityManager_a3dac9289566317ccb865d12b6265d799}{update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classHUD}{HUD}} $\ast$mushroom\+\_\+hud)
+\begin{DoxyCompactList}\small\item\em Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider, it dies and makes the mario jump. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntityManager_acf781a732afe8fdcbeaeb15e0316f8cb}{kill\+If\+In\+This\+Collider}} (\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$box\+Collider)
+\begin{DoxyCompactList}\small\item\em Kills if in the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntityManager_ad86b256621a96000cde1413ab29dd234}{check\+\_\+collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::set$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \&blocks)
+\begin{DoxyCompactList}\small\item\em Updates the goomba, takes into account he platforms If it collides with a platform it turns, and if it falls through a platform it\textquotesingle{}s pos.\+y is set to the platform top(). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntityManager_a85842924427acb9dbcd10b52435684a8}{respawn\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Respawn all goombas using the goombas\+Map\+\_\+, makes current goombas disapear. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntityManager_a1ab769f62604eaedba6b56a8b2080508}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Calls paint to all goombas in the container goombas\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntityManager_aa5b2c4a3ee350b65f67c678961e286a4}{spawn\+Entity}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, \mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Spawns an entity of type at a pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entityManager_8hh_a7c8772a8daf420748ac409390da8ed6b}{Entity\+Map}} \mbox{\hyperlink{classEntityManager_ab3d1c419422d654354706c55e93a4b99}{entity\+Map\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $>$ \mbox{\hyperlink{classEntityManager_aa3e72ca4382d60d8d0499fa9a05f0454}{entities\+\_\+}}
+\item 
+int \mbox{\hyperlink{classEntityManager_a45dea87a819602a24910221d1de15eba}{killed\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Goombas\+Manager manages the goombas in the scene. Basically a container for goombas that makes it easy to, spawn and kill goombas aswell as updating them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntityManager_a7555637657d090171be6ceee8451de0a}\label{classEntityManager_a7555637657d090171be6ceee8451de0a}} 
+\index{EntityManager@{EntityManager}!EntityManager@{EntityManager}}
+\index{EntityManager@{EntityManager}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{EntityManager()}{EntityManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Entity\+Manager\+::\+Entity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Goombas\+Manager with the default\+Goomba\+Map. 
+
+\mbox{\Hypertarget{classEntityManager_a0eae7eaa068cf740d111480cb8f5232a}\label{classEntityManager_a0eae7eaa068cf740d111480cb8f5232a}} 
+\index{EntityManager@{EntityManager}!EntityManager@{EntityManager}}
+\index{EntityManager@{EntityManager}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{EntityManager()}{EntityManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Entity\+Manager\+::\+Entity\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{entityManager_8hh_a7c8772a8daf420748ac409390da8ed6b}{Entity\+Map}}}]{gm }\end{DoxyParamCaption})}
+
+
+
+Construct a new Goombas\+Manager with a custom map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gm} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntityManager_ad86b256621a96000cde1413ab29dd234}\label{classEntityManager_ad86b256621a96000cde1413ab29dd234}} 
+\index{EntityManager@{EntityManager}!check\_collisions@{check\_collisions}}
+\index{check\_collisions@{check\_collisions}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{check\_collisions()}{check\_collisions()}}
+{\footnotesize\ttfamily void Entity\+Manager\+::check\+\_\+collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::set$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ \&}]{blocks }\end{DoxyParamCaption})}
+
+
+
+Updates the goomba, takes into account he platforms If it collides with a platform it turns, and if it falls through a platform it\textquotesingle{}s pos.\+y is set to the platform top(). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntityManager_a6016ec18868bbd60f1de8f4ecc7904d3}\label{classEntityManager_a6016ec18868bbd60f1de8f4ecc7904d3}} 
+\index{EntityManager@{EntityManager}!getKilled@{getKilled}}
+\index{getKilled@{getKilled}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{getKilled()}{getKilled()}}
+{\footnotesize\ttfamily int Entity\+Manager\+::get\+Killed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the killed\+\_\+ attribute. (How many goombas have been killed) 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntityManager_acf781a732afe8fdcbeaeb15e0316f8cb}\label{classEntityManager_acf781a732afe8fdcbeaeb15e0316f8cb}} 
+\index{EntityManager@{EntityManager}!killIfInThisCollider@{killIfInThisCollider}}
+\index{killIfInThisCollider@{killIfInThisCollider}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{killIfInThisCollider()}{killIfInThisCollider()}}
+{\footnotesize\ttfamily void Entity\+Manager\+::kill\+If\+In\+This\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$}]{box\+Collider }\end{DoxyParamCaption})}
+
+
+
+Kills if in the collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box\+Collider} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntityManager_acf781a732afe8fdcbeaeb15e0316f8cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntityManager_acf781a732afe8fdcbeaeb15e0316f8cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEntityManager_a1ab769f62604eaedba6b56a8b2080508}\label{classEntityManager_a1ab769f62604eaedba6b56a8b2080508}} 
+\index{EntityManager@{EntityManager}!paint@{paint}}
+\index{paint@{paint}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Entity\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Calls paint to all goombas in the container goombas\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntityManager_a85842924427acb9dbcd10b52435684a8}\label{classEntityManager_a85842924427acb9dbcd10b52435684a8}} 
+\index{EntityManager@{EntityManager}!respawnEntities@{respawnEntities}}
+\index{respawnEntities@{respawnEntities}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{respawnEntities()}{respawnEntities()}}
+{\footnotesize\ttfamily void Entity\+Manager\+::respawn\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Respawn all goombas using the goombas\+Map\+\_\+, makes current goombas disapear. 
+
+\mbox{\Hypertarget{classEntityManager_aa5b2c4a3ee350b65f67c678961e286a4}\label{classEntityManager_aa5b2c4a3ee350b65f67c678961e286a4}} 
+\index{EntityManager@{EntityManager}!spawnEntity@{spawnEntity}}
+\index{spawnEntity@{spawnEntity}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{spawnEntity()}{spawnEntity()}}
+{\footnotesize\ttfamily void Entity\+Manager\+::spawn\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{entity_8hh_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Spawns an entity of type at a pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntityManager_aa5b2c4a3ee350b65f67c678961e286a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEntityManager_a3dac9289566317ccb865d12b6265d799}\label{classEntityManager_a3dac9289566317ccb865d12b6265d799}} 
+\index{EntityManager@{EntityManager}!update@{update}}
+\index{update@{update}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Entity\+Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classHUD}{HUD}} $\ast$}]{mushroom\+\_\+hud }\end{DoxyParamCaption})}
+
+
+
+Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider, it dies and makes the mario jump. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntityManager_a3dac9289566317ccb865d12b6265d799_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEntityManager_aa3e72ca4382d60d8d0499fa9a05f0454}\label{classEntityManager_aa3e72ca4382d60d8d0499fa9a05f0454}} 
+\index{EntityManager@{EntityManager}!entities\_@{entities\_}}
+\index{entities\_@{entities\_}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{entities\_}{entities\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEntity}{Entity}}$>$ Entity\+Manager\+::entities\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntityManager_ab3d1c419422d654354706c55e93a4b99}\label{classEntityManager_ab3d1c419422d654354706c55e93a4b99}} 
+\index{EntityManager@{EntityManager}!entityMap\_@{entityMap\_}}
+\index{entityMap\_@{entityMap\_}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{entityMap\_}{entityMap\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entityManager_8hh_a7c8772a8daf420748ac409390da8ed6b}{Entity\+Map}} Entity\+Manager\+::entity\+Map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEntityManager_a45dea87a819602a24910221d1de15eba}\label{classEntityManager_a45dea87a819602a24910221d1de15eba}} 
+\index{EntityManager@{EntityManager}!killed\_@{killed\_}}
+\index{killed\_@{killed\_}!EntityManager@{EntityManager}}
+\doxysubsubsection{\texorpdfstring{killed\_}{killed\_}}
+{\footnotesize\ttfamily int Entity\+Manager\+::killed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{entityManager_8hh}{entity\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{entityManager_8cc}{entity\+Manager.\+cc}}\end{DoxyCompactItemize}

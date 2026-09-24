@@ -1,0 +1,7 @@
+<map id="Anim::Animator::addAnimation" name="Anim::Animator::addAnimation">
+<area shape="rect" id="node1" title="Adds an animation to the anims_ map, the the name name." alt="" coords="245,81,468,108"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#aa35fd80d740be8b7bcdc61638eb55e82" title="Constructs an Animator with the first and only animation anim, being named as &quot;idle&quot; by default." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node3" href="$classCollectable.html#a133c90052f5f73ab129261c156378ca3" title="Construct a new Collectable object at a position pos. With a type ct." alt="" coords="13,56,189,83"/>
+<area shape="rect" id="node4" href="$classMario.html#a186e5939898ff3991dd6fec02df14272" title=" " alt="" coords="49,107,153,133"/>
+<area shape="rect" id="node5" href="$classWiggler.html#a2b4580bbad11c071a353bb58f18fc8a8" title=" " alt="" coords="28,157,175,184"/>
+</map>

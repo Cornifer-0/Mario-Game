@@ -1,0 +1,275 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$game.\+hh$>$}
+
+
+
+Collaboration diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_a5bc07cf8947858f32637943836cc6f8e}{Game}} (int width, int height)
+\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\item 
+void \mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+bool \mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\+\_\+finished}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGame_a0c6fbced92dbe00f94f96d899f02fdb8}{process\+\_\+keys}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_aeac837e84d3f63a3dac7b3942705203e}{update\+\_\+objects}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_ab146f2f8cec61b092586762267cf1e73}{update\+\_\+camera}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMario}{Mario}} $\ast$ \mbox{\hyperlink{classGame_a45cff34d4c36703421b20ce788c46020}{mario\+\_\+}}
+\item 
+\mbox{\hyperlink{classMario}{Mario}} $\ast$ \mbox{\hyperlink{classGame_adacafd1414168aa1aa928e1b7b93cca5}{luigi\+\_\+}}
+\item 
+\mbox{\hyperlink{classManager}{Manager}} $\ast$ \mbox{\hyperlink{classGame_a8698ea2e2cbce27f04cd5e61898e68db}{manager\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classGame_ae68025f0c47e30423db4288e0038e5e8}{finished\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classGame_a54f332d434fcbfab7151bc4d7e71e737}{end\+\_\+sequence\+\_\+}} = false
+\item 
+int \mbox{\hyperlink{classGame_a5457d3aef48a4445d87c178eab290024}{end\+\_\+sequence\+\_\+time\+\_\+}} = 400
+\item 
+bool \mbox{\hyperlink{classGame_adf52a75a74f155ece5f314833bf8666c}{two\+Players}} = false
+\item 
+bool \mbox{\hyperlink{classGame_a5829d8216dc521eeddcb050bf8895e83}{debug\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classGame_a0199e692575fbb7366551b469b066a6c}{paused\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \mbox{\hyperlink{classGame_a636fa6f9369014f3aa1365b8cd3611b4}{sky\+\_\+blue}} = 0x5c94fc
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_a5bc07cf8947858f32637943836cc6f8e}\label{classGame_a5bc07cf8947858f32637943836cc6f8e}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a48d38b110cb6558e69b1920bb31406db}\label{classGame_a48d38b110cb6558e69b1920bb31406db}} 
+\index{Game@{Game}!is\_finished@{is\_finished}}
+\index{is\_finished@{is\_finished}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{is\_finished()}{is\_finished()}}
+{\footnotesize\ttfamily bool Game\+::is\+\_\+finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classGame_a48d38b110cb6558e69b1920bb31406db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame_af3e3428a12b9944fefb663f2fe560529}\label{classGame_af3e3428a12b9944fefb663f2fe560529}} 
+\index{Game@{Game}!paint@{paint}}
+\index{paint@{paint}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Game\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_af3e3428a12b9944fefb663f2fe560529_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classGame_af3e3428a12b9944fefb663f2fe560529_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame_a0c6fbced92dbe00f94f96d899f02fdb8}\label{classGame_a0c6fbced92dbe00f94f96d899f02fdb8}} 
+\index{Game@{Game}!process\_keys@{process\_keys}}
+\index{process\_keys@{process\_keys}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{process\_keys()}{process\_keys()}}
+{\footnotesize\ttfamily void Game\+::process\+\_\+keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a0c6fbced92dbe00f94f96d899f02fdb8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a0c6fbced92dbe00f94f96d899f02fdb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame_a3661c777f12e357cdc0b3727b2f73412}\label{classGame_a3661c777f12e357cdc0b3727b2f73412}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a3661c777f12e357cdc0b3727b2f73412_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classGame_a3661c777f12e357cdc0b3727b2f73412_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame_ab146f2f8cec61b092586762267cf1e73}\label{classGame_ab146f2f8cec61b092586762267cf1e73}} 
+\index{Game@{Game}!update\_camera@{update\_camera}}
+\index{update\_camera@{update\_camera}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_camera()}{update\_camera()}}
+{\footnotesize\ttfamily void Game\+::update\+\_\+camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_ab146f2f8cec61b092586762267cf1e73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_ab146f2f8cec61b092586762267cf1e73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame_aeac837e84d3f63a3dac7b3942705203e}\label{classGame_aeac837e84d3f63a3dac7b3942705203e}} 
+\index{Game@{Game}!update\_objects@{update\_objects}}
+\index{update\_objects@{update\_objects}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_objects()}{update\_objects()}}
+{\footnotesize\ttfamily void Game\+::update\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_aeac837e84d3f63a3dac7b3942705203e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_aeac837e84d3f63a3dac7b3942705203e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGame_a5829d8216dc521eeddcb050bf8895e83}\label{classGame_a5829d8216dc521eeddcb050bf8895e83}} 
+\index{Game@{Game}!debug\_@{debug\_}}
+\index{debug\_@{debug\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{debug\_}{debug\_}}
+{\footnotesize\ttfamily bool Game\+::debug\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a54f332d434fcbfab7151bc4d7e71e737}\label{classGame_a54f332d434fcbfab7151bc4d7e71e737}} 
+\index{Game@{Game}!end\_sequence\_@{end\_sequence\_}}
+\index{end\_sequence\_@{end\_sequence\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{end\_sequence\_}{end\_sequence\_}}
+{\footnotesize\ttfamily bool Game\+::end\+\_\+sequence\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a5457d3aef48a4445d87c178eab290024}\label{classGame_a5457d3aef48a4445d87c178eab290024}} 
+\index{Game@{Game}!end\_sequence\_time\_@{end\_sequence\_time\_}}
+\index{end\_sequence\_time\_@{end\_sequence\_time\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{end\_sequence\_time\_}{end\_sequence\_time\_}}
+{\footnotesize\ttfamily int Game\+::end\+\_\+sequence\+\_\+time\+\_\+ = 400\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_ae68025f0c47e30423db4288e0038e5e8}\label{classGame_ae68025f0c47e30423db4288e0038e5e8}} 
+\index{Game@{Game}!finished\_@{finished\_}}
+\index{finished\_@{finished\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{finished\_}{finished\_}}
+{\footnotesize\ttfamily bool Game\+::finished\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_adacafd1414168aa1aa928e1b7b93cca5}\label{classGame_adacafd1414168aa1aa928e1b7b93cca5}} 
+\index{Game@{Game}!luigi\_@{luigi\_}}
+\index{luigi\_@{luigi\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{luigi\_}{luigi\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMario}{Mario}} $\ast$ Game\+::luigi\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a8698ea2e2cbce27f04cd5e61898e68db}\label{classGame_a8698ea2e2cbce27f04cd5e61898e68db}} 
+\index{Game@{Game}!manager\_@{manager\_}}
+\index{manager\_@{manager\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{manager\_}{manager\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classManager}{Manager}}$\ast$ Game\+::manager\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a45cff34d4c36703421b20ce788c46020}\label{classGame_a45cff34d4c36703421b20ce788c46020}} 
+\index{Game@{Game}!mario\_@{mario\_}}
+\index{mario\_@{mario\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mario\_}{mario\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMario}{Mario}}$\ast$ Game\+::mario\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a0199e692575fbb7366551b469b066a6c}\label{classGame_a0199e692575fbb7366551b469b066a6c}} 
+\index{Game@{Game}!paused\_@{paused\_}}
+\index{paused\_@{paused\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paused\_}{paused\_}}
+{\footnotesize\ttfamily bool Game\+::paused\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a636fa6f9369014f3aa1365b8cd3611b4}\label{classGame_a636fa6f9369014f3aa1365b8cd3611b4}} 
+\index{Game@{Game}!sky\_blue@{sky\_blue}}
+\index{sky\_blue@{sky\_blue}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{sky\_blue}{sky\_blue}}
+{\footnotesize\ttfamily constexpr int Game\+::sky\+\_\+blue = 0x5c94fc\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_adf52a75a74f155ece5f314833bf8666c}\label{classGame_adf52a75a74f155ece5f314833bf8666c}} 
+\index{Game@{Game}!twoPlayers@{twoPlayers}}
+\index{twoPlayers@{twoPlayers}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{twoPlayers}{twoPlayers}}
+{\footnotesize\ttfamily bool Game\+::two\+Players = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/\mbox{\hyperlink{game_8hh}{game.\+hh}}\item 
+src/core/\mbox{\hyperlink{game_8cc}{game.\+cc}}\end{DoxyCompactItemize}

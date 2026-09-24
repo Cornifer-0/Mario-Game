@@ -1,0 +1,6 @@
+<map id="Mario::respawn" name="Mario::respawn">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,128,91"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="176,5,423,32"/>
+<area shape="rect" id="node3" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="211,57,387,98"/>
+<area shape="rect" id="node4" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="211,122,387,163"/>
+</map>

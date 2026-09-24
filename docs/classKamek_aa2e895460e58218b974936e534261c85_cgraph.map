@@ -1,0 +1,4 @@
+<map id="Kamek::update_MOVING" name="Kamek::update_MOVING">
+<area shape="rect" id="node1" title="Updates in the MOVING state, moves towards move_target_." alt="" coords="5,13,188,39"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964" title="Devuelve el contador de fotogramas pintados hasta el momento." alt="" coords="236,5,393,47"/>
+</map>

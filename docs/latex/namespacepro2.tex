@@ -1,0 +1,768 @@
+\hypertarget{namespacepro2}{}\doxysection{pro2 Namespace Reference}
+\label{namespacepro2}\index{pro2@{pro2}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpro2_1_1Pt}{Pt}}
+\item 
+struct \mbox{\hyperlink{structpro2_1_1Rect}{Rect}}
+\item 
+struct \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{Controls\+Set\+Up}}
+\item 
+class \mbox{\hyperlink{classpro2_1_1Window}{Window}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}{Mod\+Key}} \{ \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7ed11fb24a4f44577d0e51c33a40674}{Ctrl}} = 1
+, \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdae3f26039b51177aa99bd58f676c90b95}{Shift}} = 2
+, \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b}{Alt}} = 4
+, \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fda24b0a64ee223639589b72a25bc4a156c}{Meta}} = 8
+ \}
+\item 
+enum \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700}{Keys}} \{ \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9aa24fc884a6387a418d820ba980768}{Space}} = 32
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8819bc5c67185dd437984b99b4f6e590}{Backspace}} = 8
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ad54590c4696a7331eabc0f4c6fde3348}{Delete}} = 127
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a5f7423a798bb1981231ce4c42ea3f211}{End}} = 5
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeea82caa64877a8fc3a657e802fa3686}{Escape}} = 27
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7c656bf97a6e3f1e883060fecc2b7e36}{Home}} = 2
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8cae20caeec2b889cb528929abdec8dc}{Insert}} = 26
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ab36e80941c59958fa8af38e9fe565626}{Page\+Down}} = 4
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a472261161b652b591234518dfa6c97f5}{Page\+Up}} = 3
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a9c0991b9a25e9528ff02075ff9315f50}{Return}} = 10
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a90361512ecabd0d9df6eb1cef17600ae}{Tab}} = 9
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700afc87f5d76503f9d022ba5659cb57d14e}{Up}} = 17
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af95dcc0475c6085eb235ca826b0b64aa}{Down}} = 18
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d}{Right}} = 19
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeb7db451ca12b561e89a93b2436390cd}{Left}} = 20
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aef1a209850816aededaa5608b05d6571}{A}} = 65
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af1b9f355bf60f11547496c965b638b99}{B}} = 66
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a1c845b5d13dca5fba662d8d8a18bd7cb}{C}} = 67
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac746af27b3301a008dd611a5a545439b}{D}} = 68
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9560d678f8615b76c61d7011c0143e8}{E}} = 69
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adc7c15671f0119ac0dd5fd3c3aad49d3}{F}} = 70
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adaaaff8df223592198c396f4766d0cad}{G}} = 71
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a038168cf343f62a1f439d7161e19fdc2}{H}} = 72
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a580e4580b9f56c9e772439b679fd59ec}{I}} = 73
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a50164cc49e0d9fb1110f13dac2dda71d}{J}} = 74
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3fb940b1da6afc215c2f0affad9993eb}{K}} = 75
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700acf0eac664d5793ca9f82eec282d15b36}{L}} = 76
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1ad5936de00d49d2273f77d5727e9ee}{M}} = 77
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a84d96e7e87e9513b19f26533aaf7456d}{N}} = 78
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7e6a4ad5f23d16c06f97730d27a25a0c}{O}} = 79
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a64078be746e75abc2e40ef14318d1704}{P}} = 80
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8763f6566da4a3fe0f33b1fa788fcccc}{Q}} = 81
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a0698eb0537c841980037538577f2b03e}{R}} = 82
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3af4b86fd159f2f583fb8ce7a0d2549c}{S}} = 83
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ae1e1b1cdafcc827e9673e44f8a2fae46}{T}} = 84
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1b0ab6fe54c06f089e600000683aadf}{U}} = 85
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a46caeabc9dc7993eaba42450e48a90a2}{V}} = 86
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a4e0ff598ffbdf421cb42f16da11c5fee}{W}} = 87
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8756ca3882ff63652048780a5bb7d60d}{X}} = 88
+, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a528e3b9060ce7565361e36723c66d943}{Y}} = 89
+, \newline
+\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8f370a7d5d0dc06fefdbf4947acf3470}{Z}} = 90
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacepro2_a78c0f647b95541bca2ac64c50c32fe07}{operator$<$}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&b)
+\begin{DoxyCompactList}\small\item\em Compara dos punts del pla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacepro2_a31eacb85a9f6eeccfab874e35ddb5c66}{operator==}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&b)
+\item 
+bool \mbox{\hyperlink{namespacepro2_a06cd190e074911d24fbdebb130acaca5}{operator!=}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&b)
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{namespacepro2_a32c405af48efaff5d5db79862e331fa5}{operator+}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&b)
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{namespacepro2_aad2f730bb2240af1512c747e3772f8f7}{operator-\/}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&b)
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{namespacepro2_a971378435901d819673ad453dd7abde7}{operator$\ast$}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const int \&k)
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{namespacepro2_ad8d1198c09590d06b23911c6c5c71050}{operator/}} (const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&a, const int \&k)
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \mbox{\hyperlink{namespacepro2_ac128dd1ed6e54f088464c6815659f187}{operator+}} (const \mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \&a, const int \&k)
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \mbox{\hyperlink{namespacepro2_abe01f5b04f6d54d2e902ababd91f7d36}{operator-\/}} (const \mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \&a, const int \&k)
+\item 
+void \mbox{\hyperlink{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da}{paint\+\_\+hline}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int xini, int xfin, int y, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color=\mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}})
+\begin{DoxyCompactList}\small\item\em Dibuja una línea horizontal en la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_abb90df6acb9671a913c1f4d91591caae}{paint\+\_\+vline}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int x, int yini, int yfin, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color=\mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}})
+\begin{DoxyCompactList}\small\item\em Dibuja una línea vertical en la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a20411f55dbe1eca54a4f98e4ee623d77}{paint\+\_\+sprite}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&sprite, bool mirror, float scale=1.\+0f)
+\begin{DoxyCompactList}\small\item\em Dibuixa una imatge/textura a la finestra a partir d\textquotesingle{}una posició \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a7da69392e8cbe4f0fc8c7c027e1e7e1f}{paint\+\_\+background\+\_\+sprite}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&sprite, double parallax\+Multiplier, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&sky=\{\{0\}\})
+\begin{DoxyCompactList}\small\item\em Paints the background sprite to the window, with a parallax effect given by the parralax\+Muliplier. From a certain height, it starts drawing the sky (all black by default). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a53b6d9bb59e9b6d79ddc591a87bf9379}{paint\+\_\+sprite\+\_\+center}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&sprite, bool mirror, float scae=1.\+0f)
+\begin{DoxyCompactList}\small\item\em Dibuixa una imatge/textura a la finextra a partir d\textquotesingle{}una posicio (aquesta es el centre) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_ab5a215cae23098694e39e35b44108a0f}{paint\+\_\+number}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, int number)
+\begin{DoxyCompactList}\small\item\em Dibuixa una xifra a la pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_addfac8af42421478c938d5bbd64c1343}{paint\+\_\+end\+\_\+circle}} (\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&window, int radius, \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} center)
+\begin{DoxyCompactList}\small\item\em Paints every pixel outside the circle (formed by center and radius parameters) black. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a4243dbdb2761befd42f6592e5fb9f589}{paint\+\_\+sprite\+\_\+center}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const vector$<$ vector$<$ int $>$$>$ \&sprite, bool mirror, float scae)
+\item 
+void \mbox{\hyperlink{namespacepro2_aae12ca43c834c2f0aa225bb1509be63c}{paint\+\_\+sprite}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const vector$<$ vector$<$ int $>$$>$ \&sprite, bool mirror, float scale)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{Controls\+Set\+Up}} \mbox{\hyperlink{namespacepro2_a614165ccda5df0c456e1f81e5f3db06b}{default\+Player\+One\+Controls}}
+\item 
+const \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{Controls\+Set\+Up}} \mbox{\hyperlink{namespacepro2_aa897b737b3435ce7c902b7bd4090dbca}{default\+Player\+Two\+Controls}}
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_ad75418ec194604dc97f1efe077788d53}{black}} = 0x00000000
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_af106aa7882e524344cfa403034cd5720}{red}} = 0x00ff0000
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_a316de377ea278a05420f85b64f4349bb}{green}} = 0x0000ff00
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_aabd9113151a0b2203ccff1e694aaadae}{blue}} = 0x000000ff
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_a2724ea0a5071964af91346a0f94fd60c}{yellow}} = 0x00ffff00
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_a6ca5ebed0b2082a3548fc5b827bd1fd5}{magenta}} = 0x00ff00ff
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_ae79338de6e0d8f480ec7d4deebe04e5d}{cyan}} = 0x0000ffff
+\item 
+const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{white}} = 0x00ffffff
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}\label{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}} 
+\index{pro2@{pro2}!Color@{Color}}
+\index{Color@{Color}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700}} 
+\index{pro2@{pro2}!Keys@{Keys}}
+\index{Keys@{Keys}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{Keys}{Keys}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700}{pro2\+::\+Keys}}}
+
+Enumerado con los códigos de las teclas que se pueden pasar al método {\ttfamily \mbox{\hyperlink{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}{Window\+::is\+\_\+key\+\_\+down}}} para consultar el estado de una tecla. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Space@{Space}!pro2@{pro2}}\index{pro2@{pro2}!Space@{Space}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9aa24fc884a6387a418d820ba980768}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9aa24fc884a6387a418d820ba980768}} 
+Space&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Backspace@{Backspace}!pro2@{pro2}}\index{pro2@{pro2}!Backspace@{Backspace}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8819bc5c67185dd437984b99b4f6e590}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8819bc5c67185dd437984b99b4f6e590}} 
+Backspace&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Delete@{Delete}!pro2@{pro2}}\index{pro2@{pro2}!Delete@{Delete}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ad54590c4696a7331eabc0f4c6fde3348}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ad54590c4696a7331eabc0f4c6fde3348}} 
+Delete&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{End@{End}!pro2@{pro2}}\index{pro2@{pro2}!End@{End}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a5f7423a798bb1981231ce4c42ea3f211}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a5f7423a798bb1981231ce4c42ea3f211}} 
+End&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Escape@{Escape}!pro2@{pro2}}\index{pro2@{pro2}!Escape@{Escape}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeea82caa64877a8fc3a657e802fa3686}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeea82caa64877a8fc3a657e802fa3686}} 
+Escape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Home@{Home}!pro2@{pro2}}\index{pro2@{pro2}!Home@{Home}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7c656bf97a6e3f1e883060fecc2b7e36}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7c656bf97a6e3f1e883060fecc2b7e36}} 
+Home&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Insert@{Insert}!pro2@{pro2}}\index{pro2@{pro2}!Insert@{Insert}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8cae20caeec2b889cb528929abdec8dc}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8cae20caeec2b889cb528929abdec8dc}} 
+Insert&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PageDown@{PageDown}!pro2@{pro2}}\index{pro2@{pro2}!PageDown@{PageDown}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ab36e80941c59958fa8af38e9fe565626}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ab36e80941c59958fa8af38e9fe565626}} 
+Page\+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PageUp@{PageUp}!pro2@{pro2}}\index{pro2@{pro2}!PageUp@{PageUp}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a472261161b652b591234518dfa6c97f5}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a472261161b652b591234518dfa6c97f5}} 
+Page\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Return@{Return}!pro2@{pro2}}\index{pro2@{pro2}!Return@{Return}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a9c0991b9a25e9528ff02075ff9315f50}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a9c0991b9a25e9528ff02075ff9315f50}} 
+Return&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tab@{Tab}!pro2@{pro2}}\index{pro2@{pro2}!Tab@{Tab}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a90361512ecabd0d9df6eb1cef17600ae}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a90361512ecabd0d9df6eb1cef17600ae}} 
+Tab&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!pro2@{pro2}}\index{pro2@{pro2}!Up@{Up}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700afc87f5d76503f9d022ba5659cb57d14e}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700afc87f5d76503f9d022ba5659cb57d14e}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!pro2@{pro2}}\index{pro2@{pro2}!Down@{Down}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af95dcc0475c6085eb235ca826b0b64aa}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af95dcc0475c6085eb235ca826b0b64aa}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!pro2@{pro2}}\index{pro2@{pro2}!Right@{Right}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!pro2@{pro2}}\index{pro2@{pro2}!Left@{Left}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeb7db451ca12b561e89a93b2436390cd}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeb7db451ca12b561e89a93b2436390cd}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!pro2@{pro2}}\index{pro2@{pro2}!A@{A}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aef1a209850816aededaa5608b05d6571}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aef1a209850816aededaa5608b05d6571}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!pro2@{pro2}}\index{pro2@{pro2}!B@{B}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af1b9f355bf60f11547496c965b638b99}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af1b9f355bf60f11547496c965b638b99}} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C@{C}!pro2@{pro2}}\index{pro2@{pro2}!C@{C}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a1c845b5d13dca5fba662d8d8a18bd7cb}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a1c845b5d13dca5fba662d8d8a18bd7cb}} 
+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D@{D}!pro2@{pro2}}\index{pro2@{pro2}!D@{D}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac746af27b3301a008dd611a5a545439b}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac746af27b3301a008dd611a5a545439b}} 
+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E@{E}!pro2@{pro2}}\index{pro2@{pro2}!E@{E}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9560d678f8615b76c61d7011c0143e8}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9560d678f8615b76c61d7011c0143e8}} 
+E&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F@{F}!pro2@{pro2}}\index{pro2@{pro2}!F@{F}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adc7c15671f0119ac0dd5fd3c3aad49d3}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adc7c15671f0119ac0dd5fd3c3aad49d3}} 
+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G@{G}!pro2@{pro2}}\index{pro2@{pro2}!G@{G}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adaaaff8df223592198c396f4766d0cad}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700adaaaff8df223592198c396f4766d0cad}} 
+G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H@{H}!pro2@{pro2}}\index{pro2@{pro2}!H@{H}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a038168cf343f62a1f439d7161e19fdc2}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a038168cf343f62a1f439d7161e19fdc2}} 
+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I@{I}!pro2@{pro2}}\index{pro2@{pro2}!I@{I}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a580e4580b9f56c9e772439b679fd59ec}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a580e4580b9f56c9e772439b679fd59ec}} 
+I&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J@{J}!pro2@{pro2}}\index{pro2@{pro2}!J@{J}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a50164cc49e0d9fb1110f13dac2dda71d}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a50164cc49e0d9fb1110f13dac2dda71d}} 
+J&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K@{K}!pro2@{pro2}}\index{pro2@{pro2}!K@{K}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3fb940b1da6afc215c2f0affad9993eb}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3fb940b1da6afc215c2f0affad9993eb}} 
+K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L@{L}!pro2@{pro2}}\index{pro2@{pro2}!L@{L}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700acf0eac664d5793ca9f82eec282d15b36}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700acf0eac664d5793ca9f82eec282d15b36}} 
+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M@{M}!pro2@{pro2}}\index{pro2@{pro2}!M@{M}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1ad5936de00d49d2273f77d5727e9ee}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1ad5936de00d49d2273f77d5727e9ee}} 
+M&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N@{N}!pro2@{pro2}}\index{pro2@{pro2}!N@{N}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a84d96e7e87e9513b19f26533aaf7456d}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a84d96e7e87e9513b19f26533aaf7456d}} 
+N&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!pro2@{pro2}}\index{pro2@{pro2}!O@{O}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7e6a4ad5f23d16c06f97730d27a25a0c}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a7e6a4ad5f23d16c06f97730d27a25a0c}} 
+O&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P@{P}!pro2@{pro2}}\index{pro2@{pro2}!P@{P}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a64078be746e75abc2e40ef14318d1704}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a64078be746e75abc2e40ef14318d1704}} 
+P&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q@{Q}!pro2@{pro2}}\index{pro2@{pro2}!Q@{Q}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8763f6566da4a3fe0f33b1fa788fcccc}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8763f6566da4a3fe0f33b1fa788fcccc}} 
+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R@{R}!pro2@{pro2}}\index{pro2@{pro2}!R@{R}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a0698eb0537c841980037538577f2b03e}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a0698eb0537c841980037538577f2b03e}} 
+R&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!pro2@{pro2}}\index{pro2@{pro2}!S@{S}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3af4b86fd159f2f583fb8ce7a0d2549c}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3af4b86fd159f2f583fb8ce7a0d2549c}} 
+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!pro2@{pro2}}\index{pro2@{pro2}!T@{T}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ae1e1b1cdafcc827e9673e44f8a2fae46}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ae1e1b1cdafcc827e9673e44f8a2fae46}} 
+T&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U@{U}!pro2@{pro2}}\index{pro2@{pro2}!U@{U}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1b0ab6fe54c06f089e600000683aadf}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aa1b0ab6fe54c06f089e600000683aadf}} 
+U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V@{V}!pro2@{pro2}}\index{pro2@{pro2}!V@{V}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a46caeabc9dc7993eaba42450e48a90a2}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a46caeabc9dc7993eaba42450e48a90a2}} 
+V&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W@{W}!pro2@{pro2}}\index{pro2@{pro2}!W@{W}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a4e0ff598ffbdf421cb42f16da11c5fee}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a4e0ff598ffbdf421cb42f16da11c5fee}} 
+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!pro2@{pro2}}\index{pro2@{pro2}!X@{X}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8756ca3882ff63652048780a5bb7d60d}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8756ca3882ff63652048780a5bb7d60d}} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!pro2@{pro2}}\index{pro2@{pro2}!Y@{Y}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a528e3b9060ce7565361e36723c66d943}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a528e3b9060ce7565361e36723c66d943}} 
+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Z@{Z}!pro2@{pro2}}\index{pro2@{pro2}!Z@{Z}}}\mbox{\Hypertarget{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8f370a7d5d0dc06fefdbf4947acf3470}\label{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8f370a7d5d0dc06fefdbf4947acf3470}} 
+Z&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}\label{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}} 
+\index{pro2@{pro2}!ModKey@{ModKey}}
+\index{ModKey@{ModKey}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{ModKey}{ModKey}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}{pro2\+::\+Mod\+Key}}}
+
+Enumerado para las 4 teclas de control\+: Ctrl, Shift, Alt, y Meta. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ctrl@{Ctrl}!pro2@{pro2}}\index{pro2@{pro2}!Ctrl@{Ctrl}}}\mbox{\Hypertarget{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7ed11fb24a4f44577d0e51c33a40674}\label{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7ed11fb24a4f44577d0e51c33a40674}} 
+Ctrl&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Shift@{Shift}!pro2@{pro2}}\index{pro2@{pro2}!Shift@{Shift}}}\mbox{\Hypertarget{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdae3f26039b51177aa99bd58f676c90b95}\label{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdae3f26039b51177aa99bd58f676c90b95}} 
+Shift&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Alt@{Alt}!pro2@{pro2}}\index{pro2@{pro2}!Alt@{Alt}}}\mbox{\Hypertarget{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b}\label{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b}} 
+Alt&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Meta@{Meta}!pro2@{pro2}}\index{pro2@{pro2}!Meta@{Meta}}}\mbox{\Hypertarget{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fda24b0a64ee223639589b72a25bc4a156c}\label{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fda24b0a64ee223639589b72a25bc4a156c}} 
+Meta&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepro2_a06cd190e074911d24fbdebb130acaca5}\label{namespacepro2_a06cd190e074911d24fbdebb130acaca5}} 
+\index{pro2@{pro2}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool pro2\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_a971378435901d819673ad453dd7abde7}\label{namespacepro2_a971378435901d819673ad453dd7abde7}} 
+\index{pro2@{pro2}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const int \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_a32c405af48efaff5d5db79862e331fa5}\label{namespacepro2_a32c405af48efaff5d5db79862e331fa5}} 
+\index{pro2@{pro2}!operator+@{operator+}}
+\index{operator+@{operator+}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_ac128dd1ed6e54f088464c6815659f187}\label{namespacepro2_ac128dd1ed6e54f088464c6815659f187}} 
+\index{pro2@{pro2}!operator+@{operator+}}
+\index{operator+@{operator+}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{Rect}} pro2\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \&}]{a,  }\item[{const int \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_aad2f730bb2240af1512c747e3772f8f7}\label{namespacepro2_aad2f730bb2240af1512c747e3772f8f7}} 
+\index{pro2@{pro2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_abe01f5b04f6d54d2e902ababd91f7d36}\label{namespacepro2_abe01f5b04f6d54d2e902ababd91f7d36}} 
+\index{pro2@{pro2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{Rect}} pro2\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \&}]{a,  }\item[{const int \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_ad8d1198c09590d06b23911c6c5c71050}\label{namespacepro2_ad8d1198c09590d06b23911c6c5c71050}} 
+\index{pro2@{pro2}!operator/@{operator/}}
+\index{operator/@{operator/}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const int \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_a78c0f647b95541bca2ac64c50c32fe07}\label{namespacepro2_a78c0f647b95541bca2ac64c50c32fe07}} 
+\index{pro2@{pro2}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool pro2\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compara dos punts del pla. 
+
+La comparació és necessària per poder fer servir {\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}}} com la clau d\textquotesingle{}un {\ttfamily map}. La comparació utilitza primer la coordenada {\ttfamily x} (com si fos més \char`\"{}important\char`\"{}), i, quan les {\ttfamily x}s són iguals, la coordenada {\ttfamily y}. \mbox{\Hypertarget{namespacepro2_a31eacb85a9f6eeccfab874e35ddb5c66}\label{namespacepro2_a31eacb85a9f6eeccfab874e35ddb5c66}} 
+\index{pro2@{pro2}!operator==@{operator==}}
+\index{operator==@{operator==}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool pro2\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{a,  }\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacepro2_a7da69392e8cbe4f0fc8c7c027e1e7e1f}\label{namespacepro2_a7da69392e8cbe4f0fc8c7c027e1e7e1f}} 
+\index{pro2@{pro2}!paint\_background\_sprite@{paint\_background\_sprite}}
+\index{paint\_background\_sprite@{paint\_background\_sprite}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_background\_sprite()}{paint\_background\_sprite()}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+background\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{sprite,  }\item[{double}]{parallax\+Multiplier,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{sky = {\ttfamily \{\{0\}\}} }\end{DoxyParamCaption})}
+
+
+
+Paints the background sprite to the window, with a parallax effect given by the parralax\+Muliplier. From a certain height, it starts drawing the sky (all black by default). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em sprite} & \\
+\hline
+{\em parallax\+Multiplier} & \\
+\hline
+{\em sky} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_a7da69392e8cbe4f0fc8c7c027e1e7e1f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_a7da69392e8cbe4f0fc8c7c027e1e7e1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_addfac8af42421478c938d5bbd64c1343}\label{namespacepro2_addfac8af42421478c938d5bbd64c1343}} 
+\index{pro2@{pro2}!paint\_end\_circle@{paint\_end\_circle}}
+\index{paint\_end\_circle@{paint\_end\_circle}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_end\_circle()}{paint\_end\_circle()}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+end\+\_\+circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&}]{window,  }\item[{int}]{radius,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{center }\end{DoxyParamCaption})}
+
+
+
+Paints every pixel outside the circle (formed by center and radius parameters) black. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em radius} & \\
+\hline
+{\em center} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_addfac8af42421478c938d5bbd64c1343_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_addfac8af42421478c938d5bbd64c1343_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da}\label{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da}} 
+\index{pro2@{pro2}!paint\_hline@{paint\_hline}}
+\index{paint\_hline@{paint\_hline}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_hline()}{paint\_hline()}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+hline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{int}]{xini,  }\item[{int}]{xfin,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}}} }\end{DoxyParamCaption})}
+
+
+
+Dibuja una línea horizontal en la ventana. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Ventana en la que se dibuja la línea. \\
+\hline
+{\em xini} & Coordenada x inicial. \\
+\hline
+{\em xfin} & Coordenada x final. \\
+\hline
+{\em y} & Coordenada y. \\
+\hline
+{\em color} & Color de la línea (opcional, si no se pone se asume {\ttfamily white}). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_ab5a215cae23098694e39e35b44108a0f}\label{namespacepro2_ab5a215cae23098694e39e35b44108a0f}} 
+\index{pro2@{pro2}!paint\_number@{paint\_number}}
+\index{paint\_number@{paint\_number}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_number()}{paint\_number()}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{orig,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Dibuixa una xifra a la pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Finestra a la que pintar \\
+\hline
+{\em orig} & Origen (cantonada de dalt a l\textquotesingle{}esquerra) del rectangle que forma el {\itshape sprite} \\
+\hline
+{\em number} & Xifra que pintar entre 0 i 9 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_ab5a215cae23098694e39e35b44108a0f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{namespacepro2_ab5a215cae23098694e39e35b44108a0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_a20411f55dbe1eca54a4f98e4ee623d77}\label{namespacepro2_a20411f55dbe1eca54a4f98e4ee623d77}} 
+\index{pro2@{pro2}!paint\_sprite@{paint\_sprite}}
+\index{paint\_sprite@{paint\_sprite}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_sprite()}{paint\_sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{orig,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{sprite,  }\item[{bool}]{mirror,  }\item[{float}]{scale = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+
+
+Dibuixa una imatge/textura a la finestra a partir d\textquotesingle{}una posició 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Finestra a la que pintar \\
+\hline
+{\em orig} & Origen (cantonada de dalt a l\textquotesingle{}esquerra) del rectangle que forma el {\itshape sprite} \\
+\hline
+{\em sprite} & Matriu de colors que representa la imatge ({\itshape sprite}). \\
+\hline
+{\em mirror} & Si cal pintar girar la textura horitzontalment \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{namespacepro2_a20411f55dbe1eca54a4f98e4ee623d77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_aae12ca43c834c2f0aa225bb1509be63c}\label{namespacepro2_aae12ca43c834c2f0aa225bb1509be63c}} 
+\index{pro2@{pro2}!paint\_sprite@{paint\_sprite}}
+\index{paint\_sprite@{paint\_sprite}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_sprite()}{paint\_sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{orig,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{sprite,  }\item[{bool}]{mirror,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_aae12ca43c834c2f0aa225bb1509be63c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_aae12ca43c834c2f0aa225bb1509be63c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_a53b6d9bb59e9b6d79ddc591a87bf9379}\label{namespacepro2_a53b6d9bb59e9b6d79ddc591a87bf9379}} 
+\index{pro2@{pro2}!paint\_sprite\_center@{paint\_sprite\_center}}
+\index{paint\_sprite\_center@{paint\_sprite\_center}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_sprite\_center()}{paint\_sprite\_center()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+sprite\+\_\+center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{orig,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{sprite,  }\item[{bool}]{mirror,  }\item[{float}]{scae = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+
+
+Dibuixa una imatge/textura a la finextra a partir d\textquotesingle{}una posicio (aquesta es el centre) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Finestra a la que pintar \\
+\hline
+{\em orig} & Origen (centre) del rectangle que forma el {\itshape sprite} \\
+\hline
+{\em sprite} & Matriu de colors que representa la imatge ({\itshape sprite}). \\
+\hline
+{\em mirror\+Si} & cal pintar girar la textura horitzontalment \\
+\hline
+{\em scae} & Escala \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_a53b6d9bb59e9b6d79ddc591a87bf9379_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_a4243dbdb2761befd42f6592e5fb9f589}\label{namespacepro2_a4243dbdb2761befd42f6592e5fb9f589}} 
+\index{pro2@{pro2}!paint\_sprite\_center@{paint\_sprite\_center}}
+\index{paint\_sprite\_center@{paint\_sprite\_center}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_sprite\_center()}{paint\_sprite\_center()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+sprite\+\_\+center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{orig,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{sprite,  }\item[{bool}]{mirror,  }\item[{float}]{scae }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_a4243dbdb2761befd42f6592e5fb9f589_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepro2_abb90df6acb9671a913c1f4d91591caae}\label{namespacepro2_abb90df6acb9671a913c1f4d91591caae}} 
+\index{pro2@{pro2}!paint\_vline@{paint\_vline}}
+\index{paint\_vline@{paint\_vline}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{paint\_vline()}{paint\_vline()}}
+{\footnotesize\ttfamily void pro2\+::paint\+\_\+vline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{int}]{x,  }\item[{int}]{yini,  }\item[{int}]{yfin,  }\item[{\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}}} }\end{DoxyParamCaption})}
+
+
+
+Dibuja una línea vertical en la ventana. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Ventana en la que se dibuja la línea. \\
+\hline
+{\em x} & Coordenada x. \\
+\hline
+{\em yini} & Coordenada y inicial. \\
+\hline
+{\em yfin} & Coordenada y final. \\
+\hline
+{\em color} & Color de la línea (opcional, si no se pone se asume {\ttfamily white}). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacepro2_abb90df6acb9671a913c1f4d91591caae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepro2_abb90df6acb9671a913c1f4d91591caae_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepro2_ad75418ec194604dc97f1efe077788d53}\label{namespacepro2_ad75418ec194604dc97f1efe077788d53}} 
+\index{pro2@{pro2}!black@{black}}
+\index{black@{black}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{black}{black}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::black = 0x00000000}
+
+\mbox{\Hypertarget{namespacepro2_aabd9113151a0b2203ccff1e694aaadae}\label{namespacepro2_aabd9113151a0b2203ccff1e694aaadae}} 
+\index{pro2@{pro2}!blue@{blue}}
+\index{blue@{blue}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::blue = 0x000000ff}
+
+\mbox{\Hypertarget{namespacepro2_ae79338de6e0d8f480ec7d4deebe04e5d}\label{namespacepro2_ae79338de6e0d8f480ec7d4deebe04e5d}} 
+\index{pro2@{pro2}!cyan@{cyan}}
+\index{cyan@{cyan}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{cyan}{cyan}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::cyan = 0x0000ffff}
+
+\mbox{\Hypertarget{namespacepro2_a614165ccda5df0c456e1f81e5f3db06b}\label{namespacepro2_a614165ccda5df0c456e1f81e5f3db06b}} 
+\index{pro2@{pro2}!defaultPlayerOneControls@{defaultPlayerOneControls}}
+\index{defaultPlayerOneControls@{defaultPlayerOneControls}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{defaultPlayerOneControls}{defaultPlayerOneControls}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{Controls\+Set\+Up}} pro2\+::default\+Player\+One\+Controls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac9aa24fc884a6387a418d820ba980768}{Keys::Space}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700afc87f5d76503f9d022ba5659cb57d14e}{Keys::Up}},   \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aeb7db451ca12b561e89a93b2436390cd}{Keys::Left}},}
+\DoxyCodeLine{                                                \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d}{Keys::Right}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af95dcc0475c6085eb235ca826b0b64aa}{Keys::Down}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700af1b9f355bf60f11547496c965b638b99}{Keys::B}}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepro2_aa897b737b3435ce7c902b7bd4090dbca}\label{namespacepro2_aa897b737b3435ce7c902b7bd4090dbca}} 
+\index{pro2@{pro2}!defaultPlayerTwoControls@{defaultPlayerTwoControls}}
+\index{defaultPlayerTwoControls@{defaultPlayerTwoControls}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{defaultPlayerTwoControls}{defaultPlayerTwoControls}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{Controls\+Set\+Up}} pro2\+::default\+Player\+Two\+Controls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a4e0ff598ffbdf421cb42f16da11c5fee}{Keys::W}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a46caeabc9dc7993eaba42450e48a90a2}{Keys::V}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700aef1a209850816aededaa5608b05d6571}{Keys::A}},}
+\DoxyCodeLine{                                                \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700ac746af27b3301a008dd611a5a545439b}{Keys::D}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a3af4b86fd159f2f583fb8ce7a0d2549c}{Keys::S}}, \mbox{\hyperlink{namespacepro2_ab62eff5c9fe11f9ab23e7f3a5ab79700a8763f6566da4a3fe0f33b1fa788fcccc}{Keys::Q}}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepro2_a316de377ea278a05420f85b64f4349bb}\label{namespacepro2_a316de377ea278a05420f85b64f4349bb}} 
+\index{pro2@{pro2}!green@{green}}
+\index{green@{green}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{green}{green}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::green = 0x0000ff00}
+
+\mbox{\Hypertarget{namespacepro2_a6ca5ebed0b2082a3548fc5b827bd1fd5}\label{namespacepro2_a6ca5ebed0b2082a3548fc5b827bd1fd5}} 
+\index{pro2@{pro2}!magenta@{magenta}}
+\index{magenta@{magenta}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{magenta}{magenta}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::magenta = 0x00ff00ff}
+
+\mbox{\Hypertarget{namespacepro2_af106aa7882e524344cfa403034cd5720}\label{namespacepro2_af106aa7882e524344cfa403034cd5720}} 
+\index{pro2@{pro2}!red@{red}}
+\index{red@{red}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::red = 0x00ff0000}
+
+\mbox{\Hypertarget{namespacepro2_a776e9498a2ffad905d1116b37ac41345}\label{namespacepro2_a776e9498a2ffad905d1116b37ac41345}} 
+\index{pro2@{pro2}!white@{white}}
+\index{white@{white}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{white}{white}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::white = 0x00ffffff}
+
+\mbox{\Hypertarget{namespacepro2_a2724ea0a5071964af91346a0f94fd60c}\label{namespacepro2_a2724ea0a5071964af91346a0f94fd60c}} 
+\index{pro2@{pro2}!yellow@{yellow}}
+\index{yellow@{yellow}!pro2@{pro2}}
+\doxysubsubsection{\texorpdfstring{yellow}{yellow}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::yellow = 0x00ffff00}
+

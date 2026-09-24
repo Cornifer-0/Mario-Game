@@ -1,0 +1,12 @@
+<map id="Wiggler::mario_update_rec" name="Wiggler::mario_update_rec">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,203,192"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a60832b9f7f761240e000e18415414a11" title="Returns true if and only if the boxCollider collides with other." alt="" coords="251,5,441,32"/>
+<area shape="rect" id="node3" href="$classMario.html#a3b78a7f90fe02f6ca2f0e322770bb473" title=" " alt="" coords="569,96,656,123"/>
+<area shape="rect" id="node5" href="$classMario.html#a214bf9b6cff10d1b6f69ad2019a43f68" title=" " alt="" coords="277,107,415,133"/>
+<area shape="rect" id="node6" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="258,158,434,199"/>
+<area shape="rect" id="node7" href="$classMario.html#a3a9062f3dae45d2b304832608735826e" title=" " alt="" coords="283,224,409,251"/>
+<area shape="rect" id="node8" href="$classMario.html#ac3b75d0650fb2a149d33fd9f1420da99" title=" " alt="" coords="296,275,396,301"/>
+<area shape="rect" id="node10" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="258,326,434,367"/>
+<area shape="rect" id="node4" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="784,165,1031,192"/>
+<area shape="rect" id="node9" href="$classAnim_1_1Animator.html#a59dd3357956a0f3bba8d343362e83df5" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="489,187,736,229"/>
+</map>

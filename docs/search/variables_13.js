@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['s_1094',['s',['../namespaceAnimData.html#aea7cd9d8158066a287b2a329304fdf95',1,'AnimData']]],
+  ['s_5fplatforms_5f_1095',['s_platforms_',['../classPlatformManager.html#af811d72d826d6a710dabac0bb96df2e2',1,'PlatformManager']]],
+  ['sack_5fidle_1096',['sack_idle',['../namespaceAnimData.html#a64518a29b1179d47f96c961f0de42088',1,'AnimData']]],
+  ['shining_5fblock_1097',['shining_block',['../namespaceAnimData.html#af031452fdb83f663b111180b743c8c57',1,'AnimData']]],
+  ['sky_5fblue_1098',['sky_blue',['../classGame.html#a636fa6f9369014f3aa1365b8cd3611b4',1,'Game']]],
+  ['spawn_5f_1099',['spawn_',['../classMario.html#ace7ffcac4e645a934729ca2c01cf48a5',1,'Mario']]],
+  ['spawn_5feffect_1100',['spawn_effect',['../namespaceAnimData.html#a5a40b0dccbb8941fd14f3d373c1aaf1b',1,'AnimData']]],
+  ['spawn_5feffect_5f2_5f_1101',['spawn_effect_2_',['../namespaceAnimData.html#a658e50fa459a12c7d245fc92e3973c49',1,'AnimData']]],
+  ['speed_5f_1102',['speed_',['../classKoopaShell.html#a5963339a0387b7e12791bad4f2b8ce04',1,'KoopaShell::speed_()'],['../structWiggler_1_1bodyPart.html#aca2cc33b21b442d73427b65b6789f66b',1,'Wiggler::bodyPart::speed_()'],['../classMario.html#a617d49e2f5c6ea5a91b3cc269a94d4b1',1,'Mario::speed_()'],['../classCollectable.html#a484fd63cc130fd31558dd8f9138ccee2',1,'Collectable::speed_()'],['../classKamek.html#a247abb3040d0336994e993cfd08b1064',1,'Kamek::speed_()'],['../classEntity.html#a8d1a028a9387c16728f1ad49632b372e',1,'Entity::speed_()']]],
+  ['spins_5fleft_5f_1103',['spins_left_',['../classHUD.html#ac2afa5c7deb112b855eafeda66c6e326',1,'HUD']]],
+  ['sprint_5f_1104',['sprint_',['../structpro2_1_1ControlsSetUp.html#a42fc5ad402905bb369e8e6ef2362c580',1,'pro2::ControlsSetUp']]],
+  ['state_5f_1105',['state_',['../classKamek.html#ab5f85cfd890b01a84552ee8595e36c98',1,'Kamek::state_()'],['../structFlagManager_1_1Flag.html#a01898d9ac2877986aa50ac0e5f46a7ca',1,'FlagManager::Flag::state_()']]],
+  ['state_5ftimer_5f_1106',['state_timer_',['../classKamek.html#a770bd6a47f40703667dd32169a759ff5',1,'Kamek']]],
+  ['stop_5f_1107',['stop_',['../classKoopaShell.html#a94b5cdcae4b167e81c91ed0e7967fddc',1,'KoopaShell']]],
+  ['summoning_5ftime_1108',['SUMMONING_TIME',['../classKamek.html#a2735ae05bbcbffa32382bd8091c1a2b5',1,'Kamek']]],
+  ['super_5fmario_5fpro2_1109',['super_mario_pro2',['../namespaceAnimData.html#af4ccdab979f4c0df1d6e7a90ac4077d6',1,'AnimData']]]
+];

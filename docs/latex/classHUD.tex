@@ -1,0 +1,261 @@
+\hypertarget{classHUD}{}\doxysection{HUD Class Reference}
+\label{classHUD}\index{HUD@{HUD}}
+
+
+{\ttfamily \#include $<$HUD.\+hh$>$}
+
+
+
+Collaboration diagram for HUD\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classHUD__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHUD_a568b8ee1591f9ba3ed36ae05966f6b56}{HUD}} ()
+\begin{DoxyCompactList}\small\item\em An Empty \mbox{\hyperlink{classHUD}{HUD}}, not used. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHUD_a79899463e6c59782fbb4a4452563826c}{HUD}} (const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&anim)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHUD}{HUD}} object with an animation for the object to be collected, this represents the icon\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHUD_a7ab91197117814bc7fc35ea972768ade}{HUD}} (const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&anim, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos\+\_\+relative\+\_\+to\+\_\+camera)
+\item 
+\mbox{\hyperlink{classHUD_a21c65e01b452deb54e1fe89d41715341}{HUD}} (const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&anim, int value)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHUD}{HUD}} object with an animation for the object to be collected, this represents the icon\+\_\+. value\+\_\+ is initialized at value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHUD_ae86563d18fed2928b6943a28cf0d76c2}{update\+Value}} (int value)
+\begin{DoxyCompactList}\small\item\em Updates the value\+\_\+ attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHUD_a2ff0be71fea5ae35d08966d172e7adc7}{plus\+One}} ()
+\begin{DoxyCompactList}\small\item\em Adds one to the value\+\_\+ attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHUD_ab2c39fe958332409b95b31d68d4a4042}{plusN}} (int n)
+\begin{DoxyCompactList}\small\item\em Adds n to the value\+\_\+ attribute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHUD_aedf3c5c81db482b35bc62cafa172887c}{get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Returns the value\+\_\+ attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHUD_aec295679f897f8d945fa324441d41174}{change\+Relative\+Position}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} new\+\_\+pos)
+\item 
+void \mbox{\hyperlink{classHUD_a734bb3cef81e05eff8dbe7babbd732f3}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Paints the \mbox{\hyperlink{classHUD}{HUD}} on the screen. Fixed position relative to the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{animation__data_8hh_a4a01e3d4a02eca86dfa8cc90ee81759b}{Frame}} \mbox{\hyperlink{classHUD_ad5a06e383f62cba83a9ec84b4da84f59}{update\+Icon}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Frame that must be rendered on screen as the \mbox{\hyperlink{classHUD}{HUD}} icon. Usually an animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classHUD_a0b3fedb2f56010f707fe12f292de54a2}{icon\+\_\+}}
+\item 
+int \mbox{\hyperlink{classHUD_a85e203a6d4b479da0aa9fda58e15f8cd}{value\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classHUD_a597d9ea9a979a5b21fee9d1201853310}{pos\+\_\+relative\+\_\+to\+\_\+camera\+\_\+}}
+\item 
+int \mbox{\hyperlink{classHUD_ac2afa5c7deb112b855eafeda66c6e326}{spins\+\_\+left\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHUD_a568b8ee1591f9ba3ed36ae05966f6b56}\label{classHUD_a568b8ee1591f9ba3ed36ae05966f6b56}} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily HUD\+::\+HUD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+An Empty \mbox{\hyperlink{classHUD}{HUD}}, not used. 
+
+\mbox{\Hypertarget{classHUD_a79899463e6c59782fbb4a4452563826c}\label{classHUD_a79899463e6c59782fbb4a4452563826c}} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily HUD\+::\+HUD (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&}]{anim }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classHUD}{HUD}} object with an animation for the object to be collected, this represents the icon\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHUD_a7ab91197117814bc7fc35ea972768ade}\label{classHUD_a7ab91197117814bc7fc35ea972768ade}} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily HUD\+::\+HUD (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&}]{anim,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos\+\_\+relative\+\_\+to\+\_\+camera }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHUD_a21c65e01b452deb54e1fe89d41715341}\label{classHUD_a21c65e01b452deb54e1fe89d41715341}} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily HUD\+::\+HUD (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}} \&}]{anim,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classHUD}{HUD}} object with an animation for the object to be collected, this represents the icon\+\_\+. value\+\_\+ is initialized at value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHUD_aec295679f897f8d945fa324441d41174}\label{classHUD_aec295679f897f8d945fa324441d41174}} 
+\index{HUD@{HUD}!changeRelativePosition@{changeRelativePosition}}
+\index{changeRelativePosition@{changeRelativePosition}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{changeRelativePosition()}{changeRelativePosition()}}
+{\footnotesize\ttfamily void HUD\+::change\+Relative\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{new\+\_\+pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHUD_aedf3c5c81db482b35bc62cafa172887c}\label{classHUD_aedf3c5c81db482b35bc62cafa172887c}} 
+\index{HUD@{HUD}!getValue@{getValue}}
+\index{getValue@{getValue}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily int HUD\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the value\+\_\+ attribute. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHUD_a734bb3cef81e05eff8dbe7babbd732f3}\label{classHUD_a734bb3cef81e05eff8dbe7babbd732f3}} 
+\index{HUD@{HUD}!paint@{paint}}
+\index{paint@{paint}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void HUD\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Paints the \mbox{\hyperlink{classHUD}{HUD}} on the screen. Fixed position relative to the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHUD_a734bb3cef81e05eff8dbe7babbd732f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classHUD_ab2c39fe958332409b95b31d68d4a4042}\label{classHUD_ab2c39fe958332409b95b31d68d4a4042}} 
+\index{HUD@{HUD}!plusN@{plusN}}
+\index{plusN@{plusN}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{plusN()}{plusN()}}
+{\footnotesize\ttfamily void HUD\+::plusN (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Adds n to the value\+\_\+ attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHUD_a2ff0be71fea5ae35d08966d172e7adc7}\label{classHUD_a2ff0be71fea5ae35d08966d172e7adc7}} 
+\index{HUD@{HUD}!plusOne@{plusOne}}
+\index{plusOne@{plusOne}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{plusOne()}{plusOne()}}
+{\footnotesize\ttfamily void HUD\+::plus\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds one to the value\+\_\+ attribute. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classHUD_a2ff0be71fea5ae35d08966d172e7adc7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classHUD_ad5a06e383f62cba83a9ec84b4da84f59}\label{classHUD_ad5a06e383f62cba83a9ec84b4da84f59}} 
+\index{HUD@{HUD}!updateIcon@{updateIcon}}
+\index{updateIcon@{updateIcon}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{updateIcon()}{updateIcon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{animation__data_8hh_a4a01e3d4a02eca86dfa8cc90ee81759b}{Frame}} HUD\+::update\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Returns the Frame that must be rendered on screen as the \mbox{\hyperlink{classHUD}{HUD}} icon. Usually an animation. 
+
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHUD_ad5a06e383f62cba83a9ec84b4da84f59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classHUD_ad5a06e383f62cba83a9ec84b4da84f59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classHUD_ae86563d18fed2928b6943a28cf0d76c2}\label{classHUD_ae86563d18fed2928b6943a28cf0d76c2}} 
+\index{HUD@{HUD}!updateValue@{updateValue}}
+\index{updateValue@{updateValue}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{updateValue()}{updateValue()}}
+{\footnotesize\ttfamily void HUD\+::update\+Value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Updates the value\+\_\+ attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHUD_a0b3fedb2f56010f707fe12f292de54a2}\label{classHUD_a0b3fedb2f56010f707fe12f292de54a2}} 
+\index{HUD@{HUD}!icon\_@{icon\_}}
+\index{icon\_@{icon\_}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{icon\_}{icon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ HUD\+::icon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHUD_a597d9ea9a979a5b21fee9d1201853310}\label{classHUD_a597d9ea9a979a5b21fee9d1201853310}} 
+\index{HUD@{HUD}!pos\_relative\_to\_camera\_@{pos\_relative\_to\_camera\_}}
+\index{pos\_relative\_to\_camera\_@{pos\_relative\_to\_camera\_}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{pos\_relative\_to\_camera\_}{pos\_relative\_to\_camera\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} HUD\+::pos\+\_\+relative\+\_\+to\+\_\+camera\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHUD_ac2afa5c7deb112b855eafeda66c6e326}\label{classHUD_ac2afa5c7deb112b855eafeda66c6e326}} 
+\index{HUD@{HUD}!spins\_left\_@{spins\_left\_}}
+\index{spins\_left\_@{spins\_left\_}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{spins\_left\_}{spins\_left\_}}
+{\footnotesize\ttfamily int HUD\+::spins\+\_\+left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHUD_a85e203a6d4b479da0aa9fda58e15f8cd}\label{classHUD_a85e203a6d4b479da0aa9fda58e15f8cd}} 
+\index{HUD@{HUD}!value\_@{value\_}}
+\index{value\_@{value\_}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{value\_}{value\_}}
+{\footnotesize\ttfamily int HUD\+::value\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/components/\mbox{\hyperlink{HUD_8hh}{HUD.\+hh}}\item 
+src/components/\mbox{\hyperlink{HUD_8cc}{HUD.\+cc}}\end{DoxyCompactItemize}

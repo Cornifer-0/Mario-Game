@@ -1,0 +1,145 @@
+\hypertarget{classFlagManager}{}\doxysection{Flag\+Manager Class Reference}
+\label{classFlagManager}\index{FlagManager@{FlagManager}}
+
+
+Class for managing flags in the game. These flags, are used to set checkpoints.  
+
+
+
+
+{\ttfamily \#include $<$flag\+Manager.\+hh$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structFlagManager_1_1Flag}{Flag}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlagManager_a72a09733e9097395b36206e6467b37d5}{Flag\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structFlagManager_1_1Flag}{Flag}} \mbox{\hyperlink{classManager}{Manager}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlagManager_a06aee406466eeb96d5efdbabba6c9fc8}{update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi)
+\begin{DoxyCompactList}\small\item\em Updates the flags in the game, they change state if touched by a player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlagManager_a858ccb307f98dd15084d81a4e048d36c}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints all flags, with animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classFlagManager_abad371a9dd08beba6cadebe324f69b42}{Flag\+State}} \{ \mbox{\hyperlink{classFlagManager_abad371a9dd08beba6cadebe324f69b42a551112677f1dca4b95e2e7a8ba3e8052}{BOWSER\+\_\+\+FLAG}}
+, \mbox{\hyperlink{classFlagManager_abad371a9dd08beba6cadebe324f69b42adfe5eb51de4ecaa536627ac4b60065e3}{MARIO\+\_\+\+FLAG}}
+, \mbox{\hyperlink{classFlagManager_abad371a9dd08beba6cadebe324f69b42a477b379489aff409283c3814004605f8}{LUIGI\+\_\+\+FLAG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structFlagManager_1_1Flag}{Flag}} $>$ \mbox{\hyperlink{classFlagManager_ab97c64b06b6676e8278a1360f7cc9084}{flags\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing flags in the game. These flags, are used to set checkpoints. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classFlagManager_abad371a9dd08beba6cadebe324f69b42}\label{classFlagManager_abad371a9dd08beba6cadebe324f69b42}} 
+\index{FlagManager@{FlagManager}!FlagState@{FlagState}}
+\index{FlagState@{FlagState}!FlagManager@{FlagManager}}
+\doxysubsubsection{\texorpdfstring{FlagState}{FlagState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classFlagManager_abad371a9dd08beba6cadebe324f69b42}{Flag\+Manager\+::\+Flag\+State}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOWSER\_FLAG@{BOWSER\_FLAG}!FlagManager@{FlagManager}}\index{FlagManager@{FlagManager}!BOWSER\_FLAG@{BOWSER\_FLAG}}}\mbox{\Hypertarget{classFlagManager_abad371a9dd08beba6cadebe324f69b42a551112677f1dca4b95e2e7a8ba3e8052}\label{classFlagManager_abad371a9dd08beba6cadebe324f69b42a551112677f1dca4b95e2e7a8ba3e8052}} 
+BOWSER\+\_\+\+FLAG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MARIO\_FLAG@{MARIO\_FLAG}!FlagManager@{FlagManager}}\index{FlagManager@{FlagManager}!MARIO\_FLAG@{MARIO\_FLAG}}}\mbox{\Hypertarget{classFlagManager_abad371a9dd08beba6cadebe324f69b42adfe5eb51de4ecaa536627ac4b60065e3}\label{classFlagManager_abad371a9dd08beba6cadebe324f69b42adfe5eb51de4ecaa536627ac4b60065e3}} 
+MARIO\+\_\+\+FLAG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LUIGI\_FLAG@{LUIGI\_FLAG}!FlagManager@{FlagManager}}\index{FlagManager@{FlagManager}!LUIGI\_FLAG@{LUIGI\_FLAG}}}\mbox{\Hypertarget{classFlagManager_abad371a9dd08beba6cadebe324f69b42a477b379489aff409283c3814004605f8}\label{classFlagManager_abad371a9dd08beba6cadebe324f69b42a477b379489aff409283c3814004605f8}} 
+LUIGI\+\_\+\+FLAG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFlagManager_a72a09733e9097395b36206e6467b37d5}\label{classFlagManager_a72a09733e9097395b36206e6467b37d5}} 
+\index{FlagManager@{FlagManager}!FlagManager@{FlagManager}}
+\index{FlagManager@{FlagManager}!FlagManager@{FlagManager}}
+\doxysubsubsection{\texorpdfstring{FlagManager()}{FlagManager()}}
+{\footnotesize\ttfamily Flag\+Manager\+::\+Flag\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{structFlagManager_1_1Flag}{Flag}} \mbox{\hyperlink{classManager}{Manager}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlagManager_a858ccb307f98dd15084d81a4e048d36c}\label{classFlagManager_a858ccb307f98dd15084d81a4e048d36c}} 
+\index{FlagManager@{FlagManager}!paint@{paint}}
+\index{paint@{paint}!FlagManager@{FlagManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Flag\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints all flags, with animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlagManager_a858ccb307f98dd15084d81a4e048d36c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFlagManager_a06aee406466eeb96d5efdbabba6c9fc8}\label{classFlagManager_a06aee406466eeb96d5efdbabba6c9fc8}} 
+\index{FlagManager@{FlagManager}!update@{update}}
+\index{update@{update}!FlagManager@{FlagManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Flag\+Manager\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi }\end{DoxyParamCaption})}
+
+
+
+Updates the flags in the game, they change state if touched by a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+{\em luigi} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlagManager_a06aee406466eeb96d5efdbabba6c9fc8_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFlagManager_ab97c64b06b6676e8278a1360f7cc9084}\label{classFlagManager_ab97c64b06b6676e8278a1360f7cc9084}} 
+\index{FlagManager@{FlagManager}!flags\_@{flags\_}}
+\index{flags\_@{flags\_}!FlagManager@{FlagManager}}
+\doxysubsubsection{\texorpdfstring{flags\_}{flags\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structFlagManager_1_1Flag}{Flag}}$>$ Flag\+Manager\+::flags\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{flagManager_8hh}{flag\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{flagManager_8cc}{flag\+Manager.\+cc}}\end{DoxyCompactItemize}

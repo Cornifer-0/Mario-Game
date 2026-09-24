@@ -1,0 +1,9 @@
+<map id="Mario::setInvulnarabilityFrames" name="Mario::setInvulnarabilityFrames">
+<area shape="rect" id="node1" title=" " alt="" coords="897,25,1079,66"/>
+<area shape="rect" id="node2" href="$classGame.html#a0c6fbced92dbe00f94f96d899f02fdb8" title=" " alt="" coords="487,5,643,32"/>
+<area shape="rect" id="node5" href="$classKoopaShellManager.html#aacb6ef395b8a631fc7f3dd79bef17dd4" title="Updates the koopShell aswell as the objects around it, like the mario, luigi and the goombas." alt="" coords="691,54,849,95"/>
+<area shape="rect" id="node3" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,32,223,59"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,32,60,59"/>
+<area shape="rect" id="node6" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="499,57,631,84"/>
+<area shape="rect" id="node7" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,57,439,84"/>
+</map>

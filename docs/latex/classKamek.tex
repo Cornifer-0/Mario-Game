@@ -1,0 +1,480 @@
+\hypertarget{classKamek}{}\doxysection{Kamek Class Reference}
+\label{classKamek}\index{Kamek@{Kamek}}
+
+
+Class for \mbox{\hyperlink{classKamek}{Kamek}} enemy.  
+
+
+
+
+{\ttfamily \#include $<$kamek.\+hh$>$}
+
+
+
+Collaboration diagram for Kamek\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKamek__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKamek_aabe31040b580b1cb55aee6408155d3be}{Kamek}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classKamek}{Kamek}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classKamek_ac3c4a53921ea87bc616639c95ef917f9}{Kamek}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classKamek}{Kamek}} object with position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_a3a4f2a78a48b98e9c4273d179e9f5bb6}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints \mbox{\hyperlink{classKamek}{Kamek}} on the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_a279f7996d249690cf8aba8ec71f33b59}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ blocks, \mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$gm\+\_\+)
+\begin{DoxyCompactList}\small\item\em Updates \mbox{\hyperlink{classKamek}{Kamek}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classKamek_a00ffdaa641a95321bcc6a3e212d35271}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes kamek animations, state and collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_a122596774280b2b3c21ebf2a842f6c6f}{change\+State}} ()
+\begin{DoxyCompactList}\small\item\em Changes the state of the \mbox{\hyperlink{classKamek}{Kamek}}, based on previous state and randomness. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_a19e091952f2465adfcbd83b6d1d5312f}{update\+\_\+\+IDLE}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ blocks)
+\begin{DoxyCompactList}\small\item\em Updates in the IDLE states, floats... \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_aedf0faf6258886a6ded6c673df7c561c}{update\+\_\+\+MOVE}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ blocks)
+\begin{DoxyCompactList}\small\item\em Updates in the MOVE state, chooses a position to move to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_aa2e895460e58218b974936e534261c85}{update\+\_\+\+MOVING}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ blocks)
+\begin{DoxyCompactList}\small\item\em Updates in the MOVING state, moves towards move\+\_\+target\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_a3518828e327cdaf88d3ded63479c2888}{update\+\_\+\+SUMMON}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ blocks, \mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$gm\+\_\+, bool choose\+Ospawn)
+\begin{DoxyCompactList}\small\item\em Updates in the SUMMON state, chooses random spots to spawn Goombas, and spawns particles and animations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKamek_a03b7e7fe6258407c69cb768e6f34e47a}{update\+\_\+\+SUMMONING}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$ blocks, \mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$gm\+\_\+)
+\begin{DoxyCompactList}\small\item\em Updates in the SUMMONING, summons goombas at all Pt in the vector goombas\+\_\+spawns\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_af2da25cbe62c7f66a9c55c8cca2dd959}{random\+Point\+On\+Screen}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int inner\+Margin)
+\begin{DoxyCompactList}\small\item\em Returns a random Pt on screen, atleast \mbox{[}inner\+Margin\mbox{]} away from the borders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_a64299b15824ae412168d14eb776abb7b}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_abb394be8312d068a1325534a5dbb2657}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_a273ca46d404d8a607749c47a5b4703db}{offset\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_a247abb3040d0336994e993cfd08b1064}{speed\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classKamek_a57d4e44c6346627a03be867cbb98f46e}{looking\+\_\+left\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classKamek_a793c10188ff350007db2d091a8d3be60}{dead\+\_\+}} = false
+\item 
+int \mbox{\hyperlink{classKamek_aba7258ae7b9acbb58c4cd6a6a947edcc}{health\+\_\+}} = 3
+\item 
+int \mbox{\hyperlink{classKamek_abce704b3d35e216668e3f313cc2d7525}{velocity\+\_\+}} = 1
+\item 
+\mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909c}{Kamek\+State}} \mbox{\hyperlink{classKamek_ab5f85cfd890b01a84552ee8595e36c98}{state\+\_\+}} = \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909cafd6a0e4343048b10646dd2976cc5ad18}{IDLE}}
+\item 
+int \mbox{\hyperlink{classKamek_a770bd6a47f40703667dd32169a759ff5}{state\+\_\+timer\+\_\+}} = 0
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_a93ef228fe31e4afb2e75fa08b1f1a553}{move\+\_\+target\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKamek_a67e13eee6ab65dfafba60c559f47fa26}{teleport\+\_\+target\+\_\+}}
+\item 
+const int \mbox{\hyperlink{classKamek_aa9372f0eac4909ea900fe7717e6aafe1}{IDLE\+\_\+\+TIME}} = 50
+\item 
+const int \mbox{\hyperlink{classKamek_a2735ae05bbcbffa32382bd8091c1a2b5}{SUMMONING\+\_\+\+TIME}} = 40
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classKamek_a28a5e78aa558703af57cd44a53fb2428}{box\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classKamek_a51d37cd95a2b67452cfed2764e3f4308}{animator\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ \mbox{\hyperlink{classKamek_a62e0416ba7a116aae78f56b5b3105704}{minions\+\_\+spawns\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for \mbox{\hyperlink{classKamek}{Kamek}} enemy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKamek_aabe31040b580b1cb55aee6408155d3be}\label{classKamek_aabe31040b580b1cb55aee6408155d3be}} 
+\index{Kamek@{Kamek}!Kamek@{Kamek}}
+\index{Kamek@{Kamek}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{Kamek()}{Kamek()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Kamek\+::\+Kamek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classKamek}{Kamek}} object. 
+
+\mbox{\Hypertarget{classKamek_ac3c4a53921ea87bc616639c95ef917f9}\label{classKamek_ac3c4a53921ea87bc616639c95ef917f9}} 
+\index{Kamek@{Kamek}!Kamek@{Kamek}}
+\index{Kamek@{Kamek}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{Kamek()}{Kamek()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Kamek\+::\+Kamek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classKamek}{Kamek}} object with position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKamek_a122596774280b2b3c21ebf2a842f6c6f}\label{classKamek_a122596774280b2b3c21ebf2a842f6c6f}} 
+\index{Kamek@{Kamek}!changeState@{changeState}}
+\index{changeState@{changeState}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Kamek\+::change\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Changes the state of the \mbox{\hyperlink{classKamek}{Kamek}}, based on previous state and randomness. 
+
+\mbox{\Hypertarget{classKamek_a00ffdaa641a95321bcc6a3e212d35271}\label{classKamek_a00ffdaa641a95321bcc6a3e212d35271}} 
+\index{Kamek@{Kamek}!init@{init}}
+\index{init@{init}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Kamek\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initializes kamek animations, state and collider. 
+
+\mbox{\Hypertarget{classKamek_a3a4f2a78a48b98e9c4273d179e9f5bb6}\label{classKamek_a3a4f2a78a48b98e9c4273d179e9f5bb6}} 
+\index{Kamek@{Kamek}!paint@{paint}}
+\index{paint@{paint}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Kamek\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints \mbox{\hyperlink{classKamek}{Kamek}} on the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classKamek_a3a4f2a78a48b98e9c4273d179e9f5bb6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKamek_af2da25cbe62c7f66a9c55c8cca2dd959}\label{classKamek_af2da25cbe62c7f66a9c55c8cca2dd959}} 
+\index{Kamek@{Kamek}!randomPointOnScreen@{randomPointOnScreen}}
+\index{randomPointOnScreen@{randomPointOnScreen}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{randomPointOnScreen()}{randomPointOnScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} Kamek\+::random\+Point\+On\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{int}]{inner\+Margin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Returns a random Pt on screen, atleast \mbox{[}inner\+Margin\mbox{]} away from the borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em inner\+Margin} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKamek_af2da25cbe62c7f66a9c55c8cca2dd959_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKamek_a279f7996d249690cf8aba8ec71f33b59}\label{classKamek_a279f7996d249690cf8aba8ec71f33b59}} 
+\index{Kamek@{Kamek}!update@{update}}
+\index{update@{update}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Kamek\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$}]{blocks,  }\item[{\mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$}]{gm\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Updates \mbox{\hyperlink{classKamek}{Kamek}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+{\em gm\+\_\+} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKamek_a279f7996d249690cf8aba8ec71f33b59_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKamek_a19e091952f2465adfcbd83b6d1d5312f}\label{classKamek_a19e091952f2465adfcbd83b6d1d5312f}} 
+\index{Kamek@{Kamek}!update\_IDLE@{update\_IDLE}}
+\index{update\_IDLE@{update\_IDLE}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{update\_IDLE()}{update\_IDLE()}}
+{\footnotesize\ttfamily void Kamek\+::update\+\_\+\+IDLE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$}]{blocks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates in the IDLE states, floats... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKamek_a19e091952f2465adfcbd83b6d1d5312f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKamek_aedf0faf6258886a6ded6c673df7c561c}\label{classKamek_aedf0faf6258886a6ded6c673df7c561c}} 
+\index{Kamek@{Kamek}!update\_MOVE@{update\_MOVE}}
+\index{update\_MOVE@{update\_MOVE}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{update\_MOVE()}{update\_MOVE()}}
+{\footnotesize\ttfamily void Kamek\+::update\+\_\+\+MOVE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$}]{blocks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates in the MOVE state, chooses a position to move to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKamek_aa2e895460e58218b974936e534261c85}\label{classKamek_aa2e895460e58218b974936e534261c85}} 
+\index{Kamek@{Kamek}!update\_MOVING@{update\_MOVING}}
+\index{update\_MOVING@{update\_MOVING}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{update\_MOVING()}{update\_MOVING()}}
+{\footnotesize\ttfamily void Kamek\+::update\+\_\+\+MOVING (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$}]{blocks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates in the MOVING state, moves towards move\+\_\+target\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKamek_aa2e895460e58218b974936e534261c85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKamek_a3518828e327cdaf88d3ded63479c2888}\label{classKamek_a3518828e327cdaf88d3ded63479c2888}} 
+\index{Kamek@{Kamek}!update\_SUMMON@{update\_SUMMON}}
+\index{update\_SUMMON@{update\_SUMMON}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{update\_SUMMON()}{update\_SUMMON()}}
+{\footnotesize\ttfamily void Kamek\+::update\+\_\+\+SUMMON (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$}]{blocks,  }\item[{\mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$}]{gm\+\_\+,  }\item[{bool}]{choose\+Ospawn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates in the SUMMON state, chooses random spots to spawn Goombas, and spawns particles and animations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+{\em gm\+\_\+} & \\
+\hline
+{\em choose\+Ospawn} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKamek_a3518828e327cdaf88d3ded63479c2888_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKamek_a03b7e7fe6258407c69cb768e6f34e47a}\label{classKamek_a03b7e7fe6258407c69cb768e6f34e47a}} 
+\index{Kamek@{Kamek}!update\_SUMMONING@{update\_SUMMONING}}
+\index{update\_SUMMONING@{update\_SUMMONING}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{update\_SUMMONING()}{update\_SUMMONING()}}
+{\footnotesize\ttfamily void Kamek\+::update\+\_\+\+SUMMONING (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classBlock}{Block}} $\ast$ $>$}]{blocks,  }\item[{\mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$}]{gm\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates in the SUMMONING, summons goombas at all Pt in the vector goombas\+\_\+spawns\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em blocks} & \\
+\hline
+{\em gm\+\_\+} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classKamek_a51d37cd95a2b67452cfed2764e3f4308}\label{classKamek_a51d37cd95a2b67452cfed2764e3f4308}} 
+\index{Kamek@{Kamek}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Kamek\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a28a5e78aa558703af57cd44a53fb2428}\label{classKamek_a28a5e78aa558703af57cd44a53fb2428}} 
+\index{Kamek@{Kamek}!boxCollider\_@{boxCollider\_}}
+\index{boxCollider\_@{boxCollider\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{boxCollider\_}{boxCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Kamek\+::box\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a793c10188ff350007db2d091a8d3be60}\label{classKamek_a793c10188ff350007db2d091a8d3be60}} 
+\index{Kamek@{Kamek}!dead\_@{dead\_}}
+\index{dead\_@{dead\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{dead\_}{dead\_}}
+{\footnotesize\ttfamily bool Kamek\+::dead\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_aba7258ae7b9acbb58c4cd6a6a947edcc}\label{classKamek_aba7258ae7b9acbb58c4cd6a6a947edcc}} 
+\index{Kamek@{Kamek}!health\_@{health\_}}
+\index{health\_@{health\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{health\_}{health\_}}
+{\footnotesize\ttfamily int Kamek\+::health\+\_\+ = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_aa9372f0eac4909ea900fe7717e6aafe1}\label{classKamek_aa9372f0eac4909ea900fe7717e6aafe1}} 
+\index{Kamek@{Kamek}!IDLE\_TIME@{IDLE\_TIME}}
+\index{IDLE\_TIME@{IDLE\_TIME}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{IDLE\_TIME}{IDLE\_TIME}}
+{\footnotesize\ttfamily const int Kamek\+::\+IDLE\+\_\+\+TIME = 50\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_abb394be8312d068a1325534a5dbb2657}\label{classKamek_abb394be8312d068a1325534a5dbb2657}} 
+\index{Kamek@{Kamek}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Kamek\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a57d4e44c6346627a03be867cbb98f46e}\label{classKamek_a57d4e44c6346627a03be867cbb98f46e}} 
+\index{Kamek@{Kamek}!looking\_left\_@{looking\_left\_}}
+\index{looking\_left\_@{looking\_left\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{looking\_left\_}{looking\_left\_}}
+{\footnotesize\ttfamily bool Kamek\+::looking\+\_\+left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a62e0416ba7a116aae78f56b5b3105704}\label{classKamek_a62e0416ba7a116aae78f56b5b3105704}} 
+\index{Kamek@{Kamek}!minions\_spawns\_@{minions\_spawns\_}}
+\index{minions\_spawns\_@{minions\_spawns\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{minions\_spawns\_}{minions\_spawns\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}$>$ Kamek\+::minions\+\_\+spawns\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a93ef228fe31e4afb2e75fa08b1f1a553}\label{classKamek_a93ef228fe31e4afb2e75fa08b1f1a553}} 
+\index{Kamek@{Kamek}!move\_target\_@{move\_target\_}}
+\index{move\_target\_@{move\_target\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{move\_target\_}{move\_target\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Kamek\+::move\+\_\+target\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a273ca46d404d8a607749c47a5b4703db}\label{classKamek_a273ca46d404d8a607749c47a5b4703db}} 
+\index{Kamek@{Kamek}!offset\_pos\_@{offset\_pos\_}}
+\index{offset\_pos\_@{offset\_pos\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{offset\_pos\_}{offset\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Kamek\+::offset\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a64299b15824ae412168d14eb776abb7b}\label{classKamek_a64299b15824ae412168d14eb776abb7b}} 
+\index{Kamek@{Kamek}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Kamek\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a247abb3040d0336994e993cfd08b1064}\label{classKamek_a247abb3040d0336994e993cfd08b1064}} 
+\index{Kamek@{Kamek}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Kamek\+::speed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_ab5f85cfd890b01a84552ee8595e36c98}\label{classKamek_ab5f85cfd890b01a84552ee8595e36c98}} 
+\index{Kamek@{Kamek}!state\_@{state\_}}
+\index{state\_@{state\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{state\_}{state\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909c}{Kamek\+State}} Kamek\+::state\+\_\+ = \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909cafd6a0e4343048b10646dd2976cc5ad18}{IDLE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a770bd6a47f40703667dd32169a759ff5}\label{classKamek_a770bd6a47f40703667dd32169a759ff5}} 
+\index{Kamek@{Kamek}!state\_timer\_@{state\_timer\_}}
+\index{state\_timer\_@{state\_timer\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{state\_timer\_}{state\_timer\_}}
+{\footnotesize\ttfamily int Kamek\+::state\+\_\+timer\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a2735ae05bbcbffa32382bd8091c1a2b5}\label{classKamek_a2735ae05bbcbffa32382bd8091c1a2b5}} 
+\index{Kamek@{Kamek}!SUMMONING\_TIME@{SUMMONING\_TIME}}
+\index{SUMMONING\_TIME@{SUMMONING\_TIME}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{SUMMONING\_TIME}{SUMMONING\_TIME}}
+{\footnotesize\ttfamily const int Kamek\+::\+SUMMONING\+\_\+\+TIME = 40\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_a67e13eee6ab65dfafba60c559f47fa26}\label{classKamek_a67e13eee6ab65dfafba60c559f47fa26}} 
+\index{Kamek@{Kamek}!teleport\_target\_@{teleport\_target\_}}
+\index{teleport\_target\_@{teleport\_target\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{teleport\_target\_}{teleport\_target\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Kamek\+::teleport\+\_\+target\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKamek_abce704b3d35e216668e3f313cc2d7525}\label{classKamek_abce704b3d35e216668e3f313cc2d7525}} 
+\index{Kamek@{Kamek}!velocity\_@{velocity\_}}
+\index{velocity\_@{velocity\_}!Kamek@{Kamek}}
+\doxysubsubsection{\texorpdfstring{velocity\_}{velocity\_}}
+{\footnotesize\ttfamily int Kamek\+::velocity\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/enemies/\mbox{\hyperlink{kamek_8hh}{kamek.\+hh}}\item 
+src/enemies/\mbox{\hyperlink{kamek_8cc}{kamek.\+cc}}\end{DoxyCompactItemize}

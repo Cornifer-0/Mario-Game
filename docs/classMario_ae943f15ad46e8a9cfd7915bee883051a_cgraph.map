@@ -1,0 +1,5 @@
+<map id="Mario::updateCollider" name="Mario::updateCollider">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a2361fe1b3faf687fd549cec8ce1ddcc2" title="Returns the currentFrame of the currentAnimation." alt="" coords="216,5,435,32"/>
+<area shape="rect" id="node3" href="$classBoxCollider.html#a2f96d48196f68ebe9b5319ab9b89f72d" title="It updates the position of the boxCollider using the position of the objecte and a Frame(sprite),..." alt="" coords="250,56,401,83"/>
+</map>

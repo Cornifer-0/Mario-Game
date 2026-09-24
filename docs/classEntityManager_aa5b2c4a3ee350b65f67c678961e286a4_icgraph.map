@@ -1,0 +1,5 @@
+<map id="EntityManager::spawnEntity" name="EntityManager::spawnEntity">
+<area shape="rect" id="node1" title="Spawns an entity of type at a pos." alt="" coords="244,31,449,57"/>
+<area shape="rect" id="node2" href="$classBlockManager.html#a13d329f84ae0b96813065f08ba474d1a" title="Updates mario so he interacts with the blocks." alt="" coords="17,5,185,32"/>
+<area shape="rect" id="node3" href="$classKamek.html#a3518828e327cdaf88d3ded63479c2888" title="Updates in the SUMMON state, chooses random spots to spawn Goombas, and spawns particles and animatio..." alt="" coords="5,56,196,83"/>
+</map>

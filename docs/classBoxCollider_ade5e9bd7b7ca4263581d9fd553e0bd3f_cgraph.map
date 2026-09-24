@@ -1,0 +1,6 @@
+<map id="BoxCollider::printDebugLines" name="BoxCollider::printDebugLines">
+<area shape="rect" id="node1" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="5,31,216,57"/>
+<area shape="rect" id="node2" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="264,5,395,32"/>
+<area shape="rect" id="node4" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="264,56,395,83"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="443,31,619,57"/>
+</map>

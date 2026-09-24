@@ -1,0 +1,9 @@
+<map id="Mario" name="Mario">
+<area shape="rect" id="node1" title=" " alt="" coords="245,245,304,272"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html" title=" " alt="" coords="69,133,166,159"/>
+<area shape="rect" id="node3" href="$structpro2_1_1Rect.html" title=" " alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node4" href="$structpro2_1_1Pt.html" title=" " alt="" coords="155,5,227,32"/>
+<area shape="rect" id="node5" href="$classAnim_1_1Animator.html" title="The class animator a container for storing the different animations an object might have." alt="" coords="313,133,437,159"/>
+<area shape="rect" id="node6" title=" " alt="" coords="345,5,404,32"/>
+<area shape="rect" id="node7" href="$structpro2_1_1ControlsSetUp.html" title=" " alt="" coords="461,133,613,159"/>
+</map>

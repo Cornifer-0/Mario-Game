@@ -1,0 +1,13 @@
+<map id="Game::process_keys" name="Game::process_keys">
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,161,235"/>
+<area shape="rect" id="node2" href="$classMario.html#a9cedf22f9727329c4eb114068c0e14a8" title=" " alt="" coords="219,5,401,32"/>
+<area shape="rect" id="node3" href="$classMario.html#a3b78a7f90fe02f6ca2f0e322770bb473" title=" " alt="" coords="267,56,353,83"/>
+<area shape="rect" id="node5" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="494,115,670,157"/>
+<area shape="rect" id="node6" href="$classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b" title="Determina si cierta tecla estuvo presionada en el fotograma anterior." alt="" coords="209,259,411,285"/>
+<area shape="rect" id="node7" href="$classMario.html#a0bc34a1f489d6d10905c83fa8e1e72f9" title=" " alt="" coords="265,309,355,336"/>
+<area shape="rect" id="node8" href="$classMario.html#ae2f3ce13baf3c3b809c3333bb2b2292a" title=" " alt="" coords="249,157,371,184"/>
+<area shape="rect" id="node9" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="494,187,670,229"/>
+<area shape="rect" id="node10" href="$classMario.html#a910f099acc43a3953dacbc0be9a80df9" title=" " alt="" coords="219,361,401,402"/>
+<area shape="rect" id="node11" href="$classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522" title="Determina si cierta tecla se presionó entre el fotograma anterior y el actual." alt="" coords="223,426,397,467"/>
+<area shape="rect" id="node4" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="459,60,705,87"/>
+</map>

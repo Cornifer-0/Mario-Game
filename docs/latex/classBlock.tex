@@ -1,0 +1,369 @@
+\hypertarget{classBlock}{}\doxysection{Block Class Reference}
+\label{classBlock}\index{Block@{Block}}
+
+
+{\ttfamily \#include $<$block.\+hh$>$}
+
+
+
+Collaboration diagram for Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBlock_a37658a946bf5067ad01d68d9ff086adc}{Block}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBlock}{Block}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBlock_a1b8f46297ed2bd37582a02a7ef29fe1d}{Block}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} topleft, \mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBlock}{Block}} object at with topleft being the topleft position of the block and being of type type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classBlock_ab82d77f961632f2db14f17d38a030b12}{get\+\_\+rect}} () const
+\begin{DoxyCompactList}\small\item\em Get the rect object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBlock_af4f1893fc92f086790e695631a929424}{has\+\_\+crossed\+\_\+block\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\begin{DoxyCompactList}\small\item\em Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block downwards. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBlock_a7044504c43b0e767df1258adccddf5d9}{has\+\_\+crossed\+\_\+block\+\_\+upwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\begin{DoxyCompactList}\small\item\em Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block upwards. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBlock_a7b7bcef444de84ed1c577193e5cb7ba0}{has\+\_\+crossed\+\_\+block\+\_\+sideways}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\begin{DoxyCompactList}\small\item\em Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block sideways. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlock_ab64ad3986a6c7d163cb28ed805cd38bf}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints the block on window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlock_aa1cc2f971d78809d7318d0787cdbdebf}{change\+Type}} (\mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Changes the type of \mbox{\hyperlink{classBlock}{Block}} to a new type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classBlock_af10a005d7ccc0b53aaddf338e9188382}{get\+Collider}} () const
+\begin{DoxyCompactList}\small\item\em Get the Collider object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBlock_af0a0311a472aff5b48871b3c947cd320}{head\+Bumped}} ()
+\begin{DoxyCompactList}\small\item\em plays a little animation of the block going up and down. Using the helper functions \mbox{\hyperlink{classBlock_a88df5b85bde7399ea087f391b40b23a8}{is\+Up()}} and get\+Dow(). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBlock_a88df5b85bde7399ea087f391b40b23a8}{is\+Up}} () const
+\item 
+void \mbox{\hyperlink{classBlock_a9cee1656cac5f374b2d0c15b54787fc7}{get\+Down}} ()
+\item 
+\mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}} \mbox{\hyperlink{classBlock_ad2177efb216b3817b379b918b49bcb76}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBlock_a7f4f9c191a4def2dde07d6e8a5b258c1}{topleft\+\_\+}}
+\item 
+\mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}} \mbox{\hyperlink{classBlock_a4bd5866be44583f68f8acf9806014bf4}{type\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classBlock_a257b9042b03326f98a59956157bf064b}{box\+Collider\+\_\+}}
+\item 
+int \mbox{\hyperlink{classBlock_a9df57f4ca9e368fc085c114561466054}{frames\+\_\+up\+\_\+}} = 0
+\item 
+bool \mbox{\hyperlink{classBlock_a470371bef241bb918b90e69671436b4c}{up\+\_\+}} = false
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classBlock_abd7a30d32cb15fa8ec632245d6e55004}{animator\+\_\+}}
+\item 
+const int \mbox{\hyperlink{classBlock_a0e958db0ad350163a0d7eeacec7191f6}{PIXELS\+\_\+\+UP}} = 5
+\item 
+const int \mbox{\hyperlink{classBlock_a22849e2b103b2398b259916c3d270e2d}{UP\+\_\+\+TIME}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBlock_a37658a946bf5067ad01d68d9ff086adc}\label{classBlock_a37658a946bf5067ad01d68d9ff086adc}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBlock}{Block}} object. 
+
+\mbox{\Hypertarget{classBlock_a1b8f46297ed2bd37582a02a7ef29fe1d}\label{classBlock_a1b8f46297ed2bd37582a02a7ef29fe1d}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{topleft,  }\item[{\mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBlock}{Block}} object at with topleft being the topleft position of the block and being of type type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topleft} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBlock_aa1cc2f971d78809d7318d0787cdbdebf}\label{classBlock_aa1cc2f971d78809d7318d0787cdbdebf}} 
+\index{Block@{Block}!changeType@{changeType}}
+\index{changeType@{changeType}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{changeType()}{changeType()}}
+{\footnotesize\ttfamily void Block\+::change\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Changes the type of \mbox{\hyperlink{classBlock}{Block}} to a new type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBlock_ab82d77f961632f2db14f17d38a030b12}\label{classBlock_ab82d77f961632f2db14f17d38a030b12}} 
+\index{Block@{Block}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Block\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the rect object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classBlock_ab82d77f961632f2db14f17d38a030b12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlock_af10a005d7ccc0b53aaddf338e9188382}\label{classBlock_af10a005d7ccc0b53aaddf338e9188382}} 
+\index{Block@{Block}!getCollider@{getCollider}}
+\index{getCollider@{getCollider}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getCollider()}{getCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Block\+::get\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Collider object. 
+
+\begin{DoxyReturn}{Returns}
+box\+Collider$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBlock_a9cee1656cac5f374b2d0c15b54787fc7}\label{classBlock_a9cee1656cac5f374b2d0c15b54787fc7}} 
+\index{Block@{Block}!getDown@{getDown}}
+\index{getDown@{getDown}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getDown()}{getDown()}}
+{\footnotesize\ttfamily void Block\+::get\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classBlock_a9cee1656cac5f374b2d0c15b54787fc7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlock_ad2177efb216b3817b379b918b49bcb76}\label{classBlock_ad2177efb216b3817b379b918b49bcb76}} 
+\index{Block@{Block}!getType@{getType}}
+\index{getType@{getType}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}} Block\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+Block\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBlock_af4f1893fc92f086790e695631a929424}\label{classBlock_af4f1893fc92f086790e695631a929424}} 
+\index{Block@{Block}!has\_crossed\_block\_downwards@{has\_crossed\_block\_downwards}}
+\index{has\_crossed\_block\_downwards@{has\_crossed\_block\_downwards}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_block\_downwards()}{has\_crossed\_block\_downwards()}}
+{\footnotesize\ttfamily bool Block\+::has\+\_\+crossed\+\_\+block\+\_\+downwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+
+
+Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block downwards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plast} & \\
+\hline
+{\em pcurr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlock_af4f1893fc92f086790e695631a929424_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlock_a7b7bcef444de84ed1c577193e5cb7ba0}\label{classBlock_a7b7bcef444de84ed1c577193e5cb7ba0}} 
+\index{Block@{Block}!has\_crossed\_block\_sideways@{has\_crossed\_block\_sideways}}
+\index{has\_crossed\_block\_sideways@{has\_crossed\_block\_sideways}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_block\_sideways()}{has\_crossed\_block\_sideways()}}
+{\footnotesize\ttfamily bool Block\+::has\+\_\+crossed\+\_\+block\+\_\+sideways (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+
+
+Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block sideways. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plast} & \\
+\hline
+{\em pcurr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlock_a7b7bcef444de84ed1c577193e5cb7ba0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlock_a7044504c43b0e767df1258adccddf5d9}\label{classBlock_a7044504c43b0e767df1258adccddf5d9}} 
+\index{Block@{Block}!has\_crossed\_block\_upwards@{has\_crossed\_block\_upwards}}
+\index{has\_crossed\_block\_upwards@{has\_crossed\_block\_upwards}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_block\_upwards()}{has\_crossed\_block\_upwards()}}
+{\footnotesize\ttfamily bool Block\+::has\+\_\+crossed\+\_\+block\+\_\+upwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+
+
+Returns true only if when you draw a line from plast to pcurr it crosses the collider of the block upwards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plast} & \\
+\hline
+{\em pcurr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlock_a7044504c43b0e767df1258adccddf5d9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlock_af0a0311a472aff5b48871b3c947cd320}\label{classBlock_af0a0311a472aff5b48871b3c947cd320}} 
+\index{Block@{Block}!headBumped@{headBumped}}
+\index{headBumped@{headBumped}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{headBumped()}{headBumped()}}
+{\footnotesize\ttfamily void Block\+::head\+Bumped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+plays a little animation of the block going up and down. Using the helper functions \mbox{\hyperlink{classBlock_a88df5b85bde7399ea087f391b40b23a8}{is\+Up()}} and get\+Dow(). 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlock_af0a0311a472aff5b48871b3c947cd320_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBlock_a88df5b85bde7399ea087f391b40b23a8}\label{classBlock_a88df5b85bde7399ea087f391b40b23a8}} 
+\index{Block@{Block}!isUp@{isUp}}
+\index{isUp@{isUp}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{isUp()}{isUp()}}
+{\footnotesize\ttfamily bool Block\+::is\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBlock_ab64ad3986a6c7d163cb28ed805cd38bf}\label{classBlock_ab64ad3986a6c7d163cb28ed805cd38bf}} 
+\index{Block@{Block}!paint@{paint}}
+\index{paint@{paint}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Block\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints the block on window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBlock_ab64ad3986a6c7d163cb28ed805cd38bf_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBlock_abd7a30d32cb15fa8ec632245d6e55004}\label{classBlock_abd7a30d32cb15fa8ec632245d6e55004}} 
+\index{Block@{Block}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Block\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a257b9042b03326f98a59956157bf064b}\label{classBlock_a257b9042b03326f98a59956157bf064b}} 
+\index{Block@{Block}!boxCollider\_@{boxCollider\_}}
+\index{boxCollider\_@{boxCollider\_}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{boxCollider\_}{boxCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Block\+::box\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a9df57f4ca9e368fc085c114561466054}\label{classBlock_a9df57f4ca9e368fc085c114561466054}} 
+\index{Block@{Block}!frames\_up\_@{frames\_up\_}}
+\index{frames\_up\_@{frames\_up\_}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{frames\_up\_}{frames\_up\_}}
+{\footnotesize\ttfamily int Block\+::frames\+\_\+up\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a0e958db0ad350163a0d7eeacec7191f6}\label{classBlock_a0e958db0ad350163a0d7eeacec7191f6}} 
+\index{Block@{Block}!PIXELS\_UP@{PIXELS\_UP}}
+\index{PIXELS\_UP@{PIXELS\_UP}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{PIXELS\_UP}{PIXELS\_UP}}
+{\footnotesize\ttfamily const int Block\+::\+PIXELS\+\_\+\+UP = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a7f4f9c191a4def2dde07d6e8a5b258c1}\label{classBlock_a7f4f9c191a4def2dde07d6e8a5b258c1}} 
+\index{Block@{Block}!topleft\_@{topleft\_}}
+\index{topleft\_@{topleft\_}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{topleft\_}{topleft\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Block\+::topleft\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a4bd5866be44583f68f8acf9806014bf4}\label{classBlock_a4bd5866be44583f68f8acf9806014bf4}} 
+\index{Block@{Block}!type\_@{type\_}}
+\index{type\_@{type\_}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{type\_}{type\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{block_8hh_a54420623f26ab6bb61042b41cccf37a3}{Block\+Type}} Block\+::type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a470371bef241bb918b90e69671436b4c}\label{classBlock_a470371bef241bb918b90e69671436b4c}} 
+\index{Block@{Block}!up\_@{up\_}}
+\index{up\_@{up\_}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{up\_}{up\_}}
+{\footnotesize\ttfamily bool Block\+::up\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBlock_a22849e2b103b2398b259916c3d270e2d}\label{classBlock_a22849e2b103b2398b259916c3d270e2d}} 
+\index{Block@{Block}!UP\_TIME@{UP\_TIME}}
+\index{UP\_TIME@{UP\_TIME}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{UP\_TIME}{UP\_TIME}}
+{\footnotesize\ttfamily const int Block\+::\+UP\+\_\+\+TIME = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/world/\mbox{\hyperlink{block_8hh}{block.\+hh}}\item 
+src/world/\mbox{\hyperlink{block_8cc}{block.\+cc}}\end{DoxyCompactItemize}

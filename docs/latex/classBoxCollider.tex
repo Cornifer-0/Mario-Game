@@ -1,0 +1,371 @@
+\hypertarget{classBoxCollider}{}\doxysection{Box\+Collider Class Reference}
+\label{classBoxCollider}\index{BoxCollider@{BoxCollider}}
+
+
+{\ttfamily \#include $<$box\+Collider.\+hh$>$}
+
+
+
+Collaboration diagram for Box\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classBoxCollider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoxCollider_aa8358aaf4f5fae5446ebdf0b303ccce3}{Box\+Collider}} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty box\+Collider. Not safe, should only be used temporarlly before updating it\textquotesingle{}s attributes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider_ac40e764ead18c22ca73ac24e3e4737e4}{Box\+Collider}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} top\+\_\+left, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} bottom\+\_\+right)
+\begin{DoxyCompactList}\small\item\em Construct a new box\+Collider with the Pt\textquotesingle{}s topleft and bottomright. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider_a9106b0f9573da6e96bb9904577a1e2c7}{Box\+Collider}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} top\+\_\+left, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} bottom\+\_\+right, int padding)
+\begin{DoxyCompactList}\small\item\em Construct a new box\+Collider with the Pt\textquotesingle{}s topleft and bottomright. The box\+Collider is augmented in all sides by padding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider_a967780d931f636d2c5c4feffef54947b}{Box\+Collider}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}})
+\begin{DoxyCompactList}\small\item\em Construct a new box\+Collider using a rect. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider_a968243a34e3a345622dd2b1a145e4abf}{Box\+Collider}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}, int padding)
+\begin{DoxyCompactList}\small\item\em Construct a new box\+Collider using rect and padding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider_a8be0ce8e59e0c4f8f0e577d9fb45fc89}{Box\+Collider}} (int left, int top, int right, int bottom)
+\begin{DoxyCompactList}\small\item\em Construct a new box Collider object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider_a772772355c748ce9d6c87b0a5f0ac119}{Box\+Collider}} (int left, int top, int right, int bottom, int padding)
+\begin{DoxyCompactList}\small\item\em Construct a new box Collider object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoxCollider_a2f96d48196f68ebe9b5319ab9b89f72d}{update}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, const \mbox{\hyperlink{animation__data_8hh_a4a01e3d4a02eca86dfa8cc90ee81759b}{Frame}} \&frame)
+\begin{DoxyCompactList}\small\item\em It updates the position of the box\+Collider using the position of the objecte and a Frame(sprite), so it can tell the width and height it must have. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoxCollider_ae494bfb0cca9868d8f1c47284d9af4df}{set\+Padding}} (int padding)
+\begin{DoxyCompactList}\small\item\em Set the Padding, box\+Collider should be updated for the effects of this change to take place. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoxCollider_a2901c2cf466871306db4ca669ad15793}{move}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} top\+\_\+left, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} bottom\+\_\+right)
+\begin{DoxyCompactList}\small\item\em It changes the top\+\_\+left and bottom\+\_\+right attributes of the box\+Collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoxCollider_ade5e9bd7b7ca4263581d9fd553e0bd3f}{print\+Debug\+Lines}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int color=0x00\+FF00) const
+\begin{DoxyCompactList}\small\item\em Prints debugging square in the screen of color green by default. This square marks the borders of the box\+Collider. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoxCollider_a60832b9f7f761240e000e18415414a11}{colliding\+With}} (const \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$other) const
+\begin{DoxyCompactList}\small\item\em Returns true if and only if the box\+Collider collides with other. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoxCollider_a1a503cac86245b2f2932dff5f3089337}{colliding\+With}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} other) const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classBoxCollider_a44c967a212d3aaf4a8ffb63f3d483730}{get\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Get the Rect object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classBoxCollider_a51cff13333eb29c6e751b129020e1985}{rect\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBoxCollider_a25ebec92da1423c8c53f458ca541caa1}{topleft\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBoxCollider_a5d6dd7397a625930895c343c1ad32734}{bottomright\+\_\+}}
+\item 
+int \mbox{\hyperlink{classBoxCollider_a9bead132bcabfcf154f1db73b975401f}{padding\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBoxCollider_aa8358aaf4f5fae5446ebdf0b303ccce3}\label{classBoxCollider_aa8358aaf4f5fae5446ebdf0b303ccce3}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs an empty box\+Collider. Not safe, should only be used temporarlly before updating it\textquotesingle{}s attributes. 
+
+\mbox{\Hypertarget{classBoxCollider_ac40e764ead18c22ca73ac24e3e4737e4}\label{classBoxCollider_ac40e764ead18c22ca73ac24e3e4737e4}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{top\+\_\+left,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{bottom\+\_\+right }\end{DoxyParamCaption})}
+
+
+
+Construct a new box\+Collider with the Pt\textquotesingle{}s topleft and bottomright. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+left} & \\
+\hline
+{\em bottom\+\_\+right} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoxCollider_a9106b0f9573da6e96bb9904577a1e2c7}\label{classBoxCollider_a9106b0f9573da6e96bb9904577a1e2c7}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{top\+\_\+left,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{bottom\+\_\+right,  }\item[{int}]{padding }\end{DoxyParamCaption})}
+
+
+
+Construct a new box\+Collider with the Pt\textquotesingle{}s topleft and bottomright. The box\+Collider is augmented in all sides by padding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+left} & \\
+\hline
+{\em bottom\+\_\+right} & \\
+\hline
+{\em padding} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoxCollider_a967780d931f636d2c5c4feffef54947b}\label{classBoxCollider_a967780d931f636d2c5c4feffef54947b}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect }\end{DoxyParamCaption})}
+
+
+
+Construct a new box\+Collider using a rect. 
+
+\mbox{\Hypertarget{classBoxCollider_a968243a34e3a345622dd2b1a145e4abf}\label{classBoxCollider_a968243a34e3a345622dd2b1a145e4abf}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect,  }\item[{int}]{padding }\end{DoxyParamCaption})}
+
+
+
+Construct a new box\+Collider using rect and padding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em padding} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoxCollider_a8be0ce8e59e0c4f8f0e577d9fb45fc89}\label{classBoxCollider_a8be0ce8e59e0c4f8f0e577d9fb45fc89}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{top,  }\item[{int}]{right,  }\item[{int}]{bottom }\end{DoxyParamCaption})}
+
+
+
+Construct a new box Collider object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em top} & \\
+\hline
+{\em right} & \\
+\hline
+{\em bottom} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoxCollider_a772772355c748ce9d6c87b0a5f0ac119}\label{classBoxCollider_a772772355c748ce9d6c87b0a5f0ac119}} 
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{top,  }\item[{int}]{right,  }\item[{int}]{bottom,  }\item[{int}]{padding }\end{DoxyParamCaption})}
+
+
+
+Construct a new box Collider object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em top} & \\
+\hline
+{\em right} & \\
+\hline
+{\em bottom} & \\
+\hline
+{\em padding} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoxCollider_a60832b9f7f761240e000e18415414a11}\label{classBoxCollider_a60832b9f7f761240e000e18415414a11}} 
+\index{BoxCollider@{BoxCollider}!collidingWith@{collidingWith}}
+\index{collidingWith@{collidingWith}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{collidingWith()}{collidingWith()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Box\+Collider\+::colliding\+With (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if and only if the box\+Collider collides with other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoxCollider_a60832b9f7f761240e000e18415414a11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBoxCollider_a1a503cac86245b2f2932dff5f3089337}\label{classBoxCollider_a1a503cac86245b2f2932dff5f3089337}} 
+\index{BoxCollider@{BoxCollider}!collidingWith@{collidingWith}}
+\index{collidingWith@{collidingWith}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{collidingWith()}{collidingWith()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Box\+Collider\+::colliding\+With (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classBoxCollider_a44c967a212d3aaf4a8ffb63f3d483730}\label{classBoxCollider_a44c967a212d3aaf4a8ffb63f3d483730}} 
+\index{BoxCollider@{BoxCollider}!getRect@{getRect}}
+\index{getRect@{getRect}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Box\+Collider\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Rect object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoxCollider_a44c967a212d3aaf4a8ffb63f3d483730_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBoxCollider_a2901c2cf466871306db4ca669ad15793}\label{classBoxCollider_a2901c2cf466871306db4ca669ad15793}} 
+\index{BoxCollider@{BoxCollider}!move@{move}}
+\index{move@{move}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Box\+Collider\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{top\+\_\+left,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{bottom\+\_\+right }\end{DoxyParamCaption})}
+
+
+
+It changes the top\+\_\+left and bottom\+\_\+right attributes of the box\+Collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+left} & \\
+\hline
+{\em bottom\+\_\+right} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classBoxCollider_a2901c2cf466871306db4ca669ad15793_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBoxCollider_ade5e9bd7b7ca4263581d9fd553e0bd3f}\label{classBoxCollider_ade5e9bd7b7ca4263581d9fd553e0bd3f}} 
+\index{BoxCollider@{BoxCollider}!printDebugLines@{printDebugLines}}
+\index{printDebugLines@{printDebugLines}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{printDebugLines()}{printDebugLines()}}
+{\footnotesize\ttfamily void Box\+Collider\+::print\+Debug\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{int}]{color = {\ttfamily 0x00FF00} }\end{DoxyParamCaption}) const}
+
+
+
+Prints debugging square in the screen of color green by default. This square marks the borders of the box\+Collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoxCollider_ade5e9bd7b7ca4263581d9fd553e0bd3f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoxCollider_ade5e9bd7b7ca4263581d9fd553e0bd3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBoxCollider_ae494bfb0cca9868d8f1c47284d9af4df}\label{classBoxCollider_ae494bfb0cca9868d8f1c47284d9af4df}} 
+\index{BoxCollider@{BoxCollider}!setPadding@{setPadding}}
+\index{setPadding@{setPadding}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{setPadding()}{setPadding()}}
+{\footnotesize\ttfamily void Box\+Collider\+::set\+Padding (\begin{DoxyParamCaption}\item[{int}]{padding }\end{DoxyParamCaption})}
+
+
+
+Set the Padding, box\+Collider should be updated for the effects of this change to take place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em padding} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoxCollider_ae494bfb0cca9868d8f1c47284d9af4df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBoxCollider_a2f96d48196f68ebe9b5319ab9b89f72d}\label{classBoxCollider_a2f96d48196f68ebe9b5319ab9b89f72d}} 
+\index{BoxCollider@{BoxCollider}!update@{update}}
+\index{update@{update}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Box\+Collider\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{const \mbox{\hyperlink{animation__data_8hh_a4a01e3d4a02eca86dfa8cc90ee81759b}{Frame}} \&}]{frame }\end{DoxyParamCaption})}
+
+
+
+It updates the position of the box\+Collider using the position of the objecte and a Frame(sprite), so it can tell the width and height it must have. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+{\em frame} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoxCollider_a2f96d48196f68ebe9b5319ab9b89f72d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBoxCollider_a5d6dd7397a625930895c343c1ad32734}\label{classBoxCollider_a5d6dd7397a625930895c343c1ad32734}} 
+\index{BoxCollider@{BoxCollider}!bottomright\_@{bottomright\_}}
+\index{bottomright\_@{bottomright\_}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{bottomright\_}{bottomright\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Box\+Collider\+::bottomright\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoxCollider_a9bead132bcabfcf154f1db73b975401f}\label{classBoxCollider_a9bead132bcabfcf154f1db73b975401f}} 
+\index{BoxCollider@{BoxCollider}!padding\_@{padding\_}}
+\index{padding\_@{padding\_}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{padding\_}{padding\_}}
+{\footnotesize\ttfamily int Box\+Collider\+::padding\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoxCollider_a51cff13333eb29c6e751b129020e1985}\label{classBoxCollider_a51cff13333eb29c6e751b129020e1985}} 
+\index{BoxCollider@{BoxCollider}!rect\_@{rect\_}}
+\index{rect\_@{rect\_}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{rect\_}{rect\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Box\+Collider\+::rect\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoxCollider_a25ebec92da1423c8c53f458ca541caa1}\label{classBoxCollider_a25ebec92da1423c8c53f458ca541caa1}} 
+\index{BoxCollider@{BoxCollider}!topleft\_@{topleft\_}}
+\index{topleft\_@{topleft\_}!BoxCollider@{BoxCollider}}
+\doxysubsubsection{\texorpdfstring{topleft\_}{topleft\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Box\+Collider\+::topleft\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/components/\mbox{\hyperlink{boxCollider_8hh}{box\+Collider.\+hh}}\item 
+src/components/\mbox{\hyperlink{boxCollider_8cc}{box\+Collider.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="Block::headBumped" name="Block::headBumped">
+<area shape="rect" id="node1" title="plays a little animation of the block going up and down. Using the helper functions isUp() and getDow..." alt="" coords="5,42,157,69"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a59dd3357956a0f3bba8d343362e83df5" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="205,5,452,47"/>
+<area shape="rect" id="node4" href="$classBoxCollider.html#a2901c2cf466871306db4ca669ad15793" title="It changes the top_left and bottom_right attributes of the boxCollider." alt="" coords="257,71,400,98"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="500,13,747,39"/>
+</map>

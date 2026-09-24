@@ -1,0 +1,24 @@
+<map id="pro2::Window::width" name="pro2::Window::width">
+<area shape="rect" id="node1" title="Devuelve el ancho de la ventana." alt="" coords="787,460,941,487"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68" title="Devuelve la posición del centro de la cámara." alt="" coords="556,482,723,523"/>
+<area shape="rect" id="node6" href="$classGame.html#ab146f2f8cec61b092586762267cf1e73" title=" " alt="" coords="296,461,467,488"/>
+<area shape="rect" id="node8" href="$classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3" title=" " alt="" coords="540,233,739,260"/>
+<area shape="rect" id="node18" href="$classpro2_1_1Window.html#a1362ea74501506424e5b8c4177d19aa1" title="Devuelve la posición del cursor del ratón." alt="" coords="543,431,735,457"/>
+<area shape="rect" id="node19" href="$namespacepro2.html#a7da69392e8cbe4f0fc8c7c027e1e7e1f" title="Paints the background sprite to the window, with a parallax effect given by the parralaxMuliplier...." alt="" coords="552,547,727,589"/>
+<area shape="rect" id="node20" href="$namespacepro2.html#addfac8af42421478c938d5bbd64c1343" title="Paints every pixel outside the circle (formed by center and radius parameters) black." alt="" coords="557,613,722,640"/>
+<area shape="rect" id="node21" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="573,81,705,108"/>
+<area shape="rect" id="node22" href="$classpro2_1_1Window.html#a64ffe9a6cd8e21cdb17546f7d53a8e0f" title="Contruye una ventana con título, anchura y altura." alt="" coords="554,664,725,691"/>
+<area shape="rect" id="node3" href="$classManager.html#aed2b4bd12cabc5bd5d8528bb6ea844f4" title="Paints everything in every manager. (most of the game)." alt="" coords="321,512,441,539"/>
+<area shape="rect" id="node4" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="114,537,217,564"/>
+<area shape="rect" id="node5" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,512,60,539"/>
+<area shape="rect" id="node7" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,461,223,488"/>
+<area shape="rect" id="node9" href="$classEntity.html#a3d5357e1dbe9a7cdb0ded3978d8ac370" title="Paints the goomba on the window, if debug is set to true, it calls for the debug of the boxCollider." alt="" coords="331,309,431,336"/>
+<area shape="rect" id="node10" href="$classWiggler.html#a0891580932bfc3b1b4bca505cdbebc2e" title=" " alt="" coords="325,360,438,387"/>
+<area shape="rect" id="node11" href="$classBlockManager.html#a078eb5f7c9088eb77d78f88e8ea53b1f" title="Paints all the blocks on the screen (all that are inside the screen thanks to the finder)" alt="" coords="303,411,459,437"/>
+<area shape="rect" id="node12" href="$classFlagManager.html#a858ccb307f98dd15084d81a4e048d36c" title="Paints all flags, with animation." alt="" coords="307,56,455,83"/>
+<area shape="rect" id="node13" href="$classResourceManager.html#a429ac8e387b14fdcde5b27efe77f64eb" title="Paints all collectables on the window." alt="" coords="291,107,471,133"/>
+<area shape="rect" id="node14" href="$classKamek.html#af2da25cbe62c7f66a9c55c8cca2dd959" title="Returns a random Pt on screen, atleast [innerMargin] away from the borders." alt="" coords="271,157,492,184"/>
+<area shape="rect" id="node15" href="$classPlatformManager.html#a5d4db4a3cce1bce2967fa65ba6e5a2f8" title="Updates platforms in s_platforms_." alt="" coords="287,208,475,235"/>
+<area shape="rect" id="node16" href="$classKamek.html#a279f7996d249690cf8aba8ec71f33b59" title="Updates Kamek." alt="" coords="321,259,442,285"/>
+<area shape="rect" id="node17" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="297,5,465,32"/>
+</map>

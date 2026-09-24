@@ -1,0 +1,4 @@
+<map id="Block::getDown" name="Block::getDown">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node2" href="$classBoxCollider.html#a2901c2cf466871306db4ca669ad15793" title="It changes the top_left and bottom_right attributes of the boxCollider." alt="" coords="177,5,320,32"/>
+</map>

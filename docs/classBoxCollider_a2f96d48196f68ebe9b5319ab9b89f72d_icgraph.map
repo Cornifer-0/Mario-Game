@@ -1,0 +1,9 @@
+<map id="BoxCollider::update" name="BoxCollider::update">
+<area shape="rect" id="node1" title="It updates the position of the boxCollider using the position of the objecte and a Frame(sprite),..." alt="" coords="261,132,412,159"/>
+<area shape="rect" id="node2" href="$classCollectable.html#a133c90052f5f73ab129261c156378ca3" title="Construct a new Collectable object at a position pos. With a type ct." alt="" coords="21,5,197,32"/>
+<area shape="rect" id="node3" href="$classMario.html#a186e5939898ff3991dd6fec02df14272" title=" " alt="" coords="57,56,161,83"/>
+<area shape="rect" id="node4" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="41,107,177,133"/>
+<area shape="rect" id="node5" href="$classWiggler.html#a2b4580bbad11c071a353bb58f18fc8a8" title=" " alt="" coords="36,157,183,184"/>
+<area shape="rect" id="node6" href="$classWiggler.html#ae905a0b228df78cb3bf8fb91479e4ea5" title=" " alt="" coords="5,208,213,235"/>
+<area shape="rect" id="node7" href="$classMario.html#ae943f15ad46e8a9cfd7915bee883051a" title=" " alt="" coords="28,259,191,285"/>
+</map>

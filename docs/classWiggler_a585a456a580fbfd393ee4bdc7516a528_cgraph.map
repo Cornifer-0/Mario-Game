@@ -1,0 +1,5 @@
+<map id="Wiggler::die_rec" name="Wiggler::die_rec">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,132,73"/>
+<area shape="rect" id="node2" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="180,5,356,47"/>
+<area shape="rect" id="node3" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="180,71,356,112"/>
+</map>

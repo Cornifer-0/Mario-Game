@@ -1,0 +1,144 @@
+\hypertarget{classKoopaShellManager}{}\doxysection{Koopa\+Shell\+Manager Class Reference}
+\label{classKoopaShellManager}\index{KoopaShellManager@{KoopaShellManager}}
+
+
+{\ttfamily \#include $<$koopa\+Shell\+Manager.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classKoopaShellManager_ab9b53e46ddccafaeb6679a8f8edc70ad}{spawn}} (const \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}})
+\begin{DoxyCompactList}\small\item\em Spawns a koopshell at a position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKoopaShellManager_aacb6ef395b8a631fc7f3dd79bef17dd4}{update}} (const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, \mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, \mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$gm)
+\begin{DoxyCompactList}\small\item\em Updates the koop\+Shell aswell as the objects around it, like the mario, luigi and the goombas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKoopaShellManager_a7fbf68b8197fa46f2c4285bc38f24dbb}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints all koopa\+Shells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classKoopaShellManager}{Koopa\+Shell\+Manager}} \& \mbox{\hyperlink{classKoopaShellManager_a68da5ad47e7b6fb50c3138196499fe04}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns the only instance of a koopa\+Shell\+Manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classKoopaShell}{Koopa\+Shell}} $\ast$ $>$ \mbox{\hyperlink{classKoopaShellManager_a5edc4ffcfe3d25fd937d45dbcf63310e}{koopa\+Shells\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKoopaShellManager_a68da5ad47e7b6fb50c3138196499fe04}\label{classKoopaShellManager_a68da5ad47e7b6fb50c3138196499fe04}} 
+\index{KoopaShellManager@{KoopaShellManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!KoopaShellManager@{KoopaShellManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classKoopaShellManager}{Koopa\+Shell\+Manager}}\& Koopa\+Shell\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the only instance of a koopa\+Shell\+Manager. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classKoopaShellManager}{Koopa\+Shell\+Manager}}\& 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKoopaShellManager_a68da5ad47e7b6fb50c3138196499fe04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKoopaShellManager_a7fbf68b8197fa46f2c4285bc38f24dbb}\label{classKoopaShellManager_a7fbf68b8197fa46f2c4285bc38f24dbb}} 
+\index{KoopaShellManager@{KoopaShellManager}!paint@{paint}}
+\index{paint@{paint}!KoopaShellManager@{KoopaShellManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints all koopa\+Shells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKoopaShellManager_a7fbf68b8197fa46f2c4285bc38f24dbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKoopaShellManager_ab9b53e46ddccafaeb6679a8f8edc70ad}\label{classKoopaShellManager_ab9b53e46ddccafaeb6679a8f8edc70ad}} 
+\index{KoopaShellManager@{KoopaShellManager}!spawn@{spawn}}
+\index{spawn@{spawn}!KoopaShellManager@{KoopaShellManager}}
+\doxysubsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+Manager\+::spawn (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Spawns a koopshell at a position. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKoopaShellManager_ab9b53e46ddccafaeb6679a8f8edc70ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKoopaShellManager_aacb6ef395b8a631fc7f3dd79bef17dd4}\label{classKoopaShellManager_aacb6ef395b8a631fc7f3dd79bef17dd4}} 
+\index{KoopaShellManager@{KoopaShellManager}!update@{update}}
+\index{update@{update}!KoopaShellManager@{KoopaShellManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+Manager\+::update (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{\mbox{\hyperlink{classEntityManager}{Entity\+Manager}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+
+
+Updates the koop\+Shell aswell as the objects around it, like the mario, luigi and the goombas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em platforms} & \\
+\hline
+{\em mario} & \\
+\hline
+{\em luigi} & \\
+\hline
+{\em gm} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKoopaShellManager_aacb6ef395b8a631fc7f3dd79bef17dd4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKoopaShellManager_aacb6ef395b8a631fc7f3dd79bef17dd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classKoopaShellManager_a5edc4ffcfe3d25fd937d45dbcf63310e}\label{classKoopaShellManager_a5edc4ffcfe3d25fd937d45dbcf63310e}} 
+\index{KoopaShellManager@{KoopaShellManager}!koopaShells\_@{koopaShells\_}}
+\index{koopaShells\_@{koopaShells\_}!KoopaShellManager@{KoopaShellManager}}
+\doxysubsubsection{\texorpdfstring{koopaShells\_}{koopaShells\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classKoopaShell}{Koopa\+Shell}} $\ast$$>$ Koopa\+Shell\+Manager\+::koopa\+Shells\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/managers/\mbox{\hyperlink{koopaShellManager_8hh}{koopa\+Shell\+Manager.\+hh}}\item 
+src/managers/\mbox{\hyperlink{koopaShellManager_8cc}{koopa\+Shell\+Manager.\+cc}}\end{DoxyCompactItemize}

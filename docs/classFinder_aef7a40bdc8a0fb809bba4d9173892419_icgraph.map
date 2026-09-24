@@ -1,0 +1,4 @@
+<map id="Finder::updateNode" name="Finder::updateNode">
+<area shape="rect" id="node1" title="Comproba si el node s&#39;ha de dividir." alt="" coords="148,5,297,32"/>
+<area shape="rect" id="node2" href="$classFinder.html#a4d206a624b0d45dd8f3a1030f4b8cf3e" title="Funcio recursiva per buscar les fulles de l&#39;arbre que interseccionen amb el rectangle de t." alt="" coords="5,5,100,32"/>
+</map>

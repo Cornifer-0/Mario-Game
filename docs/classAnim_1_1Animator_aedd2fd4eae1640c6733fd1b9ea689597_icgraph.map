@@ -1,0 +1,4 @@
+<map id="Anim::Animator::spawnParticleOfAnimation" name="Anim::Animator::spawnParticleOfAnimation">
+<area shape="rect" id="node1" title="spawnsParticlesOfAnimation, Spawns the particle system with the name name at a position pos." alt="" coords="208,5,431,47"/>
+<area shape="rect" id="node2" href="$classCollectable.html#aed201917e38b6c95943084c7c6f77e5d" title="Spawns a collected animation at pos_. Does not actually destroy itself." alt="" coords="5,13,160,39"/>
+</map>

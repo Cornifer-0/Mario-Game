@@ -1,0 +1,4 @@
+<map id="pro2::Window::move_camera" name="pro2::Window::move_camera">
+<area shape="rect" id="node1" title="Indica que la posición de la esquina superior izquierda de la ventana debería moverse según el vector..." alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#ac36cada6562bd2bf7807fe8b5b76efee" title="Determina si la cámara está en movimiento (su posición final es distinta de la actual)." alt="" coords="208,5,375,47"/>
+</map>

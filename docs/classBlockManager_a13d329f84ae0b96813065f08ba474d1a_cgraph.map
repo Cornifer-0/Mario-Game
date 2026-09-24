@@ -1,0 +1,13 @@
+<map id="BlockManager::update" name="BlockManager::update">
+<area shape="rect" id="node1" title="Updates mario so he interacts with the blocks." alt="" coords="5,233,173,260"/>
+<area shape="rect" id="node2" href="$classMario.html#a214bf9b6cff10d1b6f69ad2019a43f68" title=" " alt="" coords="255,5,393,32"/>
+<area shape="rect" id="node3" href="$classBoxCollider.html#a44c967a212d3aaf4a8ffb63f3d483730" title="Get the Rect object." alt="" coords="247,56,401,83"/>
+<area shape="rect" id="node4" href="$classMario.html#a0401603fd178d8affd5b330954ca04b9" title=" " alt="" coords="263,107,385,133"/>
+<area shape="rect" id="node5" href="$classMario.html#a098c352686f9fc74fed66f1712ca02bc" title=" " alt="" coords="255,157,393,184"/>
+<area shape="rect" id="node6" href="$classMario.html#a0bc34a1f489d6d10905c83fa8e1e72f9" title=" " alt="" coords="279,208,369,235"/>
+<area shape="rect" id="node7" href="$classMario.html#a970f238b3538fa175b0f73aa29aa2c48" title=" " alt="" coords="247,259,401,285"/>
+<area shape="rect" id="node8" href="$classMario.html#a52e29f7688225e81da18bad4ed571a0e" title=" " alt="" coords="273,309,375,336"/>
+<area shape="rect" id="node9" href="$classMario.html#a807ce8785091bd609e156292409b376f" title=" " alt="" coords="273,360,375,387"/>
+<area shape="rect" id="node10" href="$classMario.html#acc6ac6e7875aa85a1a2d0acef477b1ee" title=" " alt="" coords="253,411,395,437"/>
+<area shape="rect" id="node11" href="$classEntityManager.html#aa5b2c4a3ee350b65f67c678961e286a4" title="Spawns an entity of type at a pos." alt="" coords="221,461,427,488"/>
+</map>

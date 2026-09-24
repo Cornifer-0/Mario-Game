@@ -1,0 +1,6 @@
+<map id="Finder::query" name="Finder::query">
+<area shape="rect" id="node1" title="Retorna el conjunt d&#39;objectes amb rectangles total o parcialment dins de rect." alt="" coords="5,42,112,69"/>
+<area shape="rect" id="node2" href="$classFinder.html#abf26632846b54bb3e9061e72d4dd7a95" title="Query recursiva per buscar un objecte dins de l&#39;arbre de QuadNode&#39;s." alt="" coords="160,42,275,69"/>
+<area shape="rect" id="node3" href="$classFinder.html#af25bf9f9084b01ed20944aec40c180d0" title="La funcio afageix els objecte de items a S, si i nomes si interseccionen amb rect." alt="" coords="323,5,464,47"/>
+<area shape="rect" id="node4" href="$classFinder.html#aec6b48019cf7d820c6d78040755852f4" title="Retorna true si i nomes si els rectangles a i b interseccionen en el pla." alt="" coords="512,42,639,69"/>
+</map>

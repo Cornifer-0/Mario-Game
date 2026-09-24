@@ -1,0 +1,6 @@
+<map id="fenster_sleep" name="fenster_sleep">
+<area shape="rect" id="node1" title=" " alt="" coords="309,42,420,69"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6" title="Gestiona las tareas necesarias para pasar al siguiente fotograma." alt="" coords="111,5,258,47"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#abbe66e79c657fd8939c3df975a825214" title="Espera que pase un número ms de milisegundos sin hacer nada." alt="" coords="108,71,261,98"/>
+<area shape="rect" id="node3" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>

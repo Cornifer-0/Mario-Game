@@ -1,0 +1,4 @@
+<map id="Mario::is_dead" name="Mario::is_dead">
+<area shape="rect" id="node1" title=" " alt="" coords="224,5,341,32"/>
+<area shape="rect" id="node2" href="$classEntityManager.html#a3dac9289566317ccb865d12b6265d799" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="5,5,176,32"/>
+</map>

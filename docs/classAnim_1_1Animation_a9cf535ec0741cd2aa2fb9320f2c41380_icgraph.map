@@ -1,0 +1,4 @@
+<map id="Anim::Animation::currentFrame" name="Anim::Animation::currentFrame">
+<area shape="rect" id="node1" title="Returns the current Frame." alt="" coords="263,5,448,47"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animation.html#ab0a90c26594b5aaf8c1b0da64f90e449" title="Returns the next Frame in the animation, If the currentFrame is the last frame of the AnimationFrame,..." alt="" coords="5,13,215,39"/>
+</map>

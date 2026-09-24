@@ -1,0 +1,8 @@
+<map id="include/world/collectable.hh" name="include/world/collectable.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="260,5,464,32"/>
+<area shape="rect" id="node2" href="$resourceManager_8hh.html" title=" " alt="" coords="157,80,356,121"/>
+<area shape="rect" id="node6" href="$collectable_8cc.html" title=" " alt="" coords="380,87,555,114"/>
+<area shape="rect" id="node3" href="$game_8cc.html" title=" " alt="" coords="5,169,137,196"/>
+<area shape="rect" id="node4" href="$manager_8cc.html" title=" " alt="" coords="162,169,351,196"/>
+<area shape="rect" id="node5" href="$resourceManager_8cc.html" title=" " alt="" coords="376,169,620,196"/>
+</map>

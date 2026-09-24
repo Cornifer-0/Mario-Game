@@ -1,0 +1,122 @@
+\hypertarget{classParticleSystemManager}{}\doxysection{Particle\+System\+Manager Class Reference}
+\label{classParticleSystemManager}\index{ParticleSystemManager@{ParticleSystemManager}}
+
+
+\mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}} is a class that manages particle systems and helps spawn them on the world.  
+
+
+
+
+{\ttfamily \#include $<$particle\+System.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classParticleSystemManager_ad0def8561b3917d6a8055106174f5516}{spawn}} (const \mbox{\hyperlink{classParticleSystem}{Particle\+System}} \&ps)
+\begin{DoxyCompactList}\small\item\em Spawns a new particle system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParticleSystemManager_a6fbe741bd9089945c520284071d09466}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Renders all managed particle systems onto the specified window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}} \& \mbox{\hyperlink{classParticleSystemManager_ad7a6ca8fac934a5abd048f1b1d105e6b}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the singleton instance of the \mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classParticleSystem}{Particle\+System}} $>$ \mbox{\hyperlink{classParticleSystemManager_a9c43c4405295d31bcda2c5721e789ec0}{particles\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}} is a class that manages particle systems and helps spawn them on the world. 
+
+Manages a collection of particle systems and provides functionality to spawn and render them.
+
+This class follows the Singleton design pattern to ensure that only one instance of the \mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}} exists throughout the application. It provides methods to spawn new particle systems and render them onto a given window. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParticleSystemManager_ad7a6ca8fac934a5abd048f1b1d105e6b}\label{classParticleSystemManager_ad7a6ca8fac934a5abd048f1b1d105e6b}} 
+\index{ParticleSystemManager@{ParticleSystemManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ParticleSystemManager@{ParticleSystemManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}}\& Particle\+System\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Retrieves the singleton instance of the \mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}}. 
+
+This method ensures that only one instance of the \mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}} exists and provides global access to it.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classParticleSystemManager}{Particle\+System\+Manager}}\& Reference to the singleton instance. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParticleSystemManager_ad7a6ca8fac934a5abd048f1b1d105e6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classParticleSystemManager_a6fbe741bd9089945c520284071d09466}\label{classParticleSystemManager_a6fbe741bd9089945c520284071d09466}} 
+\index{ParticleSystemManager@{ParticleSystemManager}!paint@{paint}}
+\index{paint@{paint}!ParticleSystemManager@{ParticleSystemManager}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Particle\+System\+Manager\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Renders all managed particle systems onto the specified window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Reference to the window where the particle systems will be rendered. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParticleSystemManager_a6fbe741bd9089945c520284071d09466_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classParticleSystemManager_ad0def8561b3917d6a8055106174f5516}\label{classParticleSystemManager_ad0def8561b3917d6a8055106174f5516}} 
+\index{ParticleSystemManager@{ParticleSystemManager}!spawn@{spawn}}
+\index{spawn@{spawn}!ParticleSystemManager@{ParticleSystemManager}}
+\doxysubsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily void Particle\+System\+Manager\+::spawn (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classParticleSystem}{Particle\+System}} \&}]{ps }\end{DoxyParamCaption})}
+
+
+
+Spawns a new particle system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & The particle system to be added. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParticleSystemManager_ad0def8561b3917d6a8055106174f5516_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classParticleSystemManager_a9c43c4405295d31bcda2c5721e789ec0}\label{classParticleSystemManager_a9c43c4405295d31bcda2c5721e789ec0}} 
+\index{ParticleSystemManager@{ParticleSystemManager}!particles\_@{particles\_}}
+\index{particles\_@{particles\_}!ParticleSystemManager@{ParticleSystemManager}}
+\doxysubsubsection{\texorpdfstring{particles\_}{particles\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classParticleSystem}{Particle\+System}}$>$ Particle\+System\+Manager\+::particles\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/components/\mbox{\hyperlink{particleSystem_8hh}{particle\+System.\+hh}}\item 
+src/components/\mbox{\hyperlink{particleSystem_8cc}{particle\+System.\+cc}}\end{DoxyCompactItemize}

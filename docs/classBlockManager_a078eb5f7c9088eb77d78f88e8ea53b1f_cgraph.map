@@ -1,0 +1,6 @@
+<map id="BlockManager::paint" name="BlockManager::paint">
+<area shape="rect" id="node1" title="Paints all the blocks on the screen (all that are inside the screen thanks to the finder)" alt="" coords="5,31,161,57"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3" title=" " alt="" coords="209,31,408,57"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="456,5,615,32"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="458,56,613,83"/>
+</map>

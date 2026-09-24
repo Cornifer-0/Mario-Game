@@ -1,0 +1,5 @@
+<map id="include/enemies/kamek.hh" name="include/enemies/kamek.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="11,80,74,107"/>
+<area shape="rect" id="node3" href="$geometry_8hh.html" title=" " alt="" coords="98,80,233,107"/>
+</map>

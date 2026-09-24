@@ -1,0 +1,6 @@
+<map id="Kamek::randomPointOnScreen" name="Kamek::randomPointOnScreen">
+<area shape="rect" id="node1" title="Returns a random Pt on screen, atleast [innerMargin] away from the borders." alt="" coords="5,31,227,57"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3" title=" " alt="" coords="275,31,473,57"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="521,5,680,32"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="523,56,678,83"/>
+</map>

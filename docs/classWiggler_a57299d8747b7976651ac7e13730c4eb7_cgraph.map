@@ -1,0 +1,13 @@
+<map id="Wiggler::paint_rec" name="Wiggler::paint_rec">
+<area shape="rect" id="node1" title=" " alt="" coords="5,173,145,200"/>
+<area shape="rect" id="node2" href="$classAnim_1_1Animator.html#a3ef8c8f4557a13fc4a7b7f7f0362173b" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="193,5,440,32"/>
+<area shape="rect" id="node3" href="$classAnim_1_1Animator.html#a2361fe1b3faf687fd549cec8ce1ddcc2" title="Returns the currentFrame of the currentAnimation." alt="" coords="207,56,426,83"/>
+<area shape="rect" id="node4" href="$classParticleSystemManager.html#ad7a6ca8fac934a5abd048f1b1d105e6b" title="Retrieves the singleton instance of the ParticleSystemManager." alt="" coords="229,107,405,149"/>
+<area shape="rect" id="node5" href="$classAnim_1_1Animator.html#a23d7ea38ef0175f05c8805b5ddabaa25" title="Returns the nextFrame of the animation and sets prevFrame_ to 0 if and only if prevFrame_ &gt;= than the..." alt="" coords="215,173,418,200"/>
+<area shape="rect" id="node6" href="$namespacepro2.html#a53b6d9bb59e9b6d79ddc591a87bf9379" title="Dibuixa una imatge/textura a la finextra a partir d&#39;una posicio (aquesta es el centre)" alt="" coords="249,225,385,266"/>
+<area shape="rect" id="node7" href="$classBoxCollider.html#ade5e9bd7b7ca4263581d9fd553e0bd3f" title="Prints debugging square in the screen of color green by default. This square marks the borders of the..." alt="" coords="211,291,422,317"/>
+<area shape="rect" id="node11" href="$classParticleSystemManager.html#ad0def8561b3917d6a8055106174f5516" title="Spawns a new particle system." alt="" coords="229,342,405,383"/>
+<area shape="rect" id="node8" href="$namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da" title="Dibuja una línea horizontal en la ventana." alt="" coords="488,265,619,292"/>
+<area shape="rect" id="node10" href="$namespacepro2.html#abb90df6acb9671a913c1f4d91591caae" title="Dibuja una línea vertical en la ventana." alt="" coords="488,316,619,343"/>
+<area shape="rect" id="node9" href="$classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac" title="Cambia un pixel de la ventana." alt="" coords="667,291,843,317"/>
+</map>

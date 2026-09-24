@@ -1,0 +1,52 @@
+<map id="src/core/game.cc" name="src/core/game.cc">
+<area shape="rect" id="node1" title=" " alt="" coords="3510,5,3642,32"/>
+<area shape="rect" id="node2" href="$game_8hh.html" title=" " alt="" coords="1477,80,1587,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5383,244,5463,271"/>
+<area shape="rect" id="node5" href="$animation__data_8hh.html" title=" " alt="" coords="1974,80,2165,107"/>
+<area shape="rect" id="node15" href="$window_8hh.html" title=" " alt="" coords="350,244,501,271"/>
+<area shape="rect" id="node25" href="$geometry_8hh.html" title=" " alt="" coords="3609,319,3743,345"/>
+<area shape="rect" id="node26" href="$HUD_8hh.html" title=" " alt="" coords="4643,162,4799,189"/>
+<area shape="rect" id="node27" href="$boxCollider_8hh.html" title=" " alt="" coords="634,162,833,189"/>
+<area shape="rect" id="node28" href="$particleSystem_8hh.html" title=" " alt="" coords="4667,80,4891,107"/>
+<area shape="rect" id="node31" href="$finder_8hh.html" title=" " alt="" coords="5134,162,5245,189"/>
+<area shape="rect" id="node35" href="$utils_8hh.html" title=" " alt="" coords="857,162,959,189"/>
+<area shape="rect" id="node36" href="$kamek_8hh.html" title=" " alt="" coords="984,162,1131,189"/>
+<area shape="rect" id="node37" href="$wiggler_8hh.html" title=" " alt="" coords="3109,162,3259,189"/>
+<area shape="rect" id="node38" href="$blockManager_8hh.html" title=" " alt="" coords="3405,80,3608,107"/>
+<area shape="rect" id="node41" href="$entityManager_8hh.html" title=" " alt="" coords="3843,80,4048,107"/>
+<area shape="rect" id="node43" href="$koopaShellManager_8hh.html" title=" " alt="" coords="3662,162,3901,189"/>
+<area shape="rect" id="node44" href="$manager_8hh.html" title=" " alt="" coords="5320,80,5488,107"/>
+<area shape="rect" id="node45" href="$resourceManager_8hh.html" title=" " alt="" coords="387,162,610,189"/>
+<area shape="rect" id="node48" href="$wigglerManager_8hh.html" title=" " alt="" coords="4241,162,4455,189"/>
+<area shape="rect" id="node49" href="$mario_8hh.html" title=" " alt="" coords="2981,80,3061,107"/>
+<area shape="rect" id="node50" href="$platform_8hh.html" title=" " alt="" coords="4480,162,4619,189"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2817,244,2879,271"/>
+<area shape="rect" id="node6" href="$animation__data__background_8hh.html" title=" " alt="" coords="2763,155,2933,196"/>
+<area shape="rect" id="node7" href="$animation__data__goomba_8hh.html" title=" " alt="" coords="1205,155,1376,196"/>
+<area shape="rect" id="node8" href="$animation__data__items_8hh.html" title=" " alt="" coords="1400,155,1571,196"/>
+<area shape="rect" id="node9" href="$animation__data__kamek_8hh.html" title=" " alt="" coords="1595,155,1765,196"/>
+<area shape="rect" id="node10" href="$animation__data__koopa_8hh.html" title=" " alt="" coords="1789,155,1960,196"/>
+<area shape="rect" id="node11" href="$animation__data__luigi_8hh.html" title=" " alt="" coords="1984,155,2155,196"/>
+<area shape="rect" id="node12" href="$animation__data__particles_8hh.html" title=" " alt="" coords="2179,155,2349,196"/>
+<area shape="rect" id="node13" href="$animation__data__wiggler_8hh.html" title=" " alt="" coords="2373,155,2544,196"/>
+<area shape="rect" id="node14" href="$animation__data__world_8hh.html" title=" " alt="" coords="2568,155,2739,196"/>
+<area shape="rect" id="node16" title=" " alt="" coords="455,319,524,345"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2085,319,2144,345"/>
+<area shape="rect" id="node18" href="$fenster_8h.html" title=" " alt="" coords="292,319,431,345"/>
+<area shape="rect" id="node19" title=" " alt="" coords="5,393,112,420"/>
+<area shape="rect" id="node20" title=" " alt="" coords="136,393,224,420"/>
+<area shape="rect" id="node21" title=" " alt="" coords="248,393,363,420"/>
+<area shape="rect" id="node22" title=" " alt="" coords="387,393,451,420"/>
+<area shape="rect" id="node23" title=" " alt="" coords="475,393,546,420"/>
+<area shape="rect" id="node24" title=" " alt="" coords="570,393,641,420"/>
+<area shape="rect" id="node29" href="$animator_8hh.html" title=" " alt="" coords="4875,162,5059,189"/>
+<area shape="rect" id="node30" title=" " alt="" coords="4944,244,4995,271"/>
+<area shape="rect" id="node32" title=" " alt="" coords="5273,244,5359,271"/>
+<area shape="rect" id="node33" title=" " alt="" coords="4131,244,4173,271"/>
+<area shape="rect" id="node34" title=" " alt="" coords="5125,244,5249,271"/>
+<area shape="rect" id="node39" title=" " alt="" coords="3283,162,3343,189"/>
+<area shape="rect" id="node40" href="$block_8hh.html" title=" " alt="" coords="3419,162,3536,189"/>
+<area shape="rect" id="node42" href="$entity_8hh.html" title=" " alt="" coords="3925,162,4064,189"/>
+<area shape="rect" id="node46" title=" " alt="" coords="525,244,597,271"/>
+<area shape="rect" id="node47" href="$collectable_8hh.html" title=" " alt="" coords="675,244,829,271"/>
+</map>

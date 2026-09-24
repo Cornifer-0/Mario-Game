@@ -1,0 +1,14 @@
+<map id="pro2::paint_sprite_center" name="pro2::paint_sprite_center">
+<area shape="rect" id="node1" title="Dibuixa una imatge/textura a la finextra a partir d&#39;una posicio (aquesta es el centre)" alt="" coords="467,201,603,242"/>
+<area shape="rect" id="node2" href="$classParticleSystem.html#a1525b5fa89cc33064fc959cd4c9ba08c" title="Paints the particle system on the window." alt="" coords="259,5,419,32"/>
+<area shape="rect" id="node3" href="$classEntity.html#a3d5357e1dbe9a7cdb0ded3978d8ac370" title="Paints the goomba on the window, if debug is set to true, it calls for the debug of the boxCollider." alt="" coords="289,56,389,83"/>
+<area shape="rect" id="node4" href="$classKamek.html#a3a4f2a78a48b98e9c4273d179e9f5bb6" title="Paints Kamek on the window." alt="" coords="284,107,393,133"/>
+<area shape="rect" id="node5" href="$classKoopaShell.html#abb2f50382a69724fac98e0e8bed6263a" title="Paints the koopaShells on the window." alt="" coords="271,157,406,184"/>
+<area shape="rect" id="node6" href="$classFlagManager.html#a858ccb307f98dd15084d81a4e048d36c" title="Paints all flags, with animation." alt="" coords="265,208,413,235"/>
+<area shape="rect" id="node7" href="$classMario.html#a657b66f6c78e5ae10796452486de54d8" title=" " alt="" coords="289,259,389,285"/>
+<area shape="rect" id="node10" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="271,309,407,336"/>
+<area shape="rect" id="node11" href="$classManager.html#aed2b4bd12cabc5bd5d8528bb6ea844f4" title="Paints everything in every manager. (most of the game)." alt="" coords="279,360,399,387"/>
+<area shape="rect" id="node12" href="$classWiggler.html#a57299d8747b7976651ac7e13730c4eb7" title=" " alt="" coords="269,411,409,437"/>
+<area shape="rect" id="node8" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="108,309,211,336"/>
+<area shape="rect" id="node9" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,309,60,336"/>
+</map>

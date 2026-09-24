@@ -1,0 +1,6 @@
+<map id="pro2::Window::move_camera" name="pro2::Window::move_camera">
+<area shape="rect" id="node1" title="Indica que la posición de la esquina superior izquierda de la ventana debería moverse según el vector..." alt="" coords="489,5,644,47"/>
+<area shape="rect" id="node2" href="$classGame.html#ab146f2f8cec61b092586762267cf1e73" title=" " alt="" coords="271,13,441,39"/>
+<area shape="rect" id="node3" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,13,223,39"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>

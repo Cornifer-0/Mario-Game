@@ -1,0 +1,4 @@
+<map id="pro2::paint_number" name="pro2::paint_number">
+<area shape="rect" id="node1" title="Dibuixa una xifra a la pantalla." alt="" coords="147,5,296,32"/>
+<area shape="rect" id="node2" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="5,5,99,32"/>
+</map>

@@ -1,0 +1,90 @@
+\hypertarget{kamek_8hh}{}\doxysection{include/enemies/kamek.hh File Reference}
+\label{kamek_8hh}\index{include/enemies/kamek.hh@{include/enemies/kamek.hh}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}core/geometry.\+hh\char`\"{}}\newline
+Include dependency graph for kamek.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{kamek_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kamek_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classKamek}{Kamek}}
+\begin{DoxyCompactList}\small\item\em Class for \mbox{\hyperlink{classKamek}{Kamek}} enemy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepro2}{pro2}}
+\item 
+ \mbox{\hyperlink{namespaceAnim}{Anim}}
+\begin{DoxyCompactList}\small\item\em The class \mbox{\hyperlink{namespaceAnim}{Anim}} manager everything to do with sprite animations. Mainly the classes \mbox{\hyperlink{classAnim_1_1Animation}{Animation}} and \mbox{\hyperlink{classAnim_1_1Animator}{Animator}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909c}{Kamek\+State}} \{ \newline
+\mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909cafd6a0e4343048b10646dd2976cc5ad18}{IDLE}} = 0
+, \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909caed3ef32890b6da0919b57254c5206c62}{MOVE}}
+, \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909ca16ebdcb23eb5337fd5bc598fa8d6035d}{MOVING}}
+, \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909ca3e5c0eff93ebc5c6e425e4dbf38c898d}{SUMMON}}
+, \newline
+\mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909ca3acc08fb6f381f1d86a9cd70f9673c70}{SUMMONING}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+your name (\href{mailto:you@domain.com}{\texttt{ you@domain.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/06-\/15
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{kamek_8hh_a3719180e63471838f0605a13dacd909c}\label{kamek_8hh_a3719180e63471838f0605a13dacd909c}} 
+\index{kamek.hh@{kamek.hh}!KamekState@{KamekState}}
+\index{KamekState@{KamekState}!kamek.hh@{kamek.hh}}
+\doxysubsubsection{\texorpdfstring{KamekState}{KamekState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{kamek_8hh_a3719180e63471838f0605a13dacd909c}{Kamek\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDLE@{IDLE}!kamek.hh@{kamek.hh}}\index{kamek.hh@{kamek.hh}!IDLE@{IDLE}}}\mbox{\Hypertarget{kamek_8hh_a3719180e63471838f0605a13dacd909cafd6a0e4343048b10646dd2976cc5ad18}\label{kamek_8hh_a3719180e63471838f0605a13dacd909cafd6a0e4343048b10646dd2976cc5ad18}} 
+IDLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVE@{MOVE}!kamek.hh@{kamek.hh}}\index{kamek.hh@{kamek.hh}!MOVE@{MOVE}}}\mbox{\Hypertarget{kamek_8hh_a3719180e63471838f0605a13dacd909caed3ef32890b6da0919b57254c5206c62}\label{kamek_8hh_a3719180e63471838f0605a13dacd909caed3ef32890b6da0919b57254c5206c62}} 
+MOVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING@{MOVING}!kamek.hh@{kamek.hh}}\index{kamek.hh@{kamek.hh}!MOVING@{MOVING}}}\mbox{\Hypertarget{kamek_8hh_a3719180e63471838f0605a13dacd909ca16ebdcb23eb5337fd5bc598fa8d6035d}\label{kamek_8hh_a3719180e63471838f0605a13dacd909ca16ebdcb23eb5337fd5bc598fa8d6035d}} 
+MOVING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUMMON@{SUMMON}!kamek.hh@{kamek.hh}}\index{kamek.hh@{kamek.hh}!SUMMON@{SUMMON}}}\mbox{\Hypertarget{kamek_8hh_a3719180e63471838f0605a13dacd909ca3e5c0eff93ebc5c6e425e4dbf38c898d}\label{kamek_8hh_a3719180e63471838f0605a13dacd909ca3e5c0eff93ebc5c6e425e4dbf38c898d}} 
+SUMMON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUMMONING@{SUMMONING}!kamek.hh@{kamek.hh}}\index{kamek.hh@{kamek.hh}!SUMMONING@{SUMMONING}}}\mbox{\Hypertarget{kamek_8hh_a3719180e63471838f0605a13dacd909ca3acc08fb6f381f1d86a9cd70f9673c70}\label{kamek_8hh_a3719180e63471838f0605a13dacd909ca3acc08fb6f381f1d86a9cd70f9673c70}} 
+SUMMONING&\\
+\hline
+
+\end{DoxyEnumFields}

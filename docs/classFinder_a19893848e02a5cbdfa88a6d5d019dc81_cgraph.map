@@ -1,0 +1,5 @@
+<map id="Finder::divide" name="Finder::divide">
+<area shape="rect" id="node1" title="Divideix el quadNode qn, es a dir, crea 4 fills a aquest node i reperteix als fills els objectes que ..." alt="" coords="5,31,116,57"/>
+<area shape="rect" id="node2" href="$classFinder.html#a60b26c2f502472b2d58823bddea14e7b" title="Afegeix t al contenidor del Finder." alt="" coords="180,5,275,32"/>
+<area shape="rect" id="node3" href="$classFinder.html#aec6b48019cf7d820c6d78040755852f4" title="Retorna true si i nomes si els rectangles a i b interseccionen en el pla." alt="" coords="164,56,291,83"/>
+</map>

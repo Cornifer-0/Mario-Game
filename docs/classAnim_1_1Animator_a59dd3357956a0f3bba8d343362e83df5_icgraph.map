@@ -1,0 +1,16 @@
+<map id="Anim::Animator::changeAnimationReset" name="Anim::Animator::changeAnimationReset">
+<area shape="rect" id="node1" title="Changes the currentAnim_ to name and sets currentFrame_ to 0. In case of currentAnim_ being equal to ..." alt="" coords="1112,191,1359,233"/>
+<area shape="rect" id="node2" href="$classBlock.html#af0a0311a472aff5b48871b3c947cd320" title="plays a little animation of the block going up and down. Using the helper functions isUp() and getDow..." alt="" coords="912,123,1064,149"/>
+<area shape="rect" id="node3" href="$classMario.html#ac3b75d0650fb2a149d33fd9f1420da99" title=" " alt="" coords="938,173,1038,200"/>
+<area shape="rect" id="node11" href="$classMario.html#a78a9e97404fc6528e2afab19f5177b63" title=" " alt="" coords="709,224,821,251"/>
+<area shape="rect" id="node13" href="$classHUD.html#ad5a06e383f62cba83a9ec84b4da84f59" title="Returns the Frame that must be rendered on screen as the HUD icon. Usually an animation." alt="" coords="922,275,1054,301"/>
+<area shape="rect" id="node4" href="$classWiggler.html#a301193641dc65d18bd928de27fdaf089" title=" " alt="" coords="667,5,864,32"/>
+<area shape="rect" id="node5" href="$classKoopaShellManager.html#aacb6ef395b8a631fc7f3dd79bef17dd4" title="Updates the koopShell aswell as the objects around it, like the mario, luigi and the goombas." alt="" coords="686,57,845,98"/>
+<area shape="rect" id="node10" href="$classEntityManager.html#a3dac9289566317ccb865d12b6265d799" title="Updates the goomba, takes into account a Mairo object If The Goomba collides with mario collider,..." alt="" coords="680,123,851,149"/>
+<area shape="rect" id="node12" href="$classKamek.html#a279f7996d249690cf8aba8ec71f33b59" title="Updates Kamek." alt="" coords="705,173,826,200"/>
+<area shape="rect" id="node6" href="$classManager.html#ac2255e4addd7de5e78d1ffe24f3e5ac7" title="Updates all managers, returns 1 only if the game has ended (mario has collected the END_STAR)" alt="" coords="487,144,619,171"/>
+<area shape="rect" id="node7" href="$classGame.html#aeac837e84d3f63a3dac7b3942705203e" title=" " alt="" coords="271,144,439,171"/>
+<area shape="rect" id="node8" href="$classGame.html#a3661c777f12e357cdc0b3727b2f73412" title=" " alt="" coords="108,144,223,171"/>
+<area shape="rect" id="node9" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,144,60,171"/>
+<area shape="rect" id="node14" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="719,275,812,301"/>
+</map>

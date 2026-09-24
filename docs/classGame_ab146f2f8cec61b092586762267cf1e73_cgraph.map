@@ -1,0 +1,9 @@
+<map id="Game::update_camera" name="Game::update_camera">
+<area shape="rect" id="node1" title=" " alt="" coords="5,100,176,127"/>
+<area shape="rect" id="node2" href="$classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68" title="Devuelve la posición del centro de la cámara." alt="" coords="224,34,391,75"/>
+<area shape="rect" id="node3" href="$classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d" title="Devuelve el alto de la ventana." alt="" coords="443,15,601,41"/>
+<area shape="rect" id="node4" href="$classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898" title="Devuelve el ancho de la ventana." alt="" coords="445,69,599,96"/>
+<area shape="rect" id="node5" href="$classpro2_1_1Window.html#afbc70ada8de42a0db90e11e9f3803a1e" title="Indica que la posición de la esquina superior izquierda de la ventana debería moverse según el vector..." alt="" coords="230,151,385,193"/>
+<area shape="rect" id="node7" href="$classMario.html#a0bc34a1f489d6d10905c83fa8e1e72f9" title=" " alt="" coords="262,217,353,244"/>
+<area shape="rect" id="node6" href="$classpro2_1_1Window.html#ac36cada6562bd2bf7807fe8b5b76efee" title="Determina si la cámara está en movimiento (su posición final es distinta de la actual)." alt="" coords="439,151,605,193"/>
+</map>

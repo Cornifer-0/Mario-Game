@@ -1,0 +1,284 @@
+\hypertarget{classKoopaShell}{}\doxysection{Koopa\+Shell Class Reference}
+\label{classKoopaShell}\index{KoopaShell@{KoopaShell}}
+
+
+{\ttfamily \#include $<$koopa\+Shell.\+hh$>$}
+
+
+
+Collaboration diagram for Koopa\+Shell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKoopaShell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKoopaShell_ab72c46d2a8ac5e3d9f5f6415818b962a}{Koopa\+Shell}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}})
+\begin{DoxyCompactList}\small\item\em Construct a new Koopa Shell object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classKoopaShell_a4c95bbd387e6991d4c60f1ffb7f7dab7}{Koopa\+Shell}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, \mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}})
+\begin{DoxyCompactList}\small\item\em Construct a new Koopa Shell object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classKoopaShell_aea829a05da87ce6414931db09680d6b9}{get\+Collider}} () const
+\begin{DoxyCompactList}\small\item\em Get the Collider object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKoopaShell_ab20714f5c9df44ddc68ffd4650b92b1d}{change\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em Changes the sign of the velocity of the koopashell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKoopaShell_abc313dc8febcb4564a7e0910fc32552a}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Makes the koopashell stop, if it has already stoped it starts moving again. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classKoopaShell_a71f12f2bd727b6250e163dbe0578cf2d}{has\+Stoped}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the shell is stopped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKoopaShell_a586be4893d567b657fcafe3fbfcde803}{update}} (const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms)
+\begin{DoxyCompactList}\small\item\em Updates the koopshell with all the platforms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKoopaShell_abb2f50382a69724fac98e0e8bed6263a}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints the koopa\+Shells on the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classKoopaShell_a8bd3c9ae6ee04403196b40032bfac458}{apply\+\_\+physics}} ()
+\item 
+void \mbox{\hyperlink{classKoopaShell_a547cd1161ecb1fe47efae4f02040019d}{update\+\_\+collider}} ()
+\item 
+void \mbox{\hyperlink{classKoopaShell_aa394beab15716ec67a37eb8cf8b19993}{update\+\_\+horizontal\+\_\+movement}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKoopaShell_aac4b530d58a2df40180f3a831d913f66}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKoopaShell_a9e32b48c936c2fcdcdb350efc8e21fc5}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKoopaShell_a5963339a0387b7e12791bad4f2b8ce04}{speed\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classKoopaShell_a85c52b8965598ce2849167d9ac71b01a}{accel\+\_\+}} = \{0, 0\}
+\item 
+int \mbox{\hyperlink{classKoopaShell_a894b5ecbe49fbdf55062db46215dc53f}{accel\+\_\+time\+\_\+}} = 0
+\item 
+bool \mbox{\hyperlink{classKoopaShell_a90a470e095b3b367e8e163b4a8550f9a}{grounded\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classKoopaShell_ac549d4448800afdbac80ccd8327d556c}{looking\+\_\+left\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classKoopaShell_a94b5cdcae4b167e81c91ed0e7967fddc}{stop\+\_\+}}
+\item 
+int \mbox{\hyperlink{classKoopaShell_ad57738c6d8b10403ce450cde81c0c3b6}{velocity\+\_\+}} = 4
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classKoopaShell_a9478a1826219932cbf4518a7b06ff3a6}{bottom\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classKoopaShell_a2c29f1403100a78e148254fc1d2d4695}{top\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classKoopaShell_aa3788e77e8c278b9e4eb51539a5a2234}{animator\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKoopaShell_ab72c46d2a8ac5e3d9f5f6415818b962a}\label{classKoopaShell_ab72c46d2a8ac5e3d9f5f6415818b962a}} 
+\index{KoopaShell@{KoopaShell}!KoopaShell@{KoopaShell}}
+\index{KoopaShell@{KoopaShell}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{KoopaShell()}{KoopaShell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Koopa\+Shell\+::\+Koopa\+Shell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct a new Koopa Shell object. 
+
+\mbox{\Hypertarget{classKoopaShell_a4c95bbd387e6991d4c60f1ffb7f7dab7}\label{classKoopaShell_a4c95bbd387e6991d4c60f1ffb7f7dab7}} 
+\index{KoopaShell@{KoopaShell}!KoopaShell@{KoopaShell}}
+\index{KoopaShell@{KoopaShell}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{KoopaShell()}{KoopaShell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Koopa\+Shell\+::\+Koopa\+Shell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{classAnim_1_1Animation}{Anim\+::\+Animation}}}]{anim }\end{DoxyParamCaption})}
+
+
+
+Construct a new Koopa Shell object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKoopaShell_a8bd3c9ae6ee04403196b40032bfac458}\label{classKoopaShell_a8bd3c9ae6ee04403196b40032bfac458}} 
+\index{KoopaShell@{KoopaShell}!apply\_physics@{apply\_physics}}
+\index{apply\_physics@{apply\_physics}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{apply\_physics()}{apply\_physics()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::apply\+\_\+physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_ab20714f5c9df44ddc68ffd4650b92b1d}\label{classKoopaShell_ab20714f5c9df44ddc68ffd4650b92b1d}} 
+\index{KoopaShell@{KoopaShell}!changeDirection@{changeDirection}}
+\index{changeDirection@{changeDirection}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{changeDirection()}{changeDirection()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::change\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes the sign of the velocity of the koopashell. 
+
+\mbox{\Hypertarget{classKoopaShell_aea829a05da87ce6414931db09680d6b9}\label{classKoopaShell_aea829a05da87ce6414931db09680d6b9}} 
+\index{KoopaShell@{KoopaShell}!getCollider@{getCollider}}
+\index{getCollider@{getCollider}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{getCollider()}{getCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Koopa\+Shell\+::get\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Collider object. 
+
+\begin{DoxyReturn}{Returns}
+box\+Collider$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKoopaShell_a71f12f2bd727b6250e163dbe0578cf2d}\label{classKoopaShell_a71f12f2bd727b6250e163dbe0578cf2d}} 
+\index{KoopaShell@{KoopaShell}!hasStoped@{hasStoped}}
+\index{hasStoped@{hasStoped}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{hasStoped()}{hasStoped()}}
+{\footnotesize\ttfamily bool Koopa\+Shell\+::has\+Stoped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the shell is stopped. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKoopaShell_abb2f50382a69724fac98e0e8bed6263a}\label{classKoopaShell_abb2f50382a69724fac98e0e8bed6263a}} 
+\index{KoopaShell@{KoopaShell}!paint@{paint}}
+\index{paint@{paint}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints the koopa\+Shells on the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classKoopaShell_abb2f50382a69724fac98e0e8bed6263a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKoopaShell_abc313dc8febcb4564a7e0910fc32552a}\label{classKoopaShell_abc313dc8febcb4564a7e0910fc32552a}} 
+\index{KoopaShell@{KoopaShell}!stop@{stop}}
+\index{stop@{stop}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes the koopashell stop, if it has already stoped it starts moving again. 
+
+\mbox{\Hypertarget{classKoopaShell_a586be4893d567b657fcafe3fbfcde803}\label{classKoopaShell_a586be4893d567b657fcafe3fbfcde803}} 
+\index{KoopaShell@{KoopaShell}!update@{update}}
+\index{update@{update}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::update (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms }\end{DoxyParamCaption})}
+
+
+
+Updates the koopshell with all the platforms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em platforms} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKoopaShell_a547cd1161ecb1fe47efae4f02040019d}\label{classKoopaShell_a547cd1161ecb1fe47efae4f02040019d}} 
+\index{KoopaShell@{KoopaShell}!update\_collider@{update\_collider}}
+\index{update\_collider@{update\_collider}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{update\_collider()}{update\_collider()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::update\+\_\+collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_aa394beab15716ec67a37eb8cf8b19993}\label{classKoopaShell_aa394beab15716ec67a37eb8cf8b19993}} 
+\index{KoopaShell@{KoopaShell}!update\_horizontal\_movement@{update\_horizontal\_movement}}
+\index{update\_horizontal\_movement@{update\_horizontal\_movement}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{update\_horizontal\_movement()}{update\_horizontal\_movement()}}
+{\footnotesize\ttfamily void Koopa\+Shell\+::update\+\_\+horizontal\+\_\+movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classKoopaShell_a85c52b8965598ce2849167d9ac71b01a}\label{classKoopaShell_a85c52b8965598ce2849167d9ac71b01a}} 
+\index{KoopaShell@{KoopaShell}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Koopa\+Shell\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a894b5ecbe49fbdf55062db46215dc53f}\label{classKoopaShell_a894b5ecbe49fbdf55062db46215dc53f}} 
+\index{KoopaShell@{KoopaShell}!accel\_time\_@{accel\_time\_}}
+\index{accel\_time\_@{accel\_time\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{accel\_time\_}{accel\_time\_}}
+{\footnotesize\ttfamily int Koopa\+Shell\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_aa3788e77e8c278b9e4eb51539a5a2234}\label{classKoopaShell_aa3788e77e8c278b9e4eb51539a5a2234}} 
+\index{KoopaShell@{KoopaShell}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Koopa\+Shell\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a9478a1826219932cbf4518a7b06ff3a6}\label{classKoopaShell_a9478a1826219932cbf4518a7b06ff3a6}} 
+\index{KoopaShell@{KoopaShell}!bottomCollider\_@{bottomCollider\_}}
+\index{bottomCollider\_@{bottomCollider\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{bottomCollider\_}{bottomCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Koopa\+Shell\+::bottom\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a90a470e095b3b367e8e163b4a8550f9a}\label{classKoopaShell_a90a470e095b3b367e8e163b4a8550f9a}} 
+\index{KoopaShell@{KoopaShell}!grounded\_@{grounded\_}}
+\index{grounded\_@{grounded\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{grounded\_}{grounded\_}}
+{\footnotesize\ttfamily bool Koopa\+Shell\+::grounded\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a9e32b48c936c2fcdcdb350efc8e21fc5}\label{classKoopaShell_a9e32b48c936c2fcdcdb350efc8e21fc5}} 
+\index{KoopaShell@{KoopaShell}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Koopa\+Shell\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_ac549d4448800afdbac80ccd8327d556c}\label{classKoopaShell_ac549d4448800afdbac80ccd8327d556c}} 
+\index{KoopaShell@{KoopaShell}!looking\_left\_@{looking\_left\_}}
+\index{looking\_left\_@{looking\_left\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{looking\_left\_}{looking\_left\_}}
+{\footnotesize\ttfamily bool Koopa\+Shell\+::looking\+\_\+left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_aac4b530d58a2df40180f3a831d913f66}\label{classKoopaShell_aac4b530d58a2df40180f3a831d913f66}} 
+\index{KoopaShell@{KoopaShell}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Koopa\+Shell\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a5963339a0387b7e12791bad4f2b8ce04}\label{classKoopaShell_a5963339a0387b7e12791bad4f2b8ce04}} 
+\index{KoopaShell@{KoopaShell}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Koopa\+Shell\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a94b5cdcae4b167e81c91ed0e7967fddc}\label{classKoopaShell_a94b5cdcae4b167e81c91ed0e7967fddc}} 
+\index{KoopaShell@{KoopaShell}!stop\_@{stop\_}}
+\index{stop\_@{stop\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{stop\_}{stop\_}}
+{\footnotesize\ttfamily bool Koopa\+Shell\+::stop\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_a2c29f1403100a78e148254fc1d2d4695}\label{classKoopaShell_a2c29f1403100a78e148254fc1d2d4695}} 
+\index{KoopaShell@{KoopaShell}!topCollider\_@{topCollider\_}}
+\index{topCollider\_@{topCollider\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{topCollider\_}{topCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Koopa\+Shell\+::top\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classKoopaShell_ad57738c6d8b10403ce450cde81c0c3b6}\label{classKoopaShell_ad57738c6d8b10403ce450cde81c0c3b6}} 
+\index{KoopaShell@{KoopaShell}!velocity\_@{velocity\_}}
+\index{velocity\_@{velocity\_}!KoopaShell@{KoopaShell}}
+\doxysubsubsection{\texorpdfstring{velocity\_}{velocity\_}}
+{\footnotesize\ttfamily int Koopa\+Shell\+::velocity\+\_\+ = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/enemies/\mbox{\hyperlink{koopaShell_8hh}{koopa\+Shell.\+hh}}\item 
+src/enemies/\mbox{\hyperlink{koopaShell_8cc}{koopa\+Shell.\+cc}}\end{DoxyCompactItemize}

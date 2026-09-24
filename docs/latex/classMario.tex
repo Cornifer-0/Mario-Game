@@ -1,0 +1,608 @@
+\hypertarget{classMario}{}\doxysection{Mario Class Reference}
+\label{classMario}\index{Mario@{Mario}}
+
+
+{\ttfamily \#include $<$mario.\+hh$>$}
+
+
+
+Collaboration diagram for Mario\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMario_a186e5939898ff3991dd6fec02df14272}{Mario}} (std\+::string name, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}, \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{pro2\+::\+Controls\+Set\+Up}} controls, bool main\+Character)
+\item 
+\mbox{\hyperlink{classMario_ab1cbdf22b2ecf6507a2aa2f27563942f}{Mario}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}, \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{pro2\+::\+Controls\+Set\+Up}} controls, bool main\+Character)
+\item 
+void \mbox{\hyperlink{classMario_a657b66f6c78e5ae10796452486de54d8}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0401603fd178d8affd5b330954ca04b9}{last\+\_\+pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a67b1e77451a107770223894be844fe54}{respawn\+\_\+point}} () const
+\item 
+void \mbox{\hyperlink{classMario_a807ce8785091bd609e156292409b376f}{set\+\_\+y}} (int y)
+\item 
+void \mbox{\hyperlink{classMario_a52e29f7688225e81da18bad4ed571a0e}{set\+\_\+x}} (int x)
+\item 
+bool \mbox{\hyperlink{classMario_adb7c1e4fe5678628216c3110a8eb10c0}{is\+\_\+grounded}} () const
+\item 
+bool \mbox{\hyperlink{classMario_a3a9062f3dae45d2b304832608735826e}{is\+\_\+falling}} () const
+\item 
+bool \mbox{\hyperlink{classMario_a098c352686f9fc74fed66f1712ca02bc}{looking\+Left}} () const
+\item 
+bool \mbox{\hyperlink{classMario_ab455fbf56f08999269b8b15ac97aa1c6}{is\+\_\+dead}} () const
+\item 
+void \mbox{\hyperlink{classMario_a970f238b3538fa175b0f73aa29aa2c48}{set\+\_\+grounded}} (bool grounded)
+\item 
+void \mbox{\hyperlink{classMario_acc6ac6e7875aa85a1a2d0acef477b1ee}{set\+\_\+y\+\_\+accel}} (int)
+\item 
+void \mbox{\hyperlink{classMario_ae78695ed4309b7e33ca806cf2bbbb8e0}{set\+\_\+x\+\_\+accel}} (int)
+\item 
+void \mbox{\hyperlink{classMario_a4b8785eae84e2d5f0f45bf5290054f92}{toggle\+\_\+grounded}} ()
+\item 
+void \mbox{\hyperlink{classMario_a9cedf22f9727329c4eb114068c0e14a8}{change\+Resapawn}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} new\+\_\+spawn)
+\item 
+void \mbox{\hyperlink{classMario_ac3b75d0650fb2a149d33fd9f1420da99}{jump}} ()
+\item 
+void \mbox{\hyperlink{classMario_ae2f3ce13baf3c3b809c3333bb2b2292a}{respawn}} ()
+\item 
+void \mbox{\hyperlink{classMario_a3b78a7f90fe02f6ca2f0e322770bb473}{die}} ()
+\item 
+bool \mbox{\hyperlink{classMario_ac4b0c13ef4aae16f66d34a8cb2f9b70a}{invulnarable}} () const
+\item 
+void \mbox{\hyperlink{classMario_a910f099acc43a3953dacbc0be9a80df9}{set\+Invulnarability\+Frames}} (int k)
+\item 
+void \mbox{\hyperlink{classMario_a78a9e97404fc6528e2afab19f5177b63}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms)
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classMario_a214bf9b6cff10d1b6f69ad2019a43f68}{get\+Collider}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMario_a58b73569c9d36b5443c4e0efcf5a1f95}{apply\+\_\+physics\+\_\+}} ()
+\item 
+void \mbox{\hyperlink{classMario_ae943f15ad46e8a9cfd7915bee883051a}{update\+Collider}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a1764d97c394e6e13e2754580b9c71452}{accel\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_ace7ffcac4e645a934729ca2c01cf48a5}{spawn\+\_\+}} = \{0, 0\}
+\item 
+int \mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\+\_\+time\+\_\+}} = 0
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classMario_a3f837e4b92f2f6554c3095f586dd8e8e}{animator\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classMario_a7f7c2272cf44ba41d746eedace5535a0}{box\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1ControlsSetUp}{pro2\+::\+Controls\+Set\+Up}} \mbox{\hyperlink{classMario_a740b6bc5d069b12152564a419564d29d}{controls\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classMario_a130ef7e2dcb3fc16c508d6cb8d5fa676}{main\+Character\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\+\_\+}} = false
+\item 
+bool \mbox{\hyperlink{classMario_ad582503d564465a1ec74efe32e4a9734}{was\+\_\+grounded\+\_\+}} = false
+\item 
+bool \mbox{\hyperlink{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}{looking\+\_\+left\+\_\+}} = false
+\item 
+const int \mbox{\hyperlink{classMario_a965015b9c33916377cae79afaa26c67a}{FRAMES\+\_\+\+TO\+\_\+\+RESPAWN}} = 50
+\item 
+int \mbox{\hyperlink{classMario_aef337b89f3093389411a290e1e194ba7}{respawn\+\_\+timer\+\_\+}} = 0
+\item 
+int \mbox{\hyperlink{classMario_a010fc0846ed1915022000fcd4762a4c5}{invulnarability\+\_\+frames\+\_\+}} = 0
+\item 
+bool \mbox{\hyperlink{classMario_a2117360e075c251c674f142ee4dda6ff}{dead\+\_\+}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMario_a186e5939898ff3991dd6fec02df14272}\label{classMario_a186e5939898ff3991dd6fec02df14272}} 
+\index{Mario@{Mario}!Mario@{Mario}}
+\index{Mario@{Mario}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{Mario()}{Mario()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mario\+::\+Mario (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{structpro2_1_1ControlsSetUp}{pro2\+::\+Controls\+Set\+Up}}}]{controls,  }\item[{bool}]{main\+Character }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a186e5939898ff3991dd6fec02df14272_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ab1cbdf22b2ecf6507a2aa2f27563942f}\label{classMario_ab1cbdf22b2ecf6507a2aa2f27563942f}} 
+\index{Mario@{Mario}!Mario@{Mario}}
+\index{Mario@{Mario}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{Mario()}{Mario()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mario\+::\+Mario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{structpro2_1_1ControlsSetUp}{pro2\+::\+Controls\+Set\+Up}}}]{controls,  }\item[{bool}]{main\+Character }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMario_a58b73569c9d36b5443c4e0efcf5a1f95}\label{classMario_a58b73569c9d36b5443c4e0efcf5a1f95}} 
+\index{Mario@{Mario}!apply\_physics\_@{apply\_physics\_}}
+\index{apply\_physics\_@{apply\_physics\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{apply\_physics\_()}{apply\_physics\_()}}
+{\footnotesize\ttfamily void Mario\+::apply\+\_\+physics\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a58b73569c9d36b5443c4e0efcf5a1f95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a9cedf22f9727329c4eb114068c0e14a8}\label{classMario_a9cedf22f9727329c4eb114068c0e14a8}} 
+\index{Mario@{Mario}!changeResapawn@{changeResapawn}}
+\index{changeResapawn@{changeResapawn}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{changeResapawn()}{changeResapawn()}}
+{\footnotesize\ttfamily void Mario\+::change\+Resapawn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{new\+\_\+spawn }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a9cedf22f9727329c4eb114068c0e14a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a3b78a7f90fe02f6ca2f0e322770bb473}\label{classMario_a3b78a7f90fe02f6ca2f0e322770bb473}} 
+\index{Mario@{Mario}!die@{die}}
+\index{die@{die}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily void Mario\+::die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a3b78a7f90fe02f6ca2f0e322770bb473_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a3b78a7f90fe02f6ca2f0e322770bb473_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a214bf9b6cff10d1b6f69ad2019a43f68}\label{classMario_a214bf9b6cff10d1b6f69ad2019a43f68}} 
+\index{Mario@{Mario}!getCollider@{getCollider}}
+\index{getCollider@{getCollider}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{getCollider()}{getCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Mario\+::get\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a214bf9b6cff10d1b6f69ad2019a43f68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ac4b0c13ef4aae16f66d34a8cb2f9b70a}\label{classMario_ac4b0c13ef4aae16f66d34a8cb2f9b70a}} 
+\index{Mario@{Mario}!invulnarable@{invulnarable}}
+\index{invulnarable@{invulnarable}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{invulnarable()}{invulnarable()}}
+{\footnotesize\ttfamily bool Mario\+::invulnarable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_ac4b0c13ef4aae16f66d34a8cb2f9b70a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ab455fbf56f08999269b8b15ac97aa1c6}\label{classMario_ab455fbf56f08999269b8b15ac97aa1c6}} 
+\index{Mario@{Mario}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{is\_dead()}{is\_dead()}}
+{\footnotesize\ttfamily bool Mario\+::is\+\_\+dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classMario_ab455fbf56f08999269b8b15ac97aa1c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a3a9062f3dae45d2b304832608735826e}\label{classMario_a3a9062f3dae45d2b304832608735826e}} 
+\index{Mario@{Mario}!is\_falling@{is\_falling}}
+\index{is\_falling@{is\_falling}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{is\_falling()}{is\_falling()}}
+{\footnotesize\ttfamily bool Mario\+::is\+\_\+falling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a3a9062f3dae45d2b304832608735826e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_adb7c1e4fe5678628216c3110a8eb10c0}\label{classMario_adb7c1e4fe5678628216c3110a8eb10c0}} 
+\index{Mario@{Mario}!is\_grounded@{is\_grounded}}
+\index{is\_grounded@{is\_grounded}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{is\_grounded()}{is\_grounded()}}
+{\footnotesize\ttfamily bool Mario\+::is\+\_\+grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_adb7c1e4fe5678628216c3110a8eb10c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ac3b75d0650fb2a149d33fd9f1420da99}\label{classMario_ac3b75d0650fb2a149d33fd9f1420da99}} 
+\index{Mario@{Mario}!jump@{jump}}
+\index{jump@{jump}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Mario\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_ac3b75d0650fb2a149d33fd9f1420da99_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_ac3b75d0650fb2a149d33fd9f1420da99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a0401603fd178d8affd5b330954ca04b9}\label{classMario_a0401603fd178d8affd5b330954ca04b9}} 
+\index{Mario@{Mario}!last\_pos@{last\_pos}}
+\index{last\_pos@{last\_pos}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{last\_pos()}{last\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::last\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classMario_a0401603fd178d8affd5b330954ca04b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a098c352686f9fc74fed66f1712ca02bc}\label{classMario_a098c352686f9fc74fed66f1712ca02bc}} 
+\index{Mario@{Mario}!lookingLeft@{lookingLeft}}
+\index{lookingLeft@{lookingLeft}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{lookingLeft()}{lookingLeft()}}
+{\footnotesize\ttfamily bool Mario\+::looking\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classMario_a098c352686f9fc74fed66f1712ca02bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a657b66f6c78e5ae10796452486de54d8}\label{classMario_a657b66f6c78e5ae10796452486de54d8}} 
+\index{Mario@{Mario}!paint@{paint}}
+\index{paint@{paint}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Mario\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a657b66f6c78e5ae10796452486de54d8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classMario_a657b66f6c78e5ae10796452486de54d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}\label{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}} 
+\index{Mario@{Mario}!pos@{pos}}
+\index{pos@{pos}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ae2f3ce13baf3c3b809c3333bb2b2292a}\label{classMario_ae2f3ce13baf3c3b809c3333bb2b2292a}} 
+\index{Mario@{Mario}!respawn@{respawn}}
+\index{respawn@{respawn}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{respawn()}{respawn()}}
+{\footnotesize\ttfamily void Mario\+::respawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_ae2f3ce13baf3c3b809c3333bb2b2292a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_ae2f3ce13baf3c3b809c3333bb2b2292a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a67b1e77451a107770223894be844fe54}\label{classMario_a67b1e77451a107770223894be844fe54}} 
+\index{Mario@{Mario}!respawn\_point@{respawn\_point}}
+\index{respawn\_point@{respawn\_point}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{respawn\_point()}{respawn\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::respawn\+\_\+point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMario_a970f238b3538fa175b0f73aa29aa2c48}\label{classMario_a970f238b3538fa175b0f73aa29aa2c48}} 
+\index{Mario@{Mario}!set\_grounded@{set\_grounded}}
+\index{set\_grounded@{set\_grounded}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{set\_grounded()}{set\_grounded()}}
+{\footnotesize\ttfamily void Mario\+::set\+\_\+grounded (\begin{DoxyParamCaption}\item[{bool}]{grounded }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a970f238b3538fa175b0f73aa29aa2c48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a52e29f7688225e81da18bad4ed571a0e}\label{classMario_a52e29f7688225e81da18bad4ed571a0e}} 
+\index{Mario@{Mario}!set\_x@{set\_x}}
+\index{set\_x@{set\_x}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
+{\footnotesize\ttfamily void Mario\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classMario_a52e29f7688225e81da18bad4ed571a0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ae78695ed4309b7e33ca806cf2bbbb8e0}\label{classMario_ae78695ed4309b7e33ca806cf2bbbb8e0}} 
+\index{Mario@{Mario}!set\_x\_accel@{set\_x\_accel}}
+\index{set\_x\_accel@{set\_x\_accel}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{set\_x\_accel()}{set\_x\_accel()}}
+{\footnotesize\ttfamily void Mario\+::set\+\_\+x\+\_\+accel (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMario_a807ce8785091bd609e156292409b376f}\label{classMario_a807ce8785091bd609e156292409b376f}} 
+\index{Mario@{Mario}!set\_y@{set\_y}}
+\index{set\_y@{set\_y}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
+{\footnotesize\ttfamily void Mario\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a807ce8785091bd609e156292409b376f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_acc6ac6e7875aa85a1a2d0acef477b1ee}\label{classMario_acc6ac6e7875aa85a1a2d0acef477b1ee}} 
+\index{Mario@{Mario}!set\_y\_accel@{set\_y\_accel}}
+\index{set\_y\_accel@{set\_y\_accel}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{set\_y\_accel()}{set\_y\_accel()}}
+{\footnotesize\ttfamily void Mario\+::set\+\_\+y\+\_\+accel (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classMario_acc6ac6e7875aa85a1a2d0acef477b1ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a910f099acc43a3953dacbc0be9a80df9}\label{classMario_a910f099acc43a3953dacbc0be9a80df9}} 
+\index{Mario@{Mario}!setInvulnarabilityFrames@{setInvulnarabilityFrames}}
+\index{setInvulnarabilityFrames@{setInvulnarabilityFrames}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{setInvulnarabilityFrames()}{setInvulnarabilityFrames()}}
+{\footnotesize\ttfamily void Mario\+::set\+Invulnarability\+Frames (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a910f099acc43a3953dacbc0be9a80df9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a4b8785eae84e2d5f0f45bf5290054f92}\label{classMario_a4b8785eae84e2d5f0f45bf5290054f92}} 
+\index{Mario@{Mario}!toggle\_grounded@{toggle\_grounded}}
+\index{toggle\_grounded@{toggle\_grounded}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{toggle\_grounded()}{toggle\_grounded()}}
+{\footnotesize\ttfamily void Mario\+::toggle\+\_\+grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a4b8785eae84e2d5f0f45bf5290054f92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_a78a9e97404fc6528e2afab19f5177b63}\label{classMario_a78a9e97404fc6528e2afab19f5177b63}} 
+\index{Mario@{Mario}!update@{update}}
+\index{update@{update}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Mario\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{const std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a78a9e97404fc6528e2afab19f5177b63_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_a78a9e97404fc6528e2afab19f5177b63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMario_ae943f15ad46e8a9cfd7915bee883051a}\label{classMario_ae943f15ad46e8a9cfd7915bee883051a}} 
+\index{Mario@{Mario}!updateCollider@{updateCollider}}
+\index{updateCollider@{updateCollider}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{updateCollider()}{updateCollider()}}
+{\footnotesize\ttfamily void Mario\+::update\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMario_ae943f15ad46e8a9cfd7915bee883051a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMario_a1764d97c394e6e13e2754580b9c71452}\label{classMario_a1764d97c394e6e13e2754580b9c71452}} 
+\index{Mario@{Mario}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}\label{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}} 
+\index{Mario@{Mario}!accel\_time\_@{accel\_time\_}}
+\index{accel\_time\_@{accel\_time\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{accel\_time\_}{accel\_time\_}}
+{\footnotesize\ttfamily int Mario\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a3f837e4b92f2f6554c3095f586dd8e8e}\label{classMario_a3f837e4b92f2f6554c3095f586dd8e8e}} 
+\index{Mario@{Mario}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Mario\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a7f7c2272cf44ba41d746eedace5535a0}\label{classMario_a7f7c2272cf44ba41d746eedace5535a0}} 
+\index{Mario@{Mario}!boxCollider\_@{boxCollider\_}}
+\index{boxCollider\_@{boxCollider\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{boxCollider\_}{boxCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Mario\+::box\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a740b6bc5d069b12152564a419564d29d}\label{classMario_a740b6bc5d069b12152564a419564d29d}} 
+\index{Mario@{Mario}!controls\_@{controls\_}}
+\index{controls\_@{controls\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{controls\_}{controls\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1ControlsSetUp}{pro2\+::\+Controls\+Set\+Up}} Mario\+::controls\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a2117360e075c251c674f142ee4dda6ff}\label{classMario_a2117360e075c251c674f142ee4dda6ff}} 
+\index{Mario@{Mario}!dead\_@{dead\_}}
+\index{dead\_@{dead\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{dead\_}{dead\_}}
+{\footnotesize\ttfamily bool Mario\+::dead\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a965015b9c33916377cae79afaa26c67a}\label{classMario_a965015b9c33916377cae79afaa26c67a}} 
+\index{Mario@{Mario}!FRAMES\_TO\_RESPAWN@{FRAMES\_TO\_RESPAWN}}
+\index{FRAMES\_TO\_RESPAWN@{FRAMES\_TO\_RESPAWN}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{FRAMES\_TO\_RESPAWN}{FRAMES\_TO\_RESPAWN}}
+{\footnotesize\ttfamily const int Mario\+::\+FRAMES\+\_\+\+TO\+\_\+\+RESPAWN = 50\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a9a5079abae4f376e690bdb2d69c16217}\label{classMario_a9a5079abae4f376e690bdb2d69c16217}} 
+\index{Mario@{Mario}!grounded\_@{grounded\_}}
+\index{grounded\_@{grounded\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{grounded\_}{grounded\_}}
+{\footnotesize\ttfamily bool Mario\+::grounded\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a010fc0846ed1915022000fcd4762a4c5}\label{classMario_a010fc0846ed1915022000fcd4762a4c5}} 
+\index{Mario@{Mario}!invulnarability\_frames\_@{invulnarability\_frames\_}}
+\index{invulnarability\_frames\_@{invulnarability\_frames\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{invulnarability\_frames\_}{invulnarability\_frames\_}}
+{\footnotesize\ttfamily int Mario\+::invulnarability\+\_\+frames\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a55592c8a186b21c9688ec1e10736711f}\label{classMario_a55592c8a186b21c9688ec1e10736711f}} 
+\index{Mario@{Mario}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}\label{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}} 
+\index{Mario@{Mario}!looking\_left\_@{looking\_left\_}}
+\index{looking\_left\_@{looking\_left\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{looking\_left\_}{looking\_left\_}}
+{\footnotesize\ttfamily bool Mario\+::looking\+\_\+left\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a130ef7e2dcb3fc16c508d6cb8d5fa676}\label{classMario_a130ef7e2dcb3fc16c508d6cb8d5fa676}} 
+\index{Mario@{Mario}!mainCharacter\_@{mainCharacter\_}}
+\index{mainCharacter\_@{mainCharacter\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{mainCharacter\_}{mainCharacter\_}}
+{\footnotesize\ttfamily bool Mario\+::main\+Character\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_afe8565966d1bdea7201e182558d2d709}\label{classMario_afe8565966d1bdea7201e182558d2d709}} 
+\index{Mario@{Mario}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_aef337b89f3093389411a290e1e194ba7}\label{classMario_aef337b89f3093389411a290e1e194ba7}} 
+\index{Mario@{Mario}!respawn\_timer\_@{respawn\_timer\_}}
+\index{respawn\_timer\_@{respawn\_timer\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{respawn\_timer\_}{respawn\_timer\_}}
+{\footnotesize\ttfamily int Mario\+::respawn\+\_\+timer\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_ace7ffcac4e645a934729ca2c01cf48a5}\label{classMario_ace7ffcac4e645a934729ca2c01cf48a5}} 
+\index{Mario@{Mario}!spawn\_@{spawn\_}}
+\index{spawn\_@{spawn\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{spawn\_}{spawn\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::spawn\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}\label{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}} 
+\index{Mario@{Mario}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Mario\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMario_ad582503d564465a1ec74efe32e4a9734}\label{classMario_ad582503d564465a1ec74efe32e4a9734}} 
+\index{Mario@{Mario}!was\_grounded\_@{was\_grounded\_}}
+\index{was\_grounded\_@{was\_grounded\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{was\_grounded\_}{was\_grounded\_}}
+{\footnotesize\ttfamily bool Mario\+::was\+\_\+grounded\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{mario_8hh}{mario.\+hh}}\item 
+src/\mbox{\hyperlink{mario_8cc}{mario.\+cc}}\end{DoxyCompactItemize}

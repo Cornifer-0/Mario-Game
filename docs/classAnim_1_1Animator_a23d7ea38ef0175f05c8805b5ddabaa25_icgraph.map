@@ -1,0 +1,11 @@
+<map id="Anim::Animator::nextFrame" name="Anim::Animator::nextFrame">
+<area shape="rect" id="node1" title="Returns the nextFrame of the animation and sets prevFrame_ to 0 if and only if prevFrame_ &gt;= than the..." alt="" coords="447,107,649,133"/>
+<area shape="rect" id="node2" href="$classMario.html#a657b66f6c78e5ae10796452486de54d8" title=" " alt="" coords="279,5,379,32"/>
+<area shape="rect" id="node5" href="$classBlock.html#ab64ad3986a6c7d163cb28ed805cd38bf" title="Paints the block on window." alt="" coords="279,56,378,83"/>
+<area shape="rect" id="node6" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="261,107,397,133"/>
+<area shape="rect" id="node7" href="$classWiggler.html#a57299d8747b7976651ac7e13730c4eb7" title=" " alt="" coords="259,157,399,184"/>
+<area shape="rect" id="node8" href="$classHUD.html#ad5a06e383f62cba83a9ec84b4da84f59" title="Returns the Frame that must be rendered on screen as the HUD icon. Usually an animation." alt="" coords="263,208,395,235"/>
+<area shape="rect" id="node3" href="$classGame.html#af3e3428a12b9944fefb663f2fe560529" title=" " alt="" coords="108,5,211,32"/>
+<area shape="rect" id="node4" href="$main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node9" href="$classHUD.html#a734bb3cef81e05eff8dbe7babbd732f3" title="Paints the HUD on the screen. Fixed position relative to the camera." alt="" coords="113,208,206,235"/>
+</map>

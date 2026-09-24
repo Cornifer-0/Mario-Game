@@ -1,0 +1,300 @@
+\hypertarget{classCollectable}{}\doxysection{Collectable Class Reference}
+\label{classCollectable}\index{Collectable@{Collectable}}
+
+
+Class for a collectable, an object that sits at a spot in the world and is waiting to be picked up by the player.  
+
+
+
+
+{\ttfamily \#include $<$collectable.\+hh$>$}
+
+
+
+Collaboration diagram for Collectable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCollectable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCollectable_a23fe37df56d16150ace62e3e4f93eceb}{Collectable}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCollectable}{Collectable}} object at a position pos. It assumes COIN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCollectable_a133c90052f5f73ab129261c156378ca3}{Collectable}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861e}{COLLECTABLE\+\_\+\+TYPE}} ct)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCollectable}{Collectable}} object at a position pos. With a type ct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classCollectable_ae7e91a58e5c3bc3e109c56a320c15da8}{get\+Collider}} () const
+\begin{DoxyCompactList}\small\item\em Get the box\+Collider object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classCollectable_a25be2491e7ed00b246b3d58287ba7797}{get\+\_\+rect}} ()
+\begin{DoxyCompactList}\small\item\em Get the rect object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861e}{COLLECTABLE\+\_\+\+TYPE}} \mbox{\hyperlink{classCollectable_a1a444760793ca6eb0535f2145f4171b5}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCollectable_a6b7285526c3e76540dff6c69c39f848e}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\begin{DoxyCompactList}\small\item\em Paints the collectable on the window, if debug it also paints the box\+Collider\textquotesingle{}s border by calling the paint method on the box\+Collider class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCollectable_aed201917e38b6c95943084c7c6f77e5d}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Spawns a collected animation at pos\+\_\+. Does not actually destroy itself. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCollectable_ae2c809c2d4dad99f540113c8240b22d4}{is\+Destroyed}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCollectable_a703d744038da02cafad9e2940bc073d6}{calc\+Position\+Offset}} (const \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Calculates an offset, based on the frame\+\_\+count, useful to simulate sinusoidal movements of the coins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCollectable_af8ccafbca0d7697f9b5f398e40c926d8}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCollectable_a7189e01a2b627e57490bd02ab3b3b866}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCollectable_a484fd63cc130fd31558dd8f9138ccee2}{speed\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCollectable_a1adac19727d2b61a1ba8a37d810a941c}{accel\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861e}{COLLECTABLE\+\_\+\+TYPE}} \mbox{\hyperlink{classCollectable_abbf63d3ce2deddf5e1a6e08438a6d846}{type\+\_\+}}
+\item 
+\mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ \mbox{\hyperlink{classCollectable_a91571f8f573876c9aadde7250863078f}{box\+Collider\+\_\+}}
+\item 
+\mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}} $\ast$ \mbox{\hyperlink{classCollectable_a22c075fc0d272c3e61274363cb46d4ca}{animator\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classCollectable_ac4cd9567de387d3807bbf3850096c0d2}{collected\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for a collectable, an object that sits at a spot in the world and is waiting to be picked up by the player. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCollectable_a23fe37df56d16150ace62e3e4f93eceb}\label{classCollectable_a23fe37df56d16150ace62e3e4f93eceb}} 
+\index{Collectable@{Collectable}!Collectable@{Collectable}}
+\index{Collectable@{Collectable}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{Collectable()}{Collectable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collectable\+::\+Collectable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCollectable}{Collectable}} object at a position pos. It assumes COIN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCollectable_a133c90052f5f73ab129261c156378ca3}\label{classCollectable_a133c90052f5f73ab129261c156378ca3}} 
+\index{Collectable@{Collectable}!Collectable@{Collectable}}
+\index{Collectable@{Collectable}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{Collectable()}{Collectable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collectable\+::\+Collectable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861e}{COLLECTABLE\+\_\+\+TYPE}}}]{ct }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCollectable}{Collectable}} object at a position pos. With a type ct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+{\em ct} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCollectable_a133c90052f5f73ab129261c156378ca3_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollectable_a703d744038da02cafad9e2940bc073d6}\label{classCollectable_a703d744038da02cafad9e2940bc073d6}} 
+\index{Collectable@{Collectable}!calcPositionOffset@{calcPositionOffset}}
+\index{calcPositionOffset@{calcPositionOffset}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{calcPositionOffset()}{calcPositionOffset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} Collectable\+::calc\+Position\+Offset (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculates an offset, based on the frame\+\_\+count, useful to simulate sinusoidal movements of the coins. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCollectable_a703d744038da02cafad9e2940bc073d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCollectable_a703d744038da02cafad9e2940bc073d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCollectable_aed201917e38b6c95943084c7c6f77e5d}\label{classCollectable_aed201917e38b6c95943084c7c6f77e5d}} 
+\index{Collectable@{Collectable}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Collectable\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawns a collected animation at pos\+\_\+. Does not actually destroy itself. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCollectable_aed201917e38b6c95943084c7c6f77e5d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCollectable_a25be2491e7ed00b246b3d58287ba7797}\label{classCollectable_a25be2491e7ed00b246b3d58287ba7797}} 
+\index{Collectable@{Collectable}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Collectable\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the rect object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classCollectable_a25be2491e7ed00b246b3d58287ba7797_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCollectable_ae7e91a58e5c3bc3e109c56a320c15da8}\label{classCollectable_ae7e91a58e5c3bc3e109c56a320c15da8}} 
+\index{Collectable@{Collectable}!getCollider@{getCollider}}
+\index{getCollider@{getCollider}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{getCollider()}{getCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}} $\ast$ Collectable\+::get\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the box\+Collider object. 
+
+\begin{DoxyReturn}{Returns}
+box\+Collider$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollectable_a1a444760793ca6eb0535f2145f4171b5}\label{classCollectable_a1a444760793ca6eb0535f2145f4171b5}} 
+\index{Collectable@{Collectable}!getType@{getType}}
+\index{getType@{getType}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861e}{COLLECTABLE\+\_\+\+TYPE}} Collectable\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+COLLECTABLE\+\_\+\+TYPE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollectable_ae2c809c2d4dad99f540113c8240b22d4}\label{classCollectable_ae2c809c2d4dad99f540113c8240b22d4}} 
+\index{Collectable@{Collectable}!isDestroyed@{isDestroyed}}
+\index{isDestroyed@{isDestroyed}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{isDestroyed()}{isDestroyed()}}
+{\footnotesize\ttfamily bool Collectable\+::is\+Destroyed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classCollectable_a6b7285526c3e76540dff6c69c39f848e}\label{classCollectable_a6b7285526c3e76540dff6c69c39f848e}} 
+\index{Collectable@{Collectable}!paint@{paint}}
+\index{paint@{paint}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Collectable\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+
+Paints the collectable on the window, if debug it also paints the box\+Collider\textquotesingle{}s border by calling the paint method on the box\+Collider class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCollectable_a6b7285526c3e76540dff6c69c39f848e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCollectable_a1adac19727d2b61a1ba8a37d810a941c}\label{classCollectable_a1adac19727d2b61a1ba8a37d810a941c}} 
+\index{Collectable@{Collectable}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Collectable\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_a22c075fc0d272c3e61274363cb46d4ca}\label{classCollectable_a22c075fc0d272c3e61274363cb46d4ca}} 
+\index{Collectable@{Collectable}!animator\_@{animator\_}}
+\index{animator\_@{animator\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{animator\_}{animator\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnim_1_1Animator}{Anim\+::\+Animator}}$\ast$ Collectable\+::animator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_a91571f8f573876c9aadde7250863078f}\label{classCollectable_a91571f8f573876c9aadde7250863078f}} 
+\index{Collectable@{Collectable}!boxCollider\_@{boxCollider\_}}
+\index{boxCollider\_@{boxCollider\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{boxCollider\_}{boxCollider\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoxCollider}{Box\+Collider}}$\ast$ Collectable\+::box\+Collider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_ac4cd9567de387d3807bbf3850096c0d2}\label{classCollectable_ac4cd9567de387d3807bbf3850096c0d2}} 
+\index{Collectable@{Collectable}!collected\_@{collected\_}}
+\index{collected\_@{collected\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{collected\_}{collected\_}}
+{\footnotesize\ttfamily bool Collectable\+::collected\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_a7189e01a2b627e57490bd02ab3b3b866}\label{classCollectable_a7189e01a2b627e57490bd02ab3b3b866}} 
+\index{Collectable@{Collectable}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Collectable\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_af8ccafbca0d7697f9b5f398e40c926d8}\label{classCollectable_af8ccafbca0d7697f9b5f398e40c926d8}} 
+\index{Collectable@{Collectable}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Collectable\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_a484fd63cc130fd31558dd8f9138ccee2}\label{classCollectable_a484fd63cc130fd31558dd8f9138ccee2}} 
+\index{Collectable@{Collectable}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Collectable\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCollectable_abbf63d3ce2deddf5e1a6e08438a6d846}\label{classCollectable_abbf63d3ce2deddf5e1a6e08438a6d846}} 
+\index{Collectable@{Collectable}!type\_@{type\_}}
+\index{type\_@{type\_}!Collectable@{Collectable}}
+\doxysubsubsection{\texorpdfstring{type\_}{type\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{collectable_8hh_aa24691722f0343dd10221f57b8cf861e}{COLLECTABLE\+\_\+\+TYPE}} Collectable\+::type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/world/\mbox{\hyperlink{collectable_8hh}{collectable.\+hh}}\item 
+src/world/\mbox{\hyperlink{collectable_8cc}{collectable.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,381 @@
+\hypertarget{classWiggler}{}\doxysection{Wiggler Class Reference}
+\label{classWiggler}\index{Wiggler@{Wiggler}}
+
+
+Class for the \mbox{\hyperlink{classWiggler}{Wiggler}} enemy $\ast$$\ast$$\ast$ In a linked list style $\ast$$\ast$$\ast$ Interesting recursive functions for updating, painting and managing the \mbox{\hyperlink{classWiggler}{Wiggler}}.  
+
+
+
+
+{\ttfamily \#include $<$wiggler.\+hh$>$}
+
+
+
+Collaboration diagram for Wiggler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWiggler_a966bf5ecfe5bd46f220820dc2b0a94a0}{Wiggler}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWiggler_a39525a67074492edd4a5e3bc0ca662b0}{Wiggler}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, int length)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} object with a position and a length (number of body parts) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWiggler_ab971f6d5cc9d415b1baef22978aee257}{Wiggler}} (\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWiggler_aad043160b604c4312fc04765a12f7ed1}{update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&to\+Remove, std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&to\+Add)
+\begin{DoxyCompactList}\small\item\em Updates the wiggler, using the recursive functions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWiggler_a0891580932bfc3b1b4bca505cdbebc2e}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWiggler_a5041f22f811c70f61a83d692b304319c}{update\+Collider}} ()
+\item 
+void \mbox{\hyperlink{classWiggler_a2b4580bbad11c071a353bb58f18fc8a8}{spawn\+End}} ()
+\item 
+void \mbox{\hyperlink{classWiggler_ae905a0b228df78cb3bf8fb91479e4ea5}{update\+\_\+physics\+\_\+rec}} (\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\item 
+void \mbox{\hyperlink{classWiggler_a275758d369b455e6f07e90febaea6d2d}{update\+\_\+horizontal\+\_\+movement\+\_\+rec}} (\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\item 
+void \mbox{\hyperlink{classWiggler_a893a737f969b08957044c20d9eb8b09c}{mario\+\_\+update}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{classMario}{Mario}} $\ast$luigi, std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&to\+Remove, std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&to\+Add)
+\item 
+void \mbox{\hyperlink{classWiggler_a301193641dc65d18bd928de27fdaf089}{mario\+\_\+update\+\_\+rec}} (\mbox{\hyperlink{classMario}{Mario}} $\ast$mario, \mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp, std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&to\+Remove, std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&to\+Add)
+\item 
+void \mbox{\hyperlink{classWiggler_aef749123c1ff19331d9ce1bac554107e}{check\+\_\+collisions\+\_\+rec}} (const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms, \mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\item 
+void \mbox{\hyperlink{classWiggler_a57299d8747b7976651ac7e13730c4eb7}{paint\+\_\+rec}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, bool debug, \mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\item 
+void \mbox{\hyperlink{classWiggler_a8dc2db2a03e1cd37653fde3861350a4e}{turn\+Angry}} ()
+\item 
+void \mbox{\hyperlink{classWiggler_a41a2b6fc88c6587ccfc3f0170fea4f0e}{die}} ()
+\item 
+void \mbox{\hyperlink{classWiggler_a585a456a580fbfd393ee4bdc7516a528}{die\+\_\+rec}} (\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\item 
+void \mbox{\hyperlink{classWiggler_a95f59a7ad75948629fa9f38eb2e38468}{update\+\_\+horizontal\+\_\+movement}} ()
+\item 
+void \mbox{\hyperlink{classWiggler_a38c8de7e59f5a61896b5b89313f9e7c0}{change\+Direction}} (\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$bp)
+\item 
+void \mbox{\hyperlink{classWiggler_a4f6baf5ef589d6146251d3eb1c1d74cb}{update\+\_\+physics}} ()
+\item 
+void \mbox{\hyperlink{classWiggler_a0f8225b3b982a7dee5018cda5a471a37}{check\+\_\+collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&platforms)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$ \mbox{\hyperlink{classWiggler_a241052181089388f0611de295f5c0a04}{head\+\_\+}}
+\item 
+\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$ \mbox{\hyperlink{classWiggler_add16cf9aa22bd60633c98a689a15c08b}{tail\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classWiggler_ac2533b2201187b7755b1a60c998055a2}{angry\+\_\+}} = false
+\item 
+bool \mbox{\hyperlink{classWiggler_a65a6e6935276a113206608879b70a77a}{dead\+\_\+}} = false
+\item 
+int \mbox{\hyperlink{classWiggler_af1777054240d428e2c511940dd1070b5}{amplitude\+\_\+}} = 5
+\item 
+float \mbox{\hyperlink{classWiggler_a05fb4abb97a30adef4ce6838192fd7c0}{frequency\+\_\+}} = 30.\+0
+\item 
+int \mbox{\hyperlink{classWiggler_ac89aa7c7b3f479af3a8e88a26af58224}{velocity\+\_\+}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the \mbox{\hyperlink{classWiggler}{Wiggler}} enemy $\ast$$\ast$$\ast$ In a linked list style $\ast$$\ast$$\ast$ Interesting recursive functions for updating, painting and managing the \mbox{\hyperlink{classWiggler}{Wiggler}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWiggler_a966bf5ecfe5bd46f220820dc2b0a94a0}\label{classWiggler_a966bf5ecfe5bd46f220820dc2b0a94a0}} 
+\index{Wiggler@{Wiggler}!Wiggler@{Wiggler}}
+\index{Wiggler@{Wiggler}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{Wiggler()}{Wiggler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Wiggler\+::\+Wiggler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} object. 
+
+\mbox{\Hypertarget{classWiggler_a39525a67074492edd4a5e3bc0ca662b0}\label{classWiggler_a39525a67074492edd4a5e3bc0ca662b0}} 
+\index{Wiggler@{Wiggler}!Wiggler@{Wiggler}}
+\index{Wiggler@{Wiggler}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{Wiggler()}{Wiggler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Wiggler\+::\+Wiggler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} object with a position and a length (number of body parts) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWiggler_ab971f6d5cc9d415b1baef22978aee257}\label{classWiggler_ab971f6d5cc9d415b1baef22978aee257}} 
+\index{Wiggler@{Wiggler}!Wiggler@{Wiggler}}
+\index{Wiggler@{Wiggler}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{Wiggler()}{Wiggler()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Wiggler\+::\+Wiggler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classWiggler}{Wiggler}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bp} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWiggler_a38c8de7e59f5a61896b5b89313f9e7c0}\label{classWiggler_a38c8de7e59f5a61896b5b89313f9e7c0}} 
+\index{Wiggler@{Wiggler}!changeDirection@{changeDirection}}
+\index{changeDirection@{changeDirection}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{changeDirection()}{changeDirection()}}
+{\footnotesize\ttfamily void Wiggler\+::change\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a0f8225b3b982a7dee5018cda5a471a37}\label{classWiggler_a0f8225b3b982a7dee5018cda5a471a37}} 
+\index{Wiggler@{Wiggler}!check\_collisions@{check\_collisions}}
+\index{check\_collisions@{check\_collisions}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{check\_collisions()}{check\_collisions()}}
+{\footnotesize\ttfamily void Wiggler\+::check\+\_\+collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_aef749123c1ff19331d9ce1bac554107e}\label{classWiggler_aef749123c1ff19331d9ce1bac554107e}} 
+\index{Wiggler@{Wiggler}!check\_collisions\_rec@{check\_collisions\_rec}}
+\index{check\_collisions\_rec@{check\_collisions\_rec}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{check\_collisions\_rec()}{check\_collisions\_rec()}}
+{\footnotesize\ttfamily void Wiggler\+::check\+\_\+collisions\+\_\+rec (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_aef749123c1ff19331d9ce1bac554107e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a41a2b6fc88c6587ccfc3f0170fea4f0e}\label{classWiggler_a41a2b6fc88c6587ccfc3f0170fea4f0e}} 
+\index{Wiggler@{Wiggler}!die@{die}}
+\index{die@{die}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily void Wiggler\+::die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a585a456a580fbfd393ee4bdc7516a528}\label{classWiggler_a585a456a580fbfd393ee4bdc7516a528}} 
+\index{Wiggler@{Wiggler}!die\_rec@{die\_rec}}
+\index{die\_rec@{die\_rec}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{die\_rec()}{die\_rec()}}
+{\footnotesize\ttfamily void Wiggler\+::die\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classWiggler_a585a456a580fbfd393ee4bdc7516a528_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a893a737f969b08957044c20d9eb8b09c}\label{classWiggler_a893a737f969b08957044c20d9eb8b09c}} 
+\index{Wiggler@{Wiggler}!mario\_update@{mario\_update}}
+\index{mario\_update@{mario\_update}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{mario\_update()}{mario\_update()}}
+{\footnotesize\ttfamily void Wiggler\+::mario\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&}]{to\+Remove,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&}]{to\+Add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_a893a737f969b08957044c20d9eb8b09c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a301193641dc65d18bd928de27fdaf089}\label{classWiggler_a301193641dc65d18bd928de27fdaf089}} 
+\index{Wiggler@{Wiggler}!mario\_update\_rec@{mario\_update\_rec}}
+\index{mario\_update\_rec@{mario\_update\_rec}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{mario\_update\_rec()}{mario\_update\_rec()}}
+{\footnotesize\ttfamily void Wiggler\+::mario\+\_\+update\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&}]{to\+Remove,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&}]{to\+Add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_a301193641dc65d18bd928de27fdaf089_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a0891580932bfc3b1b4bca505cdbebc2e}\label{classWiggler_a0891580932bfc3b1b4bca505cdbebc2e}} 
+\index{Wiggler@{Wiggler}!paint@{paint}}
+\index{paint@{paint}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Wiggler\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em debug} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_a0891580932bfc3b1b4bca505cdbebc2e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a57299d8747b7976651ac7e13730c4eb7}\label{classWiggler_a57299d8747b7976651ac7e13730c4eb7}} 
+\index{Wiggler@{Wiggler}!paint\_rec@{paint\_rec}}
+\index{paint\_rec@{paint\_rec}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{paint\_rec()}{paint\_rec()}}
+{\footnotesize\ttfamily void Wiggler\+::paint\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{bool}]{debug,  }\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_a57299d8747b7976651ac7e13730c4eb7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a2b4580bbad11c071a353bb58f18fc8a8}\label{classWiggler_a2b4580bbad11c071a353bb58f18fc8a8}} 
+\index{Wiggler@{Wiggler}!spawnEnd@{spawnEnd}}
+\index{spawnEnd@{spawnEnd}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{spawnEnd()}{spawnEnd()}}
+{\footnotesize\ttfamily void Wiggler\+::spawn\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_a2b4580bbad11c071a353bb58f18fc8a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a8dc2db2a03e1cd37653fde3861350a4e}\label{classWiggler_a8dc2db2a03e1cd37653fde3861350a4e}} 
+\index{Wiggler@{Wiggler}!turnAngry@{turnAngry}}
+\index{turnAngry@{turnAngry}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{turnAngry()}{turnAngry()}}
+{\footnotesize\ttfamily void Wiggler\+::turn\+Angry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_aad043160b604c4312fc04765a12f7ed1}\label{classWiggler_aad043160b604c4312fc04765a12f7ed1}} 
+\index{Wiggler@{Wiggler}!update@{update}}
+\index{update@{update}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Wiggler\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{mario,  }\item[{\mbox{\hyperlink{classMario}{Mario}} $\ast$}]{luigi,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{platforms,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&}]{to\+Remove,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classWiggler}{Wiggler}} $\ast$ $>$ \&}]{to\+Add }\end{DoxyParamCaption})}
+
+
+
+Updates the wiggler, using the recursive functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mario} & \\
+\hline
+{\em luigi} & \\
+\hline
+{\em platforms} & \\
+\hline
+{\em to\+Remove} & \\
+\hline
+{\em to\+Add} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWiggler_a95f59a7ad75948629fa9f38eb2e38468}\label{classWiggler_a95f59a7ad75948629fa9f38eb2e38468}} 
+\index{Wiggler@{Wiggler}!update\_horizontal\_movement@{update\_horizontal\_movement}}
+\index{update\_horizontal\_movement@{update\_horizontal\_movement}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{update\_horizontal\_movement()}{update\_horizontal\_movement()}}
+{\footnotesize\ttfamily void Wiggler\+::update\+\_\+horizontal\+\_\+movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a275758d369b455e6f07e90febaea6d2d}\label{classWiggler_a275758d369b455e6f07e90febaea6d2d}} 
+\index{Wiggler@{Wiggler}!update\_horizontal\_movement\_rec@{update\_horizontal\_movement\_rec}}
+\index{update\_horizontal\_movement\_rec@{update\_horizontal\_movement\_rec}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{update\_horizontal\_movement\_rec()}{update\_horizontal\_movement\_rec()}}
+{\footnotesize\ttfamily void Wiggler\+::update\+\_\+horizontal\+\_\+movement\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a4f6baf5ef589d6146251d3eb1c1d74cb}\label{classWiggler_a4f6baf5ef589d6146251d3eb1c1d74cb}} 
+\index{Wiggler@{Wiggler}!update\_physics@{update\_physics}}
+\index{update\_physics@{update\_physics}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{update\_physics()}{update\_physics()}}
+{\footnotesize\ttfamily void Wiggler\+::update\+\_\+physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_ae905a0b228df78cb3bf8fb91479e4ea5}\label{classWiggler_ae905a0b228df78cb3bf8fb91479e4ea5}} 
+\index{Wiggler@{Wiggler}!update\_physics\_rec@{update\_physics\_rec}}
+\index{update\_physics\_rec@{update\_physics\_rec}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{update\_physics\_rec()}{update\_physics\_rec()}}
+{\footnotesize\ttfamily void Wiggler\+::update\+\_\+physics\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}} $\ast$}]{bp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWiggler_ae905a0b228df78cb3bf8fb91479e4ea5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classWiggler_a5041f22f811c70f61a83d692b304319c}\label{classWiggler_a5041f22f811c70f61a83d692b304319c}} 
+\index{Wiggler@{Wiggler}!updateCollider@{updateCollider}}
+\index{updateCollider@{updateCollider}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{updateCollider()}{updateCollider()}}
+{\footnotesize\ttfamily void Wiggler\+::update\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWiggler_af1777054240d428e2c511940dd1070b5}\label{classWiggler_af1777054240d428e2c511940dd1070b5}} 
+\index{Wiggler@{Wiggler}!amplitude\_@{amplitude\_}}
+\index{amplitude\_@{amplitude\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{amplitude\_}{amplitude\_}}
+{\footnotesize\ttfamily int Wiggler\+::amplitude\+\_\+ = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_ac2533b2201187b7755b1a60c998055a2}\label{classWiggler_ac2533b2201187b7755b1a60c998055a2}} 
+\index{Wiggler@{Wiggler}!angry\_@{angry\_}}
+\index{angry\_@{angry\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{angry\_}{angry\_}}
+{\footnotesize\ttfamily bool Wiggler\+::angry\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a65a6e6935276a113206608879b70a77a}\label{classWiggler_a65a6e6935276a113206608879b70a77a}} 
+\index{Wiggler@{Wiggler}!dead\_@{dead\_}}
+\index{dead\_@{dead\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{dead\_}{dead\_}}
+{\footnotesize\ttfamily bool Wiggler\+::dead\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a05fb4abb97a30adef4ce6838192fd7c0}\label{classWiggler_a05fb4abb97a30adef4ce6838192fd7c0}} 
+\index{Wiggler@{Wiggler}!frequency\_@{frequency\_}}
+\index{frequency\_@{frequency\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{frequency\_}{frequency\_}}
+{\footnotesize\ttfamily float Wiggler\+::frequency\+\_\+ = 30.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_a241052181089388f0611de295f5c0a04}\label{classWiggler_a241052181089388f0611de295f5c0a04}} 
+\index{Wiggler@{Wiggler}!head\_@{head\_}}
+\index{head\_@{head\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{head\_}{head\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}}$\ast$ Wiggler\+::head\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_add16cf9aa22bd60633c98a689a15c08b}\label{classWiggler_add16cf9aa22bd60633c98a689a15c08b}} 
+\index{Wiggler@{Wiggler}!tail\_@{tail\_}}
+\index{tail\_@{tail\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{tail\_}{tail\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structWiggler_1_1bodyPart}{body\+Part}}$\ast$ Wiggler\+::tail\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWiggler_ac89aa7c7b3f479af3a8e88a26af58224}\label{classWiggler_ac89aa7c7b3f479af3a8e88a26af58224}} 
+\index{Wiggler@{Wiggler}!velocity\_@{velocity\_}}
+\index{velocity\_@{velocity\_}!Wiggler@{Wiggler}}
+\doxysubsubsection{\texorpdfstring{velocity\_}{velocity\_}}
+{\footnotesize\ttfamily int Wiggler\+::velocity\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/enemies/\mbox{\hyperlink{wiggler_8hh}{wiggler.\+hh}}\item 
+src/enemies/\mbox{\hyperlink{wiggler_8cc}{wiggler.\+cc}}\end{DoxyCompactItemize}

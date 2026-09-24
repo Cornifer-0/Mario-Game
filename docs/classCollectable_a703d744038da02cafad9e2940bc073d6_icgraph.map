@@ -1,0 +1,4 @@
+<map id="Collectable::calcPositionOffset" name="Collectable::calcPositionOffset">
+<area shape="rect" id="node1" title="Calculates an offset, based on the frame_count, useful to simulate sinusoidal movements of the coins." alt="" coords="189,5,371,47"/>
+<area shape="rect" id="node2" href="$classCollectable.html#a6b7285526c3e76540dff6c69c39f848e" title="Paints the collectable on the window, if debug it also paints the boxCollider&#39;s border by calling the..." alt="" coords="5,13,141,39"/>
+</map>
